@@ -10173,8 +10173,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-29-1';
-    const APP_BUILD_ID = '2026-06-29-1';
+    const DATA_CACHE_BUSTER = '2026-06-29-2';
+    const APP_BUILD_ID = '2026-06-29-2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -19565,158 +19565,211 @@ document.addEventListener('DOMContentLoaded', function() {
 	    }
 
     async function updateContestSelectForCurrentView() {
-      const activeDistrictManifest = getActiveDistrictManifest();
-      // In manifest mode, district views must use district slices; otherwise selections can appear but won't load.
-      const inManifestMode =
-        (Array.isArray(contestManifest) && contestManifest.length > 0) ||
-        (Array.isArray(activeDistrictManifest) && activeDistrictManifest.length > 0);
-      let entries = null;
+      const isCountyView = currentView === 'counties' || currentView === 'vtds_2000' || !currentView;
 
-      if (currentView === 'counties' || currentView === 'vtds_2000' || !currentView) {
-        entries = contestManifest || [];
-      } else {
-        const scope = currentView === 'districts'
-          ? 'congressional'
-          : (currentView === 'state_house' ? 'state_house' : (currentView === 'state_senate' ? 'state_senate' : null));
-        if (scope && Array.isArray(activeDistrictManifest) && activeDistrictManifest.length) {
-          entries = activeDistrictManifest.filter(e => e && e.scope === scope);
+      // County mode should be driven by Ohio's county_aggregates_nested.json fallback unless
+      // real county contest slices exist. Do not let district manifests put the county selector
+      // into the district/no-contests path.
+      if (isCountyView) {
+        const countyManifestEntries = (Array.isArray(contestManifest) ? contestManifest : [])
+          .filter(e => e && !e.scope);
+        const entriesWithModels = countyManifestEntries.length > 0
+          ? mergeManifestEntriesWithModeled(countyManifestEntries, currentView)
+          : [];
+        if (entriesWithModels.length > 0) {
+          await populateContestSelectFromManifest(entriesWithModels);
         } else {
-          entries = [];
+          populateContestSelectFromElectionJSON(electionData || []);
         }
+        return;
       }
 
-      const entriesWithModels = Array.isArray(entries) && entries.length > 0
+      const activeDistrictManifest = getActiveDistrictManifest();
+      const scope = currentView === 'districts'
+        ? 'congressional'
+        : (currentView === 'state_house' ? 'state_house' : (currentView === 'state_senate' ? 'state_senate' : null));
+      const entries = (scope && Array.isArray(activeDistrictManifest) && activeDistrictManifest.length)
+        ? activeDistrictManifest.filter(e => e && e.scope === scope)
+        : [];
+      const entriesWithModels = entries.length > 0
         ? mergeManifestEntriesWithModeled(entries, currentView)
         : [];
-      if (Array.isArray(entriesWithModels) && entriesWithModels.length > 0) {
+
+      if (entriesWithModels.length > 0) {
         await populateContestSelectFromManifest(entriesWithModels);
         return;
       }
 
-      // If we have manifests but no matches for this view, don't fall back to county contests (they won't load here).
-      if (inManifestMode && currentView !== 'counties' && currentView !== 'vtds_2000') {
-        const sel = document.getElementById('contestSelect');
-        if (sel) {
-          sel.innerHTML = '<option value="">No contests available for this view</option>';
-          sel.dataset.populated = 'true';
-          wireContestSelectHandlers(sel);
-        }
-        return;
+      const sel = document.getElementById('contestSelect');
+      if (sel) {
+        sel.disabled = false;
+        sel.innerHTML = '<option value="">No contests available for this view</option>';
+        sel.dataset.populated = 'true';
+        sel.dataset.populatedView = currentView || '';
+        wireContestSelectHandlers(sel);
       }
-
-      // Fallback (legacy JSON/CSV mode)
-      populateContestSelectFromElectionJSON(electionData);
     }
 
     function populateContestSelectFromCSV(csvData) {
-	      if (!Array.isArray(csvData) || csvData.length === 0) return;
-	      const sel = document.getElementById('contestSelect');
-	      if (sel.dataset.populated === 'true') return; // Only populate once per data load
-	      sel.innerHTML = '<option value="">Select a contest...</option>';
-      // Show loading spinner
-      var spinner = document.getElementById('contest-loading-spinner');
+      const sel = document.getElementById('contestSelect');
+      if (!sel) return;
+      if (!Array.isArray(csvData) || csvData.length === 0) {
+        sel.disabled = false;
+        sel.innerHTML = '<option value="">No county contests loaded</option>';
+        sel.dataset.populated = 'true';
+        wireContestSelectHandlers(sel);
+        return;
+      }
+
+      // County mode uses the monolithic county_aggregates_nested.json fallback.
+      // Rebuild every time the view/filter changes; the old one-time dataset.populated guard
+      // could leave county mode stuck with an empty/stale district dropdown after manifests loaded.
+      sel.disabled = false;
+      sel.innerHTML = '<option value="">Select a contest...</option>';
+
+      let spinner = document.getElementById('contest-loading-spinner');
       if (!spinner) {
         spinner = document.createElement('span');
         spinner.id = 'contest-loading-spinner';
         spinner.className = 'spinner';
         spinner.style.marginLeft = '8px';
         spinner.innerHTML = '<svg width="18" height="18" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)"/></svg>';
-        sel.parentNode.insertBefore(spinner, sel.nextSibling);
+        if (sel.parentNode) sel.parentNode.insertBefore(spinner, sel.nextSibling);
       }
-	      const contestTypes = [
-	        'president',
-	        'us_senate',
-	        'governor',
-	        'lieutenant_governor',
-	        'attorney_general',
-	        'secretary_of_state',
-	        'treasurer',
-	        'auditor',
-	        'labor_commissioner',
-	        'insurance_commissioner',
-	        'agriculture_commissioner',
-	        'superintendent'
-	      ];
-      // Precompute contest/year pairs in a single pass
+
+      const hiddenCountyContestTypes = new Set([
+        'state_house',
+        'state_senate',
+        'us_house'
+      ]);
+
+      function discoverCountyContestTypes(rows) {
+        const types = new Set();
+        rows.forEach(row => {
+          Object.keys(row || {}).forEach(key => {
+            if (!key.endsWith('_total')) return;
+            const contestType = key.replace(/_total$/, '');
+            if (!contestType || hiddenCountyContestTypes.has(contestType)) return;
+            const total = Number(row[key] || 0);
+            if (Number.isFinite(total) && total > 0) types.add(contestType);
+          });
+        });
+        return Array.from(types);
+      }
+
+      const preferredContestOrder = [
+        'president',
+        'us_senate',
+        'governor',
+        'lieutenant_governor',
+        'attorney_general',
+        'secretary_of_state',
+        'treasurer',
+        'auditor',
+        'labor_commissioner',
+        'insurance_commissioner',
+        'agriculture_commissioner',
+        'superintendent'
+      ];
+
+      const discoveredTypes = discoverCountyContestTypes(csvData);
+      const contestTypes = [
+        ...preferredContestOrder.filter(t => discoveredTypes.includes(t)),
+        ...discoveredTypes.filter(t => !preferredContestOrder.includes(t)).sort((a, b) => formatContestName(a, '').localeCompare(formatContestName(b, '')))
+      ];
+
       const contestYearPairs = {};
       csvData.forEach(row => {
         contestTypes.forEach(contestType => {
-          if (row[`${contestType}_total`] > 0) {
+          if (Number(row[`${contestType}_total`] || 0) > 0) {
             if (!contestYearPairs[contestType]) contestYearPairs[contestType] = new Set();
-            contestYearPairs[contestType].add(row.year);
+            contestYearPairs[contestType].add(Number(row.year));
           }
         });
       });
-	      function groupLabelForContestType(contestType) {
-	        if (contestType === 'president') return 'US President';
-	        if (contestType === 'us_senate') return 'US Senate';
-	        if (contestType === 'governor') return 'Governor';
-	        if (contestType === 'lieutenant_governor') return 'Lieutenant Governor';
-	        if (contestType === 'attorney_general') return 'Attorney General';
-	        if (contestType === 'secretary_of_state') return 'Secretary of State';
-	        if (contestType === 'treasurer') return 'Treasurer';
-	        if (contestType === 'auditor') return 'Auditor';
-	        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
-	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
-	        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
-	        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
-          if (contestType.startsWith('chief_justice_of_the_supreme_court')) return 'Supreme Court';
-          if (contestType.startsWith('justice_of_the_supreme_court')) return 'Supreme Court';
-	        return formatContestName(contestType, '');
-	      }
 
-	      const groupOrder = [
-	        'US President',
-	        'US Senate',
-	        'Governor',
-	        'Lieutenant Governor',
-	        'Attorney General',
-	        'Secretary of State',
-	        'Treasurer',
-	        'Auditor',
-	        'Labor Commissioner',
-	        'Insurance Commissioner',
-	        'Agriculture Commissioner',
-	        'Superintendent of Public Instruction'
-	      ];
+      function groupLabelForContestType(contestType) {
+        if (contestType === 'president') return 'US President';
+        if (contestType === 'us_senate') return 'US Senate';
+        if (contestType === 'governor') return 'Governor';
+        if (contestType === 'lieutenant_governor') return 'Lieutenant Governor';
+        if (contestType === 'attorney_general') return 'Attorney General';
+        if (contestType === 'secretary_of_state') return 'Secretary of State';
+        if (contestType === 'treasurer') return 'Treasurer';
+        if (contestType === 'auditor') return 'Auditor';
+        if (contestType === 'labor_commissioner') return 'Labor Commissioner';
+        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
+        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
+        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
+        if (contestType.startsWith('chief_justice_of_the_supreme_court')) return 'Supreme Court';
+        if (contestType.startsWith('justice_of_the_supreme_court')) return 'Supreme Court';
+        if (contestType.startsWith('court_of_appeals')) return 'Court of Appeals';
+        if (contestType.startsWith('board_of_education')) return 'State Board of Education';
+        return formatContestName(contestType, '');
+      }
 
-	      const grouped = new Map(); // label -> Array<{contestType, year}>
-	      contestTypes.forEach(contestType => {
-	        const years = contestYearPairs[contestType] ? Array.from(contestYearPairs[contestType]) : [];
-	        if (!years.length) return;
-	        const label = groupLabelForContestType(contestType);
-	        years.forEach(y => {
-	          if (!grouped.has(label)) grouped.set(label, []);
-	          grouped.get(label).push({ contestType, year: Number(y) });
-	        });
-	      });
+      const groupOrder = [
+        'US President',
+        'US Senate',
+        'Governor',
+        'Lieutenant Governor',
+        'Attorney General',
+        'Secretary of State',
+        'Treasurer',
+        'Auditor',
+        'Labor Commissioner',
+        'Insurance Commissioner',
+        'Agriculture Commissioner',
+        'Superintendent of Public Instruction',
+        'Supreme Court',
+        'Court of Appeals',
+        'State Board of Education'
+      ];
 
-	      const orderedLabels = [
-	        ...groupOrder.filter(l => grouped.has(l)),
-	        ...Array.from(grouped.keys()).filter(l => !groupOrder.includes(l)).sort((a, b) => a.localeCompare(b))
-	      ];
+      const grouped = new Map();
+      contestTypes.forEach(contestType => {
+        const years = contestYearPairs[contestType] ? Array.from(contestYearPairs[contestType]) : [];
+        if (!years.length) return;
+        const label = groupLabelForContestType(contestType);
+        years.forEach(y => {
+          if (!Number.isFinite(Number(y))) return;
+          if (!grouped.has(label)) grouped.set(label, []);
+          grouped.get(label).push({ contestType, year: Number(y) });
+        });
+      });
 
-	      const fragment = document.createDocumentFragment();
-	      orderedLabels.forEach(label => {
-	        const items = (grouped.get(label) || []).slice().sort((a, b) => Number(a.year) - Number(b.year));
-	        const og = document.createElement('optgroup');
-	        og.label = label;
-	        items.forEach(item => {
-	          const opt = document.createElement('option');
-	          opt.value = `${item.contestType}_${item.year}`;
-	          opt.textContent = `${label} (${item.year})`;
-	          og.appendChild(opt);
-	        });
-	        fragment.appendChild(og);
-	      });
+      const orderedLabels = [
+        ...groupOrder.filter(l => grouped.has(l)),
+        ...Array.from(grouped.keys()).filter(l => !groupOrder.includes(l)).sort((a, b) => a.localeCompare(b))
+      ];
 
-	      sel.appendChild(fragment);
+      const q = (contestSearchQuery || '').toString().trim().toUpperCase();
+      const fragment = document.createDocumentFragment();
+      orderedLabels.forEach(label => {
+        const items = (grouped.get(label) || []).slice().sort((a, b) => Number(a.year) - Number(b.year) || String(a.contestType).localeCompare(String(b.contestType)));
+        const og = document.createElement('optgroup');
+        og.label = label;
+        items.forEach(item => {
+          const optionLabel = formatContestLabel(item.contestType, item.year);
+          const hay = `${label} ${item.year} ${item.contestType} ${optionLabel}`.toUpperCase();
+          if (q && !hay.includes(q)) return;
+          const opt = document.createElement('option');
+          opt.value = `${item.contestType}_${item.year}`;
+          opt.textContent = optionLabel || `${label} (${item.year})`;
+          og.appendChild(opt);
+        });
+        if (og.children.length) fragment.appendChild(og);
+      });
+
+      if (!fragment.childNodes.length) {
+        sel.innerHTML = '<option value="">No matching county contests</option>';
+      } else {
+        sel.appendChild(fragment);
+      }
       sel.dataset.populated = 'true';
-      // Hide loading spinner
-  var spinner = document.getElementById('contest-loading-spinner');
-  if (spinner) spinner.style.display = 'none';
+      sel.dataset.populatedView = currentView || 'counties';
+      if (spinner) spinner.style.display = 'none';
       wireContestSelectHandlers(sel);
-
     }
 
     function populateContestSelectForStateHouse(csvData) {
@@ -26539,7 +26592,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const districtNumText = String(districtNum);
       const paddedDistrictNum = districtNumText.padStart(2, '0');
       const formattedDistrictLabel = scope === 'congressional'
-        ? `NC-${paddedDistrictNum}`
+        ? `OH-${paddedDistrictNum}`
         : `${districtLabel}-${paddedDistrictNum}`;
       const panelDistrictLabel = scope === 'state_house'
         ? 'State House District'
