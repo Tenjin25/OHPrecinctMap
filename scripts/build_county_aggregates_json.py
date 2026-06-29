@@ -8,6 +8,14 @@ from build_county_aggregates import DATA_DIR, include_office, normalize_office, 
 
 OUTPUT_PATH = DATA_DIR / "county_aggregates_nested.json"
 
+EXCLUDED_COUNTY_OFFICES = {
+    "U.S. House",
+    "State House",
+    "State Representative",
+    "State Senate",
+    "State Senator",
+}
+
 YEAR_FILES = [
     ("2000", DATA_DIR / "2000" / "20001107__oh__general__county.csv"),
     ("2002", DATA_DIR / "2002" / "20021105__oh__general.csv"),
@@ -132,6 +140,8 @@ def load_results_by_year() -> tuple[dict[str, dict], list[str]]:
             for row in reader:
                 office = normalize_office(row.get("office", ""))
                 if not include_office(office):
+                    continue
+                if office in EXCLUDED_COUNTY_OFFICES:
                     continue
 
                 county = clean_text(row.get("county", ""))

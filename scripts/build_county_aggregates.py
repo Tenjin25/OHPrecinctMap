@@ -23,10 +23,7 @@ INCLUDE_OFFICES = {
     "State Auditor",
     "Treasurer of State",
     "Treasure of State",
-    "U.S. House",
-    "U.S. Representative",
     "U.S. Senate",
-    "US House of Representatives",
     "US Senate",
 }
 
@@ -35,8 +32,6 @@ OFFICE_NORMALIZATION = {
     "President": "President/Vice President",
     "State Auditor": "Auditor of State",
     "Treasure of State": "Treasurer of State",
-    "U.S. Representative": "U.S. House",
-    "US House of Representatives": "U.S. House",
     "US Senate": "U.S. Senate",
 }
 
