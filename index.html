@@ -10173,8 +10173,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-21-1';
-    const APP_BUILD_ID = '2026-06-14-1';
+    const DATA_CACHE_BUSTER = '2026-06-29-1';
+    const APP_BUILD_ID = '2026-06-29-1';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10212,9 +10212,11 @@ document.addEventListener('DOMContentLoaded', function() {
         counties: withBase('./data/census/tl_2020_39_county20.geojson'),
         precincts: withBase('./data/census/tl_2020_39_vtd20/tl_2020_39_vtd20.geojson'),
         precincts_fallback_vtd20: withBase('./data/census/tl_2020_39_vtd20/tl_2020_39_vtd20.geojson'),
-        precinct_centroids: withBase('./data/precinct_centroids.geojson'),
-        precinct_aliases: withBase('./data/precinct_alias_index.json'),
-        precinct_friendly_names: withBase('./data/precinct_friendly_names.json'),
+        // Optional generated point index; leave blank unless the file exists in /data.
+        precinct_centroids: '',
+        // Optional generated alias/friendly-name indexes. Blank prevents GitHub Pages 404 noise.
+        precinct_aliases: '',
+        precinct_friendly_names: '',
         precinct_variant_overrides: withBase('./data/mappings/precinct_variant_overrides.json'),
         districts: withBase('./data/tileset/oh_cd118.geojson'),
         districts_2022: withBase('./data/tileset/oh_cd118.geojson'),
@@ -10226,18 +10228,19 @@ document.addEventListener('DOMContentLoaded', function() {
         state_senate: withBase('./data/tileset/oh_state_senate_2020.geojson'),
         state_senate_2022: withBase('./data/tileset/oh_state_senate_2020.geojson'),
         state_senate_2024: withBase('./data/tileset/oh_state_senate_2024.geojson'),
-        county_demographics: withBase('./data/county_demographics_2020_dp1.json'),
-        county_population_estimates: withBase('./data/CO-EST2025-POP-37-clean.csv'),
-        precinct_demographics: withBase('./data/precinct_demographics_2020_vap.csv'),
+        // Optional census/demographic overlays. Keep blank until the Ohio files are committed.
+        county_demographics: '',
+        county_population_estimates: '',
+        precinct_demographics: '',
         cvap_aggregates: {
-          county_2020: withBase('./data/cvap_aggregates/county_2020__cvap24.csv'),
-          precinct_2020: withBase('./data/cvap_aggregates/precinct_2020__cvap24.csv'),
-          cd118_2022: withBase('./data/cvap_aggregates/cd118_2022_lines__cvap24.csv'),
-          cd119_2024: withBase('./data/cvap_aggregates/cd119_2024_lines__cvap24.csv'),
-          state_house_2022: withBase('./data/cvap_aggregates/state_house_2022_lines__cvap24.csv'),
-          state_house_2024: withBase('./data/cvap_aggregates/state_house_2024_lines__cvap24.csv'),
-          state_senate_2022: withBase('./data/cvap_aggregates/state_senate_2022_lines__cvap24.csv'),
-          state_senate_2024: withBase('./data/cvap_aggregates/state_senate_2024_lines__cvap24.csv')
+          county_2020: '',
+          precinct_2020: '',
+          cd118_2022: '',
+          cd119_2024: '',
+          state_house_2022: '',
+          state_house_2024: '',
+          state_senate_2022: '',
+          state_senate_2024: ''
         },
         election: withBase('./data/county_aggregates_nested.json'),
         district_election: withBase('./data/oh_district_results_2022_lines.json'),
@@ -10252,7 +10255,9 @@ document.addEventListener('DOMContentLoaded', function() {
         state_house_info: withBase('./data/oh_state_house_districts.csv'),
         state_senate_info: withBase('./data/oh_state_senate_districts.csv'),
         district_descriptions: withBase('./data/oh_district_descriptions.json'),
-        contests_dir: withBase('./data/contests'),
+        // Optional county contest slices. This repo currently uses county_aggregates_nested.json,
+        // so leave blank unless /data/contests/manifest.json and slice JSONs are committed.
+        contests_dir: '',
         reports_match_year_summary: withBase('./data/reports/precinct_match_year_summary_fresh_2026-03-19.csv'),
         reports_top_unmatched: withBase('./data/reports/precinct_match_top_unmatched_file_county.csv'),
         crosswalks: {
@@ -18695,6 +18700,12 @@ document.addEventListener('DOMContentLoaded', function() {
             ? (contestManifest.find(e => e && e.contest_type === contestType && Number(e.year) === Number(year) && !e.scope) || null)
             : null;
           const manifestFile = (manifestEntry?.file || '').toString().trim();
+
+          if (!CONFIG.paths?.contests_dir) {
+            const fallback = (electionData || []).filter(row => row.year == year);
+            contestSliceCache.set(key, fallback);
+            return fallback;
+          }
 
           // Prefer OpenElections CSV for older presidential cycles to avoid a known-missing JSON fetch (and console 404 noise).
           if (contestType === 'president' && PRESIDENT_OPEN_ELECTIONS_CSV[Number(year)]) {
@@ -28824,10 +28835,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	    async function ensurePrecinctCentroidsLoaded() {
 	      if (precinctCentroidsLoaded || map.getSource('precinct-centroids')) return true;
+        const centroidPath = CONFIG.paths?.precinct_centroids;
+        if (!centroidPath) {
+          setViewportPrecinctCountText('Precinct dots unavailable');
+          return false;
+        }
 	      if (precinctCentroidsLoadInFlight) return false;
 	      precinctCentroidsLoadInFlight = true;
 	      try {
-	        const pts = await loadJSON(CONFIG.paths.precinct_centroids);
+	        const pts = await loadJSON(centroidPath);
           precinctCentroidsData = pts;
           try {
             precinctCentroidsData.features = (precinctCentroidsData.features || []).map(f => {
@@ -31556,6 +31572,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function hydrateAtlasDataAndDistrictSources() {
       setStatus('Loading election index...');
       try {
+        if (!CONFIG.paths?.contests_dir) throw new Error('County contest slices are not configured; using county_aggregates_nested.json.');
         const manifest = await loadJSON(`${CONFIG.paths.contests_dir}/manifest.json`);
         contestManifest = manifest?.files || [];
         try { contestYearsByTypeCache.clear(); } catch (_) {}
@@ -31643,37 +31660,51 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       // Optional county demographics (DP1-derived) for sidebar/tooltips.
-      try {
-        countyDemographics = await loadJSON(CONFIG.paths.county_demographics);
-      } catch (err) {
+      if (CONFIG.paths?.county_demographics) {
+        try {
+          countyDemographics = await loadJSON(CONFIG.paths.county_demographics);
+        } catch (err) {
+          countyDemographics = null;
+          console.warn('County demographics not loaded:', err?.message || err);
+        }
+      } else {
         countyDemographics = null;
-        console.warn('County demographics not loaded:', err?.message || err);
       }
 
       // Optional county population estimates (Census Vintage 2025) for county insight + trajectory confirmation.
-      try {
-        const countyPopulationEstimatesCSV = await loadCSV(CONFIG.paths.county_population_estimates);
-        const rows = parseCSV(countyPopulationEstimatesCSV);
-        const idx = buildCountyPopulationEstimateIndex(rows);
-        countyPopulationEstimatesByNorm = idx.byNorm;
-        countyPopulationEstimateStatewide = idx.statewide;
-      } catch (err) {
+      if (CONFIG.paths?.county_population_estimates) {
+        try {
+          const countyPopulationEstimatesCSV = await loadCSV(CONFIG.paths.county_population_estimates);
+          const rows = parseCSV(countyPopulationEstimatesCSV);
+          const idx = buildCountyPopulationEstimateIndex(rows);
+          countyPopulationEstimatesByNorm = idx.byNorm;
+          countyPopulationEstimateStatewide = idx.statewide;
+        } catch (err) {
+          countyPopulationEstimatesByNorm = null;
+          countyPopulationEstimateStatewide = null;
+          console.warn('County population estimates not loaded:', err?.message || err);
+        }
+      } else {
         countyPopulationEstimatesByNorm = null;
         countyPopulationEstimateStatewide = null;
-        console.warn('County population estimates not loaded:', err?.message || err);
       }
 
       // Optional precinct demographics (VAP by race from block aggregation).
-      try {
-        const precinctDemographicsCSV = await loadCSV(CONFIG.paths.precinct_demographics);
-        const rows = parseCSV(precinctDemographicsCSV);
-        const idx = buildPrecinctDemographicsIndexes(rows);
-        precinctDemographicsByNorm = idx.byNorm;
-        precinctDemographicsByCountyCode = idx.byCountyCode;
-      } catch (err) {
+      if (CONFIG.paths?.precinct_demographics) {
+        try {
+          const precinctDemographicsCSV = await loadCSV(CONFIG.paths.precinct_demographics);
+          const rows = parseCSV(precinctDemographicsCSV);
+          const idx = buildPrecinctDemographicsIndexes(rows);
+          precinctDemographicsByNorm = idx.byNorm;
+          precinctDemographicsByCountyCode = idx.byCountyCode;
+        } catch (err) {
+          precinctDemographicsByNorm = null;
+          precinctDemographicsByCountyCode = null;
+          console.warn('Precinct demographics not loaded:', err?.message || err);
+        }
+      } else {
         precinctDemographicsByNorm = null;
         precinctDemographicsByCountyCode = null;
-        console.warn('Precinct demographics not loaded:', err?.message || err);
       }
 
       // Optional: preload RDH CVAP aggregates used for hover totals (non-blocking).
@@ -32080,6 +32111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	    async function tryLoadContestSliceStrict(contestType, year) {
 	      const key = `${contestType}_${year}`;
+        if (!CONFIG.paths?.contests_dir) return null;
 	      try {
 	        const payload = await loadJSON(`${CONFIG.paths.contests_dir}/${key}.json`);
 	        return (payload.rows || []).map(r => ({
