@@ -1,4 +1,5 @@
 import csv
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -30,6 +31,7 @@ INCLUDE_OFFICES = {
 OFFICE_NORMALIZATION = {
     "Governor/LtGovernor": "Governor/Lieutenant Governor",
     "President": "President/Vice President",
+    "President/Vice-President": "President/Vice President",
     "State Auditor": "Auditor of State",
     "Treasure of State": "Treasurer of State",
     "US Senate": "U.S. Senate",
@@ -79,12 +81,21 @@ def clean_text(value: str) -> str:
 def normalize_office(value: str) -> str:
     office = clean_text(value)
     office = OFFICE_NORMALIZATION.get(office, office)
-    if office.startswith("Chief Justice of the Supreme Court"):
-        return office
-    if office.startswith("Justice of the Supreme Court"):
-        return office
-    if office.startswith("Judge of the Court of Appeals"):
-        return office
+
+    judicial_patterns = [
+        (r"^Chief Justice Of The Supreme Court\b", "Chief Justice of the Supreme Court"),
+        (r"^Chief Justice of the Supreme Court\b", "Chief Justice of the Supreme Court"),
+        (r"^Justice Of The Ohio Supreme Court\b", "Justice of the Supreme Court"),
+        (r"^Justice Of The Supreme Court\b", "Justice of the Supreme Court"),
+        (r"^Justice of the Supreme Court\b", "Justice of the Supreme Court"),
+        (r"^Judge Of Court Of Appeals\b", "Judge of the Court of Appeals"),
+        (r"^Judge Of The Court Of Appeals\b", "Judge of the Court of Appeals"),
+        (r"^Judge of the Court of Appeals\b", "Judge of the Court of Appeals"),
+    ]
+    for pattern, replacement in judicial_patterns:
+        if re.match(pattern, office):
+            office = re.sub(pattern, replacement, office)
+            return office
     return office
 
 

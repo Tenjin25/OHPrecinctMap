@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
+  "year": 2012,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 278275,
+        "total_votes": 278275,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "2": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 232062,
+        "total_votes": 232062,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "3": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 249500,
+        "total_votes": 249500,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "4": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 250902,
+        "total_votes": 250902,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "5": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 255978,
+        "total_votes": 255978,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "6": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 250852,
+        "total_votes": 250852,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "7": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 245720,
+        "total_votes": 245720,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "8": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 263668,
+        "total_votes": 263668,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "9": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 255381,
+        "total_votes": 255381,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "10": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 281740,
+        "total_votes": 281740,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "11": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 249034,
+        "total_votes": 249034,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "12": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 231635,
+        "total_votes": 231635,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "13": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 286892,
+        "total_votes": 286892,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "14": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 255367,
+        "total_votes": 255367,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      },
+      "15": {
+        "dem_votes": 0,
+        "rep_votes": 0,
+        "other_votes": 231752,
+        "total_votes": 231752,
+        "dem_candidate": "",
+        "rep_candidate": "",
+        "margin": 0,
+        "margin_pct": 0.0,
+        "winner": "TIE",
+        "color": "#d9d9d9"
+      }
+    }
+  }
+}

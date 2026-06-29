@@ -29,6 +29,8 @@ BLOCK_SHAPEFILES = {
 
 VTD10_DIR = CENSUS_DIR / "tl_2010_39_vtd10"
 VTD10_GEOJSON = VTD10_DIR / "tl_2010_39_vtd10.geojson"
+VTD20_DIR = CENSUS_DIR / "tl_2020_39_vtd20"
+VTD20_GEOJSON = VTD20_DIR / "tl_2020_39_vtd20.geojson"
 
 
 def ensure_pyshp() -> None:
@@ -162,6 +164,29 @@ def inspect_vtd10_bundle() -> dict:
     return result
 
 
+def inspect_vtd20_bundle() -> dict:
+    result = {
+        "path": str(VTD20_DIR),
+        "present": VTD20_DIR.exists(),
+    }
+    if not VTD20_DIR.exists():
+        return result
+
+    shp_files = sorted(VTD20_DIR.glob("*.shp"))
+    result["county_shapefile_count"] = len(shp_files)
+    result["geojson_present"] = VTD20_GEOJSON.exists()
+
+    if VTD20_GEOJSON.exists():
+        with VTD20_GEOJSON.open("r", encoding="utf-8") as fh:
+            geojson = json.load(fh)
+        result["merged_feature_count"] = len(geojson.get("features", []))
+
+    if shp_files:
+        result["sample_county_shapefiles"] = [path.name for path in shp_files[:3]]
+
+    return result
+
+
 def build_summary() -> dict:
     ensure_pyshp()
     return {
@@ -174,6 +199,7 @@ def build_summary() -> dict:
         },
         "optional_geometries": {
             "vtd10": inspect_vtd10_bundle(),
+            "vtd20": inspect_vtd20_bundle(),
         },
     }
 

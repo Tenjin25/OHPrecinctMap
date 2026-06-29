@@ -6,12 +6,19 @@ data/*/*__precinct.csv
 data/census/tl_2010_39_county10/
 data/census/tl_2010_39_tabblock10/
 data/census/tl_2010_39_vtd10/
+data/census/tl_2008_39_tabblock00.zip
 data/census/tl_2020_39_county20/
 data/census/tl_2020_39_tabblock20/
+data/census/tl_2020_39_vtd20/
+data/census/tl_2020_39_vtd20.zip
 data/2010/2010_general_precinct.txt
 data/2010/2010_primary_precinct.txt
+data/2004/raw/
+data/2008/raw/
 data/2012/2012precinct.txt
 data/2012/2012precinct.xlsx
+data/2012/raw/
+data/2012/20120306__oh__primary_precinct.csv
 data/tileset/tl_2020_39_cd118/
 data/tileset/tl_2020_39_sldl/
 data/tileset/tl_2020_39_sldu/
@@ -19,3 +26,4 @@ data/tileset/tl_2022_39_cd118/
 data/tileset/tl_2024_39_cd119/
 data/tileset/tl_2024_39_sldl/
 data/tileset/tl_2024_39_sldu/
+data/uscongressionaldistricts-2026-2032-adopted-2025-10-31-shapefiles.zip

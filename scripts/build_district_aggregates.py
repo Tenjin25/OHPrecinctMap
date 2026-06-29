@@ -17,8 +17,11 @@ DATA_DIR = BASE_DIR / "data"
 
 
 PRECINCT_GENERAL_FILES = {
+    2004: DATA_DIR / "2004" / "20041102__oh__general__precinct.csv",
     2006: DATA_DIR / "2006" / "20061107__OH__general__precinct.csv",
+    2008: DATA_DIR / "2008" / "20081104__oh__general__precinct.csv",
     2010: DATA_DIR / "2010" / "20101102__oh__general__precinct.csv",
+    2012: DATA_DIR / "2012" / "20121106__oh__general__precinct.csv",
     2014: DATA_DIR / "2014" / "20141104__oh__general__precinct.csv",
     2016: DATA_DIR / "2016" / "20161108__oh__general__precinct.csv",
     2018: DATA_DIR / "2018" / "20181106__oh__general__precinct.csv",
@@ -75,6 +78,13 @@ def slugify(value: str) -> str:
     value = value.replace("&", "and")
     value = re.sub(r"[^a-z0-9]+", "_", value)
     return value.strip("_")
+
+
+def normalize_ticket_candidate_name(candidate: str, contest_type: str) -> str:
+    candidate = clean_text(candidate)
+    if contest_type not in {"president", "governor"}:
+        return candidate
+    return re.split(r"\s+(?:and|/|&)\s+", candidate, maxsplit=1, flags=re.IGNORECASE)[0].strip()
 
 
 def normalize_district_number(value: str) -> str:
@@ -217,6 +227,7 @@ def aggregate_scopes_year(
             candidate = clean_text(row.get("candidate", ""))
             if not candidate:
                 continue
+            candidate = normalize_ticket_candidate_name(candidate, contest_type)
 
             votes = parse_votes(row.get("votes", "0"))
             if votes <= 0:

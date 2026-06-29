@@ -45,4 +45,5 @@ Note:
 
 - NHGIS block crosswalks help translate Census blocks across vintages. They do not replace a precinct or VTD boundary layer when we need to join election precinct rows onto map shapes.
 - Ohio 2010 VTD geometry is available from the official Census TIGER directory, but it is published county-by-county rather than as one statewide zip. The fetcher now supports this as dataset key `vtd10`.
+- The fetcher also supports a county-by-county `vtd20` probe using the same pattern if Census exposes Ohio 2020 VTD files that way.
 - A straightforward Ohio 2020 statewide VTD TIGER zip was not available at the expected Census path, and the Census 2000 VTD directory did not show Ohio county files during verification. That means older/legacy precinct geometry may still need a different official state source if we want a true 2000 precinct layer.

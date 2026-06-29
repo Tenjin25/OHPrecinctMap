@@ -49,27 +49,25 @@
   },
   "congressional_2026": {
     "sources": [
-      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv"
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\census\\tl_2020_39_vtd20\\tl_2020_39_vtd20.shp",
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\tileset\\oh_cd2026.geojson"
     ],
+    "method": "geometry_overlap_with_fallback",
+    "geometry_source": "vtd20",
     "offices": [
       "U.S. House"
     ],
-    "input_row_count": 2823204,
-    "matched_office_row_count": 328486,
-    "precinct_count_with_any_district_rows": 8878,
-    "crosswalk_row_count": 8915,
-    "split_precinct_count": 37,
-    "zero_total_precinct_count": 0,
-    "supplemented_precinct_count": 0,
-    "source_summaries": [
-      {
-        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
-        "input_row_count": 2823204,
-        "matched_office_row_count": 328486,
-        "precinct_count_with_any_district_rows": 8878
-      }
-    ],
-    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_cd2026_sl2025_95.csv"
+    "target_precinct_count": 8878,
+    "vtd_geometry_precinct_count": 8941,
+    "crosswalk_row_count": 8931,
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_cd2026_sl2025_95.csv",
+    "geometry_matched_precinct_count": 8771,
+    "geometry_split_precinct_count": 1212,
+    "geometry_no_overlap_precinct_count": 0,
+    "geometry_precinct_count": 8771,
+    "fallback_precinct_count": 107,
+    "missing_precinct_count": 0
   },
   "state_house_2022": {
     "sources": [

@@ -55,6 +55,14 @@ DATASETS = {
         "geojson": CENSUS_DIR / "tl_2010_39_vtd10" / "tl_2010_39_vtd10.geojson",
         "keep_shapefile_dir": True,
     },
+    "vtd20": {
+        "index_url": "https://www2.census.gov/geo/tiger/TIGER2020/VTD/",
+        "filename_regex": r"^tl_2020_39\d{3}_vtd20\.zip$",
+        "tmp_dir": TMP_DIR / "vtd20",
+        "out_dir": CENSUS_DIR / "tl_2020_39_vtd20",
+        "geojson": CENSUS_DIR / "tl_2020_39_vtd20" / "tl_2020_39_vtd20.geojson",
+        "keep_shapefile_dir": True,
+    },
     "cd118_2020": {
         "url": "https://www2.census.gov/geo/tiger/TIGER2020/CD/CD118/tl_2020_39_cd118.zip",
         "zip_name": "tl_2020_39_cd118.zip",

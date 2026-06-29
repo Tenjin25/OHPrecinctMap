@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "attorney_general",
+  "year": 2008,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 77658,
+        "rep_votes": 53702,
+        "other_votes": 7661,
+        "total_votes": 139021,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -23956,
+        "margin_pct": -17.231928989145526,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "2": {
+        "dem_votes": 138945,
+        "rep_votes": 125226,
+        "other_votes": 17226,
+        "total_votes": 281397,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -13719,
+        "margin_pct": -4.87531850019723,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "3": {
+        "dem_votes": 208984,
+        "rep_votes": 77126,
+        "other_votes": 9357,
+        "total_votes": 295467,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -131858,
+        "margin_pct": -44.62698033959799,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 110328,
+        "rep_votes": 122956,
+        "other_votes": 14065,
+        "total_votes": 247349,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": 12628,
+        "margin_pct": 5.10533699347885,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "5": {
+        "dem_votes": 77481,
+        "rep_votes": 66712,
+        "other_votes": 9542,
+        "total_votes": 153735,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -10769,
+        "margin_pct": -7.004911048232349,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "6": {
+        "dem_votes": 173741,
+        "rep_votes": 97041,
+        "other_votes": 14764,
+        "total_votes": 285546,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -76700,
+        "margin_pct": -26.860821023582893,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "7": {
+        "dem_votes": 132801,
+        "rep_votes": 104738,
+        "other_votes": 10603,
+        "total_votes": 248142,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -28063,
+        "margin_pct": -11.309250348590725,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "8": {
+        "dem_votes": 124389,
+        "rep_votes": 154602,
+        "other_votes": 15011,
+        "total_votes": 294002,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": 30213,
+        "margin_pct": 10.276460704348949,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "9": {
+        "dem_votes": 149958,
+        "rep_votes": 98016,
+        "other_votes": 13355,
+        "total_votes": 261329,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -51942,
+        "margin_pct": -19.876094884226397,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "10": {
+        "dem_votes": 42853,
+        "rep_votes": 50114,
+        "other_votes": 4814,
+        "total_votes": 97781,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": 7261,
+        "margin_pct": 7.425778014133626,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 203133,
+        "rep_votes": 37819,
+        "other_votes": 9856,
+        "total_votes": 250808,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -165314,
+        "margin_pct": -65.91257057191157,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 128261,
+        "rep_votes": 123550,
+        "other_votes": 17263,
+        "total_votes": 269074,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -4711,
+        "margin_pct": -1.750819477169849,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "13": {
+        "dem_votes": 54227,
+        "rep_votes": 31414,
+        "other_votes": 3857,
+        "total_votes": 89498,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -22813,
+        "margin_pct": -25.489955082795145,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "14": {
+        "dem_votes": 121492,
+        "rep_votes": 69164,
+        "other_votes": 11354,
+        "total_votes": 202010,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -52328,
+        "margin_pct": -25.90366813524083,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "15": {
+        "dem_votes": 146194,
+        "rep_votes": 91981,
+        "other_votes": 10011,
+        "total_votes": 248186,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike Crites",
+        "margin": -54213,
+        "margin_pct": -21.843697871757474,
+        "winner": "DEM",
+        "color": "#2171b5"
+      }
+    }
+  }
+}

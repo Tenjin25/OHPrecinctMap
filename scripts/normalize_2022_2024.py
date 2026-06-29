@@ -255,6 +255,36 @@ def normalize_county_name(value: str) -> str:
     return cleaned.title()
 
 
+def normalize_candidate_name(value: str) -> str:
+    cleaned = clean_whitespace(value)
+    if "," not in cleaned:
+        return cleaned
+
+    parts = [part.strip() for part in cleaned.split(",") if part.strip()]
+    if len(parts) < 2:
+        return cleaned
+
+    return clean_whitespace(" ".join(parts[1:] + [parts[0]]))
+
+
+def normalize_2004_precinct_name(value: str) -> str:
+    cleaned = clean_whitespace(value)
+
+    words = cleaned.split()
+    if len(words) % 2 == 0 and words[: len(words) // 2] == words[len(words) // 2 :]:
+        cleaned = " ".join(words[: len(words) // 2])
+
+    if " - " in cleaned:
+        cleaned = cleaned.replace(" - ", " ")
+
+    cleaned = re.sub(r"\bPRECINCT ([A-Z0-9]+)$", r"\1", cleaned)
+    cleaned = re.sub(r"\bPRECINCT$", "", cleaned).strip()
+    cleaned = cleaned.replace(",", " ")
+    cleaned = clean_whitespace(cleaned)
+
+    return cleaned
+
+
 def normalize_2004_office(raw_office: str) -> tuple[str, str]:
     office = clean_whitespace(raw_office).title()
     district = ""
@@ -321,7 +351,7 @@ def iter_clean_rows_from_2004_candidate_map(path: Path):
         office = clean_whitespace(row[0])
         district_value = clean_whitespace(row[1])
         party = clean_whitespace(row[2])
-        candidate = clean_whitespace(row[3].rstrip())
+        candidate = normalize_candidate_name(row[3].rstrip())
         data_column = clean_whitespace(row[4]).upper()
         if not data_column:
             continue
@@ -354,7 +384,7 @@ def iter_clean_rows_from_2004_candidate_map(path: Path):
             continue
 
         precinct_code = normalize_precinct_code(row[2])
-        precinct_name = clean_whitespace(row[3])
+        precinct_name = normalize_2004_precinct_name(row[3])
         row_district = clean_whitespace(row[5])
 
         for (data_column, district), metadata in candidate_map.items():
@@ -412,7 +442,7 @@ def normalize_candidate(value: str) -> tuple[str, str]:
         value = clean_whitespace(value[: match.start()])
     if party == "WI":
         party = ""
-    return value, party
+    return normalize_candidate_name(value), party
 
 
 def iter_clean_rows_from_rows(rows: list[list[str]]):

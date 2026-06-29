@@ -19,8 +19,9 @@ EXCLUDED_COUNTY_OFFICES = {
 YEAR_FILES = [
     ("2000", DATA_DIR / "2000" / "20001107__oh__general__county.csv"),
     ("2002", DATA_DIR / "2002" / "20021105__oh__general.csv"),
+    ("2004", DATA_DIR / "2004" / "20041102__oh__general__county.csv"),
     ("2006", DATA_DIR / "2006" / "20061107__oh__general__county.csv"),
-    ("2008", DATA_DIR / "2008" / "20081104__oh__general.csv"),
+    ("2008", DATA_DIR / "2008" / "20081104__oh__general__county.csv"),
     ("2010", DATA_DIR / "2010" / "20101102__oh__general__county.csv"),
     ("2012", DATA_DIR / "2012" / "20121106__oh__general__county.csv"),
     ("2014", DATA_DIR / "2014" / "20141104__oh__general.csv"),
@@ -31,9 +32,7 @@ YEAR_FILES = [
     ("2024", DATA_DIR / "2024" / "20241105__oh__general__county.csv"),
 ]
 
-UNAVAILABLE_YEARS = {
-    "2004": "No comparable general-election county source is present in the repo.",
-}
+UNAVAILABLE_YEARS = {}
 
 PARTY_MAP = {
     "D": "DEM",
@@ -52,6 +51,13 @@ def slugify(value: str) -> str:
     value = value.replace("&", "and")
     value = re.sub(r"[^a-z0-9]+", "_", value)
     return value.strip("_")
+
+
+def normalize_ticket_candidate_name(candidate: str, contest_key: str) -> str:
+    candidate = clean_text(candidate)
+    if contest_key not in {"presidential", "governor"}:
+        return candidate
+    return re.split(r"\s+(?:and|/|&)\s+", candidate, maxsplit=1, flags=re.IGNORECASE)[0].strip()
 
 
 def contest_key_for(office: str, district: str) -> str:
@@ -153,6 +159,7 @@ def load_results_by_year() -> tuple[dict[str, dict], list[str]]:
                     continue
 
                 contest_key = contest_key_for(office, district)
+                candidate = normalize_ticket_candidate_name(candidate, contest_key)
                 contest_bucket = contests.setdefault(contest_key, {"general": {"results": {}}})
                 county_bucket = contest_bucket["general"]["results"].setdefault(county, empty_county_result())
 

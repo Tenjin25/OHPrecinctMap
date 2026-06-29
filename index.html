@@ -2732,19 +2732,19 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 
   /* Aesthetic refresh overrides */
   :root {
-    --state-blue: #2f6fdd;
-    --state-blue-strong: #163f8c;
-    --state-red: #bb133e;
-    --state-red-strong: #8f102f;
-    --state-gold: #e8b84d;
-    --state-slate: #5a616c;
-    --state-ribbon: linear-gradient(90deg, var(--state-red) 0%, #f8f4ef 44%, var(--state-gold) 58%, var(--state-blue) 100%);
-    --state-accent-gradient: linear-gradient(135deg, var(--state-red-strong) 0%, #b64a2a 38%, var(--state-blue-strong) 100%);
-    --ui-bg: rgba(255, 252, 248, 0.9);
-    --ui-border: rgba(57, 50, 43, 0.12);
-    --ui-shadow: 0 16px 40px rgba(63, 41, 32, 0.18);
-    --ui-text: #201a17;
-    --ui-muted: #5b534d;
+    --state-blue: #003087;
+    --state-blue-strong: #00205b;
+    --state-red: #ba0c2f;
+    --state-red-strong: #8a0a23;
+    --state-gold: #cbd5e1;
+    --state-slate: #5b6472;
+    --state-ribbon: linear-gradient(90deg, var(--state-red) 0%, #f8fafc 46%, var(--state-gold) 62%, var(--state-blue) 100%);
+    --state-accent-gradient: linear-gradient(135deg, var(--state-red-strong) 0%, #b91c1c 34%, var(--state-blue-strong) 100%);
+    --ui-bg: rgba(248, 250, 252, 0.9);
+    --ui-border: rgba(30, 41, 59, 0.12);
+    --ui-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    --ui-text: #162033;
+    --ui-muted: #526072;
     --ui-accent: var(--state-red);
     --ui-accent-2: var(--state-blue-strong);
   }
@@ -2752,16 +2752,16 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   body {
     font-family: 'Manrope', 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     background:
-      radial-gradient(circle at 15% 14%, rgba(47, 111, 221, 0.18) 0%, rgba(210, 228, 255, 0.58) 26%, rgba(251, 247, 243, 0) 54%),
-      radial-gradient(circle at 84% 10%, rgba(187, 19, 62, 0.14) 0%, rgba(255, 224, 230, 0.55) 22%, rgba(251, 247, 243, 0) 52%),
-      linear-gradient(180deg, #f5efe9 0%, #fbf8f4 52%, #eef4fb 100%);
+      radial-gradient(circle at 15% 14%, rgba(0, 48, 135, 0.16) 0%, rgba(219, 234, 254, 0.6) 25%, rgba(248, 250, 252, 0) 54%),
+      radial-gradient(circle at 84% 10%, rgba(186, 12, 47, 0.13) 0%, rgba(254, 226, 226, 0.58) 22%, rgba(248, 250, 252, 0) 52%),
+      linear-gradient(180deg, #eef3f9 0%, #f8fafc 48%, #e6edf7 100%);
     color: var(--ui-text);
   }
 
   #map {
     background:
-      radial-gradient(circle at 50% 4%, rgba(232, 184, 77, 0.16) 0%, rgba(255,255,255,0) 26%),
-      linear-gradient(180deg, #f3ece5 0%, #efe8e2 38%, #e8f0fa 100%);
+      radial-gradient(circle at 50% 4%, rgba(203, 213, 225, 0.24) 0%, rgba(255,255,255,0) 26%),
+      linear-gradient(180deg, #e8eef7 0%, #edf2f8 38%, #dde8f5 100%);
   }
 
   .main-controls,
@@ -10159,7 +10159,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (/^https?:\/\//i.test(path)) return path;
       const base = detectBasePath();
       // Keep paths relative by default so the app works when served from a subfolder
-      // (e.g. `http://localhost:8000/NCPrecinctMap/index.html`) and in file-like previews.
+      // (e.g. `http://localhost:8000/OHPrecinctMap/index.html`) and in file-like previews.
       // Only prefix an explicit GitHub Pages base when detected.
       const cleaned = path.replace(/^\.\//, '').replace(/^\/+/, '');
       return base ? `${base}/${cleaned}` : cleaned;
@@ -10196,15 +10196,15 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           districts: {
             url: '',
-            sourceLayer: 'nc_cd118_tileset-30qeef'
+            sourceLayer: 'oh_cd118'
           },
           state_house: {
             url: '',
-            sourceLayer: 'nc_state_house_2022_lines_til-d2n5a7'
+            sourceLayer: 'oh_state_house_2022'
           },
           state_senate: {
             url: '',
-            sourceLayer: 'nc_state_senate_2022_lines_ti-1co9e6'
+            sourceLayer: 'oh_state_senate_2022'
           }
         }
       },
@@ -10219,7 +10219,7 @@ document.addEventListener('DOMContentLoaded', function() {
         districts: withBase('./data/tileset/oh_cd118.geojson'),
         districts_2022: withBase('./data/tileset/oh_cd118.geojson'),
         districts_2024: withBase('./data/tileset/oh_cd119.geojson'),
-        districts_2026: withBase('./data/tileset/oh_cd119.geojson'),
+        districts_2026: withBase('./data/tileset/oh_cd2026.geojson'),
         state_house: withBase('./data/tileset/oh_state_house_2020.geojson'),
         state_house_2022: withBase('./data/tileset/oh_state_house_2020.geojson'),
         state_house_2024: withBase('./data/tileset/oh_state_house_2024.geojson'),
@@ -10667,7 +10667,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const debugLog = (...args) => { if (DEBUG) console.log(...args); };
     window.SENATE_MODEL_DEBUG = window.SENATE_MODEL_DEBUG || { enabled: false, county: '' };
 
-    let electionDataJSON = null; // New JSON structure from nc_elections_aggregated.json
+    let electionDataJSON = null; // County-level aggregated election JSON
     let districtElectionDataJSON = null; // Legacy district-results fallback when slices are unavailable
     let districtElectionDataLoadInflight = null;
     let districtElectionDataLoadFailed = false;
@@ -10694,7 +10694,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let districtDescriptions = null; // Optional labels like "Sampson & Bladen Counties" or "Concord–Harrisburg"
     let countyDemographics = null; // County-level VAP (18+) + total-pop race/ethnicity from DP1 (includes AIAN/native)
     let countyPopulationEstimatesByNorm = null; // Map<string countyNorm, growth/estimate summary from Vintage 2025 county estimates>
-    let countyPopulationEstimateStatewide = null; // Statewide NC summary from the same file
+    let countyPopulationEstimateStatewide = null; // Statewide Ohio summary from the same file
 
     // --- County raw-vote deltas (cycle-to-cycle) for hover tooltips ---
     // Cache by (contestType, fromYear, toYear) so hover rendering stays synchronous/fast.
@@ -10952,6 +10952,77 @@ document.addEventListener('DOMContentLoaded', function() {
       return (Array.isArray(entries) ? entries : []).filter(shouldIncludeManifestEntry);
     }
 
+    function hasUsableMajorPartyCandidateNames(dem, rep) {
+      return !!(String(dem || '').trim() && String(rep || '').trim());
+    }
+
+    function requiresMajorPartyCandidateNamesForSelector(entry, view = currentView) {
+      const contestType = String(entry?.contest_type || '').trim();
+      const normalizedView = String(view || '').trim().toLowerCase();
+      if (!contestType) return false;
+      if (normalizedView === 'counties' || normalizedView === 'vtds_2000') return true;
+      if (
+        contestType === 'president' ||
+        contestType === 'us_senate' ||
+        contestType === 'governor' ||
+        COUNCIL_OF_STATE_CONTEST_TYPES.has(contestType) ||
+        contestType.startsWith('chief_justice_of_the_supreme_court') ||
+        contestType.startsWith('justice_of_the_supreme_court')
+      ) return true;
+      return false;
+    }
+
+    const contestOptionEligibilityCache = new Map(); // key `${scope}|${contestType}|${year}|${linesYear}` -> boolean
+
+    async function shouldShowManifestContestOption(entry, view = currentView, linesYear = currentDistrictLinesYear) {
+      if (!entry) return false;
+      const contestType = String(entry.contest_type || '').trim();
+      const year = Number(entry.year);
+      const scope = String(entry.scope || '').trim();
+      const normalizedView = String(view || '').trim().toLowerCase();
+      const normalizedLinesYear = normalizeDistrictLinesYear(linesYear);
+      if (!contestType || !Number.isFinite(year)) return false;
+
+      const modeledDef = getModeledContestDefinition(contestType, year);
+      if (modeledDef) return true;
+      if (!requiresMajorPartyCandidateNamesForSelector(entry, view)) return true;
+
+      const cacheKey = `${scope || (normalizedView === 'counties' || normalizedView === 'vtds_2000' ? 'counties' : normalizedView)}|${contestType}|${year}|${normalizedLinesYear}`;
+      if (contestOptionEligibilityCache.has(cacheKey)) return contestOptionEligibilityCache.get(cacheKey);
+
+      let eligible = true;
+      try {
+        let dem = '';
+        let rep = '';
+
+        if (scope && normalizedView !== 'counties' && normalizedView !== 'vtds_2000') {
+          const payload = await loadDistrictSlice(scope, contestType, year, normalizedLinesYear);
+          const results = payload?.general?.results || {};
+          for (const row of Object.values(results)) {
+            if (!dem) dem = (row?.dem_candidate || '').toString().trim();
+            if (!rep) rep = (row?.rep_candidate || '').toString().trim();
+            if (dem && rep) break;
+          }
+          if ((!dem || !rep) && contestType !== 'us_house') {
+            const fallback = await getContestCandidates(contestType, year);
+            if (!dem) dem = (fallback?.dem || '').toString().trim();
+            if (!rep) rep = (fallback?.rep || '').toString().trim();
+          }
+        } else {
+          const candidates = await getContestCandidates(contestType, year);
+          dem = (candidates?.dem || '').toString().trim();
+          rep = (candidates?.rep || '').toString().trim();
+        }
+
+        eligible = hasUsableMajorPartyCandidateNames(dem, rep);
+      } catch (_) {
+        eligible = false;
+      }
+
+      contestOptionEligibilityCache.set(cacheKey, eligible);
+      return eligible;
+    }
+
     function getAvailableContestYearsForType(contestType) {
       const ct = String(contestType || '').trim();
       if (!ct) return [];
@@ -11013,8 +11084,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (Array.isArray(years) && years.length) {
         let prev = null;
         // Prefer "last time this contest was up" when a seat/class cadence exists.
-        // US Senate is a special case: same seat repeats every 6 years, but NC has two seats so
-        // the generic series contains elections every 2 years. For deltas, prefer same-class y-6
+        // US Senate is a special case: same seat repeats every 6 years, while the generic series contains elections every 2 years.
+        // For deltas, prefer same-class y-6
         // when available, otherwise fall back to the most recent earlier year.
         if (ct === 'us_senate') {
           const preferred = y - 6;
@@ -12513,7 +12584,9 @@ document.addEventListener('DOMContentLoaded', function() {
       const scope = view === 'districts'
         ? 'congressional'
         : (view === 'state_house' ? 'state_house' : (view === 'state_senate' ? 'state_senate' : ''));
-      return Object.values(MODELED_CONTEST_DEFINITIONS).map(def => ({
+      return Object.values(MODELED_CONTEST_DEFINITIONS)
+        .filter(def => !String(def?.contestType || '').trim().startsWith('nc_'))
+        .map(def => ({
         year: def.year,
         scope: scope || undefined,
         contest_type: def.contestType,
@@ -15441,10 +15514,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	    }
 
 	    const PRESIDENT_OPEN_ELECTIONS_CSV = {
-	      2000: withBase('./data/2000/20001107__nc__general__precinct.csv'),
-	      2004: withBase('./data/2004/20041102__nc__general__precinct.csv'),
-	      2012: withBase('./data/2012/20121106__nc__general__precinct.csv'),
-	      2008: withBase('./data/2008/20081104__nc__general__precinct.csv')
+	      2004: withBase('./data/2004/20041102__oh__general__precinct.csv'),
+	      2008: withBase('./data/2008/20081104__oh__general__precinct.csv'),
+	      2012: withBase('./data/2012/20121106__oh__general__precinct.csv')
 	    };
 
 	    async function loadPresidentSliceFromOpenElectionsCSV(year) {
@@ -19106,12 +19178,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	      if (contestType.startsWith('nc_court_of_appeals_judge_seat_')) {
 	        const seat = contestType.replace('nc_court_of_appeals_judge_seat_', '').replace(/^0+/, '');
-	        return `NC Court of Appeals Judge Seat ${seat || contestType}`;
+	        return `Court of Appeals Judge Seat ${seat || contestType}`;
 	      }
 	      if (contestType.startsWith('nc_court_of_appeals_judge_') && contestType.endsWith('_seat')) {
 	        const who = contestType.replace('nc_court_of_appeals_judge_', '').replace(/_seat$/i, '').replace(/_/g, ' ').trim();
 	        const label = who ? (typeof toTitleCaseName === 'function' ? toTitleCaseName(who) : who) : contestType;
-	        return `NC Court of Appeals Judge (${label})`;
+	        return `Court of Appeals Judge (${label})`;
 	      }
 	      if (contestType.startsWith('nc_supreme_court_associate_justice_seat_')) {
 	        const seat = contestType.replace('nc_supreme_court_associate_justice_seat_', '').replace(/^0+/, '');
@@ -19350,7 +19422,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    function populateContestSelectFromManifest(manifestEntries) {
+    async function populateContestSelectFromManifest(manifestEntries) {
 	      const q = (contestSearchQuery || '').toString().trim().toUpperCase();
 	      const sel = document.getElementById('contestSelect');
 	      sel.innerHTML = '<option value="">Select a contest...</option>';
@@ -19414,7 +19486,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	        const years = Array.from(contestYearPairs[contestType] || []).map(Number);
 	        years.forEach(year => {
 	          if (!grouped.has(label)) grouped.set(label, []);
-	          grouped.get(label).push({ contestType, year });
+	          grouped.get(label).push({ contestType, year, scope: '' });
 	        });
 	      });
 
@@ -19424,7 +19496,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	      ];
 
 	      const fragment = document.createDocumentFragment();
-	      orderedLabels.forEach(label => {
+	      for (const label of orderedLabels) {
 	        const items = (grouped.get(label) || []).slice();
 	        const isJudicial = (label === 'Supreme Court' || label === 'Court of Appeals');
 	        items.sort((a, b) => {
@@ -19441,7 +19513,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	        const og = document.createElement('optgroup');
 	        og.label = label;
 
-	        items.forEach(item => {
+	        for (const item of items) {
+            const shouldShow = await shouldShowManifestContestOption(
+              {
+                contest_type: item.contestType,
+                year: item.year,
+                scope: item.scope || ''
+              },
+              currentView,
+              currentDistrictLinesYear
+            );
+            if (!shouldShow) continue;
 	          const opt = document.createElement('option');
 	          opt.value = `${item.contestType}_${item.year}`;
             const modeledDef = getModeledContestDefinition(item.contestType, item.year);
@@ -19457,21 +19539,21 @@ document.addEventListener('DOMContentLoaded', function() {
 	          }
 	          if (q) {
 	            const hay = `${label} ${item.year} ${item.contestType} ${formatContestName(item.contestType, item.year)}`.toUpperCase();
-	            if (!hay.includes(q)) return;
+	            if (!hay.includes(q)) continue;
 	          }
 	          og.appendChild(opt);
-	        });
+	        }
 
-	        if (!og.children.length) return;
+	        if (!og.children.length) continue;
 	        fragment.appendChild(og);
-	      });
+	      }
 
 	      sel.appendChild(fragment);
 	      sel.dataset.populated = 'true';
 	      wireContestSelectHandlers(sel);
 	    }
 
-    function updateContestSelectForCurrentView() {
+    async function updateContestSelectForCurrentView() {
       const activeDistrictManifest = getActiveDistrictManifest();
       // In manifest mode, district views must use district slices; otherwise selections can appear but won't load.
       const inManifestMode =
@@ -19492,9 +19574,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
 
-      const entriesWithModels = mergeManifestEntriesWithModeled(entries, currentView);
+      const entriesWithModels = Array.isArray(entries) && entries.length > 0
+        ? mergeManifestEntriesWithModeled(entries, currentView)
+        : [];
       if (Array.isArray(entriesWithModels) && entriesWithModels.length > 0) {
-        populateContestSelectFromManifest(entriesWithModels);
+        await populateContestSelectFromManifest(entriesWithModels);
         return;
       }
 
@@ -30419,7 +30503,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getHistoricalTrends(countyName, isDistrict = false, districtNum = null) {
       const presidentialYears = [2024, 2020, 2016, 2012, 2008];
       const stateHouseYears = [2024, 2022, 2020, 2018, 2016]; // Recent state house elections
-      // NC governor elections align with presidential years (e.g., 2016, 2020, 2024).
+      // Ohio governor elections align with presidential years (e.g., 2016, 2020, 2024).
       const governorYears = [2024, 2020, 2016, 2012, 2008];
       const trends = [];
       
@@ -33450,7 +33534,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setStatus(`Applied demographic mode for Congressional districts.`);
       } else {
         setStatewideContestTitle(`US House (${year})`);
-        setStatus(`Applied contest: NC US House ${year}`);
+        setStatus(`Applied contest: US House ${year}`);
       }
     }
 
