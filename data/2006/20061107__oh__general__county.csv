@@ -1,0 +1,2058 @@
+county,office,district,party,candidate,votes
+Adams,Attorney General,2.0,Democratic,Marc Dann,3380
+Adams,Attorney General,2.0,Republican,Betty Montgomery,4307
+Adams,Auditor of State,2.0,Democratic,Barbara Sykes,3251
+Adams,Auditor of State,2.0,Republican,Mary Taylor,4829
+Adams,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,4725
+Adams,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,71
+Adams,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,117
+Adams,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,3771
+Adams,Secretary of State,2.0,Democratic,Jennifer L. Brunner,3690
+Adams,Secretary of State,2.0,Non-partisan,John A. Eastman,222
+Adams,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,156
+Adams,Secretary of State,2.0,Republican,Greg Hartman,4193
+Adams,Treasurer of State,2.0,Democratic,Richard Cordray,3897
+Adams,Treasurer of State,2.0,Republican,Sandra O'Brien,4396
+Adams,U.S. House,2.0,Democratic,Victoria Wulsin,3773
+Adams,U.S. House,2.0,Republican,Jean Schmidt,4590
+Adams,U.S. Senate,2.0,Democratic,Sherrod Brown,3903
+Adams,U.S. Senate,2.0,Republican,Mike DeWine,4667
+Allen,Attorney General,4.0,Democratic,Marc Dann,15522
+Allen,Attorney General,4.0,Republican,Betty Montgomery,20887
+Allen,Auditor of State,4.0,Democratic,Barbara Sykes,14556
+Allen,Auditor of State,4.0,Republican,Mary Taylor,20476
+Allen,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,18000
+Allen,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,328
+Allen,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,709
+Allen,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,17184
+Allen,Secretary of State,4.0,Democratic,Jennifer L. Brunner,14934
+Allen,Secretary of State,4.0,Non-partisan,John A. Eastman,820
+Allen,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,720
+Allen,Secretary of State,4.0,Republican,Greg Hartman,18906
+Allen,Treasurer of State,4.0,Democratic,Richard Cordray,15653
+Allen,Treasurer of State,4.0,Republican,Sandra O'Brien,19650
+Allen,U.S. House,4.0,Democratic,Richard E. Siferd,14780
+Allen,U.S. House,4.0,Republican,Jim Jordan,22032
+Allen,U.S. Senate,4.0,Democratic,Sherrod Brown,16597
+Allen,U.S. Senate,4.0,Republican,Mike DeWine,19521
+Ashland,Attorney General,16.0,Democratic,Marc Dann,6401
+Ashland,Attorney General,16.0,Republican,Betty Montgomery,7546
+Ashland,Attorney General,5.0,Democratic,Marc Dann,2288
+Ashland,Attorney General,5.0,Republican,Betty Montgomery,2091
+Ashland,Auditor of State,16.0,Democratic,Barbara Sykes,5228
+Ashland,Auditor of State,16.0,Republican,Mary Taylor,8786
+Ashland,Auditor of State,5.0,Democratic,Barbara Sykes,1831
+Ashland,Auditor of State,5.0,Republican,Mary Taylor,2590
+Ashland,Governor/Lieutenant Governor,16.0,Democratic,Ted Strickland,7064
+Ashland,Governor/Lieutenant Governor,16.0,Non-partisan,Robert Fitrakis,157
+Ashland,Governor/Lieutenant Governor,16.0,Non-partisan,William S. Peirce,350
+Ashland,Governor/Lieutenant Governor,16.0,Republican,J. Kenneth Blackwell,7140
+Ashland,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,2428
+Ashland,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,67
+Ashland,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,130
+Ashland,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,2014
+Ashland,Secretary of State,16.0,Democratic,Jennifer L. Brunner,5687
+Ashland,Secretary of State,16.0,Non-partisan,John A. Eastman,427
+Ashland,Secretary of State,16.0,Non-partisan,Timothy J. Kettler,311
+Ashland,Secretary of State,16.0,Republican,Greg Hartman,7454
+Ashland,Secretary of State,5.0,Democratic,Jennifer L. Brunner,2013
+Ashland,Secretary of State,5.0,Non-partisan,John A. Eastman,176
+Ashland,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,99
+Ashland,Secretary of State,5.0,Republican,Greg Hartman,2081
+Ashland,Treasurer of State,16.0,Democratic,Richard Cordray,6029
+Ashland,Treasurer of State,16.0,Republican,Sandra O'Brien,7925
+Ashland,Treasurer of State,5.0,Democratic,Richard Cordray,2147
+Ashland,Treasurer of State,5.0,Republican,Sandra O'Brien,2235
+Ashland,U.S. House,16.0,Democratic,Thomas Shaw,5540
+Ashland,U.S. House,16.0,Republican,Ralph Regula,8937
+Ashland,U.S. House,5.0,Democratic,Robin Weirauch,1947
+Ashland,U.S. House,5.0,Republican,Paul E. Gillmor,2438
+Ashland,U.S. Senate,16.0,Democratic,Sherrod Brown,6533
+Ashland,U.S. Senate,16.0,Republican,Mike DeWine,8042
+Ashland,U.S. Senate,5.0,Democratic,Sherrod Brown,2357
+Ashland,U.S. Senate,5.0,Republican,Mike DeWine,2257
+Ashtabula,Attorney General,14.0,Democratic,Marc Dann,20960
+Ashtabula,Attorney General,14.0,Republican,Betty Montgomery,13004
+Ashtabula,Auditor of State,14.0,Democratic,Barbara Sykes,17677
+Ashtabula,Auditor of State,14.0,Republican,Mary Taylor,15310
+Ashtabula,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,22255
+Ashtabula,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,417
+Ashtabula,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,786
+Ashtabula,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,10406
+Ashtabula,Secretary of State,14.0,Democratic,Jennifer L. Brunner,19223
+Ashtabula,Secretary of State,14.0,Non-partisan,John A. Eastman,1493
+Ashtabula,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,829
+Ashtabula,Secretary of State,14.0,Republican,Greg Hartman,11106
+Ashtabula,Treasurer of State,14.0,Democratic,Richard Cordray,20760
+Ashtabula,Treasurer of State,14.0,Republican,Sandra O'Brien,13554
+Ashtabula,U.S. House,14.0,Democratic,Lewis R. Katz,15487
+Ashtabula,U.S. House,14.0,Non-partisan,Werner J. Lange,1636
+Ashtabula,U.S. House,14.0,Republican,Steven C. LaTourette,17077
+Ashtabula,U.S. Senate,14.0,Democratic,Sherrod Brown,21151
+Ashtabula,U.S. Senate,14.0,Republican,Mike DeWine,13078
+Athens,Attorney General,18.0,Democratic,Marc Dann,3490
+Athens,Attorney General,18.0,Republican,Betty Montgomery,1355
+Athens,Attorney General,6.0,Democratic,Marc Dann,9561
+Athens,Attorney General,6.0,Republican,Betty Montgomery,5049
+Athens,Auditor of State,18.0,Democratic,Barbara Sykes,3558
+Athens,Auditor of State,18.0,Republican,Mary Taylor,1152
+Athens,Auditor of State,6.0,Democratic,Barbara Sykes,9713
+Athens,Auditor of State,6.0,Republican,Mary Taylor,4470
+Athens,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,4215
+Athens,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,21
+Athens,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,50
+Athens,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,592
+Athens,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,11973
+Athens,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,95
+Athens,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,179
+Athens,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,2711
+Athens,Secretary of State,18.0,Democratic,Jennifer L. Brunner,3510
+Athens,Secretary of State,18.0,Non-partisan,John A. Eastman,152
+Athens,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,103
+Athens,Secretary of State,18.0,Republican,Greg Hartman,918
+Athens,Secretary of State,6.0,Democratic,Jennifer L. Brunner,9658
+Athens,Secretary of State,6.0,Non-partisan,John A. Eastman,343
+Athens,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,305
+Athens,Secretary of State,6.0,Republican,Greg Hartman,3839
+Athens,Treasurer of State,18.0,Democratic,Richard Cordray,3690
+Athens,Treasurer of State,18.0,Republican,Sandra O'Brien,1039
+Athens,Treasurer of State,6.0,Democratic,Richard Cordray,9997
+Athens,Treasurer of State,6.0,Republican,Sandra O'Brien,4205
+Athens,U.S. House,18.0,Democratic,Zack Space,4364
+Athens,U.S. House,18.0,Republican,Joy Padgett,1135
+Athens,U.S. House,6.0,Democratic,Charles A. Wilson,9910
+Athens,U.S. House,6.0,Republican,Chuck Blasdel,3759
+Athens,U.S. Senate,18.0,Democratic,Sherrod Brown,3752
+Athens,U.S. Senate,18.0,Republican,Mike DeWine,1161
+Athens,U.S. Senate,6.0,Democratic,Sherrod Brown,10236
+Athens,U.S. Senate,6.0,Republican,Mike DeWine,4678
+Auglaize,Attorney General,4.0,Democratic,Marc Dann,6704
+Auglaize,Attorney General,4.0,Republican,Betty Montgomery,9907
+Auglaize,Auditor of State,4.0,Democratic,Barbara Sykes,6063
+Auglaize,Auditor of State,4.0,Republican,Mary Taylor,10199
+Auglaize,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,7606
+Auglaize,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,177
+Auglaize,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,424
+Auglaize,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,8687
+Auglaize,Secretary of State,4.0,Democratic,Jennifer L. Brunner,5968
+Auglaize,Secretary of State,4.0,Non-partisan,John A. Eastman,532
+Auglaize,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,510
+Auglaize,Secretary of State,4.0,Republican,Greg Hartman,9092
+Auglaize,Treasurer of State,4.0,Democratic,Richard Cordray,6433
+Auglaize,Treasurer of State,4.0,Republican,Sandra O'Brien,9817
+Auglaize,U.S. House,4.0,Democratic,Richard E. Siferd,5552
+Auglaize,U.S. House,4.0,Republican,Jim Jordan,11461
+Auglaize,U.S. Senate,4.0,Democratic,Sherrod Brown,6845
+Auglaize,U.S. Senate,4.0,Republican,Mike DeWine,10142
+Belmont,Attorney General,18.0,Democratic,Marc Dann,3032
+Belmont,Attorney General,18.0,Republican,Betty Montgomery,2253
+Belmont,Attorney General,6.0,Democratic,Marc Dann,12441
+Belmont,Attorney General,6.0,Republican,Betty Montgomery,5162
+Belmont,Auditor of State,18.0,Democratic,Barbara Sykes,3070
+Belmont,Auditor of State,18.0,Republican,Mary Taylor,2187
+Belmont,Auditor of State,6.0,Democratic,Barbara Sykes,12662
+Belmont,Auditor of State,6.0,Republican,Mary Taylor,4859
+Belmont,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,3595
+Belmont,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,41
+Belmont,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,95
+Belmont,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,1770
+Belmont,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,14247
+Belmont,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,129
+Belmont,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,292
+Belmont,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,3823
+Belmont,Secretary of State,18.0,Democratic,Jennifer L. Brunner,3016
+Belmont,Secretary of State,18.0,Non-partisan,John A. Eastman,171
+Belmont,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,118
+Belmont,Secretary of State,18.0,Republican,Greg Hartman,1964
+Belmont,Secretary of State,6.0,Democratic,Jennifer L. Brunner,12313
+Belmont,Secretary of State,6.0,Non-partisan,John A. Eastman,534
+Belmont,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,532
+Belmont,Secretary of State,6.0,Republican,Greg Hartman,4279
+Belmont,Treasurer of State,18.0,Democratic,Richard Cordray,3185
+Belmont,Treasurer of State,18.0,Republican,Sandra O'Brien,2130
+Belmont,Treasurer of State,6.0,Democratic,Richard Cordray,12906
+Belmont,Treasurer of State,6.0,Republican,Sandra O'Brien,4835
+Belmont,U.S. House,18.0,Democratic,Zack Space,3643
+Belmont,U.S. House,18.0,Republican,Joy Padgett,1794
+Belmont,U.S. House,6.0,Democratic,Charles A. Wilson,14713
+Belmont,U.S. House,6.0,Republican,Chuck Blasdel,3761
+Belmont,U.S. Senate,18.0,Democratic,Sherrod Brown,3017
+Belmont,U.S. Senate,18.0,Republican,Mike DeWine,2402
+Belmont,U.S. Senate,6.0,Democratic,Sherrod Brown,12473
+Belmont,U.S. Senate,6.0,Republican,Mike DeWine,5654
+Brown,Attorney General,2.0,Democratic,Marc Dann,6610
+Brown,Attorney General,2.0,Republican,Betty Montgomery,7198
+Brown,Auditor of State,2.0,Democratic,Barbara Sykes,5961
+Brown,Auditor of State,2.0,Republican,Mary Taylor,7836
+Brown,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,7743
+Brown,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,106
+Brown,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,237
+Brown,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,5956
+Brown,Secretary of State,2.0,Democratic,Jennifer L. Brunner,6683
+Brown,Secretary of State,2.0,Non-partisan,John A. Eastman,369
+Brown,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,231
+Brown,Secretary of State,2.0,Republican,Greg Hartman,6367
+Brown,Treasurer of State,2.0,Democratic,Richard Cordray,6983
+Brown,Treasurer of State,2.0,Republican,Sandra O'Brien,6696
+Brown,U.S. House,2.0,Democratic,Victoria Wulsin,7193
+Brown,U.S. House,2.0,Republican,Jean Schmidt,6755
+Brown,U.S. Senate,2.0,Democratic,Sherrod Brown,6850
+Brown,U.S. Senate,2.0,Republican,Mike DeWine,7247
+Butler,Attorney General,1.0,Democratic,Marc Dann,3484
+Butler,Attorney General,1.0,Republican,Betty Montgomery,5877
+Butler,Attorney General,8.0,Democratic,Marc Dann,39605
+Butler,Attorney General,8.0,Republican,Betty Montgomery,56370
+Butler,Auditor of State,1.0,Democratic,Barbara Sykes,3136
+Butler,Auditor of State,1.0,Republican,Mary Taylor,6645
+Butler,Auditor of State,8.0,Democratic,Barbara Sykes,37189
+Butler,Auditor of State,8.0,Republican,Mary Taylor,61850
+Butler,Governor/Lieutenant Governor,1.0,Democratic,Ted Strickland,4276
+Butler,Governor/Lieutenant Governor,1.0,Non-partisan,Robert Fitrakis,119
+Butler,Governor/Lieutenant Governor,1.0,Non-partisan,William S. Peirce,229
+Butler,Governor/Lieutenant Governor,1.0,Republican,J. Kenneth Blackwell,5738
+Butler,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,48089
+Butler,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,1219
+Butler,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,1927
+Butler,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,54280
+Butler,Secretary of State,1.0,Democratic,Jennifer L. Brunner,3567
+Butler,Secretary of State,1.0,Non-partisan,John A. Eastman,216
+Butler,Secretary of State,1.0,Non-partisan,Timothy J. Kettler,268
+Butler,Secretary of State,1.0,Republican,Greg Hartman,5910
+Butler,Secretary of State,8.0,Democratic,Jennifer L. Brunner,42950
+Butler,Secretary of State,8.0,Non-partisan,John A. Eastman,1905
+Butler,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,2444
+Butler,Secretary of State,8.0,Republican,Greg Hartman,53964
+Butler,Treasurer of State,1.0,Democratic,Richard Cordray,3827
+Butler,Treasurer of State,1.0,Republican,Sandra O'Brien,6113
+Butler,Treasurer of State,8.0,Democratic,Richard Cordray,44644
+Butler,Treasurer of State,8.0,Republican,Sandra O'Brien,56547
+Butler,U.S. House,1.0,Democratic,John Cranley,3098
+Butler,U.S. House,1.0,Republican,Steve Chabot,6567
+Butler,U.S. House,8.0,Democratic,Mort Meier,38772
+Butler,U.S. House,8.0,Republican,John A. Boehner,65998
+Butler,U.S. Senate,1.0,Democratic,Sherrod Brown,3804
+Butler,U.S. Senate,1.0,Republican,Mike DeWine,6563
+Butler,U.S. Senate,8.0,Democratic,Sherrod Brown,45639
+Butler,U.S. Senate,8.0,Republican,Mike DeWine,59291
+Carroll,Attorney General,18.0,Democratic,Marc Dann,5485
+Carroll,Attorney General,18.0,Republican,Betty Montgomery,4307
+Carroll,Auditor of State,18.0,Democratic,Barbara Sykes,5097
+Carroll,Auditor of State,18.0,Republican,Mary Taylor,5136
+Carroll,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,6948
+Carroll,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,170
+Carroll,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,330
+Carroll,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,3775
+Carroll,Secretary of State,18.0,Democratic,Jennifer L. Brunner,5663
+Carroll,Secretary of State,18.0,Non-partisan,John A. Eastman,409
+Carroll,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,324
+Carroll,Secretary of State,18.0,Republican,Greg Hartman,4221
+Carroll,Treasurer of State,18.0,Democratic,Richard Cordray,6081
+Carroll,Treasurer of State,18.0,Republican,Sandra O'Brien,4614
+Carroll,U.S. House,18.0,Democratic,Zack Space,6959
+Carroll,U.S. House,18.0,Republican,Joy Padgett,3742
+Carroll,U.S. Senate,18.0,Democratic,Sherrod Brown,6182
+Carroll,U.S. Senate,18.0,Republican,Mike DeWine,4938
+Champaign,Attorney General,4.0,Democratic,Marc Dann,6064
+Champaign,Attorney General,4.0,Republican,Betty Montgomery,8048
+Champaign,Auditor of State,4.0,Democratic,Barbara Sykes,5728
+Champaign,Auditor of State,4.0,Republican,Mary Taylor,8271
+Champaign,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,7475
+Champaign,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,136
+Champaign,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,289
+Champaign,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,6355
+Champaign,Secretary of State,4.0,Democratic,Jennifer L. Brunner,6153
+Champaign,Secretary of State,4.0,Non-partisan,John A. Eastman,524
+Champaign,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,275
+Champaign,Secretary of State,4.0,Republican,Greg Hartman,6834
+Champaign,Treasurer of State,4.0,Democratic,Richard Cordray,6640
+Champaign,Treasurer of State,4.0,Republican,Sandra O'Brien,7269
+Champaign,U.S. House,4.0,Democratic,Richard E. Siferd,5051
+Champaign,U.S. House,4.0,Republican,Jim Jordan,9402
+Champaign,U.S. Senate,4.0,Democratic,Sherrod Brown,6809
+Champaign,U.S. Senate,4.0,Republican,Mike DeWine,7598
+Clark,Attorney General,7.0,Democratic,Marc Dann,24471
+Clark,Attorney General,7.0,Republican,Betty Montgomery,24125
+Clark,Auditor of State,7.0,Democratic,Barbara Sykes,23951
+Clark,Auditor of State,7.0,Republican,Mary Taylor,24709
+Clark,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,29364
+Clark,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,584
+Clark,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,905
+Clark,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,18200
+Clark,Secretary of State,7.0,Democratic,Jennifer L. Brunner,25452
+Clark,Secretary of State,7.0,Non-partisan,John A. Eastman,1572
+Clark,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,800
+Clark,Secretary of State,7.0,Republican,Greg Hartman,20379
+Clark,Treasurer of State,7.0,Democratic,Richard Cordray,27062
+Clark,Treasurer of State,7.0,Republican,Sandra O'Brien,21314
+Clark,U.S. House,7.0,Democratic,William R. Conner,19167
+Clark,U.S. House,7.0,Republican,Dave Hobson,30859
+Clark,U.S. Senate,7.0,Democratic,Sherrod Brown,26400
+Clark,U.S. Senate,7.0,Republican,Mike DeWine,23656
+Clermont,Attorney General,2.0,Democratic,Marc Dann,24112
+Clermont,Attorney General,2.0,Republican,Betty Montgomery,40460
+Clermont,Auditor of State,2.0,Democratic,Barbara Sykes,20466
+Clermont,Auditor of State,2.0,Republican,Mary Taylor,42364
+Clermont,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,27307
+Clermont,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,677
+Clermont,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,1301
+Clermont,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,35687
+Clermont,Secretary of State,2.0,Democratic,Jennifer L. Brunner,23727
+Clermont,Secretary of State,2.0,Non-partisan,John A. Eastman,1312
+Clermont,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,888
+Clermont,Secretary of State,2.0,Republican,Greg Hartman,37477
+Clermont,Treasurer of State,2.0,Democratic,Richard Cordray,24816
+Clermont,Treasurer of State,2.0,Republican,Sandra O'Brien,38089
+Clermont,U.S. House,2.0,Democratic,Victoria Wulsin,28410
+Clermont,U.S. House,2.0,Republican,Jean Schmidt,36299
+Clermont,U.S. Senate,2.0,Democratic,Sherrod Brown,25333
+Clermont,U.S. Senate,2.0,Republican,Mike DeWine,39588
+Clinton,Attorney General,3.0,Democratic,Marc Dann,5197
+Clinton,Attorney General,3.0,Republican,Betty Montgomery,7361
+Clinton,Auditor of State,3.0,Democratic,Barbara Sykes,4259
+Clinton,Auditor of State,3.0,Republican,Mary Taylor,8053
+Clinton,Governor/Lieutenant Governor,3.0,Democratic,Ted Strickland,6342
+Clinton,Governor/Lieutenant Governor,3.0,Non-partisan,Robert Fitrakis,109
+Clinton,Governor/Lieutenant Governor,3.0,Non-partisan,William S. Peirce,240
+Clinton,Governor/Lieutenant Governor,3.0,Republican,J. Kenneth Blackwell,5947
+Clinton,Secretary of State,3.0,Democratic,Jennifer L. Brunner,4781
+Clinton,Secretary of State,3.0,Non-partisan,John A. Eastman,363
+Clinton,Secretary of State,3.0,Non-partisan,Timothy J. Kettler,251
+Clinton,Secretary of State,3.0,Republican,Greg Hartman,6825
+Clinton,Treasurer of State,3.0,Democratic,Richard Cordray,5012
+Clinton,Treasurer of State,3.0,Republican,Sandra O'Brien,7256
+Clinton,U.S. House,3.0,Democratic,Richard Chema,4186
+Clinton,U.S. House,3.0,Republican,Michael R. Turner,8398
+Clinton,U.S. Senate,3.0,Democratic,Sherrod Brown,5005
+Clinton,U.S. Senate,3.0,Republican,Mike DeWine,7687
+Columbiana,Attorney General,6.0,Democratic,Marc Dann,22012
+Columbiana,Attorney General,6.0,Republican,Betty Montgomery,14342
+Columbiana,Auditor of State,6.0,Democratic,Barbara Sykes,19821
+Columbiana,Auditor of State,6.0,Republican,Mary Taylor,15173
+Columbiana,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,23914
+Columbiana,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,339
+Columbiana,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,644
+Columbiana,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,11326
+Columbiana,Secretary of State,6.0,Democratic,Jennifer L. Brunner,20277
+Columbiana,Secretary of State,6.0,Non-partisan,John A. Eastman,1102
+Columbiana,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,739
+Columbiana,Secretary of State,6.0,Republican,Greg Hartman,13369
+Columbiana,Treasurer of State,6.0,Democratic,Richard Cordray,20753
+Columbiana,Treasurer of State,6.0,Republican,Sandra O'Brien,14755
+Columbiana,U.S. House,6.0,Democratic,Charles A. Wilson,19242
+Columbiana,U.S. House,6.0,Republican,Chuck Blasdel,17559
+Columbiana,U.S. Senate,6.0,Democratic,Sherrod Brown,21802
+Columbiana,U.S. Senate,6.0,Republican,Mike DeWine,15025
+Coshocton,Attorney General,18.0,Democratic,Marc Dann,6560
+Coshocton,Attorney General,18.0,Republican,Betty Montgomery,6604
+Coshocton,Auditor of State,18.0,Democratic,Barbara Sykes,6317
+Coshocton,Auditor of State,18.0,Republican,Mary Taylor,6405
+Coshocton,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,7754
+Coshocton,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,156
+Coshocton,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,312
+Coshocton,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,5184
+Coshocton,Secretary of State,18.0,Democratic,Jennifer L. Brunner,6559
+Coshocton,Secretary of State,18.0,Non-partisan,John A. Eastman,396
+Coshocton,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,464
+Coshocton,Secretary of State,18.0,Republican,Greg Hartman,5258
+Coshocton,Treasurer of State,18.0,Democratic,Richard Cordray,6844
+Coshocton,Treasurer of State,18.0,Republican,Sandra O'Brien,5830
+Coshocton,U.S. House,18.0,Democratic,Zack Space,7516
+Coshocton,U.S. House,18.0,Republican,Joy Padgett,5910
+Coshocton,U.S. Senate,18.0,Democratic,Sherrod Brown,7024
+Coshocton,U.S. Senate,18.0,Republican,Mike DeWine,6340
+Crawford,Attorney General,5.0,Democratic,Marc Dann,7815
+Crawford,Attorney General,5.0,Republican,Betty Montgomery,8546
+Crawford,Auditor of State,5.0,Democratic,Barbara Sykes,7106
+Crawford,Auditor of State,5.0,Republican,Mary Taylor,8765
+Crawford,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,8287
+Crawford,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,196
+Crawford,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,389
+Crawford,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,7863
+Crawford,Secretary of State,5.0,Democratic,Jennifer L. Brunner,7563
+Crawford,Secretary of State,5.0,Non-partisan,John A. Eastman,552
+Crawford,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,401
+Crawford,Secretary of State,5.0,Republican,Greg Hartman,7255
+Crawford,Treasurer of State,5.0,Democratic,Richard Cordray,7967
+Crawford,Treasurer of State,5.0,Republican,Sandra O'Brien,7974
+Crawford,U.S. House,5.0,Democratic,Robin Weirauch,6830
+Crawford,U.S. House,5.0,Republican,Paul E. Gillmor,9532
+Crawford,U.S. Senate,5.0,Democratic,Sherrod Brown,8227
+Crawford,U.S. Senate,5.0,Republican,Mike DeWine,8455
+Cuyahoga,Attorney General,10.0,Democratic,Marc Dann,111619
+Cuyahoga,Attorney General,10.0,Republican,Betty Montgomery,78122
+Cuyahoga,Attorney General,11.0,Democratic,Marc Dann,122398
+Cuyahoga,Attorney General,11.0,Republican,Betty Montgomery,38116
+Cuyahoga,Attorney General,13.0,Democratic,Marc Dann,16877
+Cuyahoga,Attorney General,13.0,Republican,Betty Montgomery,18445
+Cuyahoga,Attorney General,14.0,Democratic,Marc Dann,9751
+Cuyahoga,Attorney General,14.0,Republican,Betty Montgomery,9519
+Cuyahoga,Auditor of State,10.0,Democratic,Barbara Sykes,105673
+Cuyahoga,Auditor of State,10.0,Republican,Mary Taylor,87954
+Cuyahoga,Auditor of State,11.0,Democratic,Barbara Sykes,130447
+Cuyahoga,Auditor of State,11.0,Republican,Mary Taylor,38879
+Cuyahoga,Auditor of State,13.0,Democratic,Barbara Sykes,15026
+Cuyahoga,Auditor of State,13.0,Republican,Mary Taylor,20645
+Cuyahoga,Auditor of State,14.0,Democratic,Barbara Sykes,8744
+Cuyahoga,Auditor of State,14.0,Republican,Mary Taylor,10540
+Cuyahoga,Governor/Lieutenant Governor,10.0,Democratic,Ted Strickland,150773
+Cuyahoga,Governor/Lieutenant Governor,10.0,Non-partisan,Robert Fitrakis,2245
+Cuyahoga,Governor/Lieutenant Governor,10.0,Non-partisan,William S. Peirce,3683
+Cuyahoga,Governor/Lieutenant Governor,10.0,Republican,J. Kenneth Blackwell,55415
+Cuyahoga,Governor/Lieutenant Governor,11.0,Democratic,Ted Strickland,146633
+Cuyahoga,Governor/Lieutenant Governor,11.0,Non-partisan,Robert Fitrakis,1720
+Cuyahoga,Governor/Lieutenant Governor,11.0,Non-partisan,William S. Peirce,2450
+Cuyahoga,Governor/Lieutenant Governor,11.0,Republican,J. Kenneth Blackwell,30721
+Cuyahoga,Governor/Lieutenant Governor,13.0,Democratic,Ted Strickland,24150
+Cuyahoga,Governor/Lieutenant Governor,13.0,Non-partisan,Robert Fitrakis,340
+Cuyahoga,Governor/Lieutenant Governor,13.0,Non-partisan,William S. Peirce,671
+Cuyahoga,Governor/Lieutenant Governor,13.0,Republican,J. Kenneth Blackwell,14246
+Cuyahoga,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,13826
+Cuyahoga,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,120
+Cuyahoga,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,306
+Cuyahoga,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,6876
+Cuyahoga,Secretary of State,10.0,Democratic,Jennifer L. Brunner,123978
+Cuyahoga,Secretary of State,10.0,Non-partisan,John A. Eastman,4406
+Cuyahoga,Secretary of State,10.0,Non-partisan,Timothy J. Kettler,4419
+Cuyahoga,Secretary of State,10.0,Republican,Greg Hartman,62934
+Cuyahoga,Secretary of State,11.0,Democratic,Jennifer L. Brunner,137401
+Cuyahoga,Secretary of State,11.0,Non-partisan,John A. Eastman,3755
+Cuyahoga,Secretary of State,11.0,Non-partisan,Timothy J. Kettler,2860
+Cuyahoga,Secretary of State,11.0,Republican,Greg Hartman,25537
+Cuyahoga,Secretary of State,13.0,Democratic,Jennifer L. Brunner,18326
+Cuyahoga,Secretary of State,13.0,Non-partisan,John A. Eastman,647
+Cuyahoga,Secretary of State,13.0,Non-partisan,Timothy J. Kettler,663
+Cuyahoga,Secretary of State,13.0,Republican,Greg Hartman,16340
+Cuyahoga,Secretary of State,14.0,Democratic,Jennifer L. Brunner,10566
+Cuyahoga,Secretary of State,14.0,Non-partisan,John A. Eastman,337
+Cuyahoga,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,239
+Cuyahoga,Secretary of State,14.0,Republican,Greg Hartman,8319
+Cuyahoga,Treasurer of State,10.0,Democratic,Richard Cordray,130063
+Cuyahoga,Treasurer of State,10.0,Republican,Sandra O'Brien,66178
+Cuyahoga,Treasurer of State,11.0,Democratic,Richard Cordray,140981
+Cuyahoga,Treasurer of State,11.0,Republican,Sandra O'Brien,28187
+Cuyahoga,Treasurer of State,13.0,Democratic,Richard Cordray,19478
+Cuyahoga,Treasurer of State,13.0,Republican,Sandra O'Brien,16751
+Cuyahoga,Treasurer of State,14.0,Democratic,Richard Cordray,11056
+Cuyahoga,Treasurer of State,14.0,Republican,Sandra O'Brien,8452
+Cuyahoga,U.S. House,10.0,Democratic,Dennis J. Kucinich,138424
+Cuyahoga,U.S. House,10.0,Republican,Michael D. Dovilla,70008
+Cuyahoga,U.S. House,11.0,Democratic,Stephanie Tubbs Jones,146840
+Cuyahoga,U.S. House,11.0,Republican,Lindsey N. String,29133
+Cuyahoga,U.S. House,13.0,Democratic,Betty Sutton,18835
+Cuyahoga,U.S. House,13.0,Republican,Craig Foltin,17380
+Cuyahoga,U.S. House,14.0,Democratic,Lewis R. Katz,8543
+Cuyahoga,U.S. House,14.0,Non-partisan,Werner J. Lange,255
+Cuyahoga,U.S. House,14.0,Republican,Steven C. LaTourette,11707
+Cuyahoga,U.S. Senate,10.0,Democratic,Sherrod Brown,138956
+Cuyahoga,U.S. Senate,10.0,Republican,Mike DeWine,73145
+Cuyahoga,U.S. Senate,11.0,Democratic,Sherrod Brown,147886
+Cuyahoga,U.S. Senate,11.0,Republican,Mike DeWine,32120
+Cuyahoga,U.S. Senate,13.0,Democratic,Sherrod Brown,21101
+Cuyahoga,U.S. Senate,13.0,Republican,Mike DeWine,18452
+Cuyahoga,U.S. Senate,14.0,Democratic,Sherrod Brown,11702
+Cuyahoga,U.S. Senate,14.0,Republican,Mike DeWine,9543
+Darke,Attorney General,8.0,Democratic,Marc Dann,7512
+Darke,Attorney General,8.0,Republican,Betty Montgomery,10479
+Darke,Auditor of State,8.0,Democratic,Barbara Sykes,6869
+Darke,Auditor of State,8.0,Republican,Mary Taylor,11936
+Darke,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,9365
+Darke,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,303
+Darke,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,535
+Darke,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,10018
+Darke,Secretary of State,8.0,Democratic,Jennifer L. Brunner,7834
+Darke,Secretary of State,8.0,Non-partisan,John A. Eastman,576
+Darke,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,458
+Darke,Secretary of State,8.0,Republican,Greg Hartman,10414
+Darke,Treasurer of State,8.0,Democratic,Richard Cordray,8268
+Darke,Treasurer of State,8.0,Republican,Sandra O'Brien,11151
+Darke,U.S. House,8.0,Democratic,Mort Meier,5961
+Darke,U.S. House,8.0,Republican,John A. Boehner,14045
+Darke,U.S. Senate,8.0,Democratic,Sherrod Brown,8267
+Darke,U.S. Senate,8.0,Republican,Mike DeWine,11911
+Defiance,Attorney General,5.0,Democratic,Marc Dann,6759
+Defiance,Attorney General,5.0,Republican,Betty Montgomery,6604
+Defiance,Auditor of State,5.0,Democratic,Barbara Sykes,5617
+Defiance,Auditor of State,5.0,Republican,Mary Taylor,7565
+Defiance,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,6798
+Defiance,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,220
+Defiance,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,321
+Defiance,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,6298
+Defiance,Secretary of State,5.0,Democratic,Jennifer L. Brunner,6293
+Defiance,Secretary of State,5.0,Non-partisan,John A. Eastman,398
+Defiance,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,320
+Defiance,Secretary of State,5.0,Republican,Greg Hartman,6082
+Defiance,Treasurer of State,5.0,Democratic,Richard Cordray,6203
+Defiance,Treasurer of State,5.0,Republican,Sandra O'Brien,6915
+Defiance,U.S. House,5.0,Democratic,Robin Weirauch,6138
+Defiance,U.S. House,5.0,Republican,Paul E. Gillmor,7531
+Defiance,U.S. Senate,5.0,Democratic,Sherrod Brown,6624
+Defiance,U.S. Senate,5.0,Republican,Mike DeWine,6977
+Delaware,Attorney General,12.0,Democratic,Marc Dann,23394
+Delaware,Attorney General,12.0,Republican,Betty Montgomery,40669
+Delaware,Auditor of State,12.0,Democratic,Barbara Sykes,22187
+Delaware,Auditor of State,12.0,Republican,Mary Taylor,39979
+Delaware,Governor/Lieutenant Governor,12.0,Democratic,Ted Strickland,32504
+Delaware,Governor/Lieutenant Governor,12.0,Non-partisan,Robert Fitrakis,425
+Delaware,Governor/Lieutenant Governor,12.0,Non-partisan,William S. Peirce,909
+Delaware,Governor/Lieutenant Governor,12.0,Republican,J. Kenneth Blackwell,30931
+Delaware,Secretary of State,12.0,Democratic,Jennifer L. Brunner,26432
+Delaware,Secretary of State,12.0,Non-partisan,John A. Eastman,1018
+Delaware,Secretary of State,12.0,Non-partisan,Timothy J. Kettler,789
+Delaware,Secretary of State,12.0,Republican,Greg Hartman,33567
+Delaware,Treasurer of State,12.0,Democratic,Richard Cordray,29547
+Delaware,Treasurer of State,12.0,Republican,Sandra O'Brien,32661
+Delaware,U.S. House,12.0,Democratic,Bob Shamansky,19886
+Delaware,U.S. House,12.0,Republican,Pat Tiberi,44711
+Delaware,U.S. Senate,12.0,Democratic,Sherrod Brown,27109
+Delaware,U.S. Senate,12.0,Republican,Mike DeWine,37624
+Erie,Attorney General,9.0,Democratic,Marc Dann,17794
+Erie,Attorney General,9.0,Republican,Betty Montgomery,12252
+Erie,Auditor of State,9.0,Democratic,Barbara Sykes,15523
+Erie,Auditor of State,9.0,Republican,Mary Taylor,13999
+Erie,Governor/Lieutenant Governor,9.0,Democratic,Ted Strickland,20256
+Erie,Governor/Lieutenant Governor,9.0,Non-partisan,Robert Fitrakis,279
+Erie,Governor/Lieutenant Governor,9.0,Non-partisan,William S. Peirce,482
+Erie,Governor/Lieutenant Governor,9.0,Republican,J. Kenneth Blackwell,9089
+Erie,Secretary of State,9.0,Democratic,Jennifer L. Brunner,17734
+Erie,Secretary of State,9.0,Non-partisan,John A. Eastman,804
+Erie,Secretary of State,9.0,Non-partisan,Timothy J. Kettler,419
+Erie,Secretary of State,9.0,Republican,Greg Hartman,10099
+Erie,Treasurer of State,9.0,Democratic,Richard Cordray,17932
+Erie,Treasurer of State,9.0,Republican,Sandra O'Brien,11104
+Erie,U.S. House,9.0,Democratic,Marcy Kaptur,20756
+Erie,U.S. House,9.0,Republican,Bradley S. Leavitt,8910
+Erie,U.S. Senate,9.0,Democratic,Sherrod Brown,19372
+Erie,U.S. Senate,9.0,Republican,Mike DeWine,11018
+Fairfield,Attorney General,7.0,Democratic,Marc Dann,22424
+Fairfield,Attorney General,7.0,Republican,Betty Montgomery,30538
+Fairfield,Auditor of State,7.0,Democratic,Barbara Sykes,21379
+Fairfield,Auditor of State,7.0,Republican,Mary Taylor,29758
+Fairfield,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,30180
+Fairfield,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,497
+Fairfield,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,956
+Fairfield,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,22363
+Fairfield,Secretary of State,7.0,Democratic,Jennifer L. Brunner,23704
+Fairfield,Secretary of State,7.0,Non-partisan,John A. Eastman,1230
+Fairfield,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,1062
+Fairfield,Secretary of State,7.0,Republican,Greg Hartman,24734
+Fairfield,Treasurer of State,7.0,Democratic,Richard Cordray,26174
+Fairfield,Treasurer of State,7.0,Republican,Sandra O'Brien,25210
+Fairfield,U.S. House,7.0,Democratic,William R. Conner,19361
+Fairfield,U.S. House,7.0,Republican,Dave Hobson,33335
+Fairfield,U.S. Senate,7.0,Democratic,Sherrod Brown,25283
+Fairfield,U.S. Senate,7.0,Republican,Mike DeWine,28506
+Fayette,Attorney General,7.0,Democratic,Marc Dann,3502
+Fayette,Attorney General,7.0,Republican,Betty Montgomery,4876
+Fayette,Auditor of State,7.0,Democratic,Barbara Sykes,3232
+Fayette,Auditor of State,7.0,Republican,Mary Taylor,4894
+Fayette,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,4384
+Fayette,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,40
+Fayette,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,131
+Fayette,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,3845
+Fayette,Secretary of State,7.0,Democratic,Jennifer L. Brunner,3478
+Fayette,Secretary of State,7.0,Non-partisan,John A. Eastman,315
+Fayette,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,172
+Fayette,Secretary of State,7.0,Republican,Greg Hartman,4067
+Fayette,Treasurer of State,7.0,Democratic,Richard Cordray,3823
+Fayette,Treasurer of State,7.0,Republican,Sandra O'Brien,4308
+Fayette,U.S. House,7.0,Democratic,William R. Conner,2818
+Fayette,U.S. House,7.0,Republican,Dave Hobson,5573
+Fayette,U.S. Senate,7.0,Democratic,Sherrod Brown,3793
+Fayette,U.S. Senate,7.0,Republican,Mike DeWine,4651
+Franklin,Attorney General,12.0,Democratic,Marc Dann,62153
+Franklin,Attorney General,12.0,Republican,Betty Montgomery,54039
+Franklin,Attorney General,15.0,Democratic,Marc Dann,70454
+Franklin,Attorney General,15.0,Republican,Betty Montgomery,70603
+Franklin,Attorney General,7.0,Democratic,Marc Dann,54584
+Franklin,Attorney General,7.0,Republican,Betty Montgomery,54728
+Franklin,Auditor of State,12.0,Democratic,Barbara Sykes,62417
+Franklin,Auditor of State,12.0,Republican,Mary Taylor,50993
+Franklin,Auditor of State,15.0,Democratic,Barbara Sykes,68619
+Franklin,Auditor of State,15.0,Republican,Mary Taylor,67668
+Franklin,Auditor of State,7.0,Democratic,Barbara Sykes,56830
+Franklin,Auditor of State,7.0,Republican,Mary Taylor,48782
+Franklin,Governor/Lieutenant Governor,12.0,Democratic,Ted Strickland,76473
+Franklin,Governor/Lieutenant Governor,12.0,Non-partisan,Robert Fitrakis,1134
+Franklin,Governor/Lieutenant Governor,12.0,Non-partisan,William S. Peirce,1421
+Franklin,Governor/Lieutenant Governor,12.0,Republican,J. Kenneth Blackwell,39848
+Franklin,Governor/Lieutenant Governor,15.0,Democratic,Ted Strickland,93019
+Franklin,Governor/Lieutenant Governor,15.0,Non-partisan,Robert Fitrakis,1315
+Franklin,Governor/Lieutenant Governor,15.0,Non-partisan,William S. Peirce,2155
+Franklin,Governor/Lieutenant Governor,15.0,Republican,J. Kenneth Blackwell,47629
+Franklin,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,72044
+Franklin,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,1254
+Franklin,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,1806
+Franklin,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,35124
+Franklin,Secretary of State,12.0,Democratic,Jennifer L. Brunner,70225
+Franklin,Secretary of State,12.0,Non-partisan,John A. Eastman,1864
+Franklin,Secretary of State,12.0,Non-partisan,Timothy J. Kettler,1523
+Franklin,Secretary of State,12.0,Republican,Greg Hartman,39183
+Franklin,Secretary of State,15.0,Democratic,Jennifer L. Brunner,80598
+Franklin,Secretary of State,15.0,Non-partisan,John A. Eastman,2262
+Franklin,Secretary of State,15.0,Non-partisan,Timothy J. Kettler,2019
+Franklin,Secretary of State,15.0,Republican,Greg Hartman,51108
+Franklin,Secretary of State,7.0,Democratic,Jennifer L. Brunner,61626
+Franklin,Secretary of State,7.0,Non-partisan,John A. Eastman,2423
+Franklin,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,1393
+Franklin,Secretary of State,7.0,Republican,Greg Hartman,40600
+Franklin,Treasurer of State,12.0,Democratic,Richard Cordray,79419
+Franklin,Treasurer of State,12.0,Republican,Sandra O'Brien,34880
+Franklin,Treasurer of State,15.0,Democratic,Richard Cordray,95700
+Franklin,Treasurer of State,15.0,Republican,Sandra O'Brien,42798
+Franklin,Treasurer of State,7.0,Democratic,Richard Cordray,74966
+Franklin,Treasurer of State,7.0,Republican,Sandra O'Brien,33288
+Franklin,U.S. House,12.0,Democratic,Bob Shamansky,75423
+Franklin,U.S. House,12.0,Republican,Pat Tiberi,74972
+Franklin,U.S. House,15.0,Democratic,Mary Jo Kilroy,98978
+Franklin,U.S. House,15.0,Republican,Deborah Pryce,91432
+Franklin,U.S. House,7.0,Democratic,William R. Conner,14144
+Franklin,U.S. House,7.0,Republican,Dave Hobson,11760
+Franklin,U.S. Senate,12.0,Democratic,Sherrod Brown,71087
+Franklin,U.S. Senate,12.0,Republican,Mike DeWine,46953
+Franklin,U.S. Senate,15.0,Democratic,Sherrod Brown,82219
+Franklin,U.S. Senate,15.0,Republican,Mike DeWine,61145
+Franklin,U.S. Senate,7.0,Democratic,Sherrod Brown,64655
+Franklin,U.S. Senate,7.0,Republican,Mike DeWine,46000
+Fulton,Attorney General,5.0,Democratic,Marc Dann,7607
+Fulton,Attorney General,5.0,Republican,Betty Montgomery,8283
+Fulton,Auditor of State,5.0,Democratic,Barbara Sykes,5759
+Fulton,Auditor of State,5.0,Republican,Mary Taylor,9818
+Fulton,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,8193
+Fulton,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,199
+Fulton,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,328
+Fulton,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,7421
+Fulton,Secretary of State,5.0,Democratic,Jennifer L. Brunner,7250
+Fulton,Secretary of State,5.0,Non-partisan,John A. Eastman,377
+Fulton,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,277
+Fulton,Secretary of State,5.0,Republican,Greg Hartman,7419
+Fulton,Treasurer of State,5.0,Democratic,Richard Cordray,7109
+Fulton,Treasurer of State,5.0,Republican,Sandra O'Brien,8288
+Fulton,U.S. House,5.0,Democratic,Robin Weirauch,6879
+Fulton,U.S. House,5.0,Republican,Paul E. Gillmor,9099
+Fulton,U.S. Senate,5.0,Democratic,Sherrod Brown,7936
+Fulton,U.S. Senate,5.0,Republican,Mike DeWine,8079
+Gallia,Attorney General,6.0,Democratic,Marc Dann,4181
+Gallia,Attorney General,6.0,Republican,Betty Montgomery,5604
+Gallia,Auditor of State,6.0,Democratic,Barbara Sykes,4587
+Gallia,Auditor of State,6.0,Republican,Mary Taylor,4852
+Gallia,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,6574
+Gallia,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,73
+Gallia,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,110
+Gallia,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,3406
+Gallia,Secretary of State,6.0,Democratic,Jennifer L. Brunner,4439
+Gallia,Secretary of State,6.0,Non-partisan,John A. Eastman,453
+Gallia,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,199
+Gallia,Secretary of State,6.0,Republican,Greg Hartman,4362
+Gallia,Treasurer of State,6.0,Democratic,Richard Cordray,4499
+Gallia,Treasurer of State,6.0,Republican,Sandra O'Brien,5016
+Gallia,U.S. House,6.0,Democratic,Charles A. Wilson,4890
+Gallia,U.S. House,6.0,Republican,Chuck Blasdel,4732
+Gallia,U.S. Senate,6.0,Democratic,Sherrod Brown,4803
+Gallia,U.S. Senate,6.0,Republican,Mike DeWine,5255
+Geauga,Attorney General,14.0,Democratic,Marc Dann,18361
+Geauga,Attorney General,14.0,Republican,Betty Montgomery,20587
+Geauga,Auditor of State,14.0,Democratic,Barbara Sykes,14683
+Geauga,Auditor of State,14.0,Republican,Mary Taylor,22876
+Geauga,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,22154
+Geauga,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,294
+Geauga,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,835
+Geauga,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,15850
+Geauga,Secretary of State,14.0,Democratic,Jennifer L. Brunner,17418
+Geauga,Secretary of State,14.0,Non-partisan,John A. Eastman,956
+Geauga,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,589
+Geauga,Secretary of State,14.0,Republican,Greg Hartman,17831
+Geauga,Treasurer of State,14.0,Democratic,Richard Cordray,18377
+Geauga,Treasurer of State,14.0,Republican,Sandra O'Brien,18687
+Geauga,U.S. House,14.0,Democratic,Lewis R. Katz,13173
+Geauga,U.S. House,14.0,Non-partisan,Werner J. Lange,1486
+Geauga,U.S. House,14.0,Republican,Steven C. LaTourette,24144
+Geauga,U.S. Senate,14.0,Democratic,Sherrod Brown,19903
+Geauga,U.S. Senate,14.0,Republican,Mike DeWine,19653
+Greene,Attorney General,7.0,Democratic,Marc Dann,23347
+Greene,Attorney General,7.0,Republican,Betty Montgomery,34054
+Greene,Auditor of State,7.0,Democratic,Barbara Sykes,21930
+Greene,Auditor of State,7.0,Republican,Mary Taylor,35262
+Greene,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,28612
+Greene,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,654
+Greene,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,1134
+Greene,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,28713
+Greene,Secretary of State,7.0,Democratic,Jennifer L. Brunner,23989
+Greene,Secretary of State,7.0,Non-partisan,John A. Eastman,1851
+Greene,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,893
+Greene,Secretary of State,7.0,Republican,Greg Hartman,30195
+Greene,Treasurer of State,7.0,Democratic,Richard Cordray,25455
+Greene,Treasurer of State,7.0,Republican,Sandra O'Brien,31657
+Greene,U.S. House,7.0,Democratic,William R. Conner,19950
+Greene,U.S. House,7.0,Republican,Dave Hobson,38847
+Greene,U.S. Senate,7.0,Democratic,Sherrod Brown,24415
+Greene,U.S. Senate,7.0,Republican,Mike DeWine,34797
+Guernsey,Attorney General,18.0,Democratic,Marc Dann,6837
+Guernsey,Attorney General,18.0,Republican,Betty Montgomery,6174
+Guernsey,Auditor of State,18.0,Democratic,Barbara Sykes,6729
+Guernsey,Auditor of State,18.0,Republican,Mary Taylor,5892
+Guernsey,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,8350
+Guernsey,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,153
+Guernsey,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,271
+Guernsey,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,4601
+Guernsey,Secretary of State,18.0,Democratic,Jennifer L. Brunner,7084
+Guernsey,Secretary of State,18.0,Non-partisan,John A. Eastman,372
+Guernsey,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,335
+Guernsey,Secretary of State,18.0,Republican,Greg Hartman,4837
+Guernsey,Treasurer of State,18.0,Democratic,Richard Cordray,7255
+Guernsey,Treasurer of State,18.0,Republican,Sandra O'Brien,5513
+Guernsey,U.S. House,18.0,Democratic,Zack Space,8135
+Guernsey,U.S. House,18.0,Republican,Joy Padgett,5041
+Guernsey,U.S. Senate,18.0,Democratic,Sherrod Brown,7334
+Guernsey,U.S. Senate,18.0,Republican,Mike DeWine,5905
+Hamilton,Attorney General,,Democratic,Marc Dann,5707
+Hamilton,Attorney General,,Republican,Betty Montgomery,5782
+Hamilton,Attorney General,1.0,Democratic,Marc Dann,92416
+Hamilton,Attorney General,1.0,Republican,Betty Montgomery,90858
+Hamilton,Attorney General,2.0,Democratic,Marc Dann,34952
+Hamilton,Attorney General,2.0,Republican,Betty Montgomery,52207
+Hamilton,Auditor of State,,Democratic,Barbara Sykes,5103
+Hamilton,Auditor of State,,Republican,Mary Taylor,6156
+Hamilton,Auditor of State,1.0,Democratic,Barbara Sykes,83952
+Hamilton,Auditor of State,1.0,Republican,Mary Taylor,96080
+Hamilton,Auditor of State,2.0,Democratic,Barbara Sykes,30142
+Hamilton,Auditor of State,2.0,Republican,Mary Taylor,55213
+Hamilton,Governor/Lieutenant Governor,,Democratic,Ted Strickland,5947
+Hamilton,Governor/Lieutenant Governor,,Non-partisan,Robert Fitrakis,96
+Hamilton,Governor/Lieutenant Governor,,Non-partisan,William S. Peirce,150
+Hamilton,Governor/Lieutenant Governor,,Republican,J. Kenneth Blackwell,5491
+Hamilton,Governor/Lieutenant Governor,1.0,Democratic,Ted Strickland,93793
+Hamilton,Governor/Lieutenant Governor,1.0,Non-partisan,Robert Fitrakis,1702
+Hamilton,Governor/Lieutenant Governor,1.0,Non-partisan,William S. Peirce,2820
+Hamilton,Governor/Lieutenant Governor,1.0,Republican,J. Kenneth Blackwell,88724
+Hamilton,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,39711
+Hamilton,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,569
+Hamilton,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,1203
+Hamilton,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,47159
+Hamilton,Secretary of State,,Democratic,Jennifer L. Brunner,5713
+Hamilton,Secretary of State,,Non-partisan,John A. Eastman,152
+Hamilton,Secretary of State,,Non-partisan,Timothy J. Kettler,210
+Hamilton,Secretary of State,,Republican,Greg Hartman,5201
+Hamilton,Secretary of State,1.0,Democratic,Jennifer L. Brunner,91798
+Hamilton,Secretary of State,1.0,Non-partisan,John A. Eastman,3207
+Hamilton,Secretary of State,1.0,Non-partisan,Timothy J. Kettler,3659
+Hamilton,Secretary of State,1.0,Republican,Greg Hartman,81809
+Hamilton,Secretary of State,2.0,Democratic,Jennifer L. Brunner,36572
+Hamilton,Secretary of State,2.0,Non-partisan,John A. Eastman,1267
+Hamilton,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,1150
+Hamilton,Secretary of State,2.0,Republican,Greg Hartman,46637
+Hamilton,Treasurer of State,,Democratic,Richard Cordray,5975
+Hamilton,Treasurer of State,,Republican,Sandra O'Brien,5210
+Hamilton,Treasurer of State,1.0,Democratic,Richard Cordray,97408
+Hamilton,Treasurer of State,1.0,Republican,Sandra O'Brien,81592
+Hamilton,Treasurer of State,2.0,Democratic,Richard Cordray,37905
+Hamilton,Treasurer of State,2.0,Republican,Sandra O'Brien,47041
+Hamilton,U.S. House,1.0,Democratic,John Cranley,93486
+Hamilton,U.S. House,1.0,Republican,Steve Chabot,99113
+Hamilton,U.S. House,2.0,Democratic,Victoria Wulsin,50210
+Hamilton,U.S. House,2.0,Republican,Jean Schmidt,44447
+Hamilton,U.S. Senate,,Democratic,Sherrod Brown,6112
+Hamilton,U.S. Senate,,Republican,Mike DeWine,5546
+Hamilton,U.S. Senate,1.0,Democratic,Sherrod Brown,97978
+Hamilton,U.S. Senate,1.0,Republican,Mike DeWine,88378
+Hamilton,U.S. Senate,2.0,Democratic,Sherrod Brown,38044
+Hamilton,U.S. Senate,2.0,Republican,Mike DeWine,50243
+Hancock,Attorney General,4.0,Democratic,Marc Dann,10077
+Hancock,Attorney General,4.0,Republican,Betty Montgomery,14584
+Hancock,Auditor of State,4.0,Democratic,Barbara Sykes,7959
+Hancock,Auditor of State,4.0,Republican,Mary Taylor,16821
+Hancock,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,10934
+Hancock,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,277
+Hancock,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,456
+Hancock,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,14007
+Hancock,Secretary of State,4.0,Democratic,Jennifer L. Brunner,9326
+Hancock,Secretary of State,4.0,Non-partisan,John A. Eastman,590
+Hancock,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,421
+Hancock,Secretary of State,4.0,Republican,Greg Hartman,14058
+Hancock,Treasurer of State,4.0,Democratic,Richard Cordray,9227
+Hancock,Treasurer of State,4.0,Republican,Sandra O'Brien,15472
+Hancock,U.S. House,4.0,Democratic,Richard E. Siferd,8693
+Hancock,U.S. House,4.0,Republican,Jim Jordan,16483
+Hancock,U.S. Senate,4.0,Democratic,Sherrod Brown,10498
+Hancock,U.S. Senate,4.0,Republican,Mike DeWine,15121
+Hardin,Attorney General,4.0,Democratic,Marc Dann,4405
+Hardin,Attorney General,4.0,Republican,Betty Montgomery,4981
+Hardin,Auditor of State,4.0,Democratic,Barbara Sykes,4203
+Hardin,Auditor of State,4.0,Republican,Mary Taylor,5078
+Hardin,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,5273
+Hardin,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,114
+Hardin,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,232
+Hardin,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,4099
+Hardin,Secretary of State,4.0,Democratic,Jennifer L. Brunner,4296
+Hardin,Secretary of State,4.0,Non-partisan,John A. Eastman,297
+Hardin,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,232
+Hardin,Secretary of State,4.0,Republican,Greg Hartman,4473
+Hardin,Treasurer of State,4.0,Democratic,Richard Cordray,4613
+Hardin,Treasurer of State,4.0,Republican,Sandra O'Brien,4753
+Hardin,U.S. House,4.0,Democratic,Richard E. Siferd,4131
+Hardin,U.S. House,4.0,Republican,Jim Jordan,5407
+Hardin,U.S. Senate,4.0,Democratic,Sherrod Brown,4779
+Hardin,U.S. Senate,4.0,Republican,Mike DeWine,4803
+Harrison,Attorney General,18.0,Democratic,Marc Dann,3479
+Harrison,Attorney General,18.0,Republican,Betty Montgomery,2379
+Harrison,Auditor of State,18.0,Democratic,Barbara Sykes,3639
+Harrison,Auditor of State,18.0,Republican,Mary Taylor,2147
+Harrison,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,4238
+Harrison,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,70
+Harrison,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,126
+Harrison,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,1661
+Harrison,Secretary of State,18.0,Democratic,Jennifer L. Brunner,3601
+Harrison,Secretary of State,18.0,Non-partisan,John A. Eastman,200
+Harrison,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,162
+Harrison,Secretary of State,18.0,Republican,Greg Hartman,1862
+Harrison,Treasurer of State,18.0,Democratic,Richard Cordray,3722
+Harrison,Treasurer of State,18.0,Republican,Sandra O'Brien,2111
+Harrison,U.S. House,18.0,Democratic,Zack Space,4320
+Harrison,U.S. House,18.0,Republican,Joy Padgett,1658
+Harrison,U.S. Senate,18.0,Democratic,Sherrod Brown,3530
+Harrison,U.S. Senate,18.0,Republican,Mike DeWine,2450
+Henry,Attorney General,5.0,Democratic,Marc Dann,5157
+Henry,Attorney General,5.0,Republican,Betty Montgomery,5982
+Henry,Auditor of State,5.0,Democratic,Barbara Sykes,3914
+Henry,Auditor of State,5.0,Republican,Mary Taylor,7069
+Henry,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,5723
+Henry,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,149
+Henry,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,227
+Henry,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,5371
+Henry,Secretary of State,5.0,Democratic,Jennifer L. Brunner,4907
+Henry,Secretary of State,5.0,Non-partisan,John A. Eastman,296
+Henry,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,209
+Henry,Secretary of State,5.0,Republican,Greg Hartman,5354
+Henry,Treasurer of State,5.0,Democratic,Richard Cordray,4878
+Henry,Treasurer of State,5.0,Republican,Sandra O'Brien,6035
+Henry,U.S. House,5.0,Democratic,Robin Weirauch,5001
+Henry,U.S. House,5.0,Republican,Paul E. Gillmor,6552
+Henry,U.S. Senate,5.0,Democratic,Sherrod Brown,5354
+Henry,U.S. Senate,5.0,Republican,Mike DeWine,6007
+Highland,Attorney General,3.0,Democratic,Marc Dann,5589
+Highland,Attorney General,3.0,Republican,Betty Montgomery,6886
+Highland,Auditor of State,3.0,Democratic,Barbara Sykes,5075
+Highland,Auditor of State,3.0,Republican,Mary Taylor,7531
+Highland,Governor/Lieutenant Governor,3.0,Democratic,Ted Strickland,7007
+Highland,Governor/Lieutenant Governor,3.0,Non-partisan,Robert Fitrakis,114
+Highland,Governor/Lieutenant Governor,3.0,Non-partisan,William S. Peirce,206
+Highland,Governor/Lieutenant Governor,3.0,Republican,J. Kenneth Blackwell,5822
+Highland,Secretary of State,3.0,Democratic,Jennifer L. Brunner,5416
+Highland,Secretary of State,3.0,Non-partisan,John A. Eastman,379
+Highland,Secretary of State,3.0,Non-partisan,Timothy J. Kettler,296
+Highland,Secretary of State,3.0,Republican,Greg Hartman,6425
+Highland,Treasurer of State,3.0,Democratic,Richard Cordray,5991
+Highland,Treasurer of State,3.0,Republican,Sandra O'Brien,6682
+Highland,U.S. House,3.0,Democratic,Richard Chema,4850
+Highland,U.S. House,3.0,Republican,Michael R. Turner,7912
+Highland,U.S. Senate,3.0,Democratic,Sherrod Brown,5674
+Highland,U.S. Senate,3.0,Republican,Mike DeWine,7297
+Hocking,Attorney General,18.0,Democratic,Marc Dann,5190
+Hocking,Attorney General,18.0,Republican,Betty Montgomery,4414
+Hocking,Auditor of State,18.0,Democratic,Barbara Sykes,5047
+Hocking,Auditor of State,18.0,Republican,Mary Taylor,4173
+Hocking,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,6619
+Hocking,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,98
+Hocking,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,152
+Hocking,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,2990
+Hocking,Secretary of State,18.0,Democratic,Jennifer L. Brunner,5258
+Hocking,Secretary of State,18.0,Non-partisan,John A. Eastman,238
+Hocking,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,176
+Hocking,Secretary of State,18.0,Republican,Greg Hartman,3535
+Hocking,Treasurer of State,18.0,Democratic,Richard Cordray,5593
+Hocking,Treasurer of State,18.0,Republican,Sandra O'Brien,3688
+Hocking,U.S. House,18.0,Democratic,Zack Space,5972
+Hocking,U.S. House,18.0,Republican,Joy Padgett,3515
+Hocking,U.S. Senate,18.0,Democratic,Sherrod Brown,5664
+Hocking,U.S. Senate,18.0,Republican,Mike DeWine,4062
+Holmes,Attorney General,18.0,Democratic,Marc Dann,2811
+Holmes,Attorney General,18.0,Republican,Betty Montgomery,4902
+Holmes,Auditor of State,18.0,Democratic,Barbara Sykes,2319
+Holmes,Auditor of State,18.0,Republican,Mary Taylor,5335
+Holmes,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,3301
+Holmes,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,83
+Holmes,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,208
+Holmes,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,4514
+Holmes,Secretary of State,18.0,Democratic,Jennifer L. Brunner,2572
+Holmes,Secretary of State,18.0,Non-partisan,John A. Eastman,202
+Holmes,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,184
+Holmes,Secretary of State,18.0,Republican,Greg Hartman,4502
+Holmes,Treasurer of State,18.0,Democratic,Richard Cordray,2784
+Holmes,Treasurer of State,18.0,Republican,Sandra O'Brien,4839
+Holmes,U.S. House,18.0,Democratic,Zack Space,3279
+Holmes,U.S. House,18.0,Republican,Joy Padgett,4534
+Holmes,U.S. Senate,18.0,Democratic,Sherrod Brown,2810
+Holmes,U.S. Senate,18.0,Republican,Mike DeWine,5241
+Huron,Attorney General,5.0,Democratic,Marc Dann,9647
+Huron,Attorney General,5.0,Republican,Betty Montgomery,8236
+Huron,Auditor of State,5.0,Democratic,Barbara Sykes,8053
+Huron,Auditor of State,5.0,Republican,Mary Taylor,10035
+Huron,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,10718
+Huron,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,216
+Huron,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,388
+Huron,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,7592
+Huron,Secretary of State,5.0,Democratic,Jennifer L. Brunner,9038
+Huron,Secretary of State,5.0,Non-partisan,John A. Eastman,711
+Huron,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,331
+Huron,Secretary of State,5.0,Republican,Greg Hartman,7763
+Huron,Treasurer of State,5.0,Democratic,Richard Cordray,9605
+Huron,Treasurer of State,5.0,Republican,Sandra O'Brien,8375
+Huron,U.S. House,5.0,Democratic,Robin Weirauch,7959
+Huron,U.S. House,5.0,Republican,Paul E. Gillmor,10596
+Huron,U.S. Senate,5.0,Democratic,Sherrod Brown,10234
+Huron,U.S. Senate,5.0,Republican,Mike DeWine,8694
+Jackson,Attorney General,18.0,Democratic,Marc Dann,4366
+Jackson,Attorney General,18.0,Republican,Betty Montgomery,4963
+Jackson,Auditor of State,18.0,Democratic,Barbara Sykes,4798
+Jackson,Auditor of State,18.0,Republican,Mary Taylor,4690
+Jackson,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,7117
+Jackson,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,53
+Jackson,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,101
+Jackson,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,3150
+Jackson,Secretary of State,18.0,Democratic,Jennifer L. Brunner,4945
+Jackson,Secretary of State,18.0,Non-partisan,John A. Eastman,378
+Jackson,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,201
+Jackson,Secretary of State,18.0,Republican,Greg Hartman,4166
+Jackson,Treasurer of State,18.0,Democratic,Richard Cordray,5149
+Jackson,Treasurer of State,18.0,Republican,Sandra O'Brien,4602
+Jackson,U.S. House,18.0,Democratic,Zack Space,5600
+Jackson,U.S. House,18.0,Republican,Joy Padgett,4258
+Jackson,U.S. Senate,18.0,Democratic,Sherrod Brown,5453
+Jackson,U.S. Senate,18.0,Republican,Mike DeWine,4833
+Jefferson,Attorney General,6.0,Democratic,Marc Dann,16006
+Jefferson,Attorney General,6.0,Republican,Betty Montgomery,8821
+Jefferson,Auditor of State,6.0,Democratic,Barbara Sykes,16067
+Jefferson,Auditor of State,6.0,Republican,Mary Taylor,8499
+Jefferson,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,18071
+Jefferson,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,316
+Jefferson,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,559
+Jefferson,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,7187
+Jefferson,Secretary of State,6.0,Democratic,Jennifer L. Brunner,15516
+Jefferson,Secretary of State,6.0,Non-partisan,John A. Eastman,796
+Jefferson,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,713
+Jefferson,Secretary of State,6.0,Republican,Greg Hartman,7776
+Jefferson,Treasurer of State,6.0,Democratic,Richard Cordray,16507
+Jefferson,Treasurer of State,6.0,Republican,Sandra O'Brien,8448
+Jefferson,U.S. House,6.0,Democratic,Charles A. Wilson,17959
+Jefferson,U.S. House,6.0,Republican,Chuck Blasdel,7801
+Jefferson,U.S. Senate,6.0,Democratic,Sherrod Brown,15673
+Jefferson,U.S. Senate,6.0,Republican,Mike DeWine,9988
+Knox,Attorney General,18.0,Democratic,Marc Dann,8648
+Knox,Attorney General,18.0,Republican,Betty Montgomery,11927
+Knox,Auditor of State,18.0,Democratic,Barbara Sykes,7972
+Knox,Auditor of State,18.0,Republican,Mary Taylor,11684
+Knox,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,10278
+Knox,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,176
+Knox,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,382
+Knox,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,9944
+Knox,Secretary of State,18.0,Democratic,Jennifer L. Brunner,8923
+Knox,Secretary of State,18.0,Non-partisan,John A. Eastman,542
+Knox,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,406
+Knox,Secretary of State,18.0,Republican,Greg Hartman,10089
+Knox,Treasurer of State,18.0,Democratic,Richard Cordray,9456
+Knox,Treasurer of State,18.0,Republican,Sandra O'Brien,10609
+Knox,U.S. House,18.0,Democratic,Zack Space,10645
+Knox,U.S. House,18.0,Republican,Joy Padgett,9582
+Knox,U.S. Senate,18.0,Democratic,Sherrod Brown,9641
+Knox,U.S. Senate,18.0,Republican,Mike DeWine,11036
+Lake,Attorney General,14.0,Democratic,Marc Dann,46319
+Lake,Attorney General,14.0,Republican,Betty Montgomery,40646
+Lake,Auditor of State,14.0,Democratic,Barbara Sykes,40400
+Lake,Auditor of State,14.0,Republican,Mary Taylor,43957
+Lake,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,56482
+Lake,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,886
+Lake,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,1954
+Lake,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,28675
+Lake,Secretary of State,14.0,Democratic,Jennifer L. Brunner,47815
+Lake,Secretary of State,14.0,Non-partisan,John A. Eastman,1797
+Lake,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,1570
+Lake,Secretary of State,14.0,Republican,Greg Hartman,32269
+Lake,Treasurer of State,14.0,Democratic,Richard Cordray,48140
+Lake,Treasurer of State,14.0,Republican,Sandra O'Brien,35207
+Lake,U.S. House,14.0,Democratic,Lewis R. Katz,31058
+Lake,U.S. House,14.0,Non-partisan,Werner J. Lange,2177
+Lake,U.S. House,14.0,Republican,Steven C. LaTourette,54947
+Lake,U.S. Senate,14.0,Democratic,Sherrod Brown,50649
+Lake,U.S. Senate,14.0,Republican,Mike DeWine,37988
+Lawrence,Attorney General,6.0,Democratic,Marc Dann,9546
+Lawrence,Attorney General,6.0,Republican,Betty Montgomery,8196
+Lawrence,Auditor of State,6.0,Democratic,Barbara Sykes,10534
+Lawrence,Auditor of State,6.0,Republican,Mary Taylor,8043
+Lawrence,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,13530
+Lawrence,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,79
+Lawrence,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,212
+Lawrence,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,5287
+Lawrence,Secretary of State,6.0,Democratic,Jennifer L. Brunner,9675
+Lawrence,Secretary of State,6.0,Non-partisan,John A. Eastman,839
+Lawrence,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,428
+Lawrence,Secretary of State,6.0,Republican,Greg Hartman,7362
+Lawrence,Treasurer of State,6.0,Democratic,Richard Cordray,10084
+Lawrence,Treasurer of State,6.0,Republican,Sandra O'Brien,8386
+Lawrence,U.S. House,6.0,Democratic,Charles A. Wilson,10801
+Lawrence,U.S. House,6.0,Republican,Chuck Blasdel,7954
+Lawrence,U.S. Senate,6.0,Democratic,Sherrod Brown,10561
+Lawrence,U.S. Senate,6.0,Republican,Mike DeWine,8916
+Licking,Attorney General,12.0,Democratic,Marc Dann,16858
+Licking,Attorney General,12.0,Republican,Betty Montgomery,23401
+Licking,Attorney General,18.0,Democratic,Marc Dann,8701
+Licking,Attorney General,18.0,Republican,Betty Montgomery,9326
+Licking,Auditor of State,12.0,Democratic,Barbara Sykes,15980
+Licking,Auditor of State,12.0,Republican,Mary Taylor,22806
+Licking,Auditor of State,18.0,Democratic,Barbara Sykes,8131
+Licking,Auditor of State,18.0,Republican,Mary Taylor,9265
+Licking,Governor/Lieutenant Governor,12.0,Democratic,Ted Strickland,22053
+Licking,Governor/Lieutenant Governor,12.0,Non-partisan,Robert Fitrakis,397
+Licking,Governor/Lieutenant Governor,12.0,Non-partisan,William S. Peirce,792
+Licking,Governor/Lieutenant Governor,12.0,Republican,J. Kenneth Blackwell,17534
+Licking,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,10402
+Licking,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,233
+Licking,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,427
+Licking,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,7206
+Licking,Secretary of State,12.0,Democratic,Jennifer L. Brunner,17858
+Licking,Secretary of State,12.0,Non-partisan,John A. Eastman,941
+Licking,Secretary of State,12.0,Non-partisan,Timothy J. Kettler,750
+Licking,Secretary of State,12.0,Republican,Greg Hartman,19094
+Licking,Secretary of State,18.0,Democratic,Jennifer L. Brunner,8644
+Licking,Secretary of State,18.0,Non-partisan,John A. Eastman,559
+Licking,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,463
+Licking,Secretary of State,18.0,Republican,Greg Hartman,7760
+Licking,Treasurer of State,12.0,Democratic,Richard Cordray,19880
+Licking,Treasurer of State,12.0,Republican,Sandra O'Brien,19301
+Licking,Treasurer of State,18.0,Democratic,Richard Cordray,9605
+Licking,Treasurer of State,18.0,Republican,Sandra O'Brien,8005
+Licking,U.S. House,12.0,Democratic,Bob Shamansky,13437
+Licking,U.S. House,12.0,Republican,Pat Tiberi,26260
+Licking,U.S. House,18.0,Democratic,Zack Space,11227
+Licking,U.S. House,18.0,Republican,Joy Padgett,7405
+Licking,U.S. Senate,12.0,Democratic,Sherrod Brown,19123
+Licking,U.S. Senate,12.0,Republican,Mike DeWine,21589
+Licking,U.S. Senate,18.0,Democratic,Sherrod Brown,9476
+Licking,U.S. Senate,18.0,Republican,Mike DeWine,8723
+Logan,Attorney General,4.0,Democratic,Marc Dann,6306
+Logan,Attorney General,4.0,Republican,Betty Montgomery,9697
+Logan,Auditor of State,4.0,Democratic,Barbara Sykes,5837
+Logan,Auditor of State,4.0,Republican,Mary Taylor,9888
+Logan,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,7611
+Logan,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,167
+Logan,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,361
+Logan,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,7941
+Logan,Secretary of State,4.0,Democratic,Jennifer L. Brunner,6186
+Logan,Secretary of State,4.0,Non-partisan,John A. Eastman,645
+Logan,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,398
+Logan,Secretary of State,4.0,Republican,Greg Hartman,8249
+Logan,Treasurer of State,4.0,Democratic,Richard Cordray,6675
+Logan,Treasurer of State,4.0,Republican,Sandra O'Brien,8957
+Logan,U.S. House,4.0,Democratic,Richard E. Siferd,5631
+Logan,U.S. House,4.0,Republican,Jim Jordan,10290
+Logan,U.S. Senate,4.0,Democratic,Sherrod Brown,6909
+Logan,U.S. Senate,4.0,Republican,Mike DeWine,9297
+Lorain,Attorney General,13.0,Democratic,Marc Dann,41944
+Lorain,Attorney General,13.0,Republican,Betty Montgomery,28237
+Lorain,Attorney General,9.0,Democratic,Marc Dann,16936
+Lorain,Attorney General,9.0,Republican,Betty Montgomery,11405
+Lorain,Auditor of State,13.0,Democratic,Barbara Sykes,37354
+Lorain,Auditor of State,13.0,Republican,Mary Taylor,30909
+Lorain,Auditor of State,9.0,Democratic,Barbara Sykes,14301
+Lorain,Auditor of State,9.0,Republican,Mary Taylor,13199
+Lorain,Governor/Lieutenant Governor,13.0,Democratic,Ted Strickland,49161
+Lorain,Governor/Lieutenant Governor,13.0,Non-partisan,Robert Fitrakis,916
+Lorain,Governor/Lieutenant Governor,13.0,Non-partisan,William S. Peirce,1506
+Lorain,Governor/Lieutenant Governor,13.0,Republican,J. Kenneth Blackwell,20178
+Lorain,Governor/Lieutenant Governor,9.0,Democratic,Ted Strickland,19622
+Lorain,Governor/Lieutenant Governor,9.0,Non-partisan,Robert Fitrakis,351
+Lorain,Governor/Lieutenant Governor,9.0,Non-partisan,William S. Peirce,731
+Lorain,Governor/Lieutenant Governor,9.0,Republican,J. Kenneth Blackwell,8164
+Lorain,Secretary of State,13.0,Democratic,Jennifer L. Brunner,42390
+Lorain,Secretary of State,13.0,Non-partisan,John A. Eastman,1747
+Lorain,Secretary of State,13.0,Non-partisan,Timothy J. Kettler,1405
+Lorain,Secretary of State,13.0,Republican,Greg Hartman,21811
+Lorain,Secretary of State,9.0,Democratic,Jennifer L. Brunner,16598
+Lorain,Secretary of State,9.0,Non-partisan,John A. Eastman,698
+Lorain,Secretary of State,9.0,Non-partisan,Timothy J. Kettler,656
+Lorain,Secretary of State,9.0,Republican,Greg Hartman,9141
+Lorain,Treasurer of State,13.0,Democratic,Richard Cordray,44413
+Lorain,Treasurer of State,13.0,Republican,Sandra O'Brien,23413
+Lorain,Treasurer of State,9.0,Democratic,Richard Cordray,17510
+Lorain,Treasurer of State,9.0,Republican,Sandra O'Brien,9879
+Lorain,U.S. House,13.0,Democratic,Betty Sutton,41128
+Lorain,U.S. House,13.0,Republican,Craig Foltin,29731
+Lorain,U.S. House,9.0,Democratic,Marcy Kaptur,17996
+Lorain,U.S. House,9.0,Republican,Bradley S. Leavitt,8594
+Lorain,U.S. Senate,13.0,Democratic,Sherrod Brown,48511
+Lorain,U.S. Senate,13.0,Republican,Mike DeWine,23947
+Lorain,U.S. Senate,9.0,Democratic,Sherrod Brown,18918
+Lorain,U.S. Senate,9.0,Republican,Mike DeWine,10182
+Lucas,Attorney General,,Democratic,Marc Dann,79440
+Lucas,Attorney General,,Republican,Betty Montgomery,43349
+Lucas,Attorney General,5.0,Democratic,Marc Dann,3289
+Lucas,Attorney General,5.0,Republican,Betty Montgomery,3092
+Lucas,Auditor of State,,Democratic,Barbara Sykes,70085
+Lucas,Auditor of State,,Republican,Mary Taylor,57886
+Lucas,Auditor of State,5.0,Democratic,Barbara Sykes,2593
+Lucas,Auditor of State,5.0,Republican,Mary Taylor,3918
+Lucas,Governor/Lieutenant Governor,,Democratic,Ted Strickland,91218
+Lucas,Governor/Lieutenant Governor,,Non-partisan,Robert Fitrakis,1406
+Lucas,Governor/Lieutenant Governor,,Non-partisan,William S. Peirce,1763
+Lucas,Governor/Lieutenant Governor,,Republican,J. Kenneth Blackwell,41418
+Lucas,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,3900
+Lucas,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,66
+Lucas,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,121
+Lucas,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,2889
+Lucas,Secretary of State,,Democratic,Jennifer L. Brunner,85989
+Lucas,Secretary of State,,Non-partisan,John A. Eastman,2445
+Lucas,Secretary of State,,Non-partisan,Timothy J. Kettler,1848
+Lucas,Secretary of State,,Republican,Greg Hartman,38060
+Lucas,Secretary of State,5.0,Democratic,Jennifer L. Brunner,3502
+Lucas,Secretary of State,5.0,Non-partisan,John A. Eastman,126
+Lucas,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,79
+Lucas,Secretary of State,5.0,Republican,Greg Hartman,2844
+Lucas,Treasurer of State,,Democratic,Richard Cordray,86260
+Lucas,Treasurer of State,,Republican,Sandra O'Brien,41949
+Lucas,Treasurer of State,5.0,Democratic,Richard Cordray,3479
+Lucas,Treasurer of State,5.0,Republican,Sandra O'Brien,3085
+Lucas,U.S. House,5.0,Democratic,Robin Weirauch,3257
+Lucas,U.S. House,5.0,Republican,Paul E. Gillmor,3541
+Lucas,U.S. House,9.0,Democratic,Marcy Kaptur,103283
+Lucas,U.S. House,9.0,Republican,Bradley S. Leavitt,31995
+Lucas,U.S. Senate,,Democratic,Sherrod Brown,90917
+Lucas,U.S. Senate,,Republican,Mike DeWine,44440
+Lucas,U.S. Senate,5.0,Democratic,Sherrod Brown,3713
+Lucas,U.S. Senate,5.0,Republican,Mike DeWine,3219
+Madison,Attorney General,15.0,Democratic,Marc Dann,4972
+Madison,Attorney General,15.0,Republican,Betty Montgomery,8484
+Madison,Auditor of State,15.0,Democratic,Barbara Sykes,5018
+Madison,Auditor of State,15.0,Republican,Mary Taylor,7922
+Madison,Governor/Lieutenant Governor,15.0,Democratic,Ted Strickland,7244
+Madison,Governor/Lieutenant Governor,15.0,Non-partisan,Robert Fitrakis,107
+Madison,Governor/Lieutenant Governor,15.0,Non-partisan,William S. Peirce,275
+Madison,Governor/Lieutenant Governor,15.0,Republican,J. Kenneth Blackwell,5815
+Madison,Secretary of State,15.0,Democratic,Jennifer L. Brunner,5599
+Madison,Secretary of State,15.0,Non-partisan,John A. Eastman,411
+Madison,Secretary of State,15.0,Non-partisan,Timothy J. Kettler,292
+Madison,Secretary of State,15.0,Republican,Greg Hartman,6550
+Madison,Treasurer of State,15.0,Democratic,Richard Cordray,6581
+Madison,Treasurer of State,15.0,Republican,Sandra O'Brien,6483
+Madison,U.S. House,15.0,Democratic,Mary Jo Kilroy,5075
+Madison,U.S. House,15.0,Republican,Deborah Pryce,8337
+Madison,U.S. Senate,15.0,Democratic,Sherrod Brown,6414
+Madison,U.S. Senate,15.0,Republican,Mike DeWine,7110
+Mahoning,Attorney General,17.0,Democratic,Marc Dann,38827
+Mahoning,Attorney General,17.0,Republican,Betty Montgomery,9098
+Mahoning,Attorney General,6.0,Democratic,Marc Dann,30207
+Mahoning,Attorney General,6.0,Republican,Betty Montgomery,14818
+Mahoning,Auditor of State,17.0,Democratic,Barbara Sykes,35210
+Mahoning,Auditor of State,17.0,Republican,Mary Taylor,10697
+Mahoning,Auditor of State,6.0,Democratic,Barbara Sykes,24853
+Mahoning,Auditor of State,6.0,Republican,Mary Taylor,17692
+Mahoning,Governor/Lieutenant Governor,17.0,Democratic,Ted Strickland,39619
+Mahoning,Governor/Lieutenant Governor,17.0,Non-partisan,Robert Fitrakis,592
+Mahoning,Governor/Lieutenant Governor,17.0,Non-partisan,William S. Peirce,838
+Mahoning,Governor/Lieutenant Governor,17.0,Republican,J. Kenneth Blackwell,8214
+Mahoning,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,32457
+Mahoning,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,530
+Mahoning,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,859
+Mahoning,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,12142
+Mahoning,Secretary of State,17.0,Democratic,Jennifer L. Brunner,37747
+Mahoning,Secretary of State,17.0,Non-partisan,John A. Eastman,1123
+Mahoning,Secretary of State,17.0,Non-partisan,Timothy J. Kettler,1213
+Mahoning,Secretary of State,17.0,Republican,Greg Hartman,7315
+Mahoning,Secretary of State,6.0,Democratic,Jennifer L. Brunner,28218
+Mahoning,Secretary of State,6.0,Non-partisan,John A. Eastman,1039
+Mahoning,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,985
+Mahoning,Secretary of State,6.0,Republican,Greg Hartman,13549
+Mahoning,Treasurer of State,17.0,Democratic,Richard Cordray,37601
+Mahoning,Treasurer of State,17.0,Republican,Sandra O'Brien,9336
+Mahoning,Treasurer of State,6.0,Democratic,Richard Cordray,27752
+Mahoning,Treasurer of State,6.0,Republican,Sandra O'Brien,15818
+Mahoning,U.S. House,17.0,Democratic,Tim Ryan,43789
+Mahoning,U.S. House,17.0,Republican,Don Manning,6009
+Mahoning,U.S. House,6.0,Democratic,Charles A. Wilson,27061
+Mahoning,U.S. House,6.0,Republican,Chuck Blasdel,16752
+Mahoning,U.S. Senate,17.0,Democratic,Sherrod Brown,39859
+Mahoning,U.S. Senate,17.0,Republican,Mike DeWine,9212
+Mahoning,U.S. Senate,6.0,Democratic,Sherrod Brown,29805
+Mahoning,U.S. Senate,6.0,Republican,Mike DeWine,15939
+Marion,Attorney General,4.0,Democratic,Marc Dann,9947
+Marion,Attorney General,4.0,Republican,Betty Montgomery,11233
+Marion,Auditor of State,4.0,Democratic,Barbara Sykes,9714
+Marion,Auditor of State,4.0,Republican,Mary Taylor,11071
+Marion,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,11963
+Marion,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,235
+Marion,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,434
+Marion,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,9054
+Marion,Secretary of State,4.0,Democratic,Jennifer L. Brunner,10431
+Marion,Secretary of State,4.0,Non-partisan,John A. Eastman,777
+Marion,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,492
+Marion,Secretary of State,4.0,Republican,Greg Hartman,9066
+Marion,Treasurer of State,4.0,Democratic,Richard Cordray,11174
+Marion,Treasurer of State,4.0,Republican,Sandra O'Brien,9775
+Marion,U.S. House,4.0,Democratic,Richard E. Siferd,9823
+Marion,U.S. House,4.0,Republican,Jim Jordan,11029
+Marion,U.S. Senate,4.0,Democratic,Sherrod Brown,11078
+Marion,U.S. Senate,4.0,Republican,Mike DeWine,10526
+Medina,Attorney General,13.0,Democratic,Marc Dann,10982
+Medina,Attorney General,13.0,Republican,Betty Montgomery,9183
+Medina,Attorney General,16.0,Democratic,Marc Dann,20786
+Medina,Attorney General,16.0,Republican,Betty Montgomery,22469
+Medina,Auditor of State,13.0,Democratic,Barbara Sykes,9391
+Medina,Auditor of State,13.0,Republican,Mary Taylor,10349
+Medina,Auditor of State,16.0,Democratic,Barbara Sykes,18070
+Medina,Auditor of State,16.0,Republican,Mary Taylor,24583
+Medina,Governor/Lieutenant Governor,13.0,Democratic,Ted Strickland,13279
+Medina,Governor/Lieutenant Governor,13.0,Non-partisan,Robert Fitrakis,198
+Medina,Governor/Lieutenant Governor,13.0,Non-partisan,William S. Peirce,382
+Medina,Governor/Lieutenant Governor,13.0,Republican,J. Kenneth Blackwell,7025
+Medina,Governor/Lieutenant Governor,16.0,Democratic,Ted Strickland,25782
+Medina,Governor/Lieutenant Governor,16.0,Non-partisan,Robert Fitrakis,453
+Medina,Governor/Lieutenant Governor,16.0,Non-partisan,William S. Peirce,784
+Medina,Governor/Lieutenant Governor,16.0,Republican,J. Kenneth Blackwell,17604
+Medina,Secretary of State,13.0,Democratic,Jennifer L. Brunner,10668
+Medina,Secretary of State,13.0,Non-partisan,John A. Eastman,442
+Medina,Secretary of State,13.0,Non-partisan,Timothy J. Kettler,575
+Medina,Secretary of State,13.0,Republican,Greg Hartman,7665
+Medina,Secretary of State,16.0,Democratic,Jennifer L. Brunner,20152
+Medina,Secretary of State,16.0,Non-partisan,John A. Eastman,1009
+Medina,Secretary of State,16.0,Non-partisan,Timothy J. Kettler,916
+Medina,Secretary of State,16.0,Republican,Greg Hartman,19637
+Medina,Treasurer of State,13.0,Democratic,Richard Cordray,11236
+Medina,Treasurer of State,13.0,Republican,Sandra O'Brien,8382
+Medina,Treasurer of State,16.0,Democratic,Richard Cordray,21196
+Medina,Treasurer of State,16.0,Republican,Sandra O'Brien,20996
+Medina,U.S. House,13.0,Democratic,Betty Sutton,11694
+Medina,U.S. House,13.0,Republican,Craig Foltin,8063
+Medina,U.S. House,16.0,Democratic,Thomas Shaw,18610
+Medina,U.S. House,16.0,Republican,Ralph Regula,24208
+Medina,U.S. Senate,13.0,Democratic,Sherrod Brown,12615
+Medina,U.S. Senate,13.0,Republican,Mike DeWine,8324
+Medina,U.S. Senate,16.0,Democratic,Sherrod Brown,23771
+Medina,U.S. Senate,16.0,Republican,Mike DeWine,20862
+Meigs,Attorney General,6.0,Democratic,Marc Dann,3591
+Meigs,Attorney General,6.0,Republican,Betty Montgomery,3942
+Meigs,Auditor of State,6.0,Democratic,Barbara Sykes,3726
+Meigs,Auditor of State,6.0,Republican,Mary Taylor,3466
+Meigs,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,5295
+Meigs,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,40
+Meigs,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,84
+Meigs,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,2285
+Meigs,Secretary of State,6.0,Democratic,Jennifer L. Brunner,3658
+Meigs,Secretary of State,6.0,Non-partisan,John A. Eastman,385
+Meigs,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,114
+Meigs,Secretary of State,6.0,Republican,Greg Hartman,3101
+Meigs,Treasurer of State,6.0,Democratic,Richard Cordray,3701
+Meigs,Treasurer of State,6.0,Republican,Sandra O'Brien,3621
+Meigs,U.S. House,6.0,Democratic,Charles A. Wilson,4011
+Meigs,U.S. House,6.0,Republican,Chuck Blasdel,3403
+Meigs,U.S. Senate,6.0,Democratic,Sherrod Brown,3990
+Meigs,U.S. Senate,6.0,Republican,Mike DeWine,3769
+Mercer,Attorney General,5.0,Democratic,Marc Dann,1586
+Mercer,Attorney General,5.0,Republican,Betty Montgomery,2536
+Mercer,Attorney General,8.0,Democratic,Marc Dann,3862
+Mercer,Attorney General,8.0,Republican,Betty Montgomery,6934
+Mercer,Auditor of State,5.0,Democratic,Barbara Sykes,1637
+Mercer,Auditor of State,5.0,Republican,Mary Taylor,2415
+Mercer,Auditor of State,8.0,Democratic,Barbara Sykes,3854
+Mercer,Auditor of State,8.0,Republican,Mary Taylor,6715
+Mercer,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,1659
+Mercer,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,62
+Mercer,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,127
+Mercer,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,2434
+Mercer,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,4033
+Mercer,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,127
+Mercer,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,201
+Mercer,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,6995
+Mercer,Secretary of State,5.0,Democratic,Jennifer L. Brunner,1571
+Mercer,Secretary of State,5.0,Non-partisan,John A. Eastman,117
+Mercer,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,131
+Mercer,Secretary of State,5.0,Republican,Greg Hartman,2215
+Mercer,Secretary of State,8.0,Democratic,Jennifer L. Brunner,3843
+Mercer,Secretary of State,8.0,Non-partisan,John A. Eastman,299
+Mercer,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,353
+Mercer,Secretary of State,8.0,Republican,Greg Hartman,6058
+Mercer,Treasurer of State,5.0,Democratic,Richard Cordray,1587
+Mercer,Treasurer of State,5.0,Republican,Sandra O'Brien,2490
+Mercer,Treasurer of State,8.0,Democratic,Richard Cordray,3977
+Mercer,Treasurer of State,8.0,Republican,Sandra O'Brien,6757
+Mercer,U.S. House,5.0,Democratic,Robin Weirauch,1117
+Mercer,U.S. House,5.0,Republican,Paul E. Gillmor,2406
+Mercer,U.S. House,8.0,Democratic,Mort Meier,3163
+Mercer,U.S. House,8.0,Republican,John A. Boehner,8759
+Mercer,U.S. Senate,5.0,Democratic,Sherrod Brown,1648
+Mercer,U.S. Senate,5.0,Republican,Mike DeWine,2589
+Mercer,U.S. Senate,8.0,Democratic,Sherrod Brown,3765
+Mercer,U.S. Senate,8.0,Republican,Mike DeWine,7529
+Miami,Attorney General,8.0,Democratic,Marc Dann,14064
+Miami,Attorney General,8.0,Republican,Betty Montgomery,19728
+Miami,Auditor of State,8.0,Democratic,Barbara Sykes,12584
+Miami,Auditor of State,8.0,Republican,Mary Taylor,22212
+Miami,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,17263
+Miami,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,521
+Miami,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,870
+Miami,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,18395
+Miami,Secretary of State,8.0,Democratic,Jennifer L. Brunner,14477
+Miami,Secretary of State,8.0,Non-partisan,John A. Eastman,943
+Miami,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,603
+Miami,Secretary of State,8.0,Republican,Greg Hartman,19869
+Miami,Treasurer of State,8.0,Democratic,Richard Cordray,15111
+Miami,Treasurer of State,8.0,Republican,Sandra O'Brien,20938
+Miami,U.S. House,8.0,Democratic,Mort Meier,11967
+Miami,U.S. House,8.0,Republican,John A. Boehner,24762
+Miami,U.S. Senate,8.0,Democratic,Sherrod Brown,15734
+Miami,U.S. Senate,8.0,Republican,Mike DeWine,21299
+Monroe,Attorney General,6.0,Democratic,Marc Dann,4029
+Monroe,Attorney General,6.0,Republican,Betty Montgomery,1790
+Monroe,Auditor of State,6.0,Democratic,Barbara Sykes,4203
+Monroe,Auditor of State,6.0,Republican,Mary Taylor,1568
+Monroe,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,4682
+Monroe,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,48
+Monroe,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,99
+Monroe,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,1237
+Monroe,Secretary of State,6.0,Democratic,Jennifer L. Brunner,4131
+Monroe,Secretary of State,6.0,Non-partisan,John A. Eastman,172
+Monroe,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,121
+Monroe,Secretary of State,6.0,Republican,Greg Hartman,1339
+Monroe,Treasurer of State,6.0,Democratic,Richard Cordray,4165
+Monroe,Treasurer of State,6.0,Republican,Sandra O'Brien,1636
+Monroe,U.S. House,6.0,Democratic,Charles A. Wilson,4722
+Monroe,U.S. House,6.0,Republican,Chuck Blasdel,1378
+Monroe,U.S. Senate,6.0,Democratic,Sherrod Brown,4131
+Monroe,U.S. Senate,6.0,Republican,Mike DeWine,1935
+Montgomery,Attorney General,3.0,Democratic,Marc Dann,75838
+Montgomery,Attorney General,3.0,Republican,Betty Montgomery,77730
+Montgomery,Attorney General,8.0,Democratic,Marc Dann,12699
+Montgomery,Attorney General,8.0,Republican,Betty Montgomery,12691
+Montgomery,Auditor of State,3.0,Democratic,Barbara Sykes,75419
+Montgomery,Auditor of State,3.0,Republican,Mary Taylor,80759
+Montgomery,Auditor of State,8.0,Democratic,Barbara Sykes,12327
+Montgomery,Auditor of State,8.0,Republican,Mary Taylor,13355
+Montgomery,Governor/Lieutenant Governor,3.0,Democratic,Ted Strickland,92360
+Montgomery,Governor/Lieutenant Governor,3.0,Non-partisan,Robert Fitrakis,1715
+Montgomery,Governor/Lieutenant Governor,3.0,Non-partisan,William S. Peirce,2755
+Montgomery,Governor/Lieutenant Governor,3.0,Republican,J. Kenneth Blackwell,65704
+Montgomery,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,15233
+Montgomery,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,345
+Montgomery,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,557
+Montgomery,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,10485
+Montgomery,Secretary of State,3.0,Democratic,Jennifer L. Brunner,83626
+Montgomery,Secretary of State,3.0,Non-partisan,John A. Eastman,3002
+Montgomery,Secretary of State,3.0,Non-partisan,Timothy J. Kettler,2206
+Montgomery,Secretary of State,3.0,Republican,Greg Hartman,66729
+Montgomery,Secretary of State,8.0,Democratic,Jennifer L. Brunner,13663
+Montgomery,Secretary of State,8.0,Non-partisan,John A. Eastman,675
+Montgomery,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,403
+Montgomery,Secretary of State,8.0,Republican,Greg Hartman,10837
+Montgomery,Treasurer of State,3.0,Democratic,Richard Cordray,86863
+Montgomery,Treasurer of State,3.0,Republican,Sandra O'Brien,68856
+Montgomery,Treasurer of State,8.0,Democratic,Richard Cordray,14095
+Montgomery,Treasurer of State,8.0,Republican,Sandra O'Brien,11552
+Montgomery,U.S. House,3.0,Democratic,Richard Chema,70340
+Montgomery,U.S. House,3.0,Republican,Michael R. Turner,87665
+Montgomery,U.S. House,8.0,Democratic,Mort Meier,12034
+Montgomery,U.S. House,8.0,Republican,John A. Boehner,13421
+Montgomery,U.S. Senate,3.0,Democratic,Sherrod Brown,86299
+Montgomery,U.S. Senate,3.0,Republican,Mike DeWine,75919
+Montgomery,U.S. Senate,8.0,Democratic,Sherrod Brown,14192
+Montgomery,U.S. Senate,8.0,Republican,Mike DeWine,12403
+Morgan,Attorney General,18.0,Democratic,Marc Dann,2487
+Morgan,Attorney General,18.0,Republican,Betty Montgomery,2572
+Morgan,Auditor of State,18.0,Democratic,Barbara Sykes,2422
+Morgan,Auditor of State,18.0,Republican,Mary Taylor,2589
+Morgan,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,3468
+Morgan,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,60
+Morgan,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,109
+Morgan,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,1876
+Morgan,Secretary of State,18.0,Democratic,Jennifer L. Brunner,2631
+Morgan,Secretary of State,18.0,Non-partisan,John A. Eastman,172
+Morgan,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,135
+Morgan,Secretary of State,18.0,Republican,Greg Hartman,2197
+Morgan,Treasurer of State,18.0,Democratic,Richard Cordray,2879
+Morgan,Treasurer of State,18.0,Republican,Sandra O'Brien,2334
+Morgan,U.S. House,18.0,Democratic,Zack Space,3012
+Morgan,U.S. House,18.0,Republican,Joy Padgett,2351
+Morgan,U.S. Senate,18.0,Democratic,Sherrod Brown,2955
+Morgan,U.S. Senate,18.0,Republican,Mike DeWine,2523
+Morrow,Attorney General,4.0,Democratic,Marc Dann,5340
+Morrow,Attorney General,4.0,Republican,Betty Montgomery,6850
+Morrow,Auditor of State,4.0,Democratic,Barbara Sykes,4875
+Morrow,Auditor of State,4.0,Republican,Mary Taylor,7055
+Morrow,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,6425
+Morrow,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,176
+Morrow,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,302
+Morrow,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,5668
+Morrow,Secretary of State,4.0,Democratic,Jennifer L. Brunner,5192
+Morrow,Secretary of State,4.0,Non-partisan,John A. Eastman,442
+Morrow,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,303
+Morrow,Secretary of State,4.0,Republican,Greg Hartman,5924
+Morrow,Treasurer of State,4.0,Democratic,Richard Cordray,5714
+Morrow,Treasurer of State,4.0,Republican,Sandra O'Brien,6311
+Morrow,U.S. House,4.0,Democratic,Richard E. Siferd,5010
+Morrow,U.S. House,4.0,Republican,Jim Jordan,6970
+Morrow,U.S. Senate,4.0,Democratic,Sherrod Brown,5976
+Morrow,U.S. Senate,4.0,Republican,Mike DeWine,6499
+Muskingum,Attorney General,18.0,Democratic,Marc Dann,13935
+Muskingum,Attorney General,18.0,Republican,Betty Montgomery,14050
+Muskingum,Auditor of State,18.0,Democratic,Barbara Sykes,13659
+Muskingum,Auditor of State,18.0,Republican,Mary Taylor,13717
+Muskingum,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,16733
+Muskingum,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,353
+Muskingum,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,557
+Muskingum,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,11073
+Muskingum,Secretary of State,18.0,Democratic,Jennifer L. Brunner,14652
+Muskingum,Secretary of State,18.0,Non-partisan,John A. Eastman,749
+Muskingum,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,611
+Muskingum,Secretary of State,18.0,Republican,Greg Hartman,11458
+Muskingum,Treasurer of State,18.0,Democratic,Richard Cordray,15524
+Muskingum,Treasurer of State,18.0,Republican,Sandra O'Brien,12115
+Muskingum,U.S. House,18.0,Democratic,Zack Space,17224
+Muskingum,U.S. House,18.0,Republican,Joy Padgett,11062
+Muskingum,U.S. Senate,18.0,Democratic,Sherrod Brown,15664
+Muskingum,U.S. Senate,18.0,Republican,Mike DeWine,12534
+Noble,Attorney General,6.0,Democratic,Marc Dann,2458
+Noble,Attorney General,6.0,Republican,Betty Montgomery,2563
+Noble,Auditor of State,6.0,Democratic,Barbara Sykes,2579
+Noble,Auditor of State,6.0,Republican,Mary Taylor,2266
+Noble,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,3342
+Noble,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,58
+Noble,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,89
+Noble,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,1583
+Noble,Secretary of State,6.0,Democratic,Jennifer L. Brunner,2555
+Noble,Secretary of State,6.0,Non-partisan,John A. Eastman,167
+Noble,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,147
+Noble,Secretary of State,6.0,Republican,Greg Hartman,1912
+Noble,Treasurer of State,6.0,Democratic,Richard Cordray,2631
+Noble,Treasurer of State,6.0,Republican,Sandra O'Brien,2197
+Noble,U.S. House,6.0,Democratic,Charles A. Wilson,3080
+Noble,U.S. House,6.0,Republican,Chuck Blasdel,1921
+Noble,U.S. Senate,6.0,Democratic,Sherrod Brown,2611
+Noble,U.S. Senate,6.0,Republican,Mike DeWine,2559
+Ottawa,Attorney General,9.0,Democratic,Marc Dann,9741
+Ottawa,Attorney General,9.0,Republican,Betty Montgomery,7768
+Ottawa,Auditor of State,9.0,Democratic,Barbara Sykes,8012
+Ottawa,Auditor of State,9.0,Republican,Mary Taylor,9020
+Ottawa,Governor/Lieutenant Governor,9.0,Democratic,Ted Strickland,10858
+Ottawa,Governor/Lieutenant Governor,9.0,Non-partisan,Robert Fitrakis,196
+Ottawa,Governor/Lieutenant Governor,9.0,Non-partisan,William S. Peirce,344
+Ottawa,Governor/Lieutenant Governor,9.0,Republican,J. Kenneth Blackwell,5809
+Ottawa,Secretary of State,9.0,Democratic,Jennifer L. Brunner,9905
+Ottawa,Secretary of State,9.0,Non-partisan,John A. Eastman,439
+Ottawa,Secretary of State,9.0,Non-partisan,Timothy J. Kettler,274
+Ottawa,Secretary of State,9.0,Republican,Greg Hartman,6157
+Ottawa,Treasurer of State,9.0,Democratic,Richard Cordray,9926
+Ottawa,Treasurer of State,9.0,Republican,Sandra O'Brien,6834
+Ottawa,U.S. House,9.0,Democratic,Marcy Kaptur,11845
+Ottawa,U.S. House,9.0,Republican,Bradley S. Leavitt,5620
+Ottawa,U.S. Senate,9.0,Democratic,Sherrod Brown,10548
+Ottawa,U.S. Senate,9.0,Republican,Mike DeWine,6972
+Paulding,Attorney General,5.0,Democratic,Marc Dann,3457
+Paulding,Attorney General,5.0,Republican,Betty Montgomery,3906
+Paulding,Auditor of State,5.0,Democratic,Barbara Sykes,3436
+Paulding,Auditor of State,5.0,Republican,Mary Taylor,3778
+Paulding,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,3717
+Paulding,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,179
+Paulding,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,305
+Paulding,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,3276
+Paulding,Secretary of State,5.0,Democratic,Jennifer L. Brunner,3375
+Paulding,Secretary of State,5.0,Non-partisan,John A. Eastman,264
+Paulding,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,196
+Paulding,Secretary of State,5.0,Republican,Greg Hartman,3321
+Paulding,Treasurer of State,5.0,Democratic,Richard Cordray,3421
+Paulding,Treasurer of State,5.0,Republican,Sandra O'Brien,3829
+Paulding,U.S. House,5.0,Democratic,Robin Weirauch,3406
+Paulding,U.S. House,5.0,Republican,Paul E. Gillmor,4169
+Paulding,U.S. Senate,5.0,Democratic,Sherrod Brown,3556
+Paulding,U.S. Senate,5.0,Republican,Mike DeWine,3976
+Perry,Attorney General,7.0,Democratic,Marc Dann,6220
+Perry,Attorney General,7.0,Republican,Betty Montgomery,4803
+Perry,Auditor of State,7.0,Democratic,Barbara Sykes,5819
+Perry,Auditor of State,7.0,Republican,Mary Taylor,4918
+Perry,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,7371
+Perry,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,117
+Perry,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,226
+Perry,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,3577
+Perry,Secretary of State,7.0,Democratic,Jennifer L. Brunner,6149
+Perry,Secretary of State,7.0,Non-partisan,John A. Eastman,289
+Perry,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,268
+Perry,Secretary of State,7.0,Republican,Greg Hartman,3971
+Perry,Treasurer of State,7.0,Democratic,Richard Cordray,6617
+Perry,Treasurer of State,7.0,Republican,Sandra O'Brien,4210
+Perry,U.S. House,7.0,Democratic,William R. Conner,5765
+Perry,U.S. House,7.0,Republican,Dave Hobson,5161
+Perry,U.S. Senate,7.0,Democratic,Sherrod Brown,6627
+Perry,U.S. Senate,7.0,Republican,Mike DeWine,4555
+Pickaway,Attorney General,7.0,Democratic,Marc Dann,7736
+Pickaway,Attorney General,7.0,Republican,Betty Montgomery,10005
+Pickaway,Auditor of State,7.0,Democratic,Barbara Sykes,7427
+Pickaway,Auditor of State,7.0,Republican,Mary Taylor,9590
+Pickaway,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,10609
+Pickaway,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,126
+Pickaway,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,268
+Pickaway,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,6953
+Pickaway,Secretary of State,7.0,Democratic,Jennifer L. Brunner,8205
+Pickaway,Secretary of State,7.0,Non-partisan,John A. Eastman,486
+Pickaway,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,376
+Pickaway,Secretary of State,7.0,Republican,Greg Hartman,7787
+Pickaway,Treasurer of State,7.0,Democratic,Richard Cordray,9609
+Pickaway,Treasurer of State,7.0,Republican,Sandra O'Brien,7544
+Pickaway,U.S. House,7.0,Democratic,William R. Conner,7000
+Pickaway,U.S. House,7.0,Republican,Dave Hobson,10531
+Pickaway,U.S. Senate,7.0,Democratic,Sherrod Brown,8858
+Pickaway,U.S. Senate,7.0,Republican,Mike DeWine,9059
+Pike,Attorney General,2.0,Democratic,Marc Dann,4938
+Pike,Attorney General,2.0,Republican,Betty Montgomery,3471
+Pike,Auditor of State,2.0,Democratic,Barbara Sykes,5405
+Pike,Auditor of State,2.0,Republican,Mary Taylor,3472
+Pike,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,7118
+Pike,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,43
+Pike,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,100
+Pike,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,2511
+Pike,Secretary of State,2.0,Democratic,Jennifer L. Brunner,5692
+Pike,Secretary of State,2.0,Non-partisan,John A. Eastman,253
+Pike,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,165
+Pike,Secretary of State,2.0,Republican,Greg Hartman,3090
+Pike,Treasurer of State,2.0,Democratic,Richard Cordray,5924
+Pike,Treasurer of State,2.0,Republican,Sandra O'Brien,3315
+Pike,U.S. House,2.0,Democratic,Victoria Wulsin,5696
+Pike,U.S. House,2.0,Republican,Jean Schmidt,3596
+Pike,U.S. Senate,2.0,Democratic,Sherrod Brown,5845
+Pike,U.S. Senate,2.0,Republican,Mike DeWine,3798
+Portage,Attorney General,14.0,Democratic,Marc Dann,5967
+Portage,Attorney General,14.0,Republican,Betty Montgomery,6045
+Portage,Attorney General,17.0,Democratic,Marc Dann,25658
+Portage,Attorney General,17.0,Republican,Betty Montgomery,16003
+Portage,Auditor of State,14.0,Democratic,Barbara Sykes,5054
+Portage,Auditor of State,14.0,Republican,Mary Taylor,6673
+Portage,Auditor of State,17.0,Democratic,Barbara Sykes,22747
+Portage,Auditor of State,17.0,Republican,Mary Taylor,18341
+Portage,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,7303
+Portage,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,153
+Portage,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,277
+Portage,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,4551
+Portage,Governor/Lieutenant Governor,17.0,Democratic,Ted Strickland,29250
+Portage,Governor/Lieutenant Governor,17.0,Non-partisan,Robert Fitrakis,618
+Portage,Governor/Lieutenant Governor,17.0,Non-partisan,William S. Peirce,1126
+Portage,Governor/Lieutenant Governor,17.0,Republican,J. Kenneth Blackwell,11672
+Portage,Secretary of State,14.0,Democratic,Jennifer L. Brunner,5866
+Portage,Secretary of State,14.0,Non-partisan,John A. Eastman,254
+Portage,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,270
+Portage,Secretary of State,14.0,Republican,Greg Hartman,5083
+Portage,Secretary of State,17.0,Democratic,Jennifer L. Brunner,25613
+Portage,Secretary of State,17.0,Non-partisan,John A. Eastman,1153
+Portage,Secretary of State,17.0,Non-partisan,Timothy J. Kettler,1089
+Portage,Secretary of State,17.0,Republican,Greg Hartman,12354
+Portage,Treasurer of State,14.0,Democratic,Richard Cordray,6061
+Portage,Treasurer of State,14.0,Republican,Sandra O'Brien,5613
+Portage,Treasurer of State,17.0,Democratic,Richard Cordray,26560
+Portage,Treasurer of State,17.0,Republican,Sandra O'Brien,14103
+Portage,U.S. House,14.0,Democratic,Lewis R. Katz,4857
+Portage,U.S. House,14.0,Non-partisan,Werner J. Lange,574
+Portage,U.S. House,14.0,Republican,Steven C. LaTourette,6543
+Portage,U.S. House,17.0,Democratic,Tim Ryan,30582
+Portage,U.S. House,17.0,Republican,Don Manning,10979
+Portage,U.S. Senate,14.0,Democratic,Sherrod Brown,6635
+Portage,U.S. Senate,14.0,Republican,Mike DeWine,5650
+Portage,U.S. Senate,17.0,Democratic,Sherrod Brown,27941
+Portage,U.S. Senate,17.0,Republican,Mike DeWine,14425
+Preble,Attorney General,8.0,Democratic,Marc Dann,6714
+Preble,Attorney General,8.0,Republican,Betty Montgomery,8738
+Preble,Auditor of State,8.0,Democratic,Barbara Sykes,6073
+Preble,Auditor of State,8.0,Republican,Mary Taylor,9285
+Preble,Governor/Lieutenant Governor,8.0,Democratic,Ted Strickland,7863
+Preble,Governor/Lieutenant Governor,8.0,Non-partisan,Robert Fitrakis,184
+Preble,Governor/Lieutenant Governor,8.0,Non-partisan,William S. Peirce,385
+Preble,Governor/Lieutenant Governor,8.0,Republican,J. Kenneth Blackwell,7096
+Preble,Secretary of State,8.0,Democratic,Jennifer L. Brunner,6525
+Preble,Secretary of State,8.0,Non-partisan,John A. Eastman,491
+Preble,Secretary of State,8.0,Non-partisan,Timothy J. Kettler,324
+Preble,Secretary of State,8.0,Republican,Greg Hartman,7779
+Preble,Treasurer of State,8.0,Democratic,Richard Cordray,6918
+Preble,Treasurer of State,8.0,Republican,Sandra O'Brien,8245
+Preble,U.S. House,8.0,Democratic,Mort Meier,5743
+Preble,U.S. House,8.0,Republican,John A. Boehner,9878
+Preble,U.S. Senate,8.0,Democratic,Sherrod Brown,7221
+Preble,U.S. Senate,8.0,Republican,Mike DeWine,8436
+Putnam,Attorney General,5.0,Democratic,Marc Dann,5975
+Putnam,Attorney General,5.0,Republican,Betty Montgomery,7924
+Putnam,Auditor of State,5.0,Democratic,Barbara Sykes,4729
+Putnam,Auditor of State,5.0,Republican,Mary Taylor,8596
+Putnam,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,6439
+Putnam,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,134
+Putnam,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,339
+Putnam,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,7248
+Putnam,Secretary of State,5.0,Democratic,Jennifer L. Brunner,5165
+Putnam,Secretary of State,5.0,Non-partisan,John A. Eastman,427
+Putnam,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,317
+Putnam,Secretary of State,5.0,Republican,Greg Hartman,7272
+Putnam,Treasurer of State,5.0,Democratic,Richard Cordray,5326
+Putnam,Treasurer of State,5.0,Republican,Sandra O'Brien,7953
+Putnam,U.S. House,5.0,Democratic,Robin Weirauch,4674
+Putnam,U.S. House,5.0,Republican,Paul E. Gillmor,9415
+Putnam,U.S. Senate,5.0,Democratic,Sherrod Brown,5600
+Putnam,U.S. Senate,5.0,Republican,Mike DeWine,8539
+Richland,Attorney General,4.0,Democratic,Marc Dann,22657
+Richland,Attorney General,4.0,Republican,Betty Montgomery,21931
+Richland,Auditor of State,4.0,Democratic,Barbara Sykes,20492
+Richland,Auditor of State,4.0,Republican,Mary Taylor,22897
+Richland,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,24398
+Richland,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,518
+Richland,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,1011
+Richland,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,19855
+Richland,Secretary of State,4.0,Democratic,Jennifer L. Brunner,21217
+Richland,Secretary of State,4.0,Non-partisan,John A. Eastman,1102
+Richland,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,866
+Richland,Secretary of State,4.0,Republican,Greg Hartman,20074
+Richland,Treasurer of State,4.0,Democratic,Richard Cordray,22697
+Richland,Treasurer of State,4.0,Republican,Sandra O'Brien,20620
+Richland,U.S. House,4.0,Democratic,Richard E. Siferd,21108
+Richland,U.S. House,4.0,Republican,Jim Jordan,22371
+Richland,U.S. Senate,4.0,Democratic,Sherrod Brown,24431
+Richland,U.S. Senate,4.0,Republican,Mike DeWine,21451
+Ross,Attorney General,18.0,Democratic,Marc Dann,10299
+Ross,Attorney General,18.0,Republican,Betty Montgomery,9770
+Ross,Attorney General,7.0,Democratic,Marc Dann,1533
+Ross,Attorney General,7.0,Republican,Betty Montgomery,1717
+Ross,Auditor of State,18.0,Democratic,Barbara Sykes,10206
+Ross,Auditor of State,18.0,Republican,Mary Taylor,9117
+Ross,Auditor of State,7.0,Democratic,Barbara Sykes,1476
+Ross,Auditor of State,7.0,Republican,Mary Taylor,1614
+Ross,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,13773
+Ross,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,103
+Ross,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,289
+Ross,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,6361
+Ross,Governor/Lieutenant Governor,7.0,Democratic,Ted Strickland,2157
+Ross,Governor/Lieutenant Governor,7.0,Non-partisan,Robert Fitrakis,18
+Ross,Governor/Lieutenant Governor,7.0,Non-partisan,William S. Peirce,43
+Ross,Governor/Lieutenant Governor,7.0,Republican,J. Kenneth Blackwell,1091
+Ross,Secretary of State,18.0,Democratic,Jennifer L. Brunner,10741
+Ross,Secretary of State,18.0,Non-partisan,John A. Eastman,516
+Ross,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,401
+Ross,Secretary of State,18.0,Republican,Greg Hartman,7666
+Ross,Secretary of State,7.0,Democratic,Jennifer L. Brunner,1598
+Ross,Secretary of State,7.0,Non-partisan,John A. Eastman,75
+Ross,Secretary of State,7.0,Non-partisan,Timothy J. Kettler,72
+Ross,Secretary of State,7.0,Republican,Greg Hartman,1356
+Ross,Treasurer of State,18.0,Democratic,Richard Cordray,11386
+Ross,Treasurer of State,18.0,Republican,Sandra O'Brien,7975
+Ross,Treasurer of State,7.0,Democratic,Richard Cordray,1689
+Ross,Treasurer of State,7.0,Republican,Sandra O'Brien,1424
+Ross,U.S. House,18.0,Democratic,Zack Space,12621
+Ross,U.S. House,18.0,Republican,Joy Padgett,7140
+Ross,U.S. House,7.0,Democratic,William R. Conner,1374
+Ross,U.S. House,7.0,Republican,Dave Hobson,1833
+Ross,U.S. Senate,18.0,Democratic,Sherrod Brown,11358
+Ross,U.S. Senate,18.0,Republican,Mike DeWine,8928
+Ross,U.S. Senate,7.0,Democratic,Sherrod Brown,1703
+Ross,U.S. Senate,7.0,Republican,Mike DeWine,1573
+Sandusky,Attorney General,5.0,Democratic,Marc Dann,11680
+Sandusky,Attorney General,5.0,Republican,Betty Montgomery,10005
+Sandusky,Auditor of State,5.0,Democratic,Barbara Sykes,9809
+Sandusky,Auditor of State,5.0,Republican,Mary Taylor,12368
+Sandusky,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,13473
+Sandusky,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,310
+Sandusky,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,484
+Sandusky,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,8467
+Sandusky,Secretary of State,5.0,Democratic,Jennifer L. Brunner,11971
+Sandusky,Secretary of State,5.0,Non-partisan,John A. Eastman,674
+Sandusky,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,493
+Sandusky,Secretary of State,5.0,Republican,Greg Hartman,8678
+Sandusky,Treasurer of State,5.0,Democratic,Richard Cordray,11839
+Sandusky,Treasurer of State,5.0,Republican,Sandra O'Brien,9989
+Sandusky,U.S. House,5.0,Democratic,Robin Weirauch,9742
+Sandusky,U.S. House,5.0,Republican,Paul E. Gillmor,13297
+Sandusky,U.S. Senate,5.0,Democratic,Sherrod Brown,12899
+Sandusky,U.S. Senate,5.0,Republican,Mike DeWine,9983
+Scioto,Attorney General,2.0,Democratic,Marc Dann,8393
+Scioto,Attorney General,2.0,Republican,Betty Montgomery,6152
+Scioto,Attorney General,6.0,Democratic,Marc Dann,5949
+Scioto,Attorney General,6.0,Republican,Betty Montgomery,5021
+Scioto,Auditor of State,2.0,Democratic,Barbara Sykes,8964
+Scioto,Auditor of State,2.0,Republican,Mary Taylor,5093
+Scioto,Auditor of State,6.0,Democratic,Barbara Sykes,6328
+Scioto,Auditor of State,6.0,Republican,Mary Taylor,4298
+Scioto,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,11593
+Scioto,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,41
+Scioto,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,104
+Scioto,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,3255
+Scioto,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,8191
+Scioto,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,34
+Scioto,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,77
+Scioto,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,3073
+Scioto,Secretary of State,2.0,Democratic,Jennifer L. Brunner,8772
+Scioto,Secretary of State,2.0,Non-partisan,John A. Eastman,401
+Scioto,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,235
+Scioto,Secretary of State,2.0,Republican,Greg Hartman,4698
+Scioto,Secretary of State,6.0,Democratic,Jennifer L. Brunner,6121
+Scioto,Secretary of State,6.0,Non-partisan,John A. Eastman,293
+Scioto,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,168
+Scioto,Secretary of State,6.0,Republican,Greg Hartman,4039
+Scioto,Treasurer of State,2.0,Democratic,Richard Cordray,8937
+Scioto,Treasurer of State,2.0,Republican,Sandra O'Brien,5103
+Scioto,Treasurer of State,6.0,Democratic,Richard Cordray,6299
+Scioto,Treasurer of State,6.0,Republican,Sandra O'Brien,4329
+Scioto,U.S. House,2.0,Democratic,Victoria Wulsin,8914
+Scioto,U.S. House,2.0,Republican,Jean Schmidt,5256
+Scioto,U.S. House,6.0,Democratic,Charles A. Wilson,7020
+Scioto,U.S. House,6.0,Republican,Chuck Blasdel,4245
+Scioto,U.S. Senate,2.0,Democratic,Sherrod Brown,9314
+Scioto,U.S. Senate,2.0,Republican,Mike DeWine,5553
+Scioto,U.S. Senate,6.0,Democratic,Sherrod Brown,6552
+Scioto,U.S. Senate,6.0,Republican,Mike DeWine,4755
+Seneca,Attorney General,5.0,Democratic,Marc Dann,10943
+Seneca,Attorney General,5.0,Republican,Betty Montgomery,9053
+Seneca,Auditor of State,5.0,Democratic,Barbara Sykes,8175
+Seneca,Auditor of State,5.0,Republican,Mary Taylor,11289
+Seneca,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,11387
+Seneca,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,234
+Seneca,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,419
+Seneca,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,8011
+Seneca,Secretary of State,5.0,Democratic,Jennifer L. Brunner,9956
+Seneca,Secretary of State,5.0,Non-partisan,John A. Eastman,678
+Seneca,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,477
+Seneca,Secretary of State,5.0,Republican,Greg Hartman,8129
+Seneca,Treasurer of State,5.0,Democratic,Richard Cordray,10038
+Seneca,Treasurer of State,5.0,Republican,Sandra O'Brien,9294
+Seneca,U.S. House,5.0,Democratic,Robin Weirauch,8204
+Seneca,U.S. House,5.0,Republican,Paul E. Gillmor,12103
+Seneca,U.S. Senate,5.0,Democratic,Sherrod Brown,10742
+Seneca,U.S. Senate,5.0,Republican,Mike DeWine,9343
+Shelby,Attorney General,4.0,Democratic,Marc Dann,6646
+Shelby,Attorney General,4.0,Republican,Betty Montgomery,9556
+Shelby,Auditor of State,4.0,Democratic,Barbara Sykes,6412
+Shelby,Auditor of State,4.0,Republican,Mary Taylor,10001
+Shelby,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,8061
+Shelby,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,206
+Shelby,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,400
+Shelby,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,8358
+Shelby,Secretary of State,4.0,Democratic,Jennifer L. Brunner,6614
+Shelby,Secretary of State,4.0,Non-partisan,John A. Eastman,601
+Shelby,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,512
+Shelby,Secretary of State,4.0,Republican,Greg Hartman,8392
+Shelby,Treasurer of State,4.0,Democratic,Richard Cordray,7065
+Shelby,Treasurer of State,4.0,Republican,Sandra O'Brien,9217
+Shelby,U.S. House,4.0,Democratic,Richard E. Siferd,5215
+Shelby,U.S. House,4.0,Republican,Jim Jordan,12060
+Shelby,U.S. Senate,4.0,Democratic,Sherrod Brown,7122
+Shelby,U.S. Senate,4.0,Republican,Mike DeWine,10101
+Stark,Attorney General,16.0,Democratic,Marc Dann,75584
+Stark,Attorney General,16.0,Republican,Betty Montgomery,61424
+Stark,Auditor of State,16.0,Democratic,Barbara Sykes,68118
+Stark,Auditor of State,16.0,Republican,Mary Taylor,66685
+Stark,Governor/Lieutenant Governor,16.0,Democratic,Ted Strickland,89416
+Stark,Governor/Lieutenant Governor,16.0,Non-partisan,Robert Fitrakis,1795
+Stark,Governor/Lieutenant Governor,16.0,Non-partisan,William S. Peirce,2787
+Stark,Governor/Lieutenant Governor,16.0,Republican,J. Kenneth Blackwell,45413
+Stark,Secretary of State,16.0,Democratic,Jennifer L. Brunner,74751
+Stark,Secretary of State,16.0,Non-partisan,John A. Eastman,3369
+Stark,Secretary of State,16.0,Non-partisan,Timothy J. Kettler,5248
+Stark,Secretary of State,16.0,Republican,Greg Hartman,49935
+Stark,Treasurer of State,16.0,Democratic,Richard Cordray,81002
+Stark,Treasurer of State,16.0,Republican,Sandra O'Brien,53382
+Stark,U.S. House,16.0,Democratic,Thomas Shaw,59112
+Stark,U.S. House,16.0,Republican,Ralph Regula,80722
+Stark,U.S. Senate,16.0,Democratic,Sherrod Brown,79900
+Stark,U.S. Senate,16.0,Republican,Mike DeWine,59353
+Summit,Attorney General,13.0,Democratic,Marc Dann,60736
+Summit,Attorney General,13.0,Republican,Betty Montgomery,38325
+Summit,Attorney General,14.0,Democratic,Marc Dann,27872
+Summit,Attorney General,14.0,Republican,Betty Montgomery,25807
+Summit,Attorney General,17.0,Democratic,Marc Dann,26251
+Summit,Attorney General,17.0,Republican,Betty Montgomery,16295
+Summit,Auditor of State,13.0,Democratic,Barbara Sykes,56532
+Summit,Auditor of State,13.0,Republican,Mary Taylor,41833
+Summit,Auditor of State,14.0,Democratic,Barbara Sykes,23739
+Summit,Auditor of State,14.0,Republican,Mary Taylor,28469
+Summit,Auditor of State,17.0,Democratic,Barbara Sykes,23369
+Summit,Auditor of State,17.0,Republican,Mary Taylor,18889
+Summit,Governor/Lieutenant Governor,13.0,Democratic,Ted Strickland,70468
+Summit,Governor/Lieutenant Governor,13.0,Non-partisan,Robert Fitrakis,1043
+Summit,Governor/Lieutenant Governor,13.0,Non-partisan,William S. Peirce,1680
+Summit,Governor/Lieutenant Governor,13.0,Republican,J. Kenneth Blackwell,26941
+Summit,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,34243
+Summit,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,408
+Summit,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,879
+Summit,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,18938
+Summit,Governor/Lieutenant Governor,17.0,Democratic,Ted Strickland,30436
+Summit,Governor/Lieutenant Governor,17.0,Non-partisan,Robert Fitrakis,430
+Summit,Governor/Lieutenant Governor,17.0,Non-partisan,William S. Peirce,787
+Summit,Governor/Lieutenant Governor,17.0,Republican,J. Kenneth Blackwell,11465
+Summit,Secretary of State,13.0,Democratic,Jennifer L. Brunner,61997
+Summit,Secretary of State,13.0,Non-partisan,John A. Eastman,2713
+Summit,Secretary of State,13.0,Non-partisan,Timothy J. Kettler,1852
+Summit,Secretary of State,13.0,Republican,Greg Hartman,28912
+Summit,Secretary of State,14.0,Democratic,Jennifer L. Brunner,27589
+Summit,Secretary of State,14.0,Non-partisan,John A. Eastman,1094
+Summit,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,863
+Summit,Secretary of State,14.0,Republican,Greg Hartman,21251
+Summit,Secretary of State,17.0,Democratic,Jennifer L. Brunner,26435
+Summit,Secretary of State,17.0,Non-partisan,John A. Eastman,1251
+Summit,Secretary of State,17.0,Non-partisan,Timothy J. Kettler,854
+Summit,Secretary of State,17.0,Republican,Greg Hartman,12216
+Summit,Treasurer of State,13.0,Democratic,Richard Cordray,64802
+Summit,Treasurer of State,13.0,Republican,Sandra O'Brien,31222
+Summit,Treasurer of State,14.0,Democratic,Richard Cordray,28622
+Summit,Treasurer of State,14.0,Republican,Sandra O'Brien,22413
+Summit,Treasurer of State,17.0,Democratic,Richard Cordray,27678
+Summit,Treasurer of State,17.0,Republican,Sandra O'Brien,13351
+Summit,U.S. House,13.0,Democratic,Betty Sutton,63986
+Summit,U.S. House,13.0,Republican,Craig Foltin,30750
+Summit,U.S. House,14.0,Democratic,Lewis R. Katz,22999
+Summit,U.S. House,14.0,Non-partisan,Werner J. Lange,2116
+Summit,U.S. House,14.0,Republican,Steven C. LaTourette,28023
+Summit,U.S. House,17.0,Democratic,Tim Ryan,31838
+Summit,U.S. House,17.0,Republican,Don Manning,11673
+Summit,U.S. Senate,13.0,Democratic,Sherrod Brown,67330
+Summit,U.S. Senate,13.0,Republican,Mike DeWine,33637
+Summit,U.S. Senate,14.0,Democratic,Sherrod Brown,30687
+Summit,U.S. Senate,14.0,Republican,Mike DeWine,24280
+Summit,U.S. Senate,17.0,Democratic,Sherrod Brown,28759
+Summit,U.S. Senate,17.0,Republican,Mike DeWine,14642
+Trumbull,Attorney General,14.0,Democratic,Marc Dann,2295
+Trumbull,Attorney General,14.0,Republican,Betty Montgomery,1280
+Trumbull,Attorney General,17.0,Democratic,Marc Dann,56618
+Trumbull,Attorney General,17.0,Republican,Betty Montgomery,18503
+Trumbull,Auditor of State,14.0,Democratic,Barbara Sykes,1864
+Trumbull,Auditor of State,14.0,Republican,Mary Taylor,1603
+Trumbull,Auditor of State,17.0,Democratic,Barbara Sykes,50533
+Trumbull,Auditor of State,17.0,Republican,Mary Taylor,23116
+Trumbull,Governor/Lieutenant Governor,14.0,Democratic,Ted Strickland,2255
+Trumbull,Governor/Lieutenant Governor,14.0,Non-partisan,Robert Fitrakis,46
+Trumbull,Governor/Lieutenant Governor,14.0,Non-partisan,William S. Peirce,102
+Trumbull,Governor/Lieutenant Governor,14.0,Republican,J. Kenneth Blackwell,1269
+Trumbull,Governor/Lieutenant Governor,17.0,Democratic,Ted Strickland,57906
+Trumbull,Governor/Lieutenant Governor,17.0,Non-partisan,Robert Fitrakis,843
+Trumbull,Governor/Lieutenant Governor,17.0,Non-partisan,William S. Peirce,1410
+Trumbull,Governor/Lieutenant Governor,17.0,Republican,J. Kenneth Blackwell,17287
+Trumbull,Secretary of State,14.0,Democratic,Jennifer L. Brunner,1967
+Trumbull,Secretary of State,14.0,Non-partisan,John A. Eastman,112
+Trumbull,Secretary of State,14.0,Non-partisan,Timothy J. Kettler,106
+Trumbull,Secretary of State,14.0,Republican,Greg Hartman,1305
+Trumbull,Secretary of State,17.0,Democratic,Jennifer L. Brunner,52485
+Trumbull,Secretary of State,17.0,Non-partisan,John A. Eastman,1836
+Trumbull,Secretary of State,17.0,Non-partisan,Timothy J. Kettler,1680
+Trumbull,Secretary of State,17.0,Republican,Greg Hartman,17770
+Trumbull,Treasurer of State,14.0,Democratic,Richard Cordray,1976
+Trumbull,Treasurer of State,14.0,Republican,Sandra O'Brien,1546
+Trumbull,Treasurer of State,17.0,Democratic,Richard Cordray,52922
+Trumbull,Treasurer of State,17.0,Republican,Sandra O'Brien,21411
+Trumbull,U.S. House,14.0,Democratic,Lewis R. Katz,1637
+Trumbull,U.S. House,14.0,Non-partisan,Werner J. Lange,256
+Trumbull,U.S. House,14.0,Republican,Steven C. LaTourette,1628
+Trumbull,U.S. House,17.0,Democratic,Tim Ryan,64160
+Trumbull,U.S. House,17.0,Republican,Don Manning,13264
+Trumbull,U.S. Senate,14.0,Democratic,Sherrod Brown,2211
+Trumbull,U.S. Senate,14.0,Republican,Mike DeWine,1430
+Trumbull,U.S. Senate,17.0,Democratic,Sherrod Brown,56375
+Trumbull,U.S. Senate,17.0,Republican,Mike DeWine,20090
+Tuscarawas,Attorney General,18.0,Democratic,Marc Dann,16441
+Tuscarawas,Attorney General,18.0,Republican,Betty Montgomery,13776
+Tuscarawas,Auditor of State,18.0,Democratic,Barbara Sykes,15703
+Tuscarawas,Auditor of State,18.0,Republican,Mary Taylor,14203
+Tuscarawas,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,20556
+Tuscarawas,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,311
+Tuscarawas,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,584
+Tuscarawas,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,10134
+Tuscarawas,Secretary of State,18.0,Democratic,Jennifer L. Brunner,17322
+Tuscarawas,Secretary of State,18.0,Non-partisan,John A. Eastman,1220
+Tuscarawas,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,1306
+Tuscarawas,Secretary of State,18.0,Republican,Greg Hartman,9651
+Tuscarawas,Treasurer of State,18.0,Democratic,Richard Cordray,18715
+Tuscarawas,Treasurer of State,18.0,Republican,Sandra O'Brien,11308
+Tuscarawas,U.S. House,18.0,Democratic,Zack Space,22518
+Tuscarawas,U.S. House,18.0,Republican,Joy Padgett,8458
+Tuscarawas,U.S. Senate,18.0,Democratic,Sherrod Brown,17360
+Tuscarawas,U.S. Senate,18.0,Republican,Mike DeWine,14024
+Union,Attorney General,15.0,Democratic,Marc Dann,5890
+Union,Attorney General,15.0,Republican,Betty Montgomery,10849
+Union,Auditor of State,15.0,Democratic,Barbara Sykes,5464
+Union,Auditor of State,15.0,Republican,Mary Taylor,10865
+Union,Governor/Lieutenant Governor,15.0,Democratic,Ted Strickland,7689
+Union,Governor/Lieutenant Governor,15.0,Non-partisan,Robert Fitrakis,183
+Union,Governor/Lieutenant Governor,15.0,Non-partisan,William S. Peirce,389
+Union,Governor/Lieutenant Governor,15.0,Republican,J. Kenneth Blackwell,8613
+Union,Secretary of State,15.0,Democratic,Jennifer L. Brunner,6241
+Union,Secretary of State,15.0,Non-partisan,John A. Eastman,525
+Union,Secretary of State,15.0,Non-partisan,Timothy J. Kettler,310
+Union,Secretary of State,15.0,Republican,Greg Hartman,9147
+Union,Treasurer of State,15.0,Democratic,Richard Cordray,6853
+Union,Treasurer of State,15.0,Republican,Sandra O'Brien,9420
+Union,U.S. House,15.0,Democratic,Mary Jo Kilroy,5620
+Union,U.S. House,15.0,Republican,Deborah Pryce,10966
+Union,U.S. Senate,15.0,Democratic,Sherrod Brown,6881
+Union,U.S. Senate,15.0,Republican,Mike DeWine,9950
+Van Wert,Attorney General,5.0,Democratic,Marc Dann,3958
+Van Wert,Attorney General,5.0,Republican,Betty Montgomery,6323
+Van Wert,Auditor of State,5.0,Democratic,Barbara Sykes,4016
+Van Wert,Auditor of State,5.0,Republican,Mary Taylor,6053
+Van Wert,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,4514
+Van Wert,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,184
+Van Wert,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,379
+Van Wert,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,5331
+Van Wert,Secretary of State,5.0,Democratic,Jennifer L. Brunner,4028
+Van Wert,Secretary of State,5.0,Non-partisan,John A. Eastman,287
+Van Wert,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,245
+Van Wert,Secretary of State,5.0,Republican,Greg Hartman,5551
+Van Wert,Treasurer of State,5.0,Democratic,Richard Cordray,3965
+Van Wert,Treasurer of State,5.0,Republican,Sandra O'Brien,6255
+Van Wert,U.S. House,5.0,Democratic,Robin Weirauch,3748
+Van Wert,U.S. House,5.0,Republican,Paul E. Gillmor,6646
+Van Wert,U.S. Senate,5.0,Democratic,Sherrod Brown,4177
+Van Wert,U.S. Senate,5.0,Republican,Mike DeWine,6239
+Vinton,Attorney General,18.0,Democratic,Marc Dann,2212
+Vinton,Attorney General,18.0,Republican,Betty Montgomery,2139
+Vinton,Auditor of State,18.0,Democratic,Barbara Sykes,2421
+Vinton,Auditor of State,18.0,Republican,Mary Taylor,1805
+Vinton,Governor/Lieutenant Governor,18.0,Democratic,Ted Strickland,3165
+Vinton,Governor/Lieutenant Governor,18.0,Non-partisan,Robert Fitrakis,33
+Vinton,Governor/Lieutenant Governor,18.0,Non-partisan,William S. Peirce,58
+Vinton,Governor/Lieutenant Governor,18.0,Republican,J. Kenneth Blackwell,1166
+Vinton,Secretary of State,18.0,Democratic,Jennifer L. Brunner,2308
+Vinton,Secretary of State,18.0,Non-partisan,John A. Eastman,184
+Vinton,Secretary of State,18.0,Non-partisan,Timothy J. Kettler,113
+Vinton,Secretary of State,18.0,Republican,Greg Hartman,1558
+Vinton,Treasurer of State,18.0,Democratic,Richard Cordray,2414
+Vinton,Treasurer of State,18.0,Republican,Sandra O'Brien,1803
+Vinton,U.S. House,18.0,Democratic,Zack Space,2652
+Vinton,U.S. House,18.0,Republican,Joy Padgett,1701
+Vinton,U.S. Senate,18.0,Democratic,Sherrod Brown,2484
+Vinton,U.S. Senate,18.0,Republican,Mike DeWine,2001
+Warren,Attorney General,2.0,Democratic,Marc Dann,12029
+Warren,Attorney General,2.0,Republican,Betty Montgomery,23031
+Warren,Attorney General,3.0,Democratic,Marc Dann,12093
+Warren,Attorney General,3.0,Republican,Betty Montgomery,20742
+Warren,Auditor of State,2.0,Democratic,Barbara Sykes,10074
+Warren,Auditor of State,2.0,Republican,Mary Taylor,24291
+Warren,Auditor of State,3.0,Democratic,Barbara Sykes,10485
+Warren,Auditor of State,3.0,Republican,Mary Taylor,21704
+Warren,Governor/Lieutenant Governor,2.0,Democratic,Ted Strickland,13763
+Warren,Governor/Lieutenant Governor,2.0,Non-partisan,Robert Fitrakis,247
+Warren,Governor/Lieutenant Governor,2.0,Non-partisan,William S. Peirce,516
+Warren,Governor/Lieutenant Governor,2.0,Republican,J. Kenneth Blackwell,20684
+Warren,Governor/Lieutenant Governor,3.0,Democratic,Ted Strickland,13671
+Warren,Governor/Lieutenant Governor,3.0,Non-partisan,Robert Fitrakis,280
+Warren,Governor/Lieutenant Governor,3.0,Non-partisan,William S. Peirce,497
+Warren,Governor/Lieutenant Governor,3.0,Republican,J. Kenneth Blackwell,18410
+Warren,Secretary of State,2.0,Democratic,Jennifer L. Brunner,12051
+Warren,Secretary of State,2.0,Non-partisan,John A. Eastman,684
+Warren,Secretary of State,2.0,Non-partisan,Timothy J. Kettler,750
+Warren,Secretary of State,2.0,Republican,Greg Hartman,20754
+Warren,Secretary of State,3.0,Democratic,Jennifer L. Brunner,11869
+Warren,Secretary of State,3.0,Non-partisan,John A. Eastman,721
+Warren,Secretary of State,3.0,Non-partisan,Timothy J. Kettler,688
+Warren,Secretary of State,3.0,Republican,Greg Hartman,18890
+Warren,Treasurer of State,2.0,Democratic,Richard Cordray,12409
+Warren,Treasurer of State,2.0,Republican,Sandra O'Brien,21780
+Warren,Treasurer of State,3.0,Democratic,Richard Cordray,12207
+Warren,Treasurer of State,3.0,Republican,Sandra O'Brien,19977
+Warren,U.S. House,2.0,Democratic,Victoria Wulsin,13399
+Warren,U.S. House,2.0,Republican,Jean Schmidt,19169
+Warren,U.S. House,3.0,Democratic,Richard Chema,11274
+Warren,U.S. House,3.0,Republican,Michael R. Turner,24003
+Warren,U.S. Senate,2.0,Democratic,Sherrod Brown,12577
+Warren,U.S. Senate,2.0,Republican,Mike DeWine,22803
+Warren,U.S. Senate,3.0,Democratic,Sherrod Brown,12525
+Warren,U.S. Senate,3.0,Republican,Mike DeWine,20785
+Washington,Attorney General,6.0,Democratic,Marc Dann,10542
+Washington,Attorney General,6.0,Republican,Betty Montgomery,11227
+Washington,Auditor of State,6.0,Democratic,Barbara Sykes,11234
+Washington,Auditor of State,6.0,Republican,Mary Taylor,10329
+Washington,Governor/Lieutenant Governor,6.0,Democratic,Ted Strickland,15037
+Washington,Governor/Lieutenant Governor,6.0,Non-partisan,Robert Fitrakis,103
+Washington,Governor/Lieutenant Governor,6.0,Non-partisan,William S. Peirce,236
+Washington,Governor/Lieutenant Governor,6.0,Republican,J. Kenneth Blackwell,7412
+Washington,Secretary of State,6.0,Democratic,Jennifer L. Brunner,11119
+Washington,Secretary of State,6.0,Non-partisan,John A. Eastman,564
+Washington,Secretary of State,6.0,Non-partisan,Timothy J. Kettler,380
+Washington,Secretary of State,6.0,Republican,Greg Hartman,9350
+Washington,Treasurer of State,6.0,Democratic,Richard Cordray,10753
+Washington,Treasurer of State,6.0,Republican,Sandra O'Brien,10667
+Washington,U.S. House,6.0,Democratic,Charles A. Wilson,12219
+Washington,U.S. House,6.0,Republican,Chuck Blasdel,9583
+Washington,U.S. Senate,6.0,Democratic,Sherrod Brown,11631
+Washington,U.S. Senate,6.0,Republican,Mike DeWine,11140
+Wayne,Attorney General,16.0,Democratic,Marc Dann,16915
+Wayne,Attorney General,16.0,Republican,Betty Montgomery,20178
+Wayne,Auditor of State,16.0,Democratic,Barbara Sykes,14625
+Wayne,Auditor of State,16.0,Republican,Mary Taylor,21802
+Wayne,Governor/Lieutenant Governor,16.0,Democratic,Ted Strickland,19820
+Wayne,Governor/Lieutenant Governor,16.0,Non-partisan,Robert Fitrakis,418
+Wayne,Governor/Lieutenant Governor,16.0,Non-partisan,William S. Peirce,795
+Wayne,Governor/Lieutenant Governor,16.0,Republican,J. Kenneth Blackwell,17504
+Wayne,Secretary of State,16.0,Democratic,Jennifer L. Brunner,16243
+Wayne,Secretary of State,16.0,Non-partisan,John A. Eastman,817
+Wayne,Secretary of State,16.0,Non-partisan,Timothy J. Kettler,788
+Wayne,Secretary of State,16.0,Republican,Greg Hartman,18162
+Wayne,Treasurer of State,16.0,Democratic,Richard Cordray,16842
+Wayne,Treasurer of State,16.0,Republican,Sandra O'Brien,19413
+Wayne,U.S. House,16.0,Democratic,Thomas Shaw,14693
+Wayne,U.S. House,16.0,Republican,Ralph Regula,23300
+Wayne,U.S. Senate,16.0,Democratic,Sherrod Brown,18299
+Wayne,U.S. Senate,16.0,Republican,Mike DeWine,19985
+Williams,Attorney General,5.0,Democratic,Marc Dann,6477
+Williams,Attorney General,5.0,Republican,Betty Montgomery,6380
+Williams,Auditor of State,5.0,Democratic,Barbara Sykes,5089
+Williams,Auditor of State,5.0,Republican,Mary Taylor,7610
+Williams,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,6696
+Williams,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,166
+Williams,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,317
+Williams,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,5853
+Williams,Secretary of State,5.0,Democratic,Jennifer L. Brunner,5486
+Williams,Secretary of State,5.0,Non-partisan,John A. Eastman,602
+Williams,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,561
+Williams,Secretary of State,5.0,Republican,Greg Hartman,5690
+Williams,Treasurer of State,5.0,Democratic,Richard Cordray,5764
+Williams,Treasurer of State,5.0,Republican,Sandra O'Brien,6697
+Williams,U.S. House,5.0,Democratic,Robin Weirauch,5792
+Williams,U.S. House,5.0,Republican,Paul E. Gillmor,7262
+Williams,U.S. Senate,5.0,Democratic,Sherrod Brown,6438
+Williams,U.S. Senate,5.0,Republican,Mike DeWine,6543
+Wood,Attorney General,5.0,Democratic,Marc Dann,23401
+Wood,Attorney General,5.0,Republican,Betty Montgomery,22065
+Wood,Auditor of State,5.0,Democratic,Barbara Sykes,19111
+Wood,Auditor of State,5.0,Republican,Mary Taylor,25044
+Wood,Governor/Lieutenant Governor,5.0,Democratic,Ted Strickland,26771
+Wood,Governor/Lieutenant Governor,5.0,Non-partisan,Robert Fitrakis,481
+Wood,Governor/Lieutenant Governor,5.0,Non-partisan,William S. Peirce,864
+Wood,Governor/Lieutenant Governor,5.0,Republican,J. Kenneth Blackwell,17500
+Wood,Secretary of State,5.0,Democratic,Jennifer L. Brunner,24055
+Wood,Secretary of State,5.0,Non-partisan,John A. Eastman,987
+Wood,Secretary of State,5.0,Non-partisan,Timothy J. Kettler,725
+Wood,Secretary of State,5.0,Republican,Greg Hartman,17694
+Wood,Treasurer of State,5.0,Democratic,Richard Cordray,24104
+Wood,Treasurer of State,5.0,Republican,Sandra O'Brien,19673
+Wood,U.S. House,5.0,Democratic,Robin Weirauch,22425
+Wood,U.S. House,5.0,Republican,Paul E. Gillmor,22790
+Wood,U.S. Senate,5.0,Democratic,Sherrod Brown,25875
+Wood,U.S. Senate,5.0,Republican,Mike DeWine,19637
+Wyandot,Attorney General,,Democratic,Marc Dann,1459
+Wyandot,Attorney General,,Republican,Betty Montgomery,1651
+Wyandot,Attorney General,4.0,Democratic,Marc Dann,2399
+Wyandot,Attorney General,4.0,Republican,Betty Montgomery,2550
+Wyandot,Auditor of State,,Democratic,Barbara Sykes,1167
+Wyandot,Auditor of State,,Republican,Mary Taylor,1869
+Wyandot,Auditor of State,4.0,Democratic,Barbara Sykes,1876
+Wyandot,Auditor of State,4.0,Republican,Mary Taylor,2975
+Wyandot,Governor/Lieutenant Governor,,Democratic,Ted Strickland,1580
+Wyandot,Governor/Lieutenant Governor,,Non-partisan,Robert Fitrakis,23
+Wyandot,Governor/Lieutenant Governor,,Non-partisan,William S. Peirce,61
+Wyandot,Governor/Lieutenant Governor,,Republican,J. Kenneth Blackwell,1495
+Wyandot,Governor/Lieutenant Governor,4.0,Democratic,Ted Strickland,2517
+Wyandot,Governor/Lieutenant Governor,4.0,Non-partisan,Robert Fitrakis,26
+Wyandot,Governor/Lieutenant Governor,4.0,Non-partisan,William S. Peirce,97
+Wyandot,Governor/Lieutenant Governor,4.0,Republican,J. Kenneth Blackwell,2357
+Wyandot,Secretary of State,,Democratic,Jennifer L. Brunner,1363
+Wyandot,Secretary of State,,Non-partisan,John A. Eastman,130
+Wyandot,Secretary of State,,Non-partisan,Timothy J. Kettler,56
+Wyandot,Secretary of State,,Republican,Greg Hartman,1467
+Wyandot,Secretary of State,4.0,Democratic,Jennifer L. Brunner,2206
+Wyandot,Secretary of State,4.0,Non-partisan,John A. Eastman,154
+Wyandot,Secretary of State,4.0,Non-partisan,Timothy J. Kettler,108
+Wyandot,Secretary of State,4.0,Republican,Greg Hartman,2325
+Wyandot,Treasurer of State,,Democratic,Richard Cordray,1418
+Wyandot,Treasurer of State,,Republican,Sandra O'Brien,1614
+Wyandot,Treasurer of State,4.0,Democratic,Richard Cordray,2247
+Wyandot,Treasurer of State,4.0,Republican,Sandra O'Brien,2573
+Wyandot,U.S. House,4.0,Democratic,Richard E. Siferd,1684
+Wyandot,U.S. House,4.0,Republican,Jim Jordan,2453
+Wyandot,U.S. House,5.0,Democratic,Robin Weirauch,1425
+Wyandot,U.S. House,5.0,Republican,Paul E. Gillmor,2436
+Wyandot,U.S. Senate,,Democratic,Sherrod Brown,1483
+Wyandot,U.S. Senate,,Republican,Mike DeWine,1660
+Wyandot,U.S. Senate,4.0,Democratic,Sherrod Brown,2429
+Wyandot,U.S. Senate,4.0,Republican,Mike DeWine,2541
