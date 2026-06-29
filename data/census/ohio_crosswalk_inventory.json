@@ -1,0 +1,125 @@
+﻿{
+  "nhgis_crosswalks": {
+    "blk2000_blk2010": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\nhgis_blk2000_blk2010_39.zip",
+      "present": true,
+      "csv_name": "nhgis_blk2000_blk2010_39.csv",
+      "readme_name": "nhgis_crosswalk_README.txt",
+      "row_count": 412533,
+      "source_column": "blk2000gj",
+      "target_column": "blk2010gj",
+      "unique_source_blocks": 277828,
+      "unique_target_blocks": 365344,
+      "weight_sums": {
+        "source_block_count": 277828,
+        "perfect_sum_to_one": 277813,
+        "zero_weight_sources": 0,
+        "max_abs_delta_from_one": 0.9982187607
+      }
+    },
+    "blk2010_blk2020": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\nhgis_blk2010_blk2020_39.zip",
+      "present": true,
+      "csv_name": "nhgis_blk2010_blk2020_39.csv",
+      "readme_name": "nhgis_crosswalk_README.txt",
+      "row_count": 404902,
+      "source_column": "blk2010gj",
+      "target_column": "blk2020gj",
+      "unique_source_blocks": 365348,
+      "unique_target_blocks": 276428,
+      "weight_sums": {
+        "source_block_count": 365348,
+        "perfect_sum_to_one": 365345,
+        "zero_weight_sources": 2,
+        "max_abs_delta_from_one": 1.0
+      }
+    },
+    "blk2020_blk2010": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\nhgis_blk2020_blk2010_39.zip",
+      "present": true,
+      "csv_name": "nhgis_blk2020_blk2010_39.csv",
+      "readme_name": "nhgis_crosswalk_README.txt",
+      "row_count": 404900,
+      "source_column": "blk2020gj",
+      "target_column": "blk2010gj",
+      "unique_source_blocks": 276430,
+      "unique_target_blocks": 365344,
+      "weight_sums": {
+        "source_block_count": 276430,
+        "perfect_sum_to_one": 276428,
+        "zero_weight_sources": 1,
+        "max_abs_delta_from_one": 1.0
+      }
+    }
+  },
+  "census_blocks": {
+    "tabblock10": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\census\\tl_2010_39_tabblock10\\tl_2010_39_tabblock10.shp",
+      "present": true,
+      "feature_count": 365344,
+      "fields_checked": [
+        "GEOID10",
+        "BLOCKCE10",
+        "COUNTYFP10"
+      ],
+      "sample_ids": [
+        {
+          "GEOID10": "390017705001082",
+          "BLOCKCE10": "1082",
+          "COUNTYFP10": "001"
+        },
+        {
+          "GEOID10": "390017705001059",
+          "BLOCKCE10": "1059",
+          "COUNTYFP10": "001"
+        },
+        {
+          "GEOID10": "390017705001053",
+          "BLOCKCE10": "1053",
+          "COUNTYFP10": "001"
+        }
+      ]
+    },
+    "tabblock20": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\census\\tl_2020_39_tabblock20\\tl_2020_39_tabblock20.shp",
+      "present": true,
+      "feature_count": 276428,
+      "fields_checked": [
+        "GEOID20",
+        "BLOCKCE20",
+        "COUNTYFP20"
+      ],
+      "sample_ids": [
+        {
+          "GEOID20": "391670212022046",
+          "BLOCKCE20": "2046",
+          "COUNTYFP20": "167"
+        },
+        {
+          "GEOID20": "390339746003007",
+          "BLOCKCE20": "3007",
+          "COUNTYFP20": "033"
+        },
+        {
+          "GEOID20": "390339749001064",
+          "BLOCKCE20": "1064",
+          "COUNTYFP20": "033"
+        }
+      ]
+    }
+  },
+  "optional_geometries": {
+    "vtd10": {
+      "path": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\census\\tl_2010_39_vtd10",
+      "present": true,
+      "county_shapefile_count": 88,
+      "geojson_present": true,
+      "merged_feature_count": 11029,
+      "sample_county_shapefiles": [
+        "tl_2010_39001_vtd10.shp",
+        "tl_2010_39003_vtd10.shp",
+        "tl_2010_39005_vtd10.shp"
+      ]
+    }
+  }
+}

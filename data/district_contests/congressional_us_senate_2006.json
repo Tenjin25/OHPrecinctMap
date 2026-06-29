@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_senate",
+  "year": 2006,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 86630,
+        "rep_votes": 97117,
+        "other_votes": 0,
+        "total_votes": 183747,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 10487,
+        "margin_pct": 5.707304064828269,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "2": {
+        "dem_votes": 108500,
+        "rep_votes": 114393,
+        "other_votes": 0,
+        "total_votes": 222893,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 5893,
+        "margin_pct": 2.6438694799746965,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "3": {
+        "dem_votes": 100917,
+        "rep_votes": 60960,
+        "other_votes": 0,
+        "total_votes": 161877,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -39957,
+        "margin_pct": -24.683556033284532,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 94281,
+        "rep_votes": 110835,
+        "other_votes": 0,
+        "total_votes": 205116,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 16554,
+        "margin_pct": 8.070555198034283,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "5": {
+        "dem_votes": 125295,
+        "rep_votes": 107800,
+        "other_votes": 0,
+        "total_votes": 233095,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -17495,
+        "margin_pct": -7.505523499002553,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "6": {
+        "dem_votes": 156996,
+        "rep_votes": 92515,
+        "other_votes": 0,
+        "total_votes": 249511,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -64481,
+        "margin_pct": -25.842948807868186,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "7": {
+        "dem_votes": 119783,
+        "rep_votes": 91515,
+        "other_votes": 0,
+        "total_votes": 211298,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -28268,
+        "margin_pct": -13.378261980709707,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "8": {
+        "dem_votes": 96387,
+        "rep_votes": 132342,
+        "other_votes": 0,
+        "total_votes": 228729,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 35955,
+        "margin_pct": 15.719475886310875,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 127860,
+        "rep_votes": 81889,
+        "other_votes": 0,
+        "total_votes": 209749,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -45971,
+        "margin_pct": -21.9171485918884,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "10": {
+        "dem_votes": 100594,
+        "rep_votes": 101050,
+        "other_votes": 0,
+        "total_votes": 201644,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 456,
+        "margin_pct": 0.2261411199936522,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "11": {
+        "dem_votes": 145979,
+        "rep_votes": 39517,
+        "other_votes": 0,
+        "total_votes": 185496,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -106462,
+        "margin_pct": -57.393151334799676,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 107910,
+        "rep_votes": 108090,
+        "other_votes": 0,
+        "total_votes": 216000,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 180,
+        "margin_pct": 0.08333333333333334,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "13": {
+        "dem_votes": 121413,
+        "rep_votes": 80371,
+        "other_votes": 0,
+        "total_votes": 201784,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -41042,
+        "margin_pct": -20.33957102644412,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "14": {
+        "dem_votes": 140020,
+        "rep_votes": 87590,
+        "other_votes": 0,
+        "total_votes": 227610,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": -52430,
+        "margin_pct": -23.035016036202276,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "15": {
+        "dem_votes": 88292,
+        "rep_votes": 88379,
+        "other_votes": 0,
+        "total_votes": 176671,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Mike DeWine",
+        "margin": 87,
+        "margin_pct": 0.04924407514532663,
+        "winner": "REP",
+        "color": "#fcbba1"
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "governor",
+  "year": 2022,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 134012,
+        "rep_votes": 162718,
+        "other_votes": 0,
+        "total_votes": 296730,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 28706,
+        "margin_pct": 9.674114514878845,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "2": {
+        "dem_votes": 58635,
+        "rep_votes": 198312,
+        "other_votes": 0,
+        "total_votes": 256947,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 139677,
+        "margin_pct": 54.36023771439247,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 163004,
+        "rep_votes": 97275,
+        "other_votes": 0,
+        "total_votes": 260279,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": -65729,
+        "margin_pct": -25.25328589705662,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 73422,
+        "rep_votes": 214269,
+        "other_votes": 0,
+        "total_votes": 287691,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 140847,
+        "margin_pct": 48.95773590414716,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 80621,
+        "rep_votes": 199118,
+        "other_votes": 0,
+        "total_votes": 279739,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 118497,
+        "margin_pct": 42.35984256753616,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 77099,
+        "rep_votes": 202361,
+        "other_votes": 0,
+        "total_votes": 279460,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 125262,
+        "margin_pct": 44.82287268303156,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 115646,
+        "rep_votes": 193311,
+        "other_votes": 0,
+        "total_votes": 308957,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 77665,
+        "margin_pct": 25.137802347899544,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 85526,
+        "rep_votes": 194200,
+        "other_votes": 0,
+        "total_votes": 279726,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 108674,
+        "margin_pct": 38.850160514217485,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 99383,
+        "rep_votes": 169225,
+        "other_votes": 0,
+        "total_votes": 268608,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 69842,
+        "margin_pct": 26.001459375744577,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "10": {
+        "dem_votes": 104683,
+        "rep_votes": 170867,
+        "other_votes": 0,
+        "total_votes": 275550,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 66184,
+        "margin_pct": 24.018871348212663,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 152593,
+        "rep_votes": 65786,
+        "other_votes": 0,
+        "total_votes": 218379,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": -86807,
+        "margin_pct": -39.75061704651088,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 78216,
+        "rep_votes": 196945,
+        "other_votes": 0,
+        "total_votes": 275161,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 118729,
+        "margin_pct": 43.14892008678555,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 123024,
+        "rep_votes": 163911,
+        "other_votes": 0,
+        "total_votes": 286935,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 40887,
+        "margin_pct": 14.249568717653824,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "14": {
+        "dem_votes": 102525,
+        "rep_votes": 196178,
+        "other_votes": 0,
+        "total_votes": 298703,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 93653,
+        "margin_pct": 31.35321707515492,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 97102,
+        "rep_votes": 155949,
+        "other_votes": 0,
+        "total_votes": 253051,
+        "dem_candidate": "Nan Whaley and Cheryl L. Stephens",
+        "rep_candidate": "Mike DeWine and Jon Husted",
+        "margin": 58847,
+        "margin_pct": 23.254996028468568,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "attorney_general",
+  "year": 2014,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 93533,
+        "rep_votes": 115954,
+        "other_votes": 0,
+        "total_votes": 209487,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 22421,
+        "margin_pct": 10.702812107672552,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "2": {
+        "dem_votes": 58095,
+        "rep_votes": 126546,
+        "other_votes": 0,
+        "total_votes": 184641,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 68451,
+        "margin_pct": 37.07248119323444,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 94086,
+        "rep_votes": 90299,
+        "other_votes": 0,
+        "total_votes": 184385,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": -3787,
+        "margin_pct": -2.0538547061854273,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "4": {
+        "dem_votes": 52921,
+        "rep_votes": 145220,
+        "other_votes": 0,
+        "total_votes": 198141,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 92299,
+        "margin_pct": 46.58248419055117,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 64987,
+        "rep_votes": 134744,
+        "other_votes": 0,
+        "total_votes": 199731,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 69757,
+        "margin_pct": 34.925474763556984,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 85329,
+        "rep_votes": 118018,
+        "other_votes": 0,
+        "total_votes": 203347,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 32689,
+        "margin_pct": 16.075476894175967,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 66963,
+        "rep_votes": 141784,
+        "other_votes": 0,
+        "total_votes": 208747,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 74821,
+        "margin_pct": 35.84291031727402,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 68883,
+        "rep_votes": 136899,
+        "other_votes": 0,
+        "total_votes": 205782,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 68016,
+        "margin_pct": 33.05245356736741,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 85650,
+        "rep_votes": 111130,
+        "other_votes": 0,
+        "total_votes": 196780,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 25480,
+        "margin_pct": 12.948470373005385,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 74715,
+        "rep_votes": 135935,
+        "other_votes": 0,
+        "total_votes": 210650,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 61220,
+        "margin_pct": 29.062425824827915,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 112785,
+        "rep_votes": 67361,
+        "other_votes": 0,
+        "total_votes": 180146,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": -45424,
+        "margin_pct": -25.215103305096974,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 63460,
+        "rep_votes": 133368,
+        "other_votes": 0,
+        "total_votes": 196828,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 69908,
+        "margin_pct": 35.517304448554064,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 78720,
+        "rep_votes": 120274,
+        "other_votes": 0,
+        "total_votes": 198994,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 41554,
+        "margin_pct": 20.882036644320934,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "14": {
+        "dem_votes": 77669,
+        "rep_votes": 132780,
+        "other_votes": 0,
+        "total_votes": 210449,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 55111,
+        "margin_pct": 26.18734230146021,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 57305,
+        "rep_votes": 115076,
+        "other_votes": 0,
+        "total_votes": 172381,
+        "dem_candidate": "David Pepper",
+        "rep_candidate": "Mike DeWine",
+        "margin": 57771,
+        "margin_pct": 33.51355427802368,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

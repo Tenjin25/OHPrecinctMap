@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "president",
+  "year": 2020,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 220021,
+        "rep_votes": 185223,
+        "other_votes": 6298,
+        "total_votes": 411542,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -34798,
+        "margin_pct": -8.455516083413114,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "2": {
+        "dem_votes": 100658,
+        "rep_votes": 272046,
+        "other_votes": 5067,
+        "total_votes": 377771,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 171388,
+        "margin_pct": 45.36822572404976,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 271587,
+        "rep_votes": 104497,
+        "other_votes": 5696,
+        "total_votes": 381780,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -167090,
+        "margin_pct": -43.76604327099376,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 123408,
+        "rep_votes": 263914,
+        "other_votes": 6153,
+        "total_votes": 393475,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 140506,
+        "margin_pct": 35.70900311328547,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 140969,
+        "rep_votes": 246074,
+        "other_votes": 6105,
+        "total_votes": 393148,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 105105,
+        "margin_pct": 26.73420696531586,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 137116,
+        "rep_votes": 247910,
+        "other_votes": 5290,
+        "total_votes": 390316,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 110794,
+        "margin_pct": 28.38571823855543,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 189851,
+        "rep_votes": 229780,
+        "other_votes": 5083,
+        "total_votes": 424714,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 39929,
+        "margin_pct": 9.40138540288288,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 153441,
+        "rep_votes": 241711,
+        "other_votes": 5832,
+        "total_votes": 400984,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 88270,
+        "margin_pct": 22.01334716597171,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 182303,
+        "rep_votes": 195993,
+        "other_votes": 6567,
+        "total_votes": 384863,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 13690,
+        "margin_pct": 3.5571099326253757,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 181113,
+        "rep_votes": 195765,
+        "other_votes": 6493,
+        "total_votes": 383371,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 14652,
+        "margin_pct": 3.82188532778953,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "11": {
+        "dem_votes": 277060,
+        "rep_votes": 73267,
+        "other_votes": 3718,
+        "total_votes": 354045,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -203793,
+        "margin_pct": -57.561326949963984,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 131514,
+        "rep_votes": 251608,
+        "other_votes": 5928,
+        "total_votes": 389050,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 120094,
+        "margin_pct": 30.868525896414344,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 190475,
+        "rep_votes": 181024,
+        "other_votes": 5297,
+        "total_votes": 376796,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -9451,
+        "margin_pct": -2.5082538031189294,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "14": {
+        "dem_votes": 172794,
+        "rep_votes": 234483,
+        "other_votes": 5551,
+        "total_votes": 412828,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 61689,
+        "margin_pct": 14.943027120253472,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 167426,
+        "rep_votes": 190892,
+        "other_votes": 6015,
+        "total_votes": 364333,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 23466,
+        "margin_pct": 6.440811016295532,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_senate",
+  "year": 2016,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 144722,
+        "rep_votes": 212674,
+        "other_votes": 15066,
+        "total_votes": 372462,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 67952,
+        "margin_pct": 18.244008784788786,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "2": {
+        "dem_votes": 83563,
+        "rep_votes": 239866,
+        "other_votes": 14794,
+        "total_votes": 338223,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 156303,
+        "margin_pct": 46.213001481271235,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 200159,
+        "rep_votes": 137455,
+        "other_votes": 14195,
+        "total_votes": 351809,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": -62704,
+        "margin_pct": -17.823307533349062,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 81838,
+        "rep_votes": 244865,
+        "other_votes": 16165,
+        "total_votes": 342868,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 163027,
+        "margin_pct": 47.54803597886067,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 106360,
+        "rep_votes": 226959,
+        "other_votes": 19050,
+        "total_votes": 352369,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 120599,
+        "margin_pct": 34.22520142237257,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 124567,
+        "rep_votes": 214188,
+        "other_votes": 19795,
+        "total_votes": 358550,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 89621,
+        "margin_pct": 24.995398131362432,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 125648,
+        "rep_votes": 227070,
+        "other_votes": 19382,
+        "total_votes": 372100,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 101422,
+        "margin_pct": 27.25665143778554,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 102789,
+        "rep_votes": 250281,
+        "other_votes": 14863,
+        "total_votes": 367933,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 147492,
+        "margin_pct": 40.086646210043675,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 138648,
+        "rep_votes": 188795,
+        "other_votes": 17418,
+        "total_votes": 344861,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 50147,
+        "margin_pct": 14.541220955689393,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 129376,
+        "rep_votes": 215457,
+        "other_votes": 15753,
+        "total_votes": 360586,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 86081,
+        "margin_pct": 23.872529715518628,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 235842,
+        "rep_votes": 85980,
+        "other_votes": 16176,
+        "total_votes": 337998,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": -149862,
+        "margin_pct": -44.33813217829691,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 98956,
+        "rep_votes": 229900,
+        "other_votes": 16504,
+        "total_votes": 345360,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 130944,
+        "margin_pct": 37.91521890201529,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 139949,
+        "rep_votes": 175972,
+        "other_votes": 18546,
+        "total_votes": 334467,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 36023,
+        "margin_pct": 10.7702703106734,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "14": {
+        "dem_votes": 130665,
+        "rep_votes": 216188,
+        "other_votes": 20720,
+        "total_votes": 367573,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 85523,
+        "margin_pct": 23.26694289297636,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 112732,
+        "rep_votes": 195048,
+        "other_votes": 14411,
+        "total_votes": 322191,
+        "dem_candidate": "Ted Strickland",
+        "rep_candidate": "Rob Portman",
+        "margin": 82316,
+        "margin_pct": 25.548820420185542,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

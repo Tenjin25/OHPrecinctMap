@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "auditor",
+  "year": 2018,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 151037,
+        "rep_votes": 146100,
+        "other_votes": 14956,
+        "total_votes": 312093,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": -4937,
+        "margin_pct": -1.5819002669076205,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 81423,
+        "rep_votes": 173804,
+        "other_votes": 10386,
+        "total_votes": 265613,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 92381,
+        "margin_pct": 34.780300662994655,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 203741,
+        "rep_votes": 83661,
+        "other_votes": 10332,
+        "total_votes": 297734,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": -120080,
+        "margin_pct": -40.331302437746444,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 90129,
+        "rep_votes": 184617,
+        "other_votes": 10291,
+        "total_votes": 285037,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 94488,
+        "margin_pct": 33.14938060672825,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 104850,
+        "rep_votes": 162114,
+        "other_votes": 11569,
+        "total_votes": 278533,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 57264,
+        "margin_pct": 20.559143799837003,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 121476,
+        "rep_votes": 150093,
+        "other_votes": 10566,
+        "total_votes": 282135,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 28617,
+        "margin_pct": 10.143016640969748,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "7": {
+        "dem_votes": 137919,
+        "rep_votes": 155132,
+        "other_votes": 12816,
+        "total_votes": 305867,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 17213,
+        "margin_pct": 5.627609385778786,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 104159,
+        "rep_votes": 178066,
+        "other_votes": 13157,
+        "total_votes": 295382,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 73907,
+        "margin_pct": 25.020820496848152,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 133663,
+        "rep_votes": 131550,
+        "other_votes": 12564,
+        "total_votes": 277777,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": -2113,
+        "margin_pct": -0.7606821299099638,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "10": {
+        "dem_votes": 129235,
+        "rep_votes": 147322,
+        "other_votes": 12665,
+        "total_votes": 289222,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 18087,
+        "margin_pct": 6.253673648615942,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 212164,
+        "rep_votes": 48660,
+        "other_votes": 10225,
+        "total_votes": 271049,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": -163504,
+        "margin_pct": -60.322672284347114,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 110719,
+        "rep_votes": 160846,
+        "other_votes": 9249,
+        "total_votes": 280814,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 50127,
+        "margin_pct": 17.850605739030108,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 142055,
+        "rep_votes": 122851,
+        "other_votes": 11256,
+        "total_votes": 276162,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": -19204,
+        "margin_pct": -6.953889383767499,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "14": {
+        "dem_votes": 132744,
+        "rep_votes": 149928,
+        "other_votes": 13070,
+        "total_votes": 295742,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 17184,
+        "margin_pct": 5.810469936633958,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 119907,
+        "rep_votes": 131038,
+        "other_votes": 9928,
+        "total_votes": 260873,
+        "dem_candidate": "Zack Space",
+        "rep_candidate": "Keith Faber",
+        "margin": 11131,
+        "margin_pct": 4.266827153442479,
+        "winner": "REP",
+        "color": "#fcbba1"
+      }
+    }
+  }
+}

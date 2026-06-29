@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "attorney_general",
+  "year": 2022,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 142982,
+        "rep_votes": 153143,
+        "other_votes": 0,
+        "total_votes": 296125,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 10161,
+        "margin_pct": 3.4313212325875897,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "2": {
+        "dem_votes": 62471,
+        "rep_votes": 196477,
+        "other_votes": 0,
+        "total_votes": 258948,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 134006,
+        "margin_pct": 51.75015833294716,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 168431,
+        "rep_votes": 91478,
+        "other_votes": 0,
+        "total_votes": 259909,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": -76953,
+        "margin_pct": -29.60767037693962,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 77567,
+        "rep_votes": 212899,
+        "other_votes": 0,
+        "total_votes": 290466,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 135332,
+        "margin_pct": 46.59133943387522,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 87560,
+        "rep_votes": 193992,
+        "other_votes": 0,
+        "total_votes": 281552,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 106432,
+        "margin_pct": 37.80189805080412,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 85199,
+        "rep_votes": 195182,
+        "other_votes": 0,
+        "total_votes": 280381,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 109983,
+        "margin_pct": 39.22626711510409,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 123449,
+        "rep_votes": 184893,
+        "other_votes": 0,
+        "total_votes": 308342,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 61444,
+        "margin_pct": 19.927223667226652,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 91873,
+        "rep_votes": 188105,
+        "other_votes": 0,
+        "total_votes": 279978,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 96232,
+        "margin_pct": 34.37127202851652,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 112382,
+        "rep_votes": 155247,
+        "other_votes": 0,
+        "total_votes": 267629,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 42865,
+        "margin_pct": 16.016575184303644,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "10": {
+        "dem_votes": 113417,
+        "rep_votes": 161534,
+        "other_votes": 0,
+        "total_votes": 274951,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 48117,
+        "margin_pct": 17.500209128171928,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 159280,
+        "rep_votes": 57633,
+        "other_votes": 0,
+        "total_votes": 216913,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": -101647,
+        "margin_pct": -46.86072296266245,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 81246,
+        "rep_votes": 196552,
+        "other_votes": 0,
+        "total_votes": 277798,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 115306,
+        "margin_pct": 41.50713828033319,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 130344,
+        "rep_votes": 156686,
+        "other_votes": 0,
+        "total_votes": 287030,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 26342,
+        "margin_pct": 9.17743789847751,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "14": {
+        "dem_votes": 109849,
+        "rep_votes": 188754,
+        "other_votes": 0,
+        "total_votes": 298603,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 78905,
+        "margin_pct": 26.424717769078004,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 101595,
+        "rep_votes": 152177,
+        "other_votes": 0,
+        "total_votes": 253772,
+        "dem_candidate": "Jeffrey A. Crossman",
+        "rep_candidate": "Dave Yost",
+        "margin": 50582,
+        "margin_pct": 19.932065003231248,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

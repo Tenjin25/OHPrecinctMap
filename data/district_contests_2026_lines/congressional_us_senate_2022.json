@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_senate",
+  "year": 2022,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 160363,
+        "rep_votes": 135674,
+        "other_votes": 0,
+        "total_votes": 296037,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": -24689,
+        "margin_pct": -8.339835898891018,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "2": {
+        "dem_votes": 76470,
+        "rep_votes": 181576,
+        "other_votes": 0,
+        "total_votes": 258046,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 105106,
+        "margin_pct": 40.73149748494455,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 186576,
+        "rep_votes": 73362,
+        "other_votes": 0,
+        "total_votes": 259938,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": -113214,
+        "margin_pct": -43.554232163054266,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 96644,
+        "rep_votes": 192698,
+        "other_votes": 0,
+        "total_votes": 289342,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 96054,
+        "margin_pct": 33.19739270482681,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 106593,
+        "rep_votes": 169972,
+        "other_votes": 0,
+        "total_votes": 276565,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 63379,
+        "margin_pct": 22.916493410229062,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 105453,
+        "rep_votes": 174893,
+        "other_votes": 0,
+        "total_votes": 280346,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 69440,
+        "margin_pct": 24.769392108323284,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 147102,
+        "rep_votes": 158569,
+        "other_votes": 0,
+        "total_votes": 305671,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 11467,
+        "margin_pct": 3.751419009327021,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "8": {
+        "dem_votes": 108090,
+        "rep_votes": 170729,
+        "other_votes": 0,
+        "total_votes": 278819,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 62639,
+        "margin_pct": 22.465829086253088,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 131893,
+        "rep_votes": 132189,
+        "other_votes": 0,
+        "total_votes": 264082,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 296,
+        "margin_pct": 0.11208639740686605,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 131751,
+        "rep_votes": 142969,
+        "other_votes": 0,
+        "total_votes": 274720,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 11218,
+        "margin_pct": 4.0834304018637155,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "11": {
+        "dem_votes": 171252,
+        "rep_votes": 43863,
+        "other_votes": 0,
+        "total_votes": 215115,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": -127389,
+        "margin_pct": -59.21902238337633,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 101187,
+        "rep_votes": 175679,
+        "other_votes": 0,
+        "total_votes": 276866,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 74492,
+        "margin_pct": 26.905434397867563,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 141850,
+        "rep_votes": 126899,
+        "other_votes": 0,
+        "total_votes": 268749,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": -14951,
+        "margin_pct": -5.563183490915315,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "14": {
+        "dem_votes": 134642,
+        "rep_votes": 165120,
+        "other_votes": 0,
+        "total_votes": 299762,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 30478,
+        "margin_pct": 10.167399470246394,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 118084,
+        "rep_votes": 130802,
+        "other_votes": 0,
+        "total_votes": 248886,
+        "dem_candidate": "Tim Ryan",
+        "rep_candidate": "JD Vance",
+        "margin": 12718,
+        "margin_pct": 5.109970026437806,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

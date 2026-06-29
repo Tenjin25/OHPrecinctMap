@@ -5,6 +5,7 @@ data/_tmp_census_downloads/
 data/*/*__precinct.csv
 data/census/tl_2010_39_county10/
 data/census/tl_2010_39_tabblock10/
+data/census/tl_2010_39_vtd10/
 data/census/tl_2020_39_county20/
 data/census/tl_2020_39_tabblock20/
 data/2010/2010_general_precinct.txt

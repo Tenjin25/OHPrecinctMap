@@ -1,0 +1,324 @@
+{
+  "files": [
+    {
+      "scope": "congressional",
+      "contest_type": "attorney_general",
+      "year": 2006,
+      "file": "congressional_attorney_general_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "attorney_general",
+      "year": 2010,
+      "file": "congressional_attorney_general_2010.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "attorney_general",
+      "year": 2014,
+      "file": "congressional_attorney_general_2014.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "attorney_general",
+      "year": 2018,
+      "file": "congressional_attorney_general_2018.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "attorney_general",
+      "year": 2022,
+      "file": "congressional_attorney_general_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "auditor",
+      "year": 2006,
+      "file": "congressional_auditor_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "auditor",
+      "year": 2010,
+      "file": "congressional_auditor_2010.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "auditor",
+      "year": 2014,
+      "file": "congressional_auditor_2014.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "auditor",
+      "year": 2018,
+      "file": "congressional_auditor_2018.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "auditor",
+      "year": 2022,
+      "file": "congressional_auditor_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
+      "year": 2022,
+      "file": "congressional_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "governor",
+      "year": 2006,
+      "file": "congressional_governor_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "governor",
+      "year": 2010,
+      "file": "congressional_governor_2010.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "governor",
+      "year": 2014,
+      "file": "congressional_governor_2014.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "governor",
+      "year": 2022,
+      "file": "congressional_governor_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2023",
+      "year": 2022,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2023",
+      "year": 2022,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_02_2023_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_unexpired_term_ending_12_31_2026_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "president",
+      "year": 2016,
+      "file": "congressional_president_2016.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "president",
+      "year": 2020,
+      "file": "congressional_president_2020.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "president",
+      "year": 2024,
+      "file": "congressional_president_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "secretary_of_state",
+      "year": 2006,
+      "file": "congressional_secretary_of_state_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "secretary_of_state",
+      "year": 2010,
+      "file": "congressional_secretary_of_state_2010.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "secretary_of_state",
+      "year": 2014,
+      "file": "congressional_secretary_of_state_2014.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "secretary_of_state",
+      "year": 2018,
+      "file": "congressional_secretary_of_state_2018.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "secretary_of_state",
+      "year": 2022,
+      "file": "congressional_secretary_of_state_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "treasurer",
+      "year": 2006,
+      "file": "congressional_treasurer_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "treasurer",
+      "year": 2010,
+      "file": "congressional_treasurer_2010.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "treasurer",
+      "year": 2014,
+      "file": "congressional_treasurer_2014.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "treasurer",
+      "year": 2018,
+      "file": "congressional_treasurer_2018.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "treasurer",
+      "year": 2022,
+      "file": "congressional_treasurer_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_house",
+      "year": 2022,
+      "file": "congressional_us_house_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_house",
+      "year": 2024,
+      "file": "congressional_us_house_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
+      "year": 2006,
+      "file": "congressional_us_senate_2006.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
+      "year": 2016,
+      "file": "congressional_us_senate_2016.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
+      "year": 2018,
+      "file": "congressional_us_senate_2018.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
+      "year": 2022,
+      "file": "congressional_us_senate_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
+      "year": 2024,
+      "file": "congressional_us_senate_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    }
+  ]
+}

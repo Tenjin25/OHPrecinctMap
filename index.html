@@ -10239,8 +10239,8 @@ document.addEventListener('DOMContentLoaded', function() {
           state_senate_2022: withBase('./data/cvap_aggregates/state_senate_2022_lines__cvap24.csv'),
           state_senate_2024: withBase('./data/cvap_aggregates/state_senate_2024_lines__cvap24.csv')
         },
-        election: withBase('./data/nc_elections_aggregated.json'),
-        district_election: withBase('./data/nc_district_results_2022_lines.json'),
+        election: withBase('./data/county_aggregates_nested.json'),
+        district_election: withBase('./data/oh_district_results_2022_lines.json'),
         district_contests_dir: withBase('./data/district_contests'),
         district_contests_2020_2024_dir: withBase('./data/district_contests_2020_2024'),
         district_contests_dirs: {
@@ -10248,16 +10248,17 @@ document.addEventListener('DOMContentLoaded', function() {
           '2024': withBase('./data/district_contests_2024_lines'),
           '2026': withBase('./data/district_contests_2026_lines')
         },
-        districts_info: withBase('./data/nc_congressional_districts.csv'),
-        state_house_info: withBase('./data/nc_state_house_districts.csv'),
-        state_senate_info: withBase('./data/nc_state_senate_districts.csv'),
-        district_descriptions: withBase('./data/district_descriptions.json'),
+        districts_info: withBase('./data/oh_congressional_districts.csv'),
+        state_house_info: withBase('./data/oh_state_house_districts.csv'),
+        state_senate_info: withBase('./data/oh_state_senate_districts.csv'),
+        district_descriptions: withBase('./data/oh_district_descriptions.json'),
         contests_dir: withBase('./data/contests'),
         reports_match_year_summary: withBase('./data/reports/precinct_match_year_summary_fresh_2026-03-19.csv'),
         reports_top_unmatched: withBase('./data/reports/precinct_match_top_unmatched_file_county.csv'),
         crosswalks: {
           congressional: withBase('./data/crosswalks/precinct_to_cd118.csv'),
           congressional_2022: withBase('./data/crosswalks/precinct_to_cd118.csv'),
+          congressional_2024: withBase('./data/crosswalks/precinct_to_cd119.csv'),
           congressional_2026: withBase('./data/crosswalks/precinct_to_cd2026_sl2025_95.csv'),
           state_house_2022: withBase('./data/crosswalks/precinct_to_2022_state_house.csv'),
           state_house_2024: withBase('./data/crosswalks/precinct_to_2024_state_house.csv'),
@@ -19125,6 +19126,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	        const label = who ? (typeof toTitleCaseName === 'function' ? toTitleCaseName(who) : who) : contestType;
 	        return `Supreme Court Chief Justice (${label})`;
 	      }
+        if (contestType.startsWith('chief_justice_of_the_supreme_court')) {
+          return 'Supreme Court Chief Justice';
+        }
+        if (contestType.startsWith('justice_of_the_supreme_court')) {
+          const isUnexpired = contestType.includes('unexpired_term');
+          return isUnexpired ? 'Supreme Court Justice (Unexpired Term)' : 'Supreme Court Justice';
+        }
 
 	      return nameMap[contestType] || contestType.toUpperCase();
 	    }
@@ -19372,6 +19380,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
 	        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
 	        if (contestType.startsWith('nc_supreme_court_')) return 'Supreme Court';
+          if (contestType.startsWith('chief_justice_of_the_supreme_court')) return 'Supreme Court';
+          if (contestType.startsWith('justice_of_the_supreme_court')) return 'Supreme Court';
 	        if (contestType.startsWith('nc_court_of_appeals_')) return 'Court of Appeals';
 	        return formatContestName(contestType, '');
 	      }
@@ -19555,6 +19565,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	        if (contestType === 'insurance_commissioner') return 'Insurance Commissioner';
 	        if (contestType === 'agriculture_commissioner') return 'Agriculture Commissioner';
 	        if (contestType === 'superintendent') return 'Superintendent of Public Instruction';
+          if (contestType.startsWith('chief_justice_of_the_supreme_court')) return 'Supreme Court';
+          if (contestType.startsWith('justice_of_the_supreme_court')) return 'Supreme Court';
 	        return formatContestName(contestType, '');
 	      }
 

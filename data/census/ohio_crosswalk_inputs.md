@@ -30,6 +30,19 @@ Fetcher script:
 
 - `scripts/fetch_ohio_census_geographies.py`
 
+Inventory script and latest snapshot:
+
+- `scripts/inspect_ohio_crosswalk_inputs.py`
+- `data/census/ohio_crosswalk_inventory.json`
+
+District carryover crosswalk generator and outputs:
+
+- `scripts/build_district_crosswalks.py`
+- `data/crosswalks/README.md`
+- `data/crosswalks/district_crosswalk_manifest.json`
+
 Note:
 
-The repo still does not have an Ohio precinct/VTD boundary file wired for the precinct overlay. Census tabblock and district geometry needed for the NHGIS crosswalk workflow are now present, but precinct-level overlay/crosswalk generation will still need an Ohio precinct or VTD source to join election rows onto map shapes.
+- NHGIS block crosswalks help translate Census blocks across vintages. They do not replace a precinct or VTD boundary layer when we need to join election precinct rows onto map shapes.
+- Ohio 2010 VTD geometry is available from the official Census TIGER directory, but it is published county-by-county rather than as one statewide zip. The fetcher now supports this as dataset key `vtd10`.
+- A straightforward Ohio 2020 statewide VTD TIGER zip was not available at the expected Census path, and the Census 2000 VTD directory did not show Ohio county files during verification. That means older/legacy precinct geometry may still need a different official state source if we want a true 2000 precinct layer.

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
+  "year": 2022,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 150804,
+        "rep_votes": 144158,
+        "other_votes": 0,
+        "total_votes": 294962,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": -6646,
+        "margin_pct": -2.2531715949851168,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 69327,
+        "rep_votes": 188593,
+        "other_votes": 0,
+        "total_votes": 257920,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 119266,
+        "margin_pct": 46.24147022332506,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 179114,
+        "rep_votes": 79473,
+        "other_votes": 0,
+        "total_votes": 258587,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": -99641,
+        "margin_pct": -38.532872882240795,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 87682,
+        "rep_votes": 201711,
+        "other_votes": 0,
+        "total_votes": 289393,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 114029,
+        "margin_pct": 39.40281900391509,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 96018,
+        "rep_votes": 179969,
+        "other_votes": 0,
+        "total_votes": 275987,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 83951,
+        "margin_pct": 30.418461739139886,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 97815,
+        "rep_votes": 180899,
+        "other_votes": 0,
+        "total_votes": 278714,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 83084,
+        "margin_pct": 29.809769154043213,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 135556,
+        "rep_votes": 166200,
+        "other_votes": 0,
+        "total_votes": 301756,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 30644,
+        "margin_pct": 10.155224751123425,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 98775,
+        "rep_votes": 180398,
+        "other_votes": 0,
+        "total_votes": 279173,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 81623,
+        "margin_pct": 29.23742625540435,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 120408,
+        "rep_votes": 143171,
+        "other_votes": 0,
+        "total_votes": 263579,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 22763,
+        "margin_pct": 8.636120480007891,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 123344,
+        "rep_votes": 150914,
+        "other_votes": 0,
+        "total_votes": 274258,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 27570,
+        "margin_pct": 10.05257822925858,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 166929,
+        "rep_votes": 46502,
+        "other_votes": 0,
+        "total_votes": 213431,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": -120427,
+        "margin_pct": -56.42432448894491,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 92288,
+        "rep_votes": 184229,
+        "other_votes": 0,
+        "total_votes": 276517,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 91941,
+        "margin_pct": 33.24967361862019,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 133374,
+        "rep_votes": 133403,
+        "other_votes": 0,
+        "total_votes": 266777,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 29,
+        "margin_pct": 0.010870502329661103,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "14": {
+        "dem_votes": 125272,
+        "rep_votes": 171632,
+        "other_votes": 0,
+        "total_votes": 296904,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 46360,
+        "margin_pct": 15.61447471236494,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 110114,
+        "rep_votes": 138154,
+        "other_votes": 0,
+        "total_votes": 248268,
+        "dem_candidate": "Jennifer Brunner",
+        "rep_candidate": "Sharon L. Kennedy",
+        "margin": 28040,
+        "margin_pct": 11.294246540029324,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

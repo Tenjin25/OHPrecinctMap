@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_senate",
+  "year": 2018,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 176220,
+        "rep_votes": 139944,
+        "other_votes": 0,
+        "total_votes": 316164,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -36276,
+        "margin_pct": -11.473792082590048,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "2": {
+        "dem_votes": 100197,
+        "rep_votes": 168506,
+        "other_votes": 0,
+        "total_votes": 268703,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 68309,
+        "margin_pct": 25.42174817549488,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 223013,
+        "rep_votes": 80089,
+        "other_votes": 0,
+        "total_votes": 303102,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -142924,
+        "margin_pct": -47.15376341957493,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 114196,
+        "rep_votes": 173949,
+        "other_votes": 0,
+        "total_votes": 288145,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 59753,
+        "margin_pct": 20.73712887608669,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 135633,
+        "rep_votes": 149703,
+        "other_votes": 0,
+        "total_votes": 285336,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 14070,
+        "margin_pct": 4.931028681974935,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "6": {
+        "dem_votes": 141562,
+        "rep_votes": 147158,
+        "other_votes": 0,
+        "total_votes": 288720,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 5596,
+        "margin_pct": 1.9382100304793572,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "7": {
+        "dem_votes": 166918,
+        "rep_votes": 152130,
+        "other_votes": 0,
+        "total_votes": 319048,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -14788,
+        "margin_pct": -4.635039241744189,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "8": {
+        "dem_votes": 127965,
+        "rep_votes": 170492,
+        "other_votes": 0,
+        "total_votes": 298457,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 42527,
+        "margin_pct": 14.248953785637461,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "9": {
+        "dem_votes": 168340,
+        "rep_votes": 119099,
+        "other_votes": 0,
+        "total_votes": 287439,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -49241,
+        "margin_pct": -17.13093908620612,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "10": {
+        "dem_votes": 156046,
+        "rep_votes": 137387,
+        "other_votes": 0,
+        "total_votes": 293433,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -18659,
+        "margin_pct": -6.358862159334498,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "11": {
+        "dem_votes": 233941,
+        "rep_votes": 47069,
+        "other_votes": 0,
+        "total_votes": 281010,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -186872,
+        "margin_pct": -66.50012455072773,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 123810,
+        "rep_votes": 159380,
+        "other_votes": 0,
+        "total_votes": 283190,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": 35570,
+        "margin_pct": 12.560471768070908,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "13": {
+        "dem_votes": 175079,
+        "rep_votes": 127959,
+        "other_votes": 0,
+        "total_votes": 303038,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -47120,
+        "margin_pct": -15.549205050191725,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "14": {
+        "dem_votes": 159973,
+        "rep_votes": 143567,
+        "other_votes": 0,
+        "total_votes": 303540,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -16406,
+        "margin_pct": -5.4048889767411215,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "15": {
+        "dem_votes": 141470,
+        "rep_votes": 126410,
+        "other_votes": 0,
+        "total_votes": 267880,
+        "dem_candidate": "Sherrod Brown",
+        "rep_candidate": "Jim Renacci",
+        "margin": -15060,
+        "margin_pct": -5.621920262804241,
+        "winner": "DEM",
+        "color": "#6baed6"
+      }
+    }
+  }
+}

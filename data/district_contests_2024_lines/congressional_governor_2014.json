@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "governor",
+  "year": 2014,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 70442,
+        "rep_votes": 129637,
+        "other_votes": 7458,
+        "total_votes": 207537,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 59195,
+        "margin_pct": 28.52262488134646,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "2": {
+        "dem_votes": 49398,
+        "rep_votes": 129234,
+        "other_votes": 5218,
+        "total_votes": 183850,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 79836,
+        "margin_pct": 43.42453086755507,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 80420,
+        "rep_votes": 93638,
+        "other_votes": 9299,
+        "total_votes": 183357,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 13218,
+        "margin_pct": 7.20888757996695,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "4": {
+        "dem_votes": 44844,
+        "rep_votes": 148504,
+        "other_votes": 5199,
+        "total_votes": 198547,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 103660,
+        "margin_pct": 52.2093005686311,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 56057,
+        "rep_votes": 137486,
+        "other_votes": 5930,
+        "total_votes": 199473,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 81429,
+        "margin_pct": 40.822066144290204,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 71980,
+        "rep_votes": 124243,
+        "other_votes": 6312,
+        "total_votes": 202535,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 52263,
+        "margin_pct": 25.80442886414694,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 55142,
+        "rep_votes": 144485,
+        "other_votes": 7148,
+        "total_votes": 206775,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 89343,
+        "margin_pct": 43.207834602829166,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 53165,
+        "rep_votes": 146549,
+        "other_votes": 5222,
+        "total_votes": 204936,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 93384,
+        "margin_pct": 45.56739665066167,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 73131,
+        "rep_votes": 114439,
+        "other_votes": 6614,
+        "total_votes": 194184,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 41308,
+        "margin_pct": 21.272607423886623,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "10": {
+        "dem_votes": 69002,
+        "rep_votes": 136250,
+        "other_votes": 5233,
+        "total_votes": 210485,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 67248,
+        "margin_pct": 31.949070004988478,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 101420,
+        "rep_votes": 67698,
+        "other_votes": 8531,
+        "total_votes": 177649,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": -33722,
+        "margin_pct": -18.982375358150062,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 54464,
+        "rep_votes": 135909,
+        "other_votes": 6303,
+        "total_votes": 196676,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 81445,
+        "margin_pct": 41.41074660863552,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 65246,
+        "rep_votes": 114269,
+        "other_votes": 6130,
+        "total_votes": 185645,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 49023,
+        "margin_pct": 26.406851787012847,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "14": {
+        "dem_votes": 68206,
+        "rep_votes": 134548,
+        "other_votes": 7511,
+        "total_votes": 210265,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 66342,
+        "margin_pct": 31.551613440182624,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 48988,
+        "rep_votes": 116470,
+        "other_votes": 5437,
+        "total_votes": 170895,
+        "dem_candidate": "Edward FitzGerald",
+        "rep_candidate": "John Kasich",
+        "margin": 67482,
+        "margin_pct": 39.48740454665145,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "attorney_general",
+  "year": 2018,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 163876,
+        "rep_votes": 149322,
+        "other_votes": 0,
+        "total_votes": 313198,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": -14554,
+        "margin_pct": -4.646900682635266,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 83208,
+        "rep_votes": 183266,
+        "other_votes": 0,
+        "total_votes": 266474,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 100058,
+        "margin_pct": 37.54887906512455,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 203080,
+        "rep_votes": 97787,
+        "other_votes": 0,
+        "total_votes": 300867,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": -105293,
+        "margin_pct": -34.99652670449069,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 92031,
+        "rep_votes": 194342,
+        "other_votes": 0,
+        "total_votes": 286373,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 102311,
+        "margin_pct": 35.72648259437866,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 112348,
+        "rep_votes": 167202,
+        "other_votes": 0,
+        "total_votes": 279550,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 54854,
+        "margin_pct": 19.622250044714722,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 121014,
+        "rep_votes": 163646,
+        "other_votes": 0,
+        "total_votes": 284660,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 42632,
+        "margin_pct": 14.976463149019883,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "7": {
+        "dem_votes": 151359,
+        "rep_votes": 162298,
+        "other_votes": 0,
+        "total_votes": 313657,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 10939,
+        "margin_pct": 3.487567629608139,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "8": {
+        "dem_votes": 114258,
+        "rep_votes": 179652,
+        "other_votes": 0,
+        "total_votes": 293910,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 65394,
+        "margin_pct": 22.249668265795652,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 147686,
+        "rep_votes": 137341,
+        "other_votes": 0,
+        "total_votes": 285027,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": -10345,
+        "margin_pct": -3.629480715862006,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "10": {
+        "dem_votes": 136192,
+        "rep_votes": 154516,
+        "other_votes": 0,
+        "total_votes": 290708,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 18324,
+        "margin_pct": 6.303232109195481,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 225722,
+        "rep_votes": 52759,
+        "other_votes": 0,
+        "total_votes": 278481,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": -172963,
+        "margin_pct": -62.109443732247435,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 102154,
+        "rep_votes": 177124,
+        "other_votes": 0,
+        "total_votes": 279278,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 74970,
+        "margin_pct": 26.8442197380388,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 159858,
+        "rep_votes": 137067,
+        "other_votes": 0,
+        "total_votes": 296925,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": -22791,
+        "margin_pct": -7.675675675675675,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "14": {
+        "dem_votes": 140904,
+        "rep_votes": 158778,
+        "other_votes": 0,
+        "total_votes": 299682,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 17874,
+        "margin_pct": 5.9643221815124035,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 121125,
+        "rep_votes": 144749,
+        "other_votes": 0,
+        "total_votes": 265874,
+        "dem_candidate": "Steve Dettelbach",
+        "rep_candidate": "Dave Yost",
+        "margin": 23624,
+        "margin_pct": 8.885411886833614,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

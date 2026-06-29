@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "president",
+  "year": 2020,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 220009,
+        "rep_votes": 185210,
+        "other_votes": 6298,
+        "total_votes": 411517,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -34799,
+        "margin_pct": -8.456272766374171,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "2": {
+        "dem_votes": 100661,
+        "rep_votes": 272061,
+        "other_votes": 5067,
+        "total_votes": 377789,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 171400,
+        "margin_pct": 45.36924050197332,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 271585,
+        "rep_votes": 104499,
+        "other_votes": 5696,
+        "total_votes": 381780,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -167086,
+        "margin_pct": -43.76499554717376,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 123427,
+        "rep_votes": 263921,
+        "other_votes": 6154,
+        "total_votes": 393502,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 140494,
+        "margin_pct": 35.70350341294326,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 142189,
+        "rep_votes": 248513,
+        "other_votes": 6168,
+        "total_votes": 396870,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 106324,
+        "margin_pct": 26.790636732431274,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 137580,
+        "rep_votes": 248878,
+        "other_votes": 5313,
+        "total_votes": 391771,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 111298,
+        "margin_pct": 28.408942979444625,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 192474,
+        "rep_votes": 232158,
+        "other_votes": 5147,
+        "total_votes": 429779,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 39684,
+        "margin_pct": 9.233582841413842,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 153454,
+        "rep_votes": 241726,
+        "other_votes": 5833,
+        "total_votes": 401013,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 88272,
+        "margin_pct": 22.012253966829007,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 185999,
+        "rep_votes": 197358,
+        "other_votes": 6654,
+        "total_votes": 390011,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 11359,
+        "margin_pct": 2.9124819556371486,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 181106,
+        "rep_votes": 195752,
+        "other_votes": 6493,
+        "total_votes": 383351,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 14646,
+        "margin_pct": 3.8205195760543207,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "11": {
+        "dem_votes": 280649,
+        "rep_votes": 74174,
+        "other_votes": 3759,
+        "total_votes": 358582,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -206475,
+        "margin_pct": -57.58097171637171,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 131493,
+        "rep_votes": 251593,
+        "other_votes": 5927,
+        "total_votes": 389013,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 120100,
+        "margin_pct": 30.873004244074103,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 205552,
+        "rep_votes": 194195,
+        "other_votes": 5724,
+        "total_votes": 405471,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": -11357,
+        "margin_pct": -2.8009401412184842,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "14": {
+        "dem_votes": 172797,
+        "rep_votes": 234487,
+        "other_votes": 5551,
+        "total_votes": 412835,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 61690,
+        "margin_pct": 14.943015974905228,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 169922,
+        "rep_votes": 193858,
+        "other_votes": 6097,
+        "total_votes": 369877,
+        "dem_candidate": "Joseph R. Biden and Kamala D. Harris",
+        "rep_candidate": "Donald J. Trump and Michael R. Pence",
+        "margin": 23936,
+        "margin_pct": 6.471340472643608,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

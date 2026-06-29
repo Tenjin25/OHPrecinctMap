@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+  "year": 2024,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 200869,
+        "rep_votes": 190385,
+        "other_votes": 0,
+        "total_votes": 391254,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": -10484,
+        "margin_pct": -2.6795892182571937,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 96360,
+        "rep_votes": 261874,
+        "other_votes": 0,
+        "total_votes": 358234,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 165514,
+        "margin_pct": 46.20276132360412,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 219039,
+        "rep_votes": 93216,
+        "other_votes": 0,
+        "total_votes": 312255,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": -125823,
+        "margin_pct": -40.29495124177355,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 119887,
+        "rep_votes": 263405,
+        "other_votes": 0,
+        "total_votes": 383292,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 143518,
+        "margin_pct": 37.44351564864385,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 129496,
+        "rep_votes": 236472,
+        "other_votes": 0,
+        "total_votes": 365968,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 106976,
+        "margin_pct": 29.230971013859136,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 126477,
+        "rep_votes": 236810,
+        "other_votes": 0,
+        "total_votes": 363287,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 110333,
+        "margin_pct": 30.37075370161883,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 178512,
+        "rep_votes": 213105,
+        "other_votes": 0,
+        "total_votes": 391617,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 34593,
+        "margin_pct": 8.833375466335731,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 141539,
+        "rep_votes": 238329,
+        "other_votes": 0,
+        "total_votes": 379868,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 96790,
+        "margin_pct": 25.479903545442102,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 168449,
+        "rep_votes": 190701,
+        "other_votes": 0,
+        "total_votes": 359150,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 22252,
+        "margin_pct": 6.195739941528609,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 165550,
+        "rep_votes": 191346,
+        "other_votes": 0,
+        "total_votes": 356896,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 25796,
+        "margin_pct": 7.22787590782749,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 234872,
+        "rep_votes": 64397,
+        "other_votes": 0,
+        "total_votes": 299269,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": -170475,
+        "margin_pct": -56.96380179704546,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 124861,
+        "rep_votes": 244794,
+        "other_votes": 0,
+        "total_votes": 369655,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 119933,
+        "margin_pct": 32.44457669989585,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 189711,
+        "rep_votes": 188572,
+        "other_votes": 0,
+        "total_votes": 378283,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": -1139,
+        "margin_pct": -0.30109732660468486,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "14": {
+        "dem_votes": 162114,
+        "rep_votes": 220572,
+        "other_votes": 0,
+        "total_votes": 382686,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 58458,
+        "margin_pct": 15.275709066963516,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 143034,
+        "rep_votes": 174457,
+        "other_votes": 0,
+        "total_votes": 317491,
+        "dem_candidate": "Michael P. Donnelly",
+        "rep_candidate": "Megan E. Shanahan",
+        "margin": 31423,
+        "margin_pct": 9.897288427073523,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

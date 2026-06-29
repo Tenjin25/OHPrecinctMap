@@ -1,0 +1,185 @@
+{
+  "congressional_2022": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "U.S. House"
+    ],
+    "input_row_count": 2787096,
+    "matched_office_row_count": 294789,
+    "precinct_count_with_any_district_rows": 8933,
+    "crosswalk_row_count": 8968,
+    "split_precinct_count": 35,
+    "zero_total_precinct_count": 0,
+    "supplemented_precinct_count": 0,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv",
+        "input_row_count": 2787096,
+        "matched_office_row_count": 294789,
+        "precinct_count_with_any_district_rows": 8933
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_cd118.csv"
+  },
+  "congressional_2024": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "U.S. House"
+    ],
+    "input_row_count": 2823204,
+    "matched_office_row_count": 328486,
+    "precinct_count_with_any_district_rows": 8878,
+    "crosswalk_row_count": 8915,
+    "split_precinct_count": 37,
+    "zero_total_precinct_count": 0,
+    "supplemented_precinct_count": 0,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+        "input_row_count": 2823204,
+        "matched_office_row_count": 328486,
+        "precinct_count_with_any_district_rows": 8878
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_cd119.csv"
+  },
+  "congressional_2026": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "U.S. House"
+    ],
+    "input_row_count": 2823204,
+    "matched_office_row_count": 328486,
+    "precinct_count_with_any_district_rows": 8878,
+    "crosswalk_row_count": 8915,
+    "split_precinct_count": 37,
+    "zero_total_precinct_count": 0,
+    "supplemented_precinct_count": 0,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+        "input_row_count": 2823204,
+        "matched_office_row_count": 328486,
+        "precinct_count_with_any_district_rows": 8878
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_cd2026_sl2025_95.csv"
+  },
+  "state_house_2022": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "State House"
+    ],
+    "input_row_count": 2787096,
+    "matched_office_row_count": 1607940,
+    "precinct_count_with_any_district_rows": 8933,
+    "crosswalk_row_count": 9027,
+    "split_precinct_count": 91,
+    "zero_total_precinct_count": 0,
+    "supplemented_precinct_count": 0,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv",
+        "input_row_count": 2787096,
+        "matched_office_row_count": 1607940,
+        "precinct_count_with_any_district_rows": 8933
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_2022_state_house.csv"
+  },
+  "state_house_2024": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "State House"
+    ],
+    "input_row_count": 2823204,
+    "matched_office_row_count": 1704576,
+    "precinct_count_with_any_district_rows": 8878,
+    "crosswalk_row_count": 8997,
+    "split_precinct_count": 117,
+    "zero_total_precinct_count": 0,
+    "supplemented_precinct_count": 0,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+        "input_row_count": 2823204,
+        "matched_office_row_count": 1704576,
+        "precinct_count_with_any_district_rows": 8878
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_2024_state_house.csv"
+  },
+  "state_senate_2022": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv",
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "State Senate"
+    ],
+    "input_row_count": 5610300,
+    "matched_office_row_count": 552141,
+    "precinct_count_with_any_district_rows": 8983,
+    "crosswalk_row_count": 8440,
+    "split_precinct_count": 24,
+    "zero_total_precinct_count": 567,
+    "supplemented_precinct_count": 3841,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv",
+        "input_row_count": 2787096,
+        "matched_office_row_count": 276923,
+        "precinct_count_with_any_district_rows": 8933
+      },
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+        "input_row_count": 2823204,
+        "matched_office_row_count": 275218,
+        "precinct_count_with_any_district_rows": 8878
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_2022_state_senate.csv"
+  },
+  "state_senate_2024": {
+    "sources": [
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+      "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv"
+    ],
+    "offices": [
+      "State Senate",
+      "State Senate (Unexpired Term Ending 12/31/2026)"
+    ],
+    "input_row_count": 5610300,
+    "matched_office_row_count": 569897,
+    "precinct_count_with_any_district_rows": 8983,
+    "crosswalk_row_count": 8434,
+    "split_precinct_count": 18,
+    "zero_total_precinct_count": 567,
+    "supplemented_precinct_count": 3752,
+    "source_summaries": [
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2024\\20241105__oh__general__precinct.csv",
+        "input_row_count": 2823204,
+        "matched_office_row_count": 292974,
+        "precinct_count_with_any_district_rows": 8878
+      },
+      {
+        "source": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\2022\\20221108__oh__general__precinct.csv",
+        "input_row_count": 2787096,
+        "matched_office_row_count": 276923,
+        "precinct_count_with_any_district_rows": 8933
+      }
+    ],
+    "output": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\crosswalks\\precinct_to_2024_state_senate.csv"
+  }
+}

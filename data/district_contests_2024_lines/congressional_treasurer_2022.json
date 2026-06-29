@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "treasurer",
+  "year": 2022,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 141871,
+        "rep_votes": 150913,
+        "other_votes": 0,
+        "total_votes": 292784,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 9042,
+        "margin_pct": 3.08828351276026,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "2": {
+        "dem_votes": 64805,
+        "rep_votes": 191792,
+        "other_votes": 0,
+        "total_votes": 256597,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 126987,
+        "margin_pct": 49.48888724342061,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 170186,
+        "rep_votes": 86173,
+        "other_votes": 0,
+        "total_votes": 256359,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": -84013,
+        "margin_pct": -32.771621047047304,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 82049,
+        "rep_votes": 205624,
+        "other_votes": 0,
+        "total_votes": 287673,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 123575,
+        "margin_pct": 42.95675993228423,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 88515,
+        "rep_votes": 185428,
+        "other_votes": 0,
+        "total_votes": 273943,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 96913,
+        "margin_pct": 35.37706749214253,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 91079,
+        "rep_votes": 185467,
+        "other_votes": 0,
+        "total_votes": 276546,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 94388,
+        "margin_pct": 34.13103064228012,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 123494,
+        "rep_votes": 175190,
+        "other_votes": 0,
+        "total_votes": 298684,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 51696,
+        "margin_pct": 17.30792409369099,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 93404,
+        "rep_votes": 184161,
+        "other_votes": 0,
+        "total_votes": 277565,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 90757,
+        "margin_pct": 32.697566335813235,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 113471,
+        "rep_votes": 147773,
+        "other_votes": 0,
+        "total_votes": 261244,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 34302,
+        "margin_pct": 13.130253709176095,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 116763,
+        "rep_votes": 155316,
+        "other_votes": 0,
+        "total_votes": 272079,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 38553,
+        "margin_pct": 14.169781570793777,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 158950,
+        "rep_votes": 51904,
+        "other_votes": 0,
+        "total_votes": 210854,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": -107046,
+        "margin_pct": -50.767829872802984,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 85755,
+        "rep_votes": 188890,
+        "other_votes": 0,
+        "total_votes": 274645,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 103135,
+        "margin_pct": 37.55211272733893,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 125024,
+        "rep_votes": 139671,
+        "other_votes": 0,
+        "total_votes": 264695,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 14647,
+        "margin_pct": 5.533538601031376,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "14": {
+        "dem_votes": 114889,
+        "rep_votes": 179632,
+        "other_votes": 0,
+        "total_votes": 294521,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 64743,
+        "margin_pct": 21.98247323620387,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 102913,
+        "rep_votes": 143668,
+        "other_votes": 0,
+        "total_votes": 246581,
+        "dem_candidate": "Scott Schertzer",
+        "rep_candidate": "Robert Sprague",
+        "margin": 40755,
+        "margin_pct": 16.52803744002985,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

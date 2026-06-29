@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "treasurer",
+  "year": 2018,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 156531,
+        "rep_votes": 154849,
+        "other_votes": 0,
+        "total_votes": 311380,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": -1682,
+        "margin_pct": -0.540175990750851,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 82361,
+        "rep_votes": 182184,
+        "other_votes": 0,
+        "total_votes": 264545,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 99823,
+        "margin_pct": 37.73384490351358,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 200528,
+        "rep_votes": 96612,
+        "other_votes": 0,
+        "total_votes": 297140,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": -103916,
+        "margin_pct": -34.97206703910615,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 90488,
+        "rep_votes": 193190,
+        "other_votes": 0,
+        "total_votes": 283678,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 102702,
+        "margin_pct": 36.203723940524114,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 107528,
+        "rep_votes": 172565,
+        "other_votes": 0,
+        "total_votes": 280093,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 65037,
+        "margin_pct": 23.21978771336663,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 120477,
+        "rep_votes": 160934,
+        "other_votes": 0,
+        "total_votes": 281411,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 40457,
+        "margin_pct": 14.37648137421778,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "7": {
+        "dem_votes": 139749,
+        "rep_votes": 170061,
+        "other_votes": 0,
+        "total_votes": 309810,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 30312,
+        "margin_pct": 9.784061198799265,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 110183,
+        "rep_votes": 184642,
+        "other_votes": 0,
+        "total_votes": 294825,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 74459,
+        "margin_pct": 25.255320953107773,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 139381,
+        "rep_votes": 141958,
+        "other_votes": 0,
+        "total_votes": 281339,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 2577,
+        "margin_pct": 0.9159768108936194,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 134455,
+        "rep_votes": 155038,
+        "other_votes": 0,
+        "total_votes": 289493,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 20583,
+        "margin_pct": 7.110016477082347,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 219414,
+        "rep_votes": 56914,
+        "other_votes": 0,
+        "total_votes": 276328,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": -162500,
+        "margin_pct": -58.806925103500184,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 102284,
+        "rep_votes": 175810,
+        "other_votes": 0,
+        "total_votes": 278094,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 73526,
+        "margin_pct": 26.439261544657562,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 154626,
+        "rep_votes": 141975,
+        "other_votes": 0,
+        "total_votes": 296601,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": -12651,
+        "margin_pct": -4.265326145225404,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "14": {
+        "dem_votes": 135113,
+        "rep_votes": 161255,
+        "other_votes": 0,
+        "total_votes": 296368,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 26142,
+        "margin_pct": 8.820790368730767,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 119302,
+        "rep_votes": 143807,
+        "other_votes": 0,
+        "total_votes": 263109,
+        "dem_candidate": "Rob Richardson",
+        "rep_candidate": "Robert Sprague",
+        "margin": 24505,
+        "margin_pct": 9.313630472541798,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}
