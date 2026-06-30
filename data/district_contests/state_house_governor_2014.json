@@ -1191,18 +1191,6 @@
         "margin_pct": 25.373627827007013,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 2735,
-        "rep_votes": 3773,
-        "other_votes": 362,
-        "total_votes": 6870,
-        "dem_candidate": "Edward FitzGerald",
-        "rep_candidate": "John Kasich",
-        "margin": 1038,
-        "margin_pct": 15.109170305676855,
-        "winner": "REP",
-        "color": "#cb181d"
       }
     }
   }

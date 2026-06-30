@@ -399,18 +399,6 @@
         "margin_pct": -10.212491311687021,
         "winner": "DEM",
         "color": "#6baed6"
-      },
-      "ZZZ": {
-        "dem_votes": 7603,
-        "rep_votes": 3103,
-        "other_votes": 0,
-        "total_votes": 10706,
-        "dem_candidate": "Sherrod Brown",
-        "rep_candidate": "Jim Renacci",
-        "margin": -4500,
-        "margin_pct": -42.03250513730618,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

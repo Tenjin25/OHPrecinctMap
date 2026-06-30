@@ -98,6 +98,14 @@
     },
     {
       "scope": "congressional",
+      "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2011",
+      "year": 2010,
+      "file": "congressional_chief_justice_of_the_supreme_court_term_commencing_01_01_2011_2010.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "congressional_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
@@ -125,6 +133,14 @@
       "contest_type": "governor",
       "year": 2014,
       "file": "congressional_governor_2014.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "governor",
+      "year": 2018,
+      "file": "congressional_governor_2018.json",
       "rows": 15,
       "lines_year": 2024
     },
@@ -355,6 +371,14 @@
     {
       "scope": "congressional",
       "contest_type": "us_senate",
+      "year": 2010,
+      "file": "congressional_us_senate_2010.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_senate",
       "year": 2012,
       "file": "congressional_us_senate_2012.json",
       "rows": 15,
@@ -490,6 +514,14 @@
     },
     {
       "scope": "state_house",
+      "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2011",
+      "year": 2010,
+      "file": "state_house_chief_justice_of_the_supreme_court_term_commencing_01_01_2011_2010.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_house_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
@@ -517,6 +549,14 @@
       "contest_type": "governor",
       "year": 2014,
       "file": "state_house_governor_2014.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
+      "contest_type": "governor",
+      "year": 2018,
+      "file": "state_house_governor_2018.json",
       "rows": 99,
       "lines_year": 2024
     },
@@ -747,6 +787,14 @@
     {
       "scope": "state_house",
       "contest_type": "us_senate",
+      "year": 2010,
+      "file": "state_house_us_senate_2010.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
+      "contest_type": "us_senate",
       "year": 2012,
       "file": "state_house_us_senate_2012.json",
       "rows": 99,
@@ -882,6 +930,14 @@
     },
     {
       "scope": "state_senate",
+      "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2011",
+      "year": 2010,
+      "file": "state_senate_chief_justice_of_the_supreme_court_term_commencing_01_01_2011_2010.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_senate_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
@@ -909,6 +965,14 @@
       "contest_type": "governor",
       "year": 2014,
       "file": "state_senate_governor_2014.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
+      "contest_type": "governor",
+      "year": 2018,
+      "file": "state_senate_governor_2018.json",
       "rows": 33,
       "lines_year": 2024
     },
@@ -1133,6 +1197,14 @@
       "contest_type": "us_senate",
       "year": 2006,
       "file": "state_senate_us_senate_2006.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
+      "contest_type": "us_senate",
+      "year": 2010,
+      "file": "state_senate_us_senate_2010.json",
       "rows": 33,
       "lines_year": 2024
     },

@@ -399,18 +399,6 @@
         "margin_pct": 10.104704437725285,
         "winner": "REP",
         "color": "#fb6a4a"
-      },
-      "ZZZ": {
-        "dem_votes": 3221,
-        "rep_votes": 3681,
-        "other_votes": 0,
-        "total_votes": 6902,
-        "dem_candidate": "David Pepper",
-        "rep_candidate": "Mike DeWine",
-        "margin": 460,
-        "margin_pct": 6.664734859461026,
-        "winner": "REP",
-        "color": "#fb6a4a"
       }
     }
   }

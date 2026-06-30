@@ -1191,18 +1191,6 @@
         "margin_pct": 15.731303772336199,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 4040,
-        "rep_votes": 2824,
-        "other_votes": 0,
-        "total_votes": 6864,
-        "dem_candidate": "Connie Pillich",
-        "rep_candidate": "Josh Mandel",
-        "margin": -1216,
-        "margin_pct": -17.715617715617714,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "governor",
+  "year": 2018,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 145331,
+        "rep_votes": 156004,
+        "other_votes": 8573,
+        "total_votes": 309908,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 10673,
+        "margin_pct": 3.443925293958207,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "2": {
+        "dem_votes": 94082,
+        "rep_votes": 173687,
+        "other_votes": 8387,
+        "total_votes": 276156,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 79605,
+        "margin_pct": 28.826098292269585,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 208924,
+        "rep_votes": 89143,
+        "other_votes": 6705,
+        "total_votes": 304772,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": -119781,
+        "margin_pct": -39.301838751591355,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 83354,
+        "rep_votes": 184386,
+        "other_votes": 8883,
+        "total_votes": 276623,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 101032,
+        "margin_pct": 36.52335489095267,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 117642,
+        "rep_votes": 153535,
+        "other_votes": 9886,
+        "total_votes": 281063,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 35893,
+        "margin_pct": 12.770446483528605,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "6": {
+        "dem_votes": 111069,
+        "rep_votes": 154068,
+        "other_votes": 8722,
+        "total_votes": 273859,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 42999,
+        "margin_pct": 15.701145479973272,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 145509,
+        "rep_votes": 167212,
+        "other_votes": 8866,
+        "total_votes": 321587,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 21703,
+        "margin_pct": 6.748718076290397,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 125564,
+        "rep_votes": 179327,
+        "other_votes": 9290,
+        "total_votes": 314181,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 53763,
+        "margin_pct": 17.112110535010075,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 137659,
+        "rep_votes": 140312,
+        "other_votes": 9909,
+        "total_votes": 287880,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 2653,
+        "margin_pct": 0.9215645407808809,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 131262,
+        "rep_votes": 156264,
+        "other_votes": 9045,
+        "total_votes": 296571,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 25002,
+        "margin_pct": 8.430359003408965,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 217944,
+        "rep_votes": 54456,
+        "other_votes": 6177,
+        "total_votes": 278577,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": -163488,
+        "margin_pct": -58.686826263474735,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 106753,
+        "rep_votes": 179847,
+        "other_votes": 7934,
+        "total_votes": 294534,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 73094,
+        "margin_pct": 24.81682929644795,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 149085,
+        "rep_votes": 120937,
+        "other_votes": 8191,
+        "total_votes": 278213,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": -28148,
+        "margin_pct": -10.117428013787997,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "14": {
+        "dem_votes": 138831,
+        "rep_votes": 162855,
+        "other_votes": 10006,
+        "total_votes": 311692,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 24024,
+        "margin_pct": 7.707608793295946,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 123093,
+        "rep_votes": 131681,
+        "other_votes": 6841,
+        "total_votes": 261615,
+        "dem_candidate": "Richard Cordray",
+        "rep_candidate": "Mike DeWine",
+        "margin": 8588,
+        "margin_pct": 3.2826863903063663,
+        "winner": "REP",
+        "color": "#fcbba1"
+      }
+    }
+  }
+}

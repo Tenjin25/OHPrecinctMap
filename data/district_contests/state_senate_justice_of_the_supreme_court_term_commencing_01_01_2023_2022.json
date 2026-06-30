@@ -399,18 +399,6 @@
         "margin_pct": 20.423132829763816,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6076,
-        "rep_votes": 3310,
-        "other_votes": 0,
-        "total_votes": 9386,
-        "dem_candidate": "Terri Jamison",
-        "rep_candidate": "Pat Fischer",
-        "margin": -2766,
-        "margin_pct": -29.46942254421479,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

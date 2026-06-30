@@ -1191,18 +1191,6 @@
         "margin_pct": 22.25024621075641,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 3510,
-        "rep_votes": 4485,
-        "other_votes": 0,
-        "total_votes": 7995,
-        "dem_candidate": "Eric D. Fingerhut",
-        "rep_candidate": "George V. Voinovich",
-        "margin": 975,
-        "margin_pct": 12.195121951219512,
-        "winner": "REP",
-        "color": "#fb6a4a"
       }
     }
   }

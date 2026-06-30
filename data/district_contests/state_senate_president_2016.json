@@ -399,18 +399,6 @@
         "margin_pct": 8.000756449383102,
         "winner": "REP",
         "color": "#fb6a4a"
-      },
-      "ZZZ": {
-        "dem_votes": 8228,
-        "rep_votes": 3885,
-        "other_votes": 478,
-        "total_votes": 12591,
-        "dem_candidate": "Hillary Clinton",
-        "rep_candidate": "Donald J. Trump",
-        "margin": -4343,
-        "margin_pct": -34.49289174807402,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

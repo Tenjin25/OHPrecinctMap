@@ -9,7 +9,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from build_county_aggregates import normalize_office, parse_votes
-from build_county_aggregates_json import PARTY_MAP, color_for_margin
+from build_county_aggregates_json import PARTY_MAP, color_for_margin, infer_party
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -82,7 +82,7 @@ def slugify(value: str) -> str:
 
 def normalize_ticket_candidate_name(candidate: str, contest_type: str) -> str:
     candidate = clean_text(candidate)
-    if contest_type not in {"president", "governor"}:
+    if contest_type != "president":
         return candidate
     return re.split(r"\s+(?:and|/|&)\s+", candidate, maxsplit=1, flags=re.IGNORECASE)[0].strip()
 
@@ -106,6 +106,8 @@ def contest_type_for_row(office: str, district: str) -> str:
         return "president"
     if office == "U.S. Senate":
         return "us_senate"
+    if office == "Governor":
+        return "governor"
     if office == "Governor/Lieutenant Governor":
         return "governor"
     if office == "Attorney General":
@@ -149,6 +151,10 @@ def load_crosswalk(path: Path) -> dict[str, list[tuple[str, float]]]:
             precinct_key = clean_text(row.get("precinct_key", "")).upper()
             district_num = normalize_district_number(row.get("district_num", "") or row.get("district_code", ""))
             weight_raw = clean_text(row.get("area_weight", "") or row.get("vote_weight", "0"))
+            # Some legislative crosswalk rows use ZZZ as a water/overflow bucket.
+            # Skip those so they do not surface as a fake district in outputs.
+            if district_num == "ZZZ":
+                continue
             if not precinct_key or not district_num or not weight_raw:
                 continue
             weight = float(weight_raw)
@@ -166,10 +172,26 @@ def empty_result() -> dict[str, float | str]:
         "total_votes": 0.0,
         "dem_candidate": "",
         "rep_candidate": "",
+        "_dem_candidate_votes": {},
+        "_rep_candidate_votes": {},
     }
 
 
 def finalize_result(entry: dict[str, float | str]) -> dict[str, float | str]:
+    dem_candidate_votes = entry.get("_dem_candidate_votes", {}) or {}
+    rep_candidate_votes = entry.get("_rep_candidate_votes", {}) or {}
+    dem_candidate = ""
+    rep_candidate = ""
+    if isinstance(dem_candidate_votes, dict) and dem_candidate_votes:
+        dem_candidate = max(
+            dem_candidate_votes.items(),
+            key=lambda item: (float(item[1]), str(item[0])),
+        )[0]
+    if isinstance(rep_candidate_votes, dict) and rep_candidate_votes:
+        rep_candidate = max(
+            rep_candidate_votes.items(),
+            key=lambda item: (float(item[1]), str(item[0])),
+        )[0]
     dem_votes = int(round(float(entry.get("dem_votes", 0) or 0)))
     rep_votes = int(round(float(entry.get("rep_votes", 0) or 0)))
     other_votes = int(round(float(entry.get("other_votes", 0) or 0)))
@@ -178,11 +200,12 @@ def finalize_result(entry: dict[str, float | str]) -> dict[str, float | str]:
     margin_pct = (margin / total_votes * 100.0) if total_votes else 0.0
     winner = "REP" if margin > 0 else "DEM" if margin < 0 else "TIE"
     return {
-        **entry,
         "dem_votes": dem_votes,
         "rep_votes": rep_votes,
         "other_votes": other_votes,
         "total_votes": total_votes,
+        "dem_candidate": dem_candidate,
+        "rep_candidate": rep_candidate,
         "margin": margin,
         "margin_pct": margin_pct,
         "winner": winner,
@@ -238,7 +261,7 @@ def aggregate_scopes_year(
             if votes <= 0:
                 continue
 
-            party = PARTY_MAP.get(clean_text(row.get("party", "")).upper(), "")
+            party = infer_party(office, candidate, row.get("party", ""))
             for scope in target_scopes:
                 if (
                     direct_district_num
@@ -253,12 +276,14 @@ def aggregate_scopes_year(
                     bucket = contests_by_scope[scope][contest_type][direct_district_num]
                     if party == "DEM":
                         bucket["dem_votes"] += votes
-                        if not bucket["dem_candidate"]:
-                            bucket["dem_candidate"] = candidate
+                        bucket["_dem_candidate_votes"][candidate] = (
+                            float(bucket["_dem_candidate_votes"].get(candidate, 0.0)) + votes
+                        )
                     elif party == "REP":
                         bucket["rep_votes"] += votes
-                        if not bucket["rep_candidate"]:
-                            bucket["rep_candidate"] = candidate
+                        bucket["_rep_candidate_votes"][candidate] = (
+                            float(bucket["_rep_candidate_votes"].get(candidate, 0.0)) + votes
+                        )
                     else:
                         bucket["other_votes"] += votes
                     bucket["total_votes"] += votes
@@ -276,12 +301,14 @@ def aggregate_scopes_year(
                     weighted_votes = votes * weight
                     if party == "DEM":
                         bucket["dem_votes"] += weighted_votes
-                        if not bucket["dem_candidate"]:
-                            bucket["dem_candidate"] = candidate
+                        bucket["_dem_candidate_votes"][candidate] = (
+                            float(bucket["_dem_candidate_votes"].get(candidate, 0.0)) + weighted_votes
+                        )
                     elif party == "REP":
                         bucket["rep_votes"] += weighted_votes
-                        if not bucket["rep_candidate"]:
-                            bucket["rep_candidate"] = candidate
+                        bucket["_rep_candidate_votes"][candidate] = (
+                            float(bucket["_rep_candidate_votes"].get(candidate, 0.0)) + weighted_votes
+                        )
                     else:
                         bucket["other_votes"] += weighted_votes
                     bucket["total_votes"] += weighted_votes

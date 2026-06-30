@@ -10,6 +10,7 @@ from build_county_aggregates_json import (
     clean_text,
     color_for_margin,
     contest_key_for,
+    infer_party,
     normalize_ticket_candidate_name,
 )
 from build_district_aggregates import PRECINCT_GENERAL_FILES
@@ -83,7 +84,7 @@ def build_year_contests(path: Path) -> dict[str, dict[str, dict]]:
             contest_type = normalize_contest_type(contest_key_for(office, district))
             candidate = normalize_ticket_candidate_name(candidate, contest_type)
             county_bucket = contests.setdefault(contest_type, {}).setdefault(county, empty_result())
-            party = PARTY_MAP.get(party_raw.upper(), "")
+            party = infer_party(office, candidate, party_raw)
             if party == "DEM":
                 county_bucket["dem_votes"] += votes
                 if not county_bucket["dem_candidate"]:

@@ -1191,18 +1191,6 @@
         "margin_pct": 31.790478865327902,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 5713,
-        "rep_votes": 3626,
-        "other_votes": 0,
-        "total_votes": 9339,
-        "dem_candidate": "Scott Schertzer",
-        "rep_candidate": "Robert Sprague",
-        "margin": -2087,
-        "margin_pct": -22.34714637541493,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

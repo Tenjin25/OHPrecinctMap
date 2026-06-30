@@ -1191,18 +1191,6 @@
         "margin_pct": 30.928039421143556,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 5723,
-        "rep_votes": 3618,
-        "other_votes": 0,
-        "total_votes": 9341,
-        "dem_candidate": "Taylor Sappington",
-        "rep_candidate": "Keith Faber",
-        "margin": -2105,
-        "margin_pct": -22.53506048602933,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

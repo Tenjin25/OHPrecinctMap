@@ -399,18 +399,6 @@
         "margin_pct": -22.75762581725959,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 7997,
-        "rep_votes": 3782,
-        "other_votes": 384,
-        "total_votes": 12163,
-        "dem_candidate": "Sherrod Brown",
-        "rep_candidate": "Josh Mandel",
-        "margin": -4215,
-        "margin_pct": -34.65427937186549,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

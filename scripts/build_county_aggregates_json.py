@@ -41,6 +41,21 @@ PARTY_MAP = {
     "REPUBLICAN": "REP",
 }
 
+JUDICIAL_CANDIDATE_PARTY_MAP = {
+    ("Chief Justice of the Supreme Court (Term Commencing 01/01)", "C. Ellen Connally"): "DEM",
+    ("Chief Justice of the Supreme Court (Term Commencing 01/01)", "Thomas J. Moyer"): "REP",
+    ("Justice of the Supreme Court (Term Commencing 01/02)", "Paul E. Pfeifer"): "REP",
+    ("Justice of the Supreme Court (Unexpired Term Ending 12/31)", "Terrence O'Donnell"): "REP",
+    ("Chief Justice of the Supreme Court - Term Commencing 01/01/2011", "Eric Brown"): "DEM",
+    ("Chief Justice of the Supreme Court - Term Commencing 01/01/2011", "Maureen O'Connor"): "REP",
+    ("Justice of the Supreme Court - Term Commencing 01/01/2011", "Mary Jane Trapp"): "DEM",
+    ("Justice of the Supreme Court - Term Commencing 01/01/2011", "Judith Lanzinger"): "REP",
+    ("Justice of the Ohio Supreme Court - Term Commencing 01/01/2011", "Mary Jane Trapp"): "DEM",
+    ("Justice of the Ohio Supreme Court - Term Commencing 01/01/2011", "Judith Lanzinger"): "REP",
+    ("Justice of the Supreme Court - Term Commencing 01/02/2011", "Paul Pfeifer"): "REP",
+    ("Justice of the Ohio Supreme Court - Term Commencing 01/02/2011", "Paul Pfeifer"): "REP",
+}
+
 
 def clean_text(value: str) -> str:
     return " ".join((value or "").split())
@@ -55,9 +70,16 @@ def slugify(value: str) -> str:
 
 def normalize_ticket_candidate_name(candidate: str, contest_key: str) -> str:
     candidate = clean_text(candidate)
-    if contest_key not in {"presidential", "governor"}:
+    if contest_key not in {"presidential", "president"}:
         return candidate
     return re.split(r"\s+(?:and|/|&)\s+", candidate, maxsplit=1, flags=re.IGNORECASE)[0].strip()
+
+
+def infer_party(office: str, candidate: str, party_raw: str) -> str:
+    explicit_party = PARTY_MAP.get(clean_text(party_raw).upper(), "")
+    if explicit_party:
+        return explicit_party
+    return JUDICIAL_CANDIDATE_PARTY_MAP.get((normalize_office(office), clean_text(candidate)), "")
 
 
 def contest_key_for(office: str, district: str) -> str:
@@ -163,7 +185,7 @@ def load_results_by_year() -> tuple[dict[str, dict], list[str]]:
                 contest_bucket = contests.setdefault(contest_key, {"general": {"results": {}}})
                 county_bucket = contest_bucket["general"]["results"].setdefault(county, empty_county_result())
 
-                party = PARTY_MAP.get(party_raw.upper(), "")
+                party = infer_party(office, candidate, party_raw)
                 if party == "DEM":
                     county_bucket["dem_votes"] += votes
                     if not county_bucket["dem_candidate"]:

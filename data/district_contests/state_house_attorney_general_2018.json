@@ -1191,18 +1191,6 @@
         "margin_pct": 15.418092240317504,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 7143,
-        "rep_votes": 3462,
-        "other_votes": 0,
-        "total_votes": 10605,
-        "dem_candidate": "Steve Dettelbach",
-        "rep_candidate": "Dave Yost",
-        "margin": -3681,
-        "margin_pct": -34.71004243281471,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

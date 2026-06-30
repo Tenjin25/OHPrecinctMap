@@ -399,18 +399,6 @@
         "margin_pct": 30.324876726453297,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 5731,
-        "rep_votes": 3774,
-        "other_votes": 0,
-        "total_votes": 9505,
-        "dem_candidate": "Jeffrey A. Crossman",
-        "rep_candidate": "Dave Yost",
-        "margin": -1957,
-        "margin_pct": -20.58916359810626,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

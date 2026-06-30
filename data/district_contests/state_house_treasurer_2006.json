@@ -1191,18 +1191,6 @@
         "margin_pct": -17.600024986725803,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 4288,
-        "rep_votes": 2162,
-        "other_votes": 0,
-        "total_votes": 6450,
-        "dem_candidate": "Richard Cordray",
-        "rep_candidate": "Sandra O'Brien",
-        "margin": -2126,
-        "margin_pct": -32.96124031007752,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

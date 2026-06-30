@@ -399,18 +399,6 @@
         "margin_pct": -14.144534121368272,
         "winner": "DEM",
         "color": "#6baed6"
-      },
-      "ZZZ": {
-        "dem_votes": 8132,
-        "rep_votes": 4369,
-        "other_votes": 140,
-        "total_votes": 12641,
-        "dem_candidate": "Barack Obama",
-        "rep_candidate": "Mitt Romney",
-        "margin": -3763,
-        "margin_pct": -29.768214539988925,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

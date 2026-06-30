@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_senate",
+  "year": 2010,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 75930,
+        "rep_votes": 143030,
+        "other_votes": 5407,
+        "total_votes": 224367,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 67100,
+        "margin_pct": 29.9063587782517,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "2": {
+        "dem_votes": 64796,
+        "rep_votes": 146961,
+        "other_votes": 8087,
+        "total_votes": 219844,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 82165,
+        "margin_pct": 37.37422899874456,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 119946,
+        "rep_votes": 101183,
+        "other_votes": 8597,
+        "total_votes": 229726,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": -18763,
+        "margin_pct": -8.16755613208779,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "4": {
+        "dem_votes": 53690,
+        "rep_votes": 142495,
+        "other_votes": 8842,
+        "total_votes": 205027,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 88805,
+        "margin_pct": 43.31380744975052,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 75145,
+        "rep_votes": 138291,
+        "other_votes": 9693,
+        "total_votes": 223129,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 63146,
+        "margin_pct": 28.300220948419973,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 107464,
+        "rep_votes": 124568,
+        "other_votes": 10419,
+        "total_votes": 242451,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 17104,
+        "margin_pct": 7.054621346168917,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "7": {
+        "dem_votes": 86372,
+        "rep_votes": 151344,
+        "other_votes": 8826,
+        "total_votes": 246542,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 64972,
+        "margin_pct": 26.35331910992853,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "8": {
+        "dem_votes": 71216,
+        "rep_votes": 177461,
+        "other_votes": 7279,
+        "total_votes": 255956,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 106245,
+        "margin_pct": 41.50908749941396,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 108861,
+        "rep_votes": 125862,
+        "other_votes": 8034,
+        "total_votes": 242757,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 17001,
+        "margin_pct": 7.003299595892189,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 99137,
+        "rep_votes": 148964,
+        "other_votes": 8112,
+        "total_votes": 256213,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 49827,
+        "margin_pct": 19.447490954791522,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "11": {
+        "dem_votes": 156399,
+        "rep_votes": 58533,
+        "other_votes": 6344,
+        "total_votes": 221276,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": -97866,
+        "margin_pct": -44.22802292160017,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 67407,
+        "rep_votes": 138852,
+        "other_votes": 10600,
+        "total_votes": 216859,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 71445,
+        "margin_pct": 32.94537003306296,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 79563,
+        "rep_votes": 97901,
+        "other_votes": 6261,
+        "total_votes": 183725,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 18338,
+        "margin_pct": 9.981221934957137,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "14": {
+        "dem_votes": 91936,
+        "rep_votes": 127622,
+        "other_votes": 11406,
+        "total_votes": 230964,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 35686,
+        "margin_pct": 15.45089277982716,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 73008,
+        "rep_votes": 132559,
+        "other_votes": 9304,
+        "total_votes": 214871,
+        "dem_candidate": "Lee Fisher",
+        "rep_candidate": "Rob Portman",
+        "margin": 59551,
+        "margin_pct": 27.714768395921276,
+        "winner": "REP",
+        "color": "#cb181d"
+      }
+    }
+  }
+}

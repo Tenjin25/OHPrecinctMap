@@ -1191,18 +1191,6 @@
         "margin_pct": -1.3798205268405648,
         "winner": "DEM",
         "color": "#c6dbef"
-      },
-      "ZZZ": {
-        "dem_votes": 3627,
-        "rep_votes": 2750,
-        "other_votes": 0,
-        "total_votes": 6377,
-        "dem_candidate": "Barbara Sykes",
-        "rep_candidate": "Mary Taylor",
-        "margin": -877,
-        "margin_pct": -13.752548220166222,
-        "winner": "DEM",
-        "color": "#6baed6"
       }
     }
   }

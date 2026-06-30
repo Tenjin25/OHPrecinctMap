@@ -399,18 +399,6 @@
         "margin_pct": 21.902369588880514,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6146,
-        "rep_votes": 3253,
-        "other_votes": 0,
-        "total_votes": 9399,
-        "dem_candidate": "Marilyn Zayas",
-        "rep_candidate": "Pat DeWine",
-        "margin": -2893,
-        "margin_pct": -30.779870198957337,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

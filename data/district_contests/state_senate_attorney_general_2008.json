@@ -375,18 +375,6 @@
         "margin_pct": -38.433966783115714,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 5976,
-        "rep_votes": 2513,
-        "other_votes": 298,
-        "total_votes": 8787,
-        "dem_candidate": "Richard Cordray",
-        "rep_candidate": "Mike Crites",
-        "margin": -3463,
-        "margin_pct": -39.41049277341527,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

@@ -267,6 +267,14 @@ def normalize_candidate_name(value: str) -> str:
     return clean_whitespace(" ".join(parts[1:] + [parts[0]]))
 
 
+def strip_running_mate(candidate: str, office: str) -> str:
+    cleaned_candidate = clean_whitespace(candidate)
+    cleaned_office = clean_whitespace(office)
+    if cleaned_office not in {"President/Vice President", "Governor/Lieutenant Governor"}:
+        return cleaned_candidate
+    return re.split(r"\s+(?:and|/|&)\s+", cleaned_candidate, maxsplit=1, flags=re.IGNORECASE)[0].strip()
+
+
 def normalize_2004_precinct_name(value: str) -> str:
     cleaned = clean_whitespace(value)
 
@@ -326,6 +334,7 @@ def iter_clean_rows_from_2008_all_counties(path: Path):
             office_label = clean_whitespace(office_row[column_index]) if column_index < len(office_row) else ""
             office, district = normalize_contest(office_label)
             candidate, party = normalize_candidate(candidate_header)
+            candidate = strip_running_mate(candidate, office)
             votes = parse_votes(row[column_index])
 
             yield [
@@ -395,6 +404,7 @@ def iter_clean_rows_from_2004_candidate_map(path: Path):
                 continue
 
             office, normalized_district, party, candidate = metadata
+            candidate = strip_running_mate(candidate, office)
             votes = parse_votes(row[column_index])
             yield [
                 county,
@@ -472,6 +482,7 @@ def iter_clean_rows_from_rows(rows: list[list[str]]):
 
             office, district = normalize_contest(contests[offset])
             candidate, party = normalize_candidate(candidate_header)
+            candidate = strip_running_mate(candidate, office)
 
             yield [
                 county,

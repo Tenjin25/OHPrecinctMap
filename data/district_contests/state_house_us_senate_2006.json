@@ -1191,18 +1191,6 @@
         "margin_pct": -19.22696962212892,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 4504,
-        "rep_votes": 2357,
-        "other_votes": 0,
-        "total_votes": 6861,
-        "dem_candidate": "Sherrod Brown",
-        "rep_candidate": "Mike DeWine",
-        "margin": -2147,
-        "margin_pct": -31.29281445853374,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

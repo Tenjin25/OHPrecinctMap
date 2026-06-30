@@ -1191,18 +1191,6 @@
         "margin_pct": 15.316348543185605,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6679,
-        "rep_votes": 3759,
-        "other_votes": 0,
-        "total_votes": 10438,
-        "dem_candidate": "Rob Richardson",
-        "rep_candidate": "Robert Sprague",
-        "margin": -2920,
-        "margin_pct": -27.974707798428817,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

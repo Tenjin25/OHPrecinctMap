@@ -399,18 +399,6 @@
         "margin_pct": 0.8304982136614397,
         "winner": "REP",
         "color": "#fcbba1"
-      },
-      "ZZZ": {
-        "dem_votes": 6657,
-        "rep_votes": 3355,
-        "other_votes": 423,
-        "total_votes": 10435,
-        "dem_candidate": "Zack Space",
-        "rep_candidate": "Keith Faber",
-        "margin": -3302,
-        "margin_pct": -31.643507426928608,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

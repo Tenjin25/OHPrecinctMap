@@ -399,18 +399,6 @@
         "margin_pct": 0.0,
         "winner": "TIE",
         "color": "#d9d9d9"
-      },
-      "ZZZ": {
-        "dem_votes": 0,
-        "rep_votes": 0,
-        "other_votes": 9105,
-        "total_votes": 9105,
-        "dem_candidate": "",
-        "rep_candidate": "",
-        "margin": 0,
-        "margin_pct": 0.0,
-        "winner": "TIE",
-        "color": "#d9d9d9"
       }
     }
   }

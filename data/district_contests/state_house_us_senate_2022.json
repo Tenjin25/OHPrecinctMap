@@ -1191,18 +1191,6 @@
         "margin_pct": 20.565402487548347,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6530,
-        "rep_votes": 3022,
-        "other_votes": 0,
-        "total_votes": 9552,
-        "dem_candidate": "Tim Ryan",
-        "rep_candidate": "JD Vance",
-        "margin": -3508,
-        "margin_pct": -36.725293132328304,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

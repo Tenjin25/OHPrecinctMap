@@ -399,18 +399,6 @@
         "margin_pct": -39.76803778905229,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 3820,
-        "rep_votes": 2471,
-        "other_votes": 0,
-        "total_votes": 6291,
-        "dem_candidate": "Marc Dann",
-        "rep_candidate": "Betty Montgomery",
-        "margin": -1349,
-        "margin_pct": -21.44333174376093,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

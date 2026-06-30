@@ -1191,18 +1191,6 @@
         "margin_pct": -1.6865149273013413,
         "winner": "DEM",
         "color": "#c6dbef"
-      },
-      "ZZZ": {
-        "dem_votes": 5310,
-        "rep_votes": 3027,
-        "other_votes": 29,
-        "total_votes": 8366,
-        "dem_candidate": "John F. Kerry",
-        "rep_candidate": "George W. Bush",
-        "margin": -2283,
-        "margin_pct": -27.28902701410471,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

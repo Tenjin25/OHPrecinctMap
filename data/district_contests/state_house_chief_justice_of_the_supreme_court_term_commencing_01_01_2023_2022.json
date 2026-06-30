@@ -1191,18 +1191,6 @@
         "margin_pct": 27.08880567819818,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6241,
-        "rep_votes": 3214,
-        "other_votes": 0,
-        "total_votes": 9455,
-        "dem_candidate": "Jennifer Brunner",
-        "rep_candidate": "Sharon L. Kennedy",
-        "margin": -3027,
-        "margin_pct": -32.01480698043363,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

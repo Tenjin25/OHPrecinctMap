@@ -1191,18 +1191,6 @@
         "margin_pct": 26.137908708319845,
         "winner": "REP",
         "color": "#cb181d"
-      },
-      "ZZZ": {
-        "dem_votes": 6590,
-        "rep_votes": 5209,
-        "other_votes": 526,
-        "total_votes": 12325,
-        "dem_candidate": "Ted Strickland",
-        "rep_candidate": "Rob Portman",
-        "margin": -1381,
-        "margin_pct": -11.204868154158214,
-        "winner": "DEM",
-        "color": "#6baed6"
       }
     }
   }

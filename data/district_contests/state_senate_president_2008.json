@@ -375,18 +375,6 @@
         "margin_pct": -14.599706332118592,
         "winner": "DEM",
         "color": "#6baed6"
-      },
-      "ZZZ": {
-        "dem_votes": 6732,
-        "rep_votes": 3220,
-        "other_votes": 118,
-        "total_votes": 10070,
-        "dem_candidate": "Barack Obama",
-        "rep_candidate": "John McCain",
-        "margin": -3512,
-        "margin_pct": -34.875868917576966,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

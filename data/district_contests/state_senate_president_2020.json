@@ -399,18 +399,6 @@
         "margin_pct": 13.186799571302016,
         "winner": "REP",
         "color": "#fb6a4a"
-      },
-      "ZZZ": {
-        "dem_votes": 9079,
-        "rep_votes": 4240,
-        "other_votes": 137,
-        "total_votes": 13456,
-        "dem_candidate": "Joseph R. Biden",
-        "rep_candidate": "Donald J. Trump",
-        "margin": -4839,
-        "margin_pct": -35.96165279429251,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

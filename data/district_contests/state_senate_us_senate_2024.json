@@ -399,18 +399,6 @@
         "margin_pct": 11.361850583021656,
         "winner": "REP",
         "color": "#fb6a4a"
-      },
-      "ZZZ": {
-        "dem_votes": 8564,
-        "rep_votes": 3711,
-        "other_votes": 277,
-        "total_votes": 12552,
-        "dem_candidate": "Sherrod Brown",
-        "rep_candidate": "Bernie Moreno",
-        "margin": -4853,
-        "margin_pct": -38.66316124920331,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

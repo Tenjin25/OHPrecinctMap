@@ -20150,6 +20150,13 @@ document.addEventListener('DOMContentLoaded', function() {
       return s.toUpperCase();
     }
 
+    function isSuppressedDistrictId(scope, districtId) {
+      const normalizedScope = String(scope || '').trim().toLowerCase();
+      const normalizedDistrictId = String(districtId || '').trim().toUpperCase();
+      if (!normalizedDistrictId) return false;
+      return normalizedDistrictId === 'ZZZ' && (normalizedScope === 'state_house' || normalizedScope === 'state_senate');
+    }
+
     function normalizeCarryoverPrecinctKey(raw) {
       return (raw || '').toString().replace(/\s+/g, ' ').trim().toUpperCase();
     }
@@ -20195,6 +20202,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const precinctKey = normalizeCarryoverPrecinctKey(row.precinct_key || row.precinct || row.vtd_name20 || '');
         const districtNum = normalizeCarryoverDistrictNumber(row.district_num || row.district_code || row.district);
         const weight = Number(row.area_weight);
+        if (isSuppressedDistrictId(scope, districtNum)) return;
         if (!precinctKey || !districtNum || !Number.isFinite(weight) || weight <= 0) return;
 
         const districtEntry = { precinctKey, weight };
@@ -20270,6 +20278,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     async function showAndPinDistrictSelection(scope, districtNum, contestValue = '') {
+      if (isSuppressedDistrictId(scope, districtNum)) return false;
       const districtId = Number(districtNum);
       if (!scope || !Number.isFinite(districtId)) return false;
 
@@ -26691,6 +26700,13 @@ document.addEventListener('DOMContentLoaded', function() {
       const props = e.features[0].properties || {};
       const districtNum = getDistrictNumberFromPropsCandidates(props, districtFieldCandidates);
       if (!districtNum) return;
+      if (isSuppressedDistrictId(scope, districtNum)) {
+        try { map.getCanvas().style.cursor = ''; } catch (_) {}
+        hideHoverTooltip();
+        clearVoteCounterHoverState();
+        clearHoverOutline();
+        return;
+      }
       const requestId = ++districtHoverRequestId;
       setDistrictHoverOutline(scope, districtNum);
 
@@ -29927,6 +29943,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (e.features && e.features[0] && e.features[0].properties) {
             const props = e.features[0].properties;
             const districtNum = normalizeDistrictNumber(props.DISTRICT || props.SLDLST || props.district_id || props.district);
+            if (isSuppressedDistrictId('state_house', districtNum)) return;
             if (districtNum) {
               zoomToClickedDistrictFeature(e.features[0], { padding: 40, duration: 850, maxZoom: 11.2 });
               // Show detailed sidebar (results + trends).
@@ -30045,6 +30062,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (e.features && e.features[0] && e.features[0].properties) {
             const props = e.features[0].properties;
             const districtNum = normalizeDistrictNumber(props.DISTRICT || props.SLDUST || props.district_id || props.district);
+            if (isSuppressedDistrictId('state_senate', districtNum)) return;
             if (districtNum) {
               zoomToClickedDistrictFeature(e.features[0], { padding: 40, duration: 850, maxZoom: 11.0 });
               // Show detailed sidebar (results + trends).
@@ -33917,6 +33935,7 @@ document.addEventListener('DOMContentLoaded', function() {
           let totalVotes = 0;
 
           Object.keys(districtResults).forEach(districtId => {
+            if (isSuppressedDistrictId(districtScope, districtId)) return;
             const row = districtResults[districtId] || {};
             if (!statewideDemCandidate) statewideDemCandidate = stripRunningMateName((row.dem_candidate || '').toString().trim());
             if (!statewideRepCandidate) statewideRepCandidate = stripRunningMateName((row.rep_candidate || '').toString().trim());

@@ -1191,18 +1191,6 @@
         "margin_pct": -31.338995753185113,
         "winner": "DEM",
         "color": "#2171b5"
-      },
-      "ZZZ": {
-        "dem_votes": 4831,
-        "rep_votes": 1842,
-        "other_votes": 176,
-        "total_votes": 6849,
-        "dem_candidate": "Ted Strickland",
-        "rep_candidate": "J. Kenneth Blackwell",
-        "margin": -2989,
-        "margin_pct": -43.64140750474522,
-        "winner": "DEM",
-        "color": "#2171b5"
       }
     }
   }

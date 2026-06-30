@@ -1,271 +1,95 @@
 {
-  "2022": {
-    "manifest_entries": 147,
-    "dir": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\district_contests",
+  "2026": {
+    "manifest_entries": 52,
+    "dir": "C:\\Users\\Shama\\OneDrive\\Documents\\Side_Projects\\Side_Projects\\OHPrecinctMap\\data\\district_contests_2026_lines",
     "summaries": {
       "congressional_2004": {
         "scope": "congressional",
         "year": 2004,
         "contest_count": 5,
-        "matched_precinct_rows": 84487,
-        "allocated_district_rows": 84808,
-        "unmatched_precinct_count": 3120
-      },
-      "state_house_2004": {
-        "scope": "state_house",
-        "year": 2004,
-        "contest_count": 5,
-        "matched_precinct_rows": 84487,
-        "allocated_district_rows": 89905,
-        "unmatched_precinct_count": 3120
-      },
-      "state_senate_2004": {
-        "scope": "state_senate",
-        "year": 2004,
-        "contest_count": 5,
-        "matched_precinct_rows": 84466,
-        "allocated_district_rows": 87047,
-        "unmatched_precinct_count": 3122
+        "matched_precinct_rows": 84206,
+        "allocated_district_rows": 84677,
+        "unmatched_precinct_count": 3148
       },
       "congressional_2006": {
         "scope": "congressional",
         "year": 2006,
         "contest_count": 6,
-        "matched_precinct_rows": 134272,
-        "allocated_district_rows": 134781,
-        "unmatched_precinct_count": 2665
-      },
-      "state_house_2006": {
-        "scope": "state_house",
-        "year": 2006,
-        "contest_count": 6,
-        "matched_precinct_rows": 134272,
-        "allocated_district_rows": 143108,
-        "unmatched_precinct_count": 2665
-      },
-      "state_senate_2006": {
-        "scope": "state_senate",
-        "year": 2006,
-        "contest_count": 6,
-        "matched_precinct_rows": 134240,
-        "allocated_district_rows": 138398,
-        "unmatched_precinct_count": 2667
+        "matched_precinct_rows": 133705,
+        "allocated_district_rows": 134454,
+        "unmatched_precinct_count": 2701
       },
       "congressional_2008": {
         "scope": "congressional",
         "year": 2008,
         "contest_count": 2,
-        "matched_precinct_rows": 58562,
-        "allocated_district_rows": 58824,
-        "unmatched_precinct_count": 4004
-      },
-      "state_house_2008": {
-        "scope": "state_house",
-        "year": 2008,
-        "contest_count": 2,
-        "matched_precinct_rows": 58562,
-        "allocated_district_rows": 62409,
-        "unmatched_precinct_count": 4004
-      },
-      "state_senate_2008": {
-        "scope": "state_senate",
-        "year": 2008,
-        "contest_count": 2,
-        "matched_precinct_rows": 58546,
-        "allocated_district_rows": 60361,
-        "unmatched_precinct_count": 4006
+        "matched_precinct_rows": 58359,
+        "allocated_district_rows": 58776,
+        "unmatched_precinct_count": 4032
       },
       "congressional_2010": {
         "scope": "congressional",
         "year": 2010,
-        "contest_count": 5,
-        "matched_precinct_rows": 144852,
-        "allocated_district_rows": 145396,
-        "unmatched_precinct_count": 1375
-      },
-      "state_house_2010": {
-        "scope": "state_house",
-        "year": 2010,
-        "contest_count": 5,
-        "matched_precinct_rows": 144852,
-        "allocated_district_rows": 154461,
-        "unmatched_precinct_count": 1375
-      },
-      "state_senate_2010": {
-        "scope": "state_senate",
-        "year": 2010,
-        "contest_count": 5,
-        "matched_precinct_rows": 144818,
-        "allocated_district_rows": 149316,
-        "unmatched_precinct_count": 1377
+        "contest_count": 7,
+        "matched_precinct_rows": 202394,
+        "allocated_district_rows": 203541,
+        "unmatched_precinct_count": 1501
       },
       "congressional_2012": {
         "scope": "congressional",
         "year": 2012,
         "contest_count": 5,
-        "matched_precinct_rows": 120224,
-        "allocated_district_rows": 120692,
-        "unmatched_precinct_count": 710
-      },
-      "state_house_2012": {
-        "scope": "state_house",
-        "year": 2012,
-        "contest_count": 5,
-        "matched_precinct_rows": 120224,
-        "allocated_district_rows": 128201,
-        "unmatched_precinct_count": 710
-      },
-      "state_senate_2012": {
-        "scope": "state_senate",
-        "year": 2012,
-        "contest_count": 5,
-        "matched_precinct_rows": 120198,
-        "allocated_district_rows": 123899,
-        "unmatched_precinct_count": 712
+        "matched_precinct_rows": 119698,
+        "allocated_district_rows": 120398,
+        "unmatched_precinct_count": 749
       },
       "congressional_2014": {
         "scope": "congressional",
         "year": 2014,
         "contest_count": 5,
-        "matched_precinct_rows": 113420,
-        "allocated_district_rows": 113835,
-        "unmatched_precinct_count": 424
-      },
-      "state_house_2014": {
-        "scope": "state_house",
-        "year": 2014,
-        "contest_count": 5,
-        "matched_precinct_rows": 113420,
-        "allocated_district_rows": 120923,
-        "unmatched_precinct_count": 424
-      },
-      "state_senate_2014": {
-        "scope": "state_senate",
-        "year": 2014,
-        "contest_count": 5,
-        "matched_precinct_rows": 113394,
-        "allocated_district_rows": 116877,
-        "unmatched_precinct_count": 426
+        "matched_precinct_rows": 112212,
+        "allocated_district_rows": 112849,
+        "unmatched_precinct_count": 517
       },
       "congressional_2016": {
         "scope": "congressional",
         "year": 2016,
         "contest_count": 2,
-        "matched_precinct_rows": 85709,
-        "allocated_district_rows": 86036,
-        "unmatched_precinct_count": 139
-      },
-      "state_house_2016": {
-        "scope": "state_house",
-        "year": 2016,
-        "contest_count": 2,
-        "matched_precinct_rows": 85709,
-        "allocated_district_rows": 91399,
-        "unmatched_precinct_count": 139
-      },
-      "state_senate_2016": {
-        "scope": "state_senate",
-        "year": 2016,
-        "contest_count": 2,
-        "matched_precinct_rows": 85709,
-        "allocated_district_rows": 88350,
-        "unmatched_precinct_count": 139
+        "matched_precinct_rows": 84757,
+        "allocated_district_rows": 85261,
+        "unmatched_precinct_count": 236
       },
       "congressional_2018": {
         "scope": "congressional",
         "year": 2018,
-        "contest_count": 5,
-        "matched_precinct_rows": 105680,
-        "allocated_district_rows": 106088,
-        "unmatched_precinct_count": 93
-      },
-      "state_house_2018": {
-        "scope": "state_house",
-        "year": 2018,
-        "contest_count": 5,
-        "matched_precinct_rows": 105680,
-        "allocated_district_rows": 112686,
-        "unmatched_precinct_count": 93
-      },
-      "state_senate_2018": {
-        "scope": "state_senate",
-        "year": 2018,
-        "contest_count": 5,
-        "matched_precinct_rows": 105680,
-        "allocated_district_rows": 108944,
-        "unmatched_precinct_count": 93
+        "contest_count": 6,
+        "matched_precinct_rows": 139015,
+        "allocated_district_rows": 139828,
+        "unmatched_precinct_count": 192
       },
       "congressional_2020": {
         "scope": "congressional",
         "year": 2020,
         "contest_count": 1,
-        "matched_precinct_rows": 33672,
-        "allocated_district_rows": 33803,
-        "unmatched_precinct_count": 60
-      },
-      "state_house_2020": {
-        "scope": "state_house",
-        "year": 2020,
-        "contest_count": 1,
-        "matched_precinct_rows": 33672,
-        "allocated_district_rows": 35926,
-        "unmatched_precinct_count": 60
-      },
-      "state_senate_2020": {
-        "scope": "state_senate",
-        "year": 2020,
-        "contest_count": 1,
-        "matched_precinct_rows": 33672,
-        "allocated_district_rows": 34721,
-        "unmatched_precinct_count": 60
+        "matched_precinct_rows": 33289,
+        "allocated_district_rows": 33481,
+        "unmatched_precinct_count": 162
       },
       "congressional_2022": {
         "scope": "congressional",
         "year": 2022,
         "contest_count": 10,
-        "matched_precinct_rows": 187253,
-        "allocated_district_rows": 187915,
-        "unmatched_precinct_count": 0
-      },
-      "state_house_2022": {
-        "scope": "state_house",
-        "year": 2022,
-        "contest_count": 10,
-        "matched_precinct_rows": 184944,
-        "allocated_district_rows": 196110,
-        "unmatched_precinct_count": 0
-      },
-      "state_senate_2022": {
-        "scope": "state_senate",
-        "year": 2022,
-        "contest_count": 10,
-        "matched_precinct_rows": 176727,
-        "allocated_district_rows": 181882,
-        "unmatched_precinct_count": 24
+        "matched_precinct_rows": 185267,
+        "allocated_district_rows": 186234,
+        "unmatched_precinct_count": 105
       },
       "congressional_2024": {
         "scope": "congressional",
         "year": 2024,
         "contest_count": 3,
-        "matched_precinct_rows": 83491,
-        "allocated_district_rows": 83748,
-        "unmatched_precinct_count": 50
-      },
-      "state_house_2024": {
-        "scope": "state_house",
-        "year": 2024,
-        "contest_count": 3,
-        "matched_precinct_rows": 67033,
-        "allocated_district_rows": 71274,
-        "unmatched_precinct_count": 50
-      },
-      "state_senate_2024": {
-        "scope": "state_senate",
-        "year": 2024,
-        "contest_count": 3,
-        "matched_precinct_rows": 65820,
-        "allocated_district_rows": 67775,
-        "unmatched_precinct_count": 74
+        "matched_precinct_rows": 83852,
+        "allocated_district_rows": 84230,
+        "unmatched_precinct_count": 0
       }
     }
   }

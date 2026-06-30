@@ -399,18 +399,6 @@
         "margin_pct": 2.260972365893306,
         "winner": "REP",
         "color": "#fcbba1"
-      },
-      "ZZZ": {
-        "dem_votes": 3413,
-        "rep_votes": 3086,
-        "other_votes": 263,
-        "total_votes": 6762,
-        "dem_candidate": "John Patrick Carney",
-        "rep_candidate": "Dave Yost",
-        "margin": -327,
-        "margin_pct": -4.835847382431234,
-        "winner": "DEM",
-        "color": "#c6dbef"
       }
     }
   }
