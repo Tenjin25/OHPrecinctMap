@@ -10173,8 +10173,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-29-2';
-    const APP_BUILD_ID = '2026-06-29-2';
+    const DATA_CACHE_BUSTER = '2026-06-30-senate-seat-1';
+    const APP_BUILD_ID = '2026-06-30-senate-seat-1';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10255,9 +10255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         state_house_info: withBase('./data/oh_state_house_districts.csv'),
         state_senate_info: withBase('./data/oh_state_senate_districts.csv'),
         district_descriptions: withBase('./data/oh_district_descriptions.json'),
-        // Optional county contest slices. This repo currently uses county_aggregates_nested.json,
-        // so leave blank unless /data/contests/manifest.json and slice JSONs are committed.
-        contests_dir: '',
+        contests_dir: withBase('./data/contests'),
         reports_match_year_summary: withBase('./data/reports/precinct_match_year_summary_fresh_2026-03-19.csv'),
         reports_top_unmatched: withBase('./data/reports/precinct_match_top_unmatched_file_county.csv'),
         crosswalks: {
@@ -10267,8 +10265,10 @@ document.addEventListener('DOMContentLoaded', function() {
           congressional_2026: withBase('./data/crosswalks/precinct_to_cd2026_sl2025_95.csv'),
           state_house_2022: withBase('./data/crosswalks/precinct_to_2022_state_house.csv'),
           state_house_2024: withBase('./data/crosswalks/precinct_to_2024_state_house.csv'),
+          state_house_2026: withBase('./data/crosswalks/precinct_to_2024_state_house.csv'),
           state_senate_2022: withBase('./data/crosswalks/precinct_to_2022_state_senate.csv'),
-          state_senate_2024: withBase('./data/crosswalks/precinct_to_2024_state_senate.csv')
+          state_senate_2024: withBase('./data/crosswalks/precinct_to_2024_state_senate.csv'),
+          state_senate_2026: withBase('./data/crosswalks/precinct_to_2024_state_senate.csv')
         }
       },
       center: [-82.8, 40.25],
@@ -10957,6 +10957,46 @@ document.addEventListener('DOMContentLoaded', function() {
       return (Array.isArray(entries) ? entries : []).filter(shouldIncludeManifestEntry);
     }
 
+    function buildCountyManifestFromElectionRows(rows) {
+      const contestTypes = [
+        'president',
+        'us_senate',
+        'governor',
+        'lieutenant_governor',
+        'attorney_general',
+        'secretary_of_state',
+        'treasurer',
+        'auditor',
+        'labor_commissioner',
+        'insurance_commissioner',
+        'agriculture_commissioner',
+        'superintendent'
+      ];
+      const entries = [];
+      const seen = new Set();
+      (Array.isArray(rows) ? rows : []).forEach(row => {
+        const year = Number(row?.year);
+        if (!Number.isFinite(year)) return;
+        contestTypes.forEach(contestType => {
+          const total = Number(row?.[`${contestType}_total`] || 0);
+          if (!(total > 0)) return;
+          const key = `${contestType}|${year}`;
+          if (seen.has(key)) return;
+          seen.add(key);
+          entries.push({
+            year,
+            contest_type: contestType,
+            rows: 1
+          });
+        });
+      });
+      return entries.sort((a, b) => {
+        const byType = String(a?.contest_type || '').localeCompare(String(b?.contest_type || ''));
+        if (byType !== 0) return byType;
+        return Number(a?.year || 0) - Number(b?.year || 0);
+      });
+    }
+
     function hasUsableMajorPartyCandidateNames(dem, rep) {
       return !!(String(dem || '').trim() && String(rep || '').trim());
     }
@@ -11066,6 +11106,37 @@ document.addEventListener('DOMContentLoaded', function() {
       return Array.from(years).filter(Number.isFinite).sort((a, b) => a - b);
     }
 
+    // US Senate has two Ohio seat/classes in the generic `us_senate` contest stream.
+    // Keep shift/flip comparisons within the same seat instead of comparing the most
+    // recent Senate election from the other class (for example 2024 should compare to
+    // 2018, not 2022; 2022 should compare to 2016, not 2020/2018).
+    // 2026 is intentionally not included yet; add it to the proper chain when that
+    // special-election dataset/model is ready to go live.
+    const US_SENATE_SAME_SEAT_YEAR_CHAINS = [
+      [2004, 2010, 2016, 2022],
+      [2006, 2012, 2018, 2024]
+    ];
+
+    function getUsSenateSameSeatChain(year) {
+      const y = Number(year);
+      if (!Number.isFinite(y)) return [];
+      return US_SENATE_SAME_SEAT_YEAR_CHAINS.find(chain => chain.includes(y)) || [];
+    }
+
+    function getUsSenateSameSeatPriorYears(year, availableYears = []) {
+      const y = Number(year);
+      const available = new Set(
+        (Array.isArray(availableYears) ? availableYears : [])
+          .map(Number)
+          .filter(Number.isFinite)
+      );
+      const chain = getUsSenateSameSeatChain(y);
+      if (!chain.length) return [];
+      return chain
+        .filter(cy => Number(cy) < y && available.has(Number(cy)))
+        .sort((a, b) => b - a);
+    }
+
     function getPriorContestYearsFromAvailableYears(contestType, year, availableYears) {
       const ct = String(contestType || '').trim();
       const y = Number(year);
@@ -11073,10 +11144,8 @@ document.addEventListener('DOMContentLoaded', function() {
         ? availableYears.map(Number).filter(v => Number.isFinite(v) && v < y).sort((a, b) => a - b)
         : [];
       if (!years.length) return [];
-      if (ct !== 'us_senate') return years.slice().sort((a, b) => b - a);
-      const preferred = [y - 6, y - 12].filter(v => years.includes(v));
-      const rest = years.filter(v => !preferred.includes(v)).sort((a, b) => b - a);
-      return [...preferred, ...rest];
+      if (ct === 'us_senate') return getUsSenateSameSeatPriorYears(y, years);
+      return years.slice().sort((a, b) => b - a);
     }
 
     function getVoteDeltaPairsForTooltip(contestType, toYear, maxPairs = 2) {
@@ -11087,42 +11156,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const years = getAvailableContestYearsForType(ct);
       if (Array.isArray(years) && years.length) {
-        let prev = null;
-        // Prefer "last time this contest was up" when a seat/class cadence exists.
-        // US Senate is a special case: same seat repeats every 6 years, while the generic series contains elections every 2 years.
-        // For deltas, prefer same-class y-6
-        // when available, otherwise fall back to the most recent earlier year.
         if (ct === 'us_senate') {
-          const preferred = y - 6;
-          if (years.includes(preferred)) prev = preferred;
-        }
-        if (!Number.isFinite(prev)) {
-          for (let i = years.length - 1; i >= 0; i -= 1) {
-            const yr = Number(years[i]);
-            if (!Number.isFinite(yr)) continue;
-            if (yr < y) { prev = yr; break; }
+          // Do not fall back across Senate classes. Vote deltas in the tooltip should
+          // use the same seat sequence as shift/flip mode.
+          const senatePrior = getPriorContestYearsFromAvailableYears(ct, y, years);
+          const prev = senatePrior[0];
+          if (Number.isFinite(prev)) {
+            pairs.push({ from: prev, to: y });
+            if (pairs.length >= (Number(maxPairs) || 0)) return pairs;
+            const prevPrior = getPriorContestYearsFromAvailableYears(ct, prev, years)[0];
+            if (Number.isFinite(prevPrior)) pairs.push({ from: prevPrior, to: prev });
           }
+          return pairs.slice(0, Math.max(0, Number(maxPairs) || 0));
+        }
+
+        let prev = null;
+        for (let i = years.length - 1; i >= 0; i -= 1) {
+          const yr = Number(years[i]);
+          if (!Number.isFinite(yr)) continue;
+          if (yr < y) { prev = yr; break; }
         }
         if (Number.isFinite(prev)) {
           pairs.push({ from: prev, to: y });
           if (pairs.length >= (Number(maxPairs) || 0)) return pairs;
 
           let prevPrev = null;
-          if (ct === 'us_senate') {
-            const preferredPrev = prev - 6;
-            if (years.includes(preferredPrev)) prevPrev = preferredPrev;
-          }
-          if (!Number.isFinite(prevPrev)) {
-            for (let i = years.length - 1; i >= 0; i -= 1) {
-              const yr = Number(years[i]);
-              if (!Number.isFinite(yr)) continue;
-              if (yr < prev) { prevPrev = yr; break; }
-            }
+          for (let i = years.length - 1; i >= 0; i -= 1) {
+            const yr = Number(years[i]);
+            if (!Number.isFinite(yr)) continue;
+            if (yr < prev) { prevPrev = yr; break; }
           }
           if (Number.isFinite(prevPrev)) pairs.push({ from: prevPrev, to: prev });
           return pairs.slice(0, Math.max(0, Number(maxPairs) || 0));
         }
       }
+
+      // US Senate should never fall back to the generic 4-year path because that
+      // would mix unrelated seat/classes when the manifest is not ready yet.
+      if (ct === 'us_senate') return [];
 
       // Fallback: assume 4-year cycles (presidential / many statewide) and let strict loaders decide availability.
       const fy = y - 4;
@@ -12791,7 +12862,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
 
-      updateContestSelectForCurrentView();
+      await updateContestSelectForCurrentView();
       const nextContestSelect = document.getElementById('contestSelect');
       const canPreserveContest = !!(
         previousContestValue &&
@@ -14661,6 +14732,55 @@ document.addEventListener('DOMContentLoaded', function() {
       };
     }
 
+    function getTrendSeriesSignedMarginPct(trendItem, options = {}) {
+      if (!trendItem) return 0;
+      const total = Number(trendItem?.total_votes || 0);
+      const dem = Number(trendItem?.dem_votes || 0);
+      const rep = Number(trendItem?.rep_votes || 0);
+      const rawSigned = Number.isFinite(Number(trendItem?.margin_pct))
+        ? Number(trendItem.margin_pct)
+        : signedMarginPctFromVotes(dem, rep, total);
+      // Some pre-aggregated history rows only carry a signed margin. Keep using it
+      // instead of collapsing the shift timeline to 0 when totals are absent.
+      if (!(Number.isFinite(total) && total > 0)) return rawSigned;
+      const useCountyPrecision = String(options?.precision || '').toLowerCase() === 'county';
+      const absDisplay = useCountyPrecision
+        ? countyMarginPctDisplayValue(rep, dem, total)
+        : marginPctDisplayValue(rep, dem, total);
+      if (absDisplay === 0 && rawSigned !== 0) return rawSigned;
+      if (rawSigned > 0) return Math.abs(absDisplay);
+      if (rawSigned < 0) return -Math.abs(absDisplay);
+      return 0;
+    }
+
+    function getPreviousTrendItemForContest(sortedSeries, index, contestType) {
+      const current = Array.isArray(sortedSeries) ? sortedSeries[index] : null;
+      const ct = String(contestType || '').trim();
+      const currentYear = Number(current?.year);
+      if (!current || !Number.isFinite(currentYear)) return null;
+      if (ct === 'us_senate') {
+        const years = sortedSeries.map(item => Number(item?.year)).filter(Number.isFinite);
+        const priorYears = getUsSenateSameSeatPriorYears(currentYear, years);
+        for (const py of priorYears) {
+          const prior = sortedSeries.find(item => Number(item?.year) === Number(py));
+          if (prior) return prior;
+        }
+        return null;
+      }
+      return index > 0 ? sortedSeries[index - 1] : null;
+    }
+
+    function getEarliestComparableTrendEntry(annotated, entry, contestType) {
+      const list = Array.isArray(annotated) ? annotated : [];
+      const ct = String(contestType || '').trim();
+      const year = Number(entry?.item?.year);
+      if (!entry || !Number.isFinite(year)) return list[0] || null;
+      if (ct !== 'us_senate') return list[0] || null;
+      const chain = getUsSenateSameSeatChain(year);
+      if (!chain.length) return entry;
+      return list.find(candidate => chain.includes(Number(candidate?.item?.year))) || entry;
+    }
+
     function renderFocusTrendSeries(series, caption = 'Trend history', options = {}) {
       const captionEl = document.getElementById('focus-trend-caption');
       const chartEl = document.getElementById('focus-trend-chart');
@@ -14681,26 +14801,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const sortedSeries = series
         .slice()
         .sort((a, b) => a.year - b.year);
-      const signedTrendDisplayMarginPct = (trendItem) => {
-        const total = Number(trendItem?.total_votes || 0);
-        const dem = Number(trendItem?.dem_votes || 0);
-        const rep = Number(trendItem?.rep_votes || 0);
-        const rawSigned = Number.isFinite(Number(trendItem?.margin_pct))
-          ? Number(trendItem.margin_pct)
-          : signedMarginPctFromVotes(dem, rep, total);
-        // If a historical row doesn't carry vote totals (for example, some pre-aggregated trend bundles),
-        // fall back to the signed margin directly so "Since 2020 / 2008 / 2000" deltas don't collapse to 0.
-        if (!(Number.isFinite(total) && total > 0)) return rawSigned;
-        const absDisplay = useCountyMarginPrecision
-          ? countyMarginPctDisplayValue(rep, dem, total)
-          : marginPctDisplayValue(rep, dem, total);
-        if (absDisplay === 0 && rawSigned !== 0) return rawSigned;
-        if (rawSigned > 0) return Math.abs(absDisplay);
-        if (rawSigned < 0) return -Math.abs(absDisplay);
-        return 0;
-      };
       const annotated = sortedSeries.map((item, idx) => {
-        const prev = idx > 0 ? sortedSeries[idx - 1] : null;
+        const prev = getPreviousTrendItemForContest(sortedSeries, idx, contestTypeHint);
         const totalVotes = Number(item.total_votes || 0);
         const demVotes = Number(item.dem_votes || 0);
         const repVotes = Number(item.rep_votes || 0);
@@ -14708,8 +14810,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const demPct = totalVotes > 0 ? (demVotes / totalVotes) * 100 : 0;
         const repPct = totalVotes > 0 ? (repVotes / totalVotes) * 100 : 0;
         const otherPct = totalVotes > 0 ? (otherVotes / totalVotes) * 100 : 0;
-        const signedPct = signedTrendDisplayMarginPct(item);
-        const prevSignedPct = prev ? signedTrendDisplayMarginPct(prev) : NaN;
+        const signedPct = getTrendSeriesSignedMarginPct(item, { precision: useCountyMarginPrecision ? 'county' : 'default' });
+        const prevSignedPct = prev
+          ? getTrendSeriesSignedMarginPct(prev, { precision: useCountyMarginPrecision ? 'county' : 'default' })
+          : NaN;
         const winnerMeta = getTrendWinnerMeta(item, {
           contestType: contestTypeHint,
           year: Number(item?.year),
@@ -14761,10 +14865,18 @@ document.addEventListener('DOMContentLoaded', function() {
         return `${winnerLast} +${marginLabel}%`;
       })();
       const earliest = annotated[0];
-      const historyShift = describeTrendShift(summaryEntry.signedPct, earliest ? earliest.signedPct : NaN, earliest ? earliest.item.year : '');
+      const summaryHistoryAnchor = getEarliestComparableTrendEntry(annotated, summaryEntry, contestTypeHint) || earliest;
+      const historyShift = describeTrendShift(
+        summaryEntry.signedPct,
+        summaryHistoryAnchor ? summaryHistoryAnchor.signedPct : NaN,
+        summaryHistoryAnchor ? summaryHistoryAnchor.item.year : ''
+      );
+      const streakSeries = contestTypeHint === 'us_senate'
+        ? annotated.filter(entry => getUsSenateSameSeatChain(Number(latest?.item?.year)).includes(Number(entry?.item?.year)))
+        : annotated;
       let streakCount = 0;
-      for (let i = annotated.length - 1; i >= 0; i -= 1) {
-        if (annotated[i].winnerMeta.partyClass !== latest.winnerMeta.partyClass) break;
+      for (let i = streakSeries.length - 1; i >= 0; i -= 1) {
+        if (streakSeries[i].winnerMeta.partyClass !== latest.winnerMeta.partyClass) break;
         streakCount += 1;
       }
       const latestStreakLabel = latest.winnerMeta.partyClass === 'tie'
@@ -18707,20 +18819,26 @@ document.addEventListener('DOMContentLoaded', function() {
             return fallback;
           }
 
-          // Prefer OpenElections CSV for older presidential cycles to avoid a known-missing JSON fetch (and console 404 noise).
-          if (contestType === 'president' && PRESIDENT_OPEN_ELECTIONS_CSV[Number(year)]) {
-            try {
-              const rows = await loadPresidentSliceFromOpenElectionsCSV(Number(year));
-              contestSliceCache.set(key, rows);
-              return rows;
-            } catch (err) {
-              console.warn('Failed to load OpenElections presidential CSV for', year, err?.message || err);
-            }
-          }
+          // County mode should prefer the manifest JSON slice when it exists.
+          // Ohio already has data/contests/president_2004.json, president_2008.json,
+          // and president_2012.json, so forcing the old OpenElections CSV loader first
+          // makes the selector wait on missing precinct CSV paths and can leave county
+          // mode looking broken. Keep CSV as a last-resort fallback only.
+          const hasOpenElectionsFallback = contestType === 'president' && !!PRESIDENT_OPEN_ELECTIONS_CSV[Number(year)];
 
 	        try {
             if (manifestHasEntries && !manifestEntry) {
               // Manifest is present but this contest/year isn't indexed: don't guess a JSON filename that will 404.
+              // Only use the legacy CSV bundle as a last resort; otherwise fall back to county_aggregates_nested.json.
+              if (hasOpenElectionsFallback) {
+                try {
+                  const rows = await loadPresidentSliceFromOpenElectionsCSV(Number(year));
+                  contestSliceCache.set(key, rows);
+                  return rows;
+                } catch (err) {
+                  console.warn('Failed to load OpenElections presidential CSV for', year, err?.message || err);
+                }
+              }
               const fallback = (electionData || []).filter(row => row.year == year);
               contestSliceCache.set(key, fallback);
               return fallback;
@@ -18746,7 +18864,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }));
 	          contestSliceCache.set(key, rows);
 	          return rows;
-	        } catch (_) {
+	        } catch (jsonErr) {
+              // If the JSON slice is genuinely missing and a legacy CSV path is configured,
+              // try it after the JSON path fails instead of before it.
+              if (hasOpenElectionsFallback) {
+                try {
+                  const rows = await loadPresidentSliceFromOpenElectionsCSV(Number(year));
+                  contestSliceCache.set(key, rows);
+                  return rows;
+                } catch (csvErr) {
+                  console.warn('Failed to load presidential JSON and CSV fallbacks for', year, jsonErr?.message || jsonErr, csvErr?.message || csvErr);
+                }
+              }
 	          const fallback = (electionData || []).filter(row => row.year == year);
 	          contestSliceCache.set(key, fallback);
 	          return fallback;
@@ -20037,9 +20166,15 @@ document.addEventListener('DOMContentLoaded', function() {
           : (crosswalks.congressional_2022 || crosswalks.congressional)) || '';
       }
       if (scope === 'state_house') {
+        if (linesYear === 2026) {
+          return crosswalks.state_house_2026 || crosswalks.state_house_2024 || crosswalks.state_house_2022 || '';
+        }
         return crosswalks[`state_house_${linesYear}`] || crosswalks.state_house_2022 || '';
       }
       if (scope === 'state_senate') {
+        if (linesYear === 2026) {
+          return crosswalks.state_senate_2026 || crosswalks.state_senate_2024 || crosswalks.state_senate_2022 || '';
+        }
         return crosswalks[`state_senate_${linesYear}`] || crosswalks.state_senate_2022 || '';
       }
       return '';
@@ -20287,7 +20422,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Repopulate contest selector
-      updateContestSelectForCurrentView();
+      await updateContestSelectForCurrentView();
       
       // Clear pinned geography selection before rebuilding the new view.
       window.lastSelectedCounty = '';
@@ -23285,43 +23420,10 @@ document.addEventListener('DOMContentLoaded', function() {
       );
       const demGrowthPattern = /Urban anchor|Metro spillover|outer-suburban|Above-state growth county|Coastal growth/i.test(patternLabel);
 
-      function getSignedMarginTowardGop(row) {
-        if (!row) return 0;
-        const explicit = Number(row.margin_pct);
-        const winnerRaw = (row.winner || '').toString().trim().toUpperCase();
-        const winnerNorm = winnerRaw === 'R' ? 'REP' : winnerRaw === 'D' ? 'DEM' : winnerRaw;
-        if (Number.isFinite(explicit) && explicit !== 0) {
-          if (winnerNorm === 'REP') return Math.abs(explicit);
-          if (winnerNorm === 'DEM') return -Math.abs(explicit);
-          // If the winner tag is missing/unknown but we have a signed margin, treat it as already
-          // encoded toward GOP (positive = R, negative = D). This avoids "0" fallbacks that can
-          // corrupt long-run shift deltas when vote totals aren't present on a precomputed row.
-          return explicit;
-        }
-        const repVotes = Number(row.rep_votes);
-        const demVotes = Number(row.dem_votes);
-        const totalVotes = Number(row.total_votes);
-        if (Number.isFinite(repVotes) && Number.isFinite(demVotes) && Number.isFinite(totalVotes) && totalVotes > 0) {
-          return ((repVotes - demVotes) / totalVotes) * 100;
-        }
-        return 0;
-      }
-
       function getSignedDisplayMarginTowardGop(row) {
-        if (!row) return 0;
-        const repVotes = Number(row.rep_votes);
-        const demVotes = Number(row.dem_votes);
-        const totalVotes = Number(row.total_votes);
-        const rawSigned = getSignedMarginTowardGop(row);
-        if (!(Number.isFinite(totalVotes) && totalVotes > 0)) return rawSigned;
-        const useCounty = unitLower === 'county';
-        const absDisplay = useCounty
-          ? countyMarginPctDisplayValue(repVotes, demVotes, totalVotes)
-          : marginPctDisplayValue(repVotes, demVotes, totalVotes);
-        if (absDisplay === 0 && rawSigned !== 0) return rawSigned;
-        if (rawSigned > 0) return Math.abs(absDisplay);
-        if (rawSigned < 0) return -Math.abs(absDisplay);
-        return 0;
+        return getTrendSeriesSignedMarginPct(row, {
+          precision: unitLower === 'county' ? 'county' : 'default'
+        });
       }
 
       function formatShiftLabel(delta) {
@@ -23370,7 +23472,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	      const previousSigned = previous ? getSignedDisplayMarginTowardGop(previous) : null;
 	      const recentShiftTowardGop = previous ? (latestSigned - previousSigned) : null;
       const recentWindowStart = sorted.length >= 3 ? sorted[Math.max(0, sorted.length - 3)] : first;
-      const recentWindowStartSigned = recentWindowStart ? getSignedMarginTowardGop(recentWindowStart) : null;
+      const recentWindowStartSigned = recentWindowStart ? getSignedDisplayMarginTowardGop(recentWindowStart) : null;
       const recentWindowShiftTowardGop = Number.isFinite(recentWindowStartSigned)
         ? (latestSigned - recentWindowStartSigned)
         : recentShiftTowardGop;
@@ -23382,8 +23484,8 @@ document.addEventListener('DOMContentLoaded', function() {
       let rightwardSteps = 0;
       let leftwardSteps = 0;
       for (let i = 1; i < recentSlice.length; i += 1) {
-        const prev = getSignedMarginTowardGop(recentSlice[i - 1]);
-        const curr = getSignedMarginTowardGop(recentSlice[i]);
+        const prev = getSignedDisplayMarginTowardGop(recentSlice[i - 1]);
+        const curr = getSignedDisplayMarginTowardGop(recentSlice[i]);
         const deltaTowardGop = curr - prev;
         if (deltaTowardGop > 0.5) rightwardSteps += 1;
         if (deltaTowardGop < -0.5) leftwardSteps += 1;
@@ -23419,7 +23521,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (electionCount < 3) return 0;
         let sum = 0;
         for (let i = 1; i < sorted.length; i += 1) {
-          sum += Math.abs(getSignedMarginTowardGop(sorted[i]) - getSignedMarginTowardGop(sorted[i - 1]));
+          sum += Math.abs(
+            getSignedDisplayMarginTowardGop(sorted[i]) -
+            getSignedDisplayMarginTowardGop(sorted[i - 1])
+          );
         }
         return sum / Math.max(1, sorted.length - 1);
       })();
@@ -31651,8 +31756,14 @@ document.addEventListener('DOMContentLoaded', function() {
           debugLog('Debug flattened data - first record keys:', Object.keys(electionData[0]));
           debugLog('Debug flattened data - first record:', electionData[0]);
         }
+        contestManifest = buildCountyManifestFromElectionRows(electionData);
+        Object.keys(PRESIDENT_OPEN_ELECTIONS_CSV).map(Number).forEach(y => {
+          const exists = contestManifest.some(e => e && e.contest_type === 'president' && Number(e.year) === Number(y));
+          if (!exists) contestManifest.push({ year: y, contest_type: 'president', file: `open_elections_csv_${y}.csv`, rows: 1 });
+        });
+        try { contestYearsByTypeCache.clear(); } catch (_) {}
         setStatus('Election data loaded');
-        populateContestSelectFromElectionJSON(electionData);
+        await updateContestSelectForCurrentView();
       }
 
       try {
@@ -32165,32 +32276,48 @@ document.addEventListener('DOMContentLoaded', function() {
 	    async function tryLoadContestSliceStrict(contestType, year) {
 	      const key = `${contestType}_${year}`;
         if (!CONFIG.paths?.contests_dir) return null;
-	      try {
-	        const payload = await loadJSON(`${CONFIG.paths.contests_dir}/${key}.json`);
-	        return (payload.rows || []).map(r => ({
-	          year: Number(year),
-	          county: r.county,
-	          [`${contestType}_dem`]: Number(r.dem_votes) || 0,
-	          [`${contestType}_rep`]: Number(r.rep_votes) || 0,
-	          [`${contestType}_other`]: Number(r.other_votes) || 0,
-	          [`${contestType}_total`]: Number(r.total_votes) || 0,
-	          [`${contestType}_dem_candidate`]: r.dem_candidate || '',
-	          [`${contestType}_rep_candidate`]: r.rep_candidate || '',
-	          [`${contestType}_margin`]: Number(r.margin) || 0,
-	          [`${contestType}_margin_pct`]: Number(r.margin_pct) || 0,
-	          [`${contestType}_winner`]: r.winner || '',
-	          [`${contestType}_color`]: r.color || ''
-	        }));
-	      } catch (_) {
-	        if (contestType === 'president' && PRESIDENT_OPEN_ELECTIONS_CSV[Number(year)]) {
-	          try {
-	            return await loadPresidentSliceFromOpenElectionsCSV(Number(year));
-	          } catch (err) {
-	            console.warn('Strict presidential CSV load failed for', year, err?.message || err);
-	          }
+        const candidatePaths = [];
+        try {
+          const manifestEntry = getVisibleManifestEntries(contestManifest).find(e => (
+            e &&
+            String(e.contest_type || '') === String(contestType || '') &&
+            Number(e.year) === Number(year) &&
+            !e.scope
+          ));
+          const manifestFile = (manifestEntry?.file || '').toString().trim();
+          if (manifestFile) candidatePaths.push(`${CONFIG.paths.contests_dir}/${manifestFile}`);
+        } catch (_) {}
+        candidatePaths.push(`${CONFIG.paths.contests_dir}/${key}.json`);
+        const seenPaths = new Set();
+        for (const path of candidatePaths) {
+          if (!path || seenPaths.has(path)) continue;
+          seenPaths.add(path);
+	        try {
+	          const payload = await loadJSON(path);
+	          return (payload.rows || []).map(r => ({
+	            year: Number(year),
+	            county: r.county,
+	            [`${contestType}_dem`]: Number(r.dem_votes) || 0,
+	            [`${contestType}_rep`]: Number(r.rep_votes) || 0,
+	            [`${contestType}_other`]: Number(r.other_votes) || 0,
+	            [`${contestType}_total`]: Number(r.total_votes) || 0,
+	            [`${contestType}_dem_candidate`]: r.dem_candidate || '',
+	            [`${contestType}_rep_candidate`]: r.rep_candidate || '',
+	            [`${contestType}_margin`]: Number(r.margin) || 0,
+	            [`${contestType}_margin_pct`]: Number(r.margin_pct) || 0,
+	            [`${contestType}_winner`]: r.winner || '',
+	            [`${contestType}_color`]: r.color || ''
+	          }));
+	        } catch (_) {}
+        }
+	      if (contestType === 'president' && PRESIDENT_OPEN_ELECTIONS_CSV[Number(year)]) {
+	        try {
+	          return await loadPresidentSliceFromOpenElectionsCSV(Number(year));
+	        } catch (err) {
+	          console.warn('Strict presidential CSV load failed for', year, err?.message || err);
 	        }
-	        return null;
 	      }
+	      return null;
 	    }
 
     async function getPreviousContestSlice(contestType, year) {
