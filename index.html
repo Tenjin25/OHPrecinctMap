@@ -6385,8 +6385,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   }
 
   #precinct-toggle {
-    background: linear-gradient(180deg, #065f46 0%, #047857 100%) !important;
-    box-shadow: 0 12px 22px rgba(6, 95, 70, 0.20) !important;
+    background: linear-gradient(180deg, #8f2433 0%, #6f2230 100%) !important;
+    box-shadow: 0 12px 22px rgba(143, 36, 51, 0.24) !important;
   }
 
   .desktop-statewide-panel {
@@ -6427,8 +6427,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
   }
 
   .desktop-statewide-tag {
-    background: linear-gradient(135deg, rgba(220, 38, 38, 0.12) 0%, rgba(37, 99, 235, 0.12) 100%);
-    color: #1e3a8a;
+    background: linear-gradient(135deg, rgba(143, 36, 51, 0.16) 0%, rgba(59, 103, 159, 0.18) 100%);
+    color: #244f83;
   }
 
   .desktop-statewide-title {
@@ -7459,8 +7459,10 @@ body.focus-active #hover-tooltip[data-context="preview"] {
       display: grid;
       gap: 10px;
       padding: 14px 14px 16px !important;
-      background: linear-gradient(180deg, rgba(239, 246, 255, 0.94) 0%, rgba(248, 250, 252, 0.92) 100%) !important;
-      border-color: rgba(96, 165, 250, 0.24) !important;
+      background:
+        radial-gradient(circle at top right, rgba(59, 103, 159, 0.12) 0%, rgba(59, 103, 159, 0) 34%),
+        linear-gradient(180deg, rgba(255, 249, 242, 0.97) 0%, rgba(244, 237, 225, 0.94) 100%) !important;
+      border-color: rgba(59, 103, 159, 0.22) !important;
     }
 
     .desktop-fly-search-wrap {
@@ -7488,8 +7490,8 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 
     #desktop-fly-search:focus {
       outline: none;
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+      border-color: #3b679f;
+      box-shadow: 0 0 0 3px rgba(59, 103, 159, 0.14);
     }
 
     .desktop-fly-submit {
@@ -7498,12 +7500,12 @@ body.focus-active #hover-tooltip[data-context="preview"] {
       padding: 0 16px;
       border: none;
       border-radius: 14px;
-      background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+      background: linear-gradient(145deg, #8f2433 0%, #6f2b4a 34%, #3b679f 100%);
       color: #fff;
       font-size: 14px;
       font-weight: 800;
       cursor: pointer;
-      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.20);
+      box-shadow: 0 12px 24px rgba(48, 70, 107, 0.22), 0 8px 18px rgba(143, 36, 51, 0.18);
     }
 
     .desktop-fly-helper {
@@ -10353,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-theme-refresh-3';
-    const APP_BUILD_ID = '2026-06-30-senate-seat-1';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-precinct-crosswalk-5';
+    const APP_BUILD_ID = '2026-06-30-ohio-precinct-crosswalk-2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10390,10 +10392,9 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       paths: {
         counties: withBase('./data/census/tl_2020_39_county20.geojson'),
-        precincts: withBase('./data/census/tl_2020_39_vtd20/tl_2020_39_vtd20.geojson'),
-        precincts_fallback_vtd20: withBase('./data/census/tl_2020_39_vtd20/tl_2020_39_vtd20.geojson'),
-        // Optional generated point index; leave blank unless the file exists in /data.
-        precinct_centroids: '',
+        precincts: withBase('./data/precincts/oh_precincts.geojson'),
+        precincts_fallback_vtd20: withBase('./data/precincts/oh_precincts.geojson'),
+        precinct_centroids: withBase('./data/precincts/oh_precinct_centroids.geojson'),
         // Optional generated alias/friendly-name indexes. Blank prevents GitHub Pages 404 noise.
         precinct_aliases: '',
         precinct_friendly_names: '',
@@ -10403,10 +10404,10 @@ document.addEventListener('DOMContentLoaded', function() {
         districts_2024: withBase('./data/tileset/oh_cd119.geojson'),
         districts_2026: withBase('./data/tileset/oh_cd2026.geojson'),
         state_house: withBase('./data/tileset/oh_state_house_2020.geojson'),
-        state_house_2022: withBase('./data/tileset/oh_state_house_2020.geojson'),
+        state_house_2022: withBase('./data/tileset/oh_state_house_2022.geojson'),
         state_house_2024: withBase('./data/tileset/oh_state_house_2024.geojson'),
         state_senate: withBase('./data/tileset/oh_state_senate_2020.geojson'),
-        state_senate_2022: withBase('./data/tileset/oh_state_senate_2020.geojson'),
+        state_senate_2022: withBase('./data/tileset/oh_state_senate_2022.geojson'),
         state_senate_2024: withBase('./data/tileset/oh_state_senate_2024.geojson'),
         // Optional census/demographic overlays. Keep blank until the Ohio files are committed.
         county_demographics: '',

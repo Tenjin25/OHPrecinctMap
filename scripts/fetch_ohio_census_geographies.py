@@ -98,6 +98,20 @@ DATASETS = {
         "geojson": DATA_ROOT / "tileset" / "oh_state_senate_2020.geojson",
         "keep_shapefile_dir": True,
     },
+    "sldl22": {
+        "url": "https://www2.census.gov/geo/tiger/TIGER2022/SLDL/tl_2022_39_sldl.zip",
+        "zip_name": "tl_2022_39_sldl.zip",
+        "out_dir": DATA_ROOT / "tileset" / "tl_2022_39_sldl",
+        "geojson": DATA_ROOT / "tileset" / "oh_state_house_2022.geojson",
+        "keep_shapefile_dir": True,
+    },
+    "sldu22": {
+        "url": "https://www2.census.gov/geo/tiger/TIGER2022/SLDU/tl_2022_39_sldu.zip",
+        "zip_name": "tl_2022_39_sldu.zip",
+        "out_dir": DATA_ROOT / "tileset" / "tl_2022_39_sldu",
+        "geojson": DATA_ROOT / "tileset" / "oh_state_senate_2022.geojson",
+        "keep_shapefile_dir": True,
+    },
     "sldl24": {
         "url": "https://www2.census.gov/geo/tiger/TIGER2024/SLDL/tl_2024_39_sldl.zip",
         "zip_name": "tl_2024_39_sldl.zip",
@@ -243,6 +257,7 @@ def fetch_dataset(key: str, force: bool = False) -> dict:
         return fetch_directory_dataset(key, force=force)
 
     zip_path = TMP_DIR / spec["zip_name"]
+    local_zip_path = CENSUS_DIR / spec["zip_name"]
     geojson_path = spec["geojson"]
     out_dir = spec["out_dir"]
     if force:
@@ -252,7 +267,11 @@ def fetch_dataset(key: str, force: bool = False) -> dict:
             geojson_path.unlink()
 
     if not zip_path.exists():
-        download(spec["url"], zip_path)
+        if local_zip_path.exists():
+            zip_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(local_zip_path, zip_path)
+        else:
+            download(spec["url"], zip_path)
     extract(zip_path, out_dir)
     shp_path = find_shapefile(out_dir)
     feature_count = convert_shapefile_to_geojson(

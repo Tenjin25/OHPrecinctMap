@@ -170,6 +170,14 @@
     },
     {
       "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
       "year": 2004,
       "file": "congressional_justice_of_the_supreme_court_term_commencing_01_02_2004.json",
@@ -194,6 +202,14 @@
     },
     {
       "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
       "year": 2004,
       "file": "congressional_justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
@@ -205,6 +221,14 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
       "year": 2012,
       "file": "congressional_justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
+      "rows": 15,
+      "lines_year": 2024
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+      "year": 2024,
+      "file": "congressional_justice_of_the_supreme_court_unexpired_term_ending_12_31_2026_2024.json",
       "rows": 15,
       "lines_year": 2024
     },
@@ -586,6 +610,14 @@
     },
     {
       "scope": "state_house",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+      "year": 2024,
+      "file": "state_house_justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
       "year": 2004,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_02_2004.json",
@@ -610,6 +642,14 @@
     },
     {
       "scope": "state_house",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+      "year": 2024,
+      "file": "state_house_justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
       "year": 2004,
       "file": "state_house_justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
@@ -621,6 +661,14 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
       "year": 2012,
       "file": "state_house_justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
+      "rows": 99,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_house",
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+      "year": 2024,
+      "file": "state_house_justice_of_the_supreme_court_unexpired_term_ending_12_31_2026_2024.json",
       "rows": 99,
       "lines_year": 2024
     },
@@ -725,7 +773,7 @@
       "contest_type": "state_house",
       "year": 2024,
       "file": "state_house_state_house_2024.json",
-      "rows": 32,
+      "rows": 99,
       "lines_year": 2024
     },
     {
@@ -1002,6 +1050,14 @@
     },
     {
       "scope": "state_senate",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+      "year": 2024,
+      "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
       "year": 2004,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_02_2004.json",
@@ -1026,6 +1082,14 @@
     },
     {
       "scope": "state_senate",
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+      "year": 2024,
+      "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
       "year": 2004,
       "file": "state_senate_justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
@@ -1037,6 +1101,14 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
       "year": 2012,
       "file": "state_senate_justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
+      "rows": 33,
+      "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+      "year": 2024,
+      "file": "state_senate_justice_of_the_supreme_court_unexpired_term_ending_12_31_2026_2024.json",
       "rows": 33,
       "lines_year": 2024
     },
@@ -1141,7 +1213,7 @@
       "contest_type": "state_senate",
       "year": 2024,
       "file": "state_senate_state_senate_2024.json",
-      "rows": 11,
+      "rows": 17,
       "lines_year": 2024
     },
     {
