@@ -197,14 +197,14 @@
         "color": "#cb181d"
       },
       "17": {
-        "dem_votes": 12079,
-        "rep_votes": 21285,
+        "dem_votes": 12213,
+        "rep_votes": 21499,
         "other_votes": 0,
-        "total_votes": 33364,
+        "total_votes": 33712,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 9206,
-        "margin_pct": 27.592614794389164,
+        "margin": 9286,
+        "margin_pct": 27.545087802562882,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -221,14 +221,14 @@
         "color": "#2171b5"
       },
       "19": {
-        "dem_votes": 15062,
-        "rep_votes": 22578,
+        "dem_votes": 15422,
+        "rep_votes": 23015,
         "other_votes": 0,
-        "total_votes": 37640,
+        "total_votes": 38437,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 7516,
-        "margin_pct": 19.968119022316685,
+        "margin": 7593,
+        "margin_pct": 19.754403309311343,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -725,14 +725,14 @@
         "color": "#cb181d"
       },
       "61": {
-        "dem_votes": 9936,
-        "rep_votes": 23797,
+        "dem_votes": 10025,
+        "rep_votes": 24003,
         "other_votes": 0,
-        "total_votes": 33733,
+        "total_votes": 34028,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 13861,
-        "margin_pct": 41.09032697951561,
+        "margin": 13978,
+        "margin_pct": 41.07793581756201,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -1025,14 +1025,14 @@
         "color": "#cb181d"
       },
       "86": {
-        "dem_votes": 6521,
-        "rep_votes": 15459,
+        "dem_votes": 6602,
+        "rep_votes": 15618,
         "other_votes": 0,
-        "total_votes": 21980,
+        "total_votes": 22220,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 8938,
-        "margin_pct": 40.66424021838034,
+        "margin": 9016,
+        "margin_pct": 40.576057605760575,
         "winner": "REP",
         "color": "#cb181d"
       },

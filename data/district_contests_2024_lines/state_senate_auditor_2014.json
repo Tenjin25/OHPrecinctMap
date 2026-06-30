@@ -281,14 +281,14 @@
         "color": "#2171b5"
       },
       "24": {
-        "dem_votes": 35606,
-        "rep_votes": 47384,
-        "other_votes": 4074,
-        "total_votes": 87064,
+        "dem_votes": 35706,
+        "rep_votes": 47645,
+        "other_votes": 4097,
+        "total_votes": 87448,
         "dem_candidate": "John Patrick Carney",
         "rep_candidate": "Dave Yost",
-        "margin": 11778,
-        "margin_pct": 13.527979417440045,
+        "margin": 11939,
+        "margin_pct": 13.652685024242977,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -305,14 +305,14 @@
         "color": "#fb6a4a"
       },
       "26": {
-        "dem_votes": 21232,
-        "rep_votes": 51690,
-        "other_votes": 4514,
-        "total_votes": 77436,
+        "dem_votes": 21315,
+        "rep_votes": 51764,
+        "other_votes": 4530,
+        "total_votes": 77609,
         "dem_candidate": "John Patrick Carney",
         "rep_candidate": "Dave Yost",
-        "margin": 30458,
-        "margin_pct": 39.33312671109045,
+        "margin": 30449,
+        "margin_pct": 39.23385174399876,
         "winner": "REP",
         "color": "#cb181d"
       },

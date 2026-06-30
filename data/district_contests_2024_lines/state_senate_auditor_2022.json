@@ -17,14 +17,14 @@
         "color": "#cb181d"
       },
       "2": {
-        "dem_votes": 53148,
-        "rep_votes": 80693,
+        "dem_votes": 53638,
+        "rep_votes": 81502,
         "other_votes": 0,
-        "total_votes": 133841,
+        "total_votes": 135140,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": 27545,
-        "margin_pct": 20.58039016444886,
+        "margin": 27864,
+        "margin_pct": 20.61861772976173,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -53,28 +53,28 @@
         "color": "#cb181d"
       },
       "5": {
-        "dem_votes": 37249,
-        "rep_votes": 95977,
+        "dem_votes": 36634,
+        "rep_votes": 95491,
         "other_votes": 0,
-        "total_votes": 133226,
+        "total_votes": 132125,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": 58728,
-        "margin_pct": 44.0814855959047,
+        "margin": 58857,
+        "margin_pct": 44.54645222327341,
         "winner": "REP",
         "color": "#cb181d"
       },
       "6": {
-        "dem_votes": 56973,
-        "rep_votes": 55900,
+        "dem_votes": 60750,
+        "rep_votes": 60911,
         "other_votes": 0,
-        "total_votes": 112873,
+        "total_votes": 121661,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": -1073,
-        "margin_pct": -0.9506259247118444,
-        "winner": "DEM",
-        "color": "#c6dbef"
+        "margin": 161,
+        "margin_pct": 0.13233493066800373,
+        "winner": "REP",
+        "color": "#fcbba1"
       },
       "7": {
         "dem_votes": 55083,
@@ -89,14 +89,14 @@
         "color": "#cb181d"
       },
       "8": {
-        "dem_votes": 57376,
-        "rep_votes": 88904,
+        "dem_votes": 57452,
+        "rep_votes": 89124,
         "other_votes": 0,
-        "total_votes": 146280,
+        "total_votes": 146576,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": 31528,
-        "margin_pct": 21.553185671315287,
+        "margin": 31672,
+        "margin_pct": 21.607903067350726,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -125,14 +125,14 @@
         "color": "#cb181d"
       },
       "11": {
-        "dem_votes": 51805,
-        "rep_votes": 37411,
+        "dem_votes": 51570,
+        "rep_votes": 36934,
         "other_votes": 0,
-        "total_votes": 89216,
+        "total_votes": 88504,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": -14394,
-        "margin_pct": -16.133877331420372,
+        "margin": -14636,
+        "margin_pct": -16.537105667540448,
         "winner": "DEM",
         "color": "#2171b5"
       },
@@ -305,14 +305,14 @@
         "color": "#2171b5"
       },
       "26": {
-        "dem_votes": 31664,
-        "rep_votes": 86892,
+        "dem_votes": 31985,
+        "rep_votes": 87387,
         "other_votes": 0,
-        "total_votes": 118556,
+        "total_votes": 119372,
         "dem_candidate": "Taylor Sappington",
         "rep_candidate": "Keith Faber",
-        "margin": 55228,
-        "margin_pct": 46.58389284388812,
+        "margin": 55402,
+        "margin_pct": 46.41121871125557,
         "winner": "REP",
         "color": "#cb181d"
       },

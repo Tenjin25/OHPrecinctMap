@@ -209,14 +209,14 @@
         "color": "#2171b5"
       },
       "18": {
-        "dem_votes": 68750,
-        "rep_votes": 33128,
-        "other_votes": 3018,
-        "total_votes": 104896,
+        "dem_votes": 69742,
+        "rep_votes": 33567,
+        "other_votes": 3044,
+        "total_votes": 106353,
         "dem_candidate": "Ted Strickland",
         "rep_candidate": "J. Kenneth Blackwell",
-        "margin": -35622,
-        "margin_pct": -33.959350213544845,
+        "margin": -36175,
+        "margin_pct": -34.01408516920068,
         "winner": "DEM",
         "color": "#2171b5"
       },
@@ -305,14 +305,14 @@
         "color": "#2171b5"
       },
       "26": {
-        "dem_votes": 52314,
-        "rep_votes": 42692,
-        "other_votes": 3287,
-        "total_votes": 98293,
+        "dem_votes": 52573,
+        "rep_votes": 42794,
+        "other_votes": 3298,
+        "total_votes": 98665,
         "dem_candidate": "Ted Strickland",
         "rep_candidate": "J. Kenneth Blackwell",
-        "margin": -9622,
-        "margin_pct": -9.789099935905913,
+        "margin": -9779,
+        "margin_pct": -9.911316069528201,
         "winner": "DEM",
         "color": "#6baed6"
       },

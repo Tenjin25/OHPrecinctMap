@@ -210,12 +210,12 @@
       },
       "18": {
         "dem_votes": 0,
-        "rep_votes": 62701,
+        "rep_votes": 63483,
         "other_votes": 0,
-        "total_votes": 62701,
+        "total_votes": 63483,
         "dem_candidate": "",
         "rep_candidate": "Paul E. Pfeifer",
-        "margin": 62701,
+        "margin": 63483,
         "margin_pct": 100.0,
         "winner": "REP",
         "color": "#cb181d"
@@ -306,12 +306,12 @@
       },
       "26": {
         "dem_votes": 0,
-        "rep_votes": 87463,
+        "rep_votes": 87836,
         "other_votes": 0,
-        "total_votes": 87463,
+        "total_votes": 87836,
         "dem_candidate": "",
         "rep_candidate": "Paul E. Pfeifer",
-        "margin": 87463,
+        "margin": 87836,
         "margin_pct": 100.0,
         "winner": "REP",
         "color": "#cb181d"

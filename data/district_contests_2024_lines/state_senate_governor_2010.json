@@ -209,14 +209,14 @@
         "color": "#fcbba1"
       },
       "18": {
-        "dem_votes": 57664,
-        "rep_votes": 66346,
-        "other_votes": 5114,
-        "total_votes": 129124,
+        "dem_votes": 58119,
+        "rep_votes": 66865,
+        "other_votes": 5133,
+        "total_votes": 130117,
         "dem_candidate": "Ted Strickland",
         "rep_candidate": "John Kasich",
-        "margin": 8682,
-        "margin_pct": 6.72376939995663,
+        "margin": 8746,
+        "margin_pct": 6.721642829146076,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -281,14 +281,14 @@
         "color": "#2171b5"
       },
       "24": {
-        "dem_votes": 51355,
-        "rep_votes": 53658,
-        "other_votes": 5421,
-        "total_votes": 110434,
+        "dem_votes": 51530,
+        "rep_votes": 53943,
+        "other_votes": 5443,
+        "total_votes": 110916,
         "dem_candidate": "Ted Strickland",
         "rep_candidate": "John Kasich",
-        "margin": 2303,
-        "margin_pct": 2.085408479272688,
+        "margin": 2413,
+        "margin_pct": 2.175520213494897,
         "winner": "REP",
         "color": "#fcbba1"
       },
@@ -305,14 +305,14 @@
         "color": "#6baed6"
       },
       "26": {
-        "dem_votes": 37590,
-        "rep_votes": 52659,
-        "other_votes": 5226,
-        "total_votes": 95475,
+        "dem_votes": 37748,
+        "rep_votes": 52744,
+        "other_votes": 5245,
+        "total_votes": 95737,
         "dem_candidate": "Ted Strickland",
         "rep_candidate": "John Kasich",
-        "margin": 15069,
-        "margin_pct": 15.783189316575019,
+        "margin": 14996,
+        "margin_pct": 15.663745469358764,
         "winner": "REP",
         "color": "#cb181d"
       },

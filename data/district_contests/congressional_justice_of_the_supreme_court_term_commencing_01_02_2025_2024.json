@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+  "year": 2024,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 196524,
+        "rep_votes": 195856,
+        "other_votes": 0,
+        "total_votes": 392380,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": -668,
+        "margin_pct": -0.17024313165808655,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "2": {
+        "dem_votes": 97556,
+        "rep_votes": 264812,
+        "other_votes": 0,
+        "total_votes": 362368,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 167256,
+        "margin_pct": 46.156393500529845,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 223867,
+        "rep_votes": 92193,
+        "other_votes": 0,
+        "total_votes": 316060,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": -131674,
+        "margin_pct": -41.66107701069417,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 123820,
+        "rep_votes": 259589,
+        "other_votes": 0,
+        "total_votes": 383409,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 135769,
+        "margin_pct": 35.41101017451338,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 134750,
+        "rep_votes": 233878,
+        "other_votes": 0,
+        "total_votes": 368628,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 99128,
+        "margin_pct": 26.8910663324544,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 131062,
+        "rep_votes": 230189,
+        "other_votes": 0,
+        "total_votes": 361251,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 99127,
+        "margin_pct": 27.439924041732755,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 176489,
+        "rep_votes": 207041,
+        "other_votes": 0,
+        "total_votes": 383530,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 30552,
+        "margin_pct": 7.96600005214716,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 138258,
+        "rep_votes": 243432,
+        "other_votes": 0,
+        "total_votes": 381690,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 105174,
+        "margin_pct": 27.554821975949068,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 171765,
+        "rep_votes": 187232,
+        "other_votes": 0,
+        "total_votes": 358997,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 15467,
+        "margin_pct": 4.308392549241359,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "10": {
+        "dem_votes": 171160,
+        "rep_votes": 191998,
+        "other_votes": 0,
+        "total_votes": 363158,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 20838,
+        "margin_pct": 5.737998336812076,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 230018,
+        "rep_votes": 60358,
+        "other_votes": 0,
+        "total_votes": 290376,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": -169660,
+        "margin_pct": -58.42769374879466,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 128091,
+        "rep_votes": 242124,
+        "other_votes": 0,
+        "total_votes": 370215,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 114033,
+        "margin_pct": 30.801831368258988,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 193114,
+        "rep_votes": 182148,
+        "other_votes": 0,
+        "total_votes": 375262,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": -10966,
+        "margin_pct": -2.92222500546285,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "14": {
+        "dem_votes": 165150,
+        "rep_votes": 215431,
+        "other_votes": 0,
+        "total_votes": 380581,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 50281,
+        "margin_pct": 13.211642199689422,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 146437,
+        "rep_votes": 173588,
+        "other_votes": 0,
+        "total_votes": 320025,
+        "dem_candidate": "Melody J. Stewart",
+        "rep_candidate": "Joseph T. Deters",
+        "margin": 27151,
+        "margin_pct": 8.48402468557144,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

@@ -209,14 +209,14 @@
         "color": "#cb181d"
       },
       "18": {
-        "dem_votes": 44432,
-        "rep_votes": 75211,
-        "other_votes": 7402,
-        "total_votes": 127045,
+        "dem_votes": 44756,
+        "rep_votes": 75806,
+        "other_votes": 7462,
+        "total_votes": 128024,
         "dem_candidate": "Kevin Boyce",
         "rep_candidate": "Josh Mandel",
-        "margin": 30779,
-        "margin_pct": 24.22684875437837,
+        "margin": 31050,
+        "margin_pct": 24.2532650128101,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -281,14 +281,14 @@
         "color": "#2171b5"
       },
       "24": {
-        "dem_votes": 41346,
-        "rep_votes": 58063,
-        "other_votes": 7532,
-        "total_votes": 106941,
+        "dem_votes": 41449,
+        "rep_votes": 58413,
+        "other_votes": 7556,
+        "total_votes": 107418,
         "dem_candidate": "Kevin Boyce",
         "rep_candidate": "Josh Mandel",
-        "margin": 16717,
-        "margin_pct": 15.631983991172701,
+        "margin": 16964,
+        "margin_pct": 15.792511497142007,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -305,14 +305,14 @@
         "color": "#c6dbef"
       },
       "26": {
-        "dem_votes": 29268,
-        "rep_votes": 58875,
-        "other_votes": 5506,
-        "total_votes": 93649,
+        "dem_votes": 29406,
+        "rep_votes": 58979,
+        "other_votes": 5522,
+        "total_votes": 93907,
         "dem_candidate": "Kevin Boyce",
         "rep_candidate": "Josh Mandel",
-        "margin": 29607,
-        "margin_pct": 31.614859742228962,
+        "margin": 29573,
+        "margin_pct": 31.49179507384966,
         "winner": "REP",
         "color": "#cb181d"
       },

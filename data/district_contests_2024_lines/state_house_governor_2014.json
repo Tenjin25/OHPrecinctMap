@@ -197,14 +197,14 @@
         "color": "#cb181d"
       },
       "17": {
-        "dem_votes": 8893,
-        "rep_votes": 24660,
-        "other_votes": 1163,
-        "total_votes": 34716,
+        "dem_votes": 8973,
+        "rep_votes": 24979,
+        "other_votes": 1174,
+        "total_votes": 35126,
         "dem_candidate": "Edward FitzGerald",
         "rep_candidate": "John Kasich",
-        "margin": 15767,
-        "margin_pct": 45.41709874409494,
+        "margin": 16006,
+        "margin_pct": 45.56738598189376,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -1025,14 +1025,14 @@
         "color": "#cb181d"
       },
       "86": {
-        "dem_votes": 4226,
-        "rep_votes": 15284,
-        "other_votes": 655,
-        "total_votes": 20165,
+        "dem_votes": 4295,
+        "rep_votes": 15379,
+        "other_votes": 665,
+        "total_votes": 20339,
         "dem_candidate": "Edward FitzGerald",
         "rep_candidate": "John Kasich",
-        "margin": 11058,
-        "margin_pct": 54.83758988346145,
+        "margin": 11084,
+        "margin_pct": 54.496287919760064,
         "winner": "REP",
         "color": "#cb181d"
       },

@@ -281,14 +281,14 @@
         "color": "#2171b5"
       },
       "24": {
-        "dem_votes": 41854,
-        "rep_votes": 47349,
+        "dem_votes": 42008,
+        "rep_votes": 47594,
         "other_votes": 0,
-        "total_votes": 89203,
+        "total_votes": 89602,
         "dem_candidate": "Connie Pillich",
         "rep_candidate": "Josh Mandel",
-        "margin": 5495,
-        "margin_pct": 6.160106722868066,
+        "margin": 5586,
+        "margin_pct": 6.234235842949934,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -305,14 +305,14 @@
         "color": "#6baed6"
       },
       "26": {
-        "dem_votes": 27974,
-        "rep_votes": 50540,
+        "dem_votes": 28079,
+        "rep_votes": 50610,
         "other_votes": 0,
-        "total_votes": 78514,
+        "total_votes": 78689,
         "dem_candidate": "Connie Pillich",
         "rep_candidate": "Josh Mandel",
-        "margin": 22566,
-        "margin_pct": 28.741370965687647,
+        "margin": 22531,
+        "margin_pct": 28.632972842455747,
         "winner": "REP",
         "color": "#cb181d"
       },

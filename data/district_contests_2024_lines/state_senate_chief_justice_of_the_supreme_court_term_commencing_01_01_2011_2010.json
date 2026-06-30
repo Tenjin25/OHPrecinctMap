@@ -209,14 +209,14 @@
         "color": "#cb181d"
       },
       "18": {
-        "dem_votes": 34351,
-        "rep_votes": 76004,
+        "dem_votes": 34711,
+        "rep_votes": 76441,
         "other_votes": 0,
-        "total_votes": 110355,
+        "total_votes": 111152,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 41653,
-        "margin_pct": 37.74455167414254,
+        "margin": 41730,
+        "margin_pct": 37.54318410824816,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -281,14 +281,14 @@
         "color": "#fb6a4a"
       },
       "24": {
-        "dem_votes": 33282,
-        "rep_votes": 57447,
+        "dem_votes": 33416,
+        "rep_votes": 57661,
         "other_votes": 0,
-        "total_votes": 90729,
+        "total_votes": 91077,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 24165,
-        "margin_pct": 26.634262473960916,
+        "margin": 24245,
+        "margin_pct": 26.62033224634101,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -305,14 +305,14 @@
         "color": "#cb181d"
       },
       "26": {
-        "dem_votes": 25397,
-        "rep_votes": 59728,
+        "dem_votes": 25478,
+        "rep_votes": 59887,
         "other_votes": 0,
-        "total_votes": 85125,
+        "total_votes": 85365,
         "dem_candidate": "Eric Brown",
         "rep_candidate": "Maureen O'Connor",
-        "margin": 34331,
-        "margin_pct": 40.330102790014685,
+        "margin": 34409,
+        "margin_pct": 40.30808879517366,
         "winner": "REP",
         "color": "#cb181d"
       },

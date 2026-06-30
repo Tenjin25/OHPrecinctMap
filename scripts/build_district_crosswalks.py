@@ -44,7 +44,7 @@ SPECS = [
         "source": DATA_ROOT / "2022" / "20221108__oh__general__precinct.csv",
         "offices": {"State House"},
         "output": CROSSWALK_DIR / "precinct_to_2022_state_house.csv",
-        "geometry_geojson": DATA_ROOT / "tileset" / "oh_state_house_2020.geojson",
+        "geometry_geojson": DATA_ROOT / "tileset" / "oh_state_house_2022.geojson",
         "geometry_field": "SLDLST",
     },
     {
@@ -63,7 +63,7 @@ SPECS = [
         ],
         "offices": {"State Senate"},
         "output": CROSSWALK_DIR / "precinct_to_2022_state_senate.csv",
-        "geometry_geojson": DATA_ROOT / "tileset" / "oh_state_senate_2020.geojson",
+        "geometry_geojson": DATA_ROOT / "tileset" / "oh_state_senate_2022.geojson",
         "geometry_field": "SLDUST",
     },
     {

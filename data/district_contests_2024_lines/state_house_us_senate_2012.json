@@ -197,14 +197,14 @@
         "color": "#2171b5"
       },
       "17": {
-        "dem_votes": 27567,
-        "rep_votes": 26784,
-        "other_votes": 2373,
-        "total_votes": 56724,
+        "dem_votes": 27860,
+        "rep_votes": 27128,
+        "other_votes": 2399,
+        "total_votes": 57387,
         "dem_candidate": "Sherrod Brown",
         "rep_candidate": "Josh Mandel",
-        "margin": -783,
-        "margin_pct": -1.3803680981595092,
+        "margin": -732,
+        "margin_pct": -1.2755502117204245,
         "winner": "DEM",
         "color": "#c6dbef"
       },
@@ -725,14 +725,14 @@
         "color": "#cb181d"
       },
       "61": {
-        "dem_votes": 20570,
-        "rep_votes": 30833,
-        "other_votes": 2626,
-        "total_votes": 54029,
+        "dem_votes": 20877,
+        "rep_votes": 31436,
+        "other_votes": 2670,
+        "total_votes": 54983,
         "dem_candidate": "Sherrod Brown",
         "rep_candidate": "Josh Mandel",
-        "margin": 10263,
-        "margin_pct": 18.995354346739717,
+        "margin": 10559,
+        "margin_pct": 19.20411763636033,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -1025,14 +1025,14 @@
         "color": "#cb181d"
       },
       "86": {
-        "dem_votes": 12839,
-        "rep_votes": 20863,
-        "other_votes": 2115,
-        "total_votes": 35817,
+        "dem_votes": 13092,
+        "rep_votes": 21009,
+        "other_votes": 2149,
+        "total_votes": 36250,
         "dem_candidate": "Sherrod Brown",
         "rep_candidate": "Josh Mandel",
-        "margin": 8024,
-        "margin_pct": 22.40276963453109,
+        "margin": 7917,
+        "margin_pct": 21.84,
         "winner": "REP",
         "color": "#cb181d"
       },

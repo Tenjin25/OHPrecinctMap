@@ -74,5 +74,6 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 ## Notes
 
 - District results are aggregated from precinct-level inputs wherever available.
+- The 2022 state house and state senate carryover files are now rebuilt against the 2022 Census legislative geometries, rather than the older 2020 legislative shapes.
 - Some views compare older elections against newer line vintages so users can inspect how the same electorate would map onto different districts.
 - The atlas intentionally emphasizes margin structure and geography, not just who won.

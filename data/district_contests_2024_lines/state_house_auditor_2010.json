@@ -197,14 +197,14 @@
         "color": "#fcbba1"
       },
       "17": {
-        "dem_votes": 16081,
-        "rep_votes": 21439,
-        "other_votes": 1756,
-        "total_votes": 39276,
+        "dem_votes": 16251,
+        "rep_votes": 21691,
+        "other_votes": 1786,
+        "total_votes": 39728,
         "dem_candidate": "David Pepper",
         "rep_candidate": "Dave Yost",
-        "margin": 5358,
-        "margin_pct": 13.641918728994806,
+        "margin": 5440,
+        "margin_pct": 13.693113169552959,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -221,14 +221,14 @@
         "color": "#2171b5"
       },
       "19": {
-        "dem_votes": 20557,
-        "rep_votes": 21129,
-        "other_votes": 1756,
-        "total_votes": 43442,
+        "dem_votes": 20998,
+        "rep_votes": 21584,
+        "other_votes": 1795,
+        "total_votes": 44377,
         "dem_candidate": "David Pepper",
         "rep_candidate": "Dave Yost",
-        "margin": 572,
-        "margin_pct": 1.3166981262372819,
+        "margin": 586,
+        "margin_pct": 1.3205038646145526,
         "winner": "REP",
         "color": "#fcbba1"
       },
@@ -725,14 +725,14 @@
         "color": "#cb181d"
       },
       "61": {
-        "dem_votes": 10631,
-        "rep_votes": 26065,
-        "other_votes": 2048,
-        "total_votes": 38744,
+        "dem_votes": 10712,
+        "rep_votes": 26289,
+        "other_votes": 2070,
+        "total_votes": 39071,
         "dem_candidate": "David Pepper",
         "rep_candidate": "Dave Yost",
-        "margin": 15434,
-        "margin_pct": 39.835845550278755,
+        "margin": 15577,
+        "margin_pct": 39.86844462644928,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -1025,14 +1025,14 @@
         "color": "#cb181d"
       },
       "86": {
-        "dem_votes": 7226,
-        "rep_votes": 15633,
-        "other_votes": 1431,
-        "total_votes": 24290,
+        "dem_votes": 7375,
+        "rep_votes": 15721,
+        "other_votes": 1450,
+        "total_votes": 24546,
         "dem_candidate": "David Pepper",
         "rep_candidate": "Dave Yost",
-        "margin": 8407,
-        "margin_pct": 34.610951008645536,
+        "margin": 8346,
+        "margin_pct": 34.0014666340748,
         "winner": "REP",
         "color": "#cb181d"
       },

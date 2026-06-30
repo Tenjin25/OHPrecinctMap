@@ -29,6 +29,7 @@ Format:
 Method:
 
 - The legislative crosswalks are now geometry-based where the modern precinct code can be bridged to the statewide `vtd20` layer, with fallback to vote-derived carryover rows only for unmatched precinct codes.
+- The `precinct_to_2022_state_house.csv` and `precinct_to_2022_state_senate.csv` files now use the 2022 Census `SLDL` and `SLDU` geometries as their primary district shapes.
 - The `precinct_to_cd2026_sl2025_95.csv` congressional file is also geometry-based for precincts that can be matched onto the statewide `vtd20` layer, with fallback to earlier carryover rows for unmatched modern precinct codes.
 - Vote-derived fallback rows come from positive-vote precinct rows in the corresponding general-election file for that cycle.
 - State senate fallback rows still need two-cycle support because only half the senate districts are normally on the ballot in a single general election year.

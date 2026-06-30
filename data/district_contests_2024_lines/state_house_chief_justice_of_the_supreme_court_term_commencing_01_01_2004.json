@@ -221,14 +221,14 @@
         "color": "#2171b5"
       },
       "19": {
-        "dem_votes": 15260,
-        "rep_votes": 15393,
+        "dem_votes": 15831,
+        "rep_votes": 15927,
         "other_votes": 0,
-        "total_votes": 30653,
+        "total_votes": 31758,
         "dem_candidate": "C. Ellen Connally",
         "rep_candidate": "Thomas J. Moyer",
-        "margin": 133,
-        "margin_pct": 0.43388901575702216,
+        "margin": 96,
+        "margin_pct": 0.3022860381636123,
         "winner": "REP",
         "color": "#fcbba1"
       },
@@ -725,14 +725,14 @@
         "color": "#cb181d"
       },
       "61": {
-        "dem_votes": 14016,
-        "rep_votes": 22463,
+        "dem_votes": 14122,
+        "rep_votes": 22696,
         "other_votes": 0,
-        "total_votes": 36479,
+        "total_votes": 36818,
         "dem_candidate": "C. Ellen Connally",
         "rep_candidate": "Thomas J. Moyer",
-        "margin": 8447,
-        "margin_pct": 23.155788261739634,
+        "margin": 8574,
+        "margin_pct": 23.287522407518065,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -1025,14 +1025,14 @@
         "color": "#cb181d"
       },
       "86": {
-        "dem_votes": 9591,
-        "rep_votes": 15760,
+        "dem_votes": 9852,
+        "rep_votes": 15989,
         "other_votes": 0,
-        "total_votes": 25351,
+        "total_votes": 25841,
         "dem_candidate": "C. Ellen Connally",
         "rep_candidate": "Thomas J. Moyer",
-        "margin": 6169,
-        "margin_pct": 24.334345785176126,
+        "margin": 6137,
+        "margin_pct": 23.749080917921134,
         "winner": "REP",
         "color": "#cb181d"
       },
