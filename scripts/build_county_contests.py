@@ -119,6 +119,8 @@ def write_json(path: Path, payload: dict) -> None:
 
 def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    for existing in OUTPUT_DIR.glob("*.json"):
+        existing.unlink()
     manifest_entries: list[dict] = []
 
     for year, path in YEAR_FILES:
