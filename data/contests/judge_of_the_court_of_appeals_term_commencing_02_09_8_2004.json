@@ -1,0 +1,46 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_8",
+  "year": 2004,
+  "rows": [
+    {
+      "county": "Darke",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 7046,
+      "total_votes": 7046,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Miami",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 12458,
+      "total_votes": 12458,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Montgomery",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 9460,
+      "total_votes": 9460,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    }
+  ]
+}

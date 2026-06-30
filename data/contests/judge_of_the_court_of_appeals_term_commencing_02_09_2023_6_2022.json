@@ -1,0 +1,111 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2023_6",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Erie",
+      "dem_votes": 0,
+      "rep_votes": 20294,
+      "other_votes": 0,
+      "total_votes": 20294,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 20294,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Fulton",
+      "dem_votes": 0,
+      "rep_votes": 13081,
+      "other_votes": 0,
+      "total_votes": 13081,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 13081,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Huron",
+      "dem_votes": 0,
+      "rep_votes": 14256,
+      "other_votes": 0,
+      "total_votes": 14256,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 14256,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Lucas",
+      "dem_votes": 0,
+      "rep_votes": 83247,
+      "other_votes": 0,
+      "total_votes": 83247,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 83247,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Ottawa",
+      "dem_votes": 0,
+      "rep_votes": 13974,
+      "other_votes": 0,
+      "total_votes": 13974,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 13974,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Sandusky",
+      "dem_votes": 0,
+      "rep_votes": 16847,
+      "other_votes": 0,
+      "total_votes": 16847,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 16847,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Williams",
+      "dem_votes": 0,
+      "rep_votes": 9937,
+      "other_votes": 0,
+      "total_votes": 9937,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 9937,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Wood",
+      "dem_votes": 0,
+      "rep_votes": 34980,
+      "other_votes": 0,
+      "total_votes": 34980,
+      "dem_candidate": "",
+      "rep_candidate": "Christine Mayle",
+      "margin": 34980,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

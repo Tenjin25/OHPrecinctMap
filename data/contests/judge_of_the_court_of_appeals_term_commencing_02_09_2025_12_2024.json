@@ -1,0 +1,111 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2025_12",
+  "year": 2024,
+  "rows": [
+    {
+      "county": "Brown",
+      "dem_votes": 0,
+      "rep_votes": 17547,
+      "other_votes": 0,
+      "total_votes": 17547,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 17547,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Butler",
+      "dem_votes": 0,
+      "rep_votes": 130929,
+      "other_votes": 0,
+      "total_votes": 130929,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 130929,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clermont",
+      "dem_votes": 0,
+      "rep_votes": 82873,
+      "other_votes": 0,
+      "total_votes": 82873,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 82873,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clinton",
+      "dem_votes": 0,
+      "rep_votes": 15708,
+      "other_votes": 0,
+      "total_votes": 15708,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 15708,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Fayette",
+      "dem_votes": 0,
+      "rep_votes": 9836,
+      "other_votes": 0,
+      "total_votes": 9836,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 9836,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Madison",
+      "dem_votes": 0,
+      "rep_votes": 15196,
+      "other_votes": 0,
+      "total_votes": 15196,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 15196,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Preble",
+      "dem_votes": 0,
+      "rep_votes": 17927,
+      "other_votes": 0,
+      "total_votes": 17927,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 17927,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Warren",
+      "dem_votes": 0,
+      "rep_votes": 99964,
+      "other_votes": 0,
+      "total_votes": 99964,
+      "dem_candidate": "",
+      "rep_candidate": "Melena Siebert",
+      "margin": 99964,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

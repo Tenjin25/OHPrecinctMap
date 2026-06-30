@@ -1,0 +1,85 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_10_2023_2",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Champaign",
+      "dem_votes": 0,
+      "rep_votes": 10834,
+      "other_votes": 0,
+      "total_votes": 10834,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 10834,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clark",
+      "dem_votes": 0,
+      "rep_votes": 31419,
+      "other_votes": 0,
+      "total_votes": 31419,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 31419,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Darke",
+      "dem_votes": 0,
+      "rep_votes": 17468,
+      "other_votes": 0,
+      "total_votes": 17468,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 17468,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Greene",
+      "dem_votes": 0,
+      "rep_votes": 48053,
+      "other_votes": 0,
+      "total_votes": 48053,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 48053,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Miami",
+      "dem_votes": 0,
+      "rep_votes": 33217,
+      "other_votes": 0,
+      "total_votes": 33217,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 33217,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Montgomery",
+      "dem_votes": 0,
+      "rep_votes": 115103,
+      "other_votes": 0,
+      "total_votes": 115103,
+      "dem_candidate": "",
+      "rep_candidate": "Ronald C. Lewis",
+      "margin": 115103,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

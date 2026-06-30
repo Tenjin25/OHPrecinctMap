@@ -1,0 +1,20 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_01_02_2025_8",
+  "year": 2024,
+  "rows": [
+    {
+      "county": "Cuyahoga",
+      "dem_votes": 337353,
+      "rep_votes": 0,
+      "other_votes": 0,
+      "total_votes": 337353,
+      "dem_candidate": "Michelle J. Sheehan",
+      "rep_candidate": "",
+      "margin": -337353,
+      "margin_pct": -100.0,
+      "winner": "DEM",
+      "color": "#2171b5"
+    }
+  ]
+}

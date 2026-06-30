@@ -1,0 +1,33 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_10_12",
+  "year": 2004,
+  "rows": [
+    {
+      "county": "Delaware",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 48564,
+      "total_votes": 48564,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Licking",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 30509,
+      "total_votes": 30509,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    }
+  ]
+}

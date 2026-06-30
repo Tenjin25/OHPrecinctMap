@@ -1,0 +1,98 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2",
+  "year": 2004,
+  "rows": [
+    {
+      "county": "Adams",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 9241,
+      "total_votes": 9241,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Brown",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 12189,
+      "total_votes": 12189,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Clermont",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 59430,
+      "total_votes": 59430,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Hamilton",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 79566,
+      "total_votes": 79566,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Pike",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 9514,
+      "total_votes": 9514,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Scioto",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 16256,
+      "total_votes": 16256,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    },
+    {
+      "county": "Warren",
+      "dem_votes": 0,
+      "rep_votes": 0,
+      "other_votes": 26023,
+      "total_votes": 26023,
+      "dem_candidate": "",
+      "rep_candidate": "",
+      "margin": 0,
+      "margin_pct": 0.0,
+      "winner": "TIE",
+      "color": "#d9d9d9"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_unexpired_term_ending_02_08_2025_11",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Ashtabula",
+      "dem_votes": 0,
+      "rep_votes": 23407,
+      "other_votes": 0,
+      "total_votes": 23407,
+      "dem_candidate": "",
+      "rep_candidate": "John J. Eklund",
+      "margin": 23407,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Geauga",
+      "dem_votes": 0,
+      "rep_votes": 31612,
+      "other_votes": 0,
+      "total_votes": 31612,
+      "dem_candidate": "",
+      "rep_candidate": "John J. Eklund",
+      "margin": 31612,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Lake",
+      "dem_votes": 0,
+      "rep_votes": 65499,
+      "other_votes": 0,
+      "total_votes": 65499,
+      "dem_candidate": "",
+      "rep_candidate": "John J. Eklund",
+      "margin": 65499,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Portage",
+      "dem_votes": 0,
+      "rep_votes": 41711,
+      "other_votes": 0,
+      "total_votes": 41711,
+      "dem_candidate": "",
+      "rep_candidate": "John J. Eklund",
+      "margin": 41711,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Trumbull",
+      "dem_votes": 0,
+      "rep_votes": 47322,
+      "other_votes": 0,
+      "total_votes": 47322,
+      "dem_candidate": "",
+      "rep_candidate": "John J. Eklund",
+      "margin": 47322,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

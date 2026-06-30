@@ -1,0 +1,59 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_10_2023_9",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Lorain",
+      "dem_votes": 50112,
+      "rep_votes": 57361,
+      "other_votes": 0,
+      "total_votes": 107473,
+      "dem_candidate": "Erica Voorhees",
+      "rep_candidate": "Donna J. Carr",
+      "margin": 7249,
+      "margin_pct": 6.74494989439208,
+      "winner": "REP",
+      "color": "#fb6a4a"
+    },
+    {
+      "county": "Medina",
+      "dem_votes": 27436,
+      "rep_votes": 48426,
+      "other_votes": 0,
+      "total_votes": 75862,
+      "dem_candidate": "Erica Voorhees",
+      "rep_candidate": "Donna J. Carr",
+      "margin": 20990,
+      "margin_pct": 27.668661516965017,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Summit",
+      "dem_votes": 100791,
+      "rep_votes": 93190,
+      "other_votes": 0,
+      "total_votes": 193981,
+      "dem_candidate": "Erica Voorhees",
+      "rep_candidate": "Donna J. Carr",
+      "margin": -7601,
+      "margin_pct": -3.9184250003866357,
+      "winner": "DEM",
+      "color": "#c6dbef"
+    },
+    {
+      "county": "Wayne",
+      "dem_votes": 11078,
+      "rep_votes": 26838,
+      "other_votes": 0,
+      "total_votes": 37916,
+      "dem_candidate": "Erica Voorhees",
+      "rep_candidate": "Donna J. Carr",
+      "margin": 15760,
+      "margin_pct": 41.565565987973415,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

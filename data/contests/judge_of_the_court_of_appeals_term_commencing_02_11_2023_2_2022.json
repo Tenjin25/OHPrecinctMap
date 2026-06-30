@@ -1,0 +1,85 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_11_2023_2",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Champaign",
+      "dem_votes": 0,
+      "rep_votes": 10822,
+      "other_votes": 0,
+      "total_votes": 10822,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 10822,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clark",
+      "dem_votes": 0,
+      "rep_votes": 31436,
+      "other_votes": 0,
+      "total_votes": 31436,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 31436,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Darke",
+      "dem_votes": 0,
+      "rep_votes": 17447,
+      "other_votes": 0,
+      "total_votes": 17447,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 17447,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Greene",
+      "dem_votes": 0,
+      "rep_votes": 47707,
+      "other_votes": 0,
+      "total_votes": 47707,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 47707,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Miami",
+      "dem_votes": 0,
+      "rep_votes": 33389,
+      "other_votes": 0,
+      "total_votes": 33389,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 33389,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Montgomery",
+      "dem_votes": 0,
+      "rep_votes": 116401,
+      "other_votes": 0,
+      "total_votes": 116401,
+      "dem_candidate": "",
+      "rep_candidate": "Mike Tucker",
+      "margin": 116401,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

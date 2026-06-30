@@ -1,0 +1,85 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2025_2",
+  "year": 2024,
+  "rows": [
+    {
+      "county": "Champaign",
+      "dem_votes": 0,
+      "rep_votes": 15294,
+      "other_votes": 0,
+      "total_votes": 15294,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 15294,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clark",
+      "dem_votes": 0,
+      "rep_votes": 44782,
+      "other_votes": 0,
+      "total_votes": 44782,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 44782,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Darke",
+      "dem_votes": 0,
+      "rep_votes": 23351,
+      "other_votes": 0,
+      "total_votes": 23351,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 23351,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Greene",
+      "dem_votes": 0,
+      "rep_votes": 64973,
+      "other_votes": 0,
+      "total_votes": 64973,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 64973,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Miami",
+      "dem_votes": 0,
+      "rep_votes": 44331,
+      "other_votes": 0,
+      "total_votes": 44331,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 44331,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Montgomery",
+      "dem_votes": 0,
+      "rep_votes": 154682,
+      "other_votes": 0,
+      "total_votes": 154682,
+      "dem_candidate": "",
+      "rep_candidate": "Robert Hanseman",
+      "margin": 154682,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}

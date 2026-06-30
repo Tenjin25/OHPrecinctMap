@@ -1,0 +1,20 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_10_2025_1",
+  "year": 2024,
+  "rows": [
+    {
+      "county": "Hamilton",
+      "dem_votes": 218756,
+      "rep_votes": 170309,
+      "other_votes": 0,
+      "total_votes": 389065,
+      "dem_candidate": "Marilyn Zayas",
+      "rep_candidate": "Stacy Lefton",
+      "margin": -48447,
+      "margin_pct": -12.4521609499698,
+      "winner": "DEM",
+      "color": "#6baed6"
+    }
+  ]
+}

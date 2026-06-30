@@ -1,0 +1,72 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2023_11",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Ashtabula",
+      "dem_votes": 11661,
+      "rep_votes": 18777,
+      "other_votes": 0,
+      "total_votes": 30438,
+      "dem_candidate": "Thomas R. Wright",
+      "rep_candidate": "Eugene A. Lucci",
+      "margin": 7116,
+      "margin_pct": 23.37867139759511,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Geauga",
+      "dem_votes": 15461,
+      "rep_votes": 26382,
+      "other_votes": 0,
+      "total_votes": 41843,
+      "dem_candidate": "Thomas R. Wright",
+      "rep_candidate": "Eugene A. Lucci",
+      "margin": 10921,
+      "margin_pct": 26.099945032621946,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Lake",
+      "dem_votes": 35867,
+      "rep_votes": 57154,
+      "other_votes": 0,
+      "total_votes": 93021,
+      "dem_candidate": "Thomas R. Wright",
+      "rep_candidate": "Eugene A. Lucci",
+      "margin": 21287,
+      "margin_pct": 22.88407993893852,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Portage",
+      "dem_votes": 26096,
+      "rep_votes": 33001,
+      "other_votes": 0,
+      "total_votes": 59097,
+      "dem_candidate": "Thomas R. Wright",
+      "rep_candidate": "Eugene A. Lucci",
+      "margin": 6905,
+      "margin_pct": 11.684180246036178,
+      "winner": "REP",
+      "color": "#fb6a4a"
+    },
+    {
+      "county": "Trumbull",
+      "dem_votes": 33079,
+      "rep_votes": 37031,
+      "other_votes": 0,
+      "total_votes": 70110,
+      "dem_candidate": "Thomas R. Wright",
+      "rep_candidate": "Eugene A. Lucci",
+      "margin": 3952,
+      "margin_pct": 5.636856368563685,
+      "winner": "REP",
+      "color": "#fb6a4a"
+    }
+  ]
+}

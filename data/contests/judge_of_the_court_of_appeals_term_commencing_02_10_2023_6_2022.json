@@ -1,0 +1,111 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_10_2023_6",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Erie",
+      "dem_votes": 12157,
+      "rep_votes": 15963,
+      "other_votes": 0,
+      "total_votes": 28120,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 3806,
+      "margin_pct": 13.534850640113799,
+      "winner": "REP",
+      "color": "#fb6a4a"
+    },
+    {
+      "county": "Fulton",
+      "dem_votes": 4687,
+      "rep_votes": 11392,
+      "other_votes": 0,
+      "total_votes": 16079,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 6705,
+      "margin_pct": 41.70035449965794,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Huron",
+      "dem_votes": 5246,
+      "rep_votes": 12837,
+      "other_votes": 0,
+      "total_votes": 18083,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 7591,
+      "margin_pct": 41.97865398440524,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Lucas",
+      "dem_votes": 77335,
+      "rep_votes": 52554,
+      "other_votes": 0,
+      "total_votes": 129889,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": -24781,
+      "margin_pct": -19.078597879728076,
+      "winner": "DEM",
+      "color": "#2171b5"
+    },
+    {
+      "county": "Ottawa",
+      "dem_votes": 7268,
+      "rep_votes": 10824,
+      "other_votes": 0,
+      "total_votes": 18092,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 3556,
+      "margin_pct": 19.65509617510502,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Sandusky",
+      "dem_votes": 7303,
+      "rep_votes": 13568,
+      "other_votes": 0,
+      "total_votes": 20871,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 6265,
+      "margin_pct": 30.01772794787025,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Williams",
+      "dem_votes": 3303,
+      "rep_votes": 9224,
+      "other_votes": 0,
+      "total_votes": 12527,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 5921,
+      "margin_pct": 47.26590564380937,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Wood",
+      "dem_votes": 21439,
+      "rep_votes": 26003,
+      "other_votes": 0,
+      "total_votes": 47442,
+      "dem_candidate": "Tom Puffenberger",
+      "rep_candidate": "Charles E. Sulek",
+      "margin": 4564,
+      "margin_pct": 9.620167783820243,
+      "winner": "REP",
+      "color": "#fb6a4a"
+    }
+  ]
+}

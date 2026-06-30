@@ -1,0 +1,20 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2025_10",
+  "year": 2024,
+  "rows": [
+    {
+      "county": "Franklin",
+      "dem_votes": 391594,
+      "rep_votes": 0,
+      "other_votes": 0,
+      "total_votes": 391594,
+      "dem_candidate": "Laurel Beatty Blunt",
+      "rep_candidate": "",
+      "margin": -391594,
+      "margin_pct": -100.0,
+      "winner": "DEM",
+      "color": "#2171b5"
+    }
+  ]
+}

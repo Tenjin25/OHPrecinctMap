@@ -1,0 +1,20 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_unexpired_term_ending_02_09_2027_8",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Cuyahoga",
+      "dem_votes": 249113,
+      "rep_votes": 128380,
+      "other_votes": 0,
+      "total_votes": 377493,
+      "dem_candidate": "Michael John Ryan",
+      "rep_candidate": "Cornelius J. O'Sullivan",
+      "margin": -120733,
+      "margin_pct": -31.982844715001335,
+      "winner": "DEM",
+      "color": "#2171b5"
+    }
+  ]
+}

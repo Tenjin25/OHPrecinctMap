@@ -10255,9 +10255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         state_house_info: withBase('./data/oh_state_house_districts.csv'),
         state_senate_info: withBase('./data/oh_state_senate_districts.csv'),
         district_descriptions: withBase('./data/oh_district_descriptions.json'),
-        // Optional county contest slices. This repo currently uses county_aggregates_nested.json,
-        // so leave blank unless /data/contests/manifest.json and slice JSONs are committed.
-        contests_dir: '',
+        contests_dir: withBase('./data/contests'),
         reports_match_year_summary: withBase('./data/reports/precinct_match_year_summary_fresh_2026-03-19.csv'),
         reports_top_unmatched: withBase('./data/reports/precinct_match_top_unmatched_file_county.csv'),
         crosswalks: {

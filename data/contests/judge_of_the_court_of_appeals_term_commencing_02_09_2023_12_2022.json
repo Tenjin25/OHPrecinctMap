@@ -1,0 +1,111 @@
+{
+  "scope": "county",
+  "contest_type": "judge_of_the_court_of_appeals_term_commencing_02_09_2023_12",
+  "year": 2022,
+  "rows": [
+    {
+      "county": "Brown",
+      "dem_votes": 0,
+      "rep_votes": 12384,
+      "other_votes": 0,
+      "total_votes": 12384,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 12384,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Butler",
+      "dem_votes": 0,
+      "rep_votes": 96229,
+      "other_votes": 0,
+      "total_votes": 96229,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 96229,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clermont",
+      "dem_votes": 0,
+      "rep_votes": 60972,
+      "other_votes": 0,
+      "total_votes": 60972,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 60972,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Clinton",
+      "dem_votes": 0,
+      "rep_votes": 11413,
+      "other_votes": 0,
+      "total_votes": 11413,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 11413,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Fayette",
+      "dem_votes": 0,
+      "rep_votes": 6999,
+      "other_votes": 0,
+      "total_votes": 6999,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 6999,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Madison",
+      "dem_votes": 0,
+      "rep_votes": 10635,
+      "other_votes": 0,
+      "total_votes": 10635,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 10635,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Preble",
+      "dem_votes": 0,
+      "rep_votes": 13442,
+      "other_votes": 0,
+      "total_votes": 13442,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 13442,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    },
+    {
+      "county": "Warren",
+      "dem_votes": 0,
+      "rep_votes": 76090,
+      "other_votes": 0,
+      "total_votes": 76090,
+      "dem_candidate": "",
+      "rep_candidate": "Robin N. Piper",
+      "margin": 76090,
+      "margin_pct": 100.0,
+      "winner": "REP",
+      "color": "#cb181d"
+    }
+  ]
+}
