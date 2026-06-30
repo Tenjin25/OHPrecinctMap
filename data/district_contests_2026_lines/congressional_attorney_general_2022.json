@@ -89,14 +89,14 @@
         "color": "#cb181d"
       },
       "8": {
-        "dem_votes": 107329,
-        "rep_votes": 186951,
+        "dem_votes": 107365,
+        "rep_votes": 187193,
         "other_votes": 0,
-        "total_votes": 294280,
+        "total_votes": 294558,
         "dem_candidate": "Jeffrey A. Crossman",
         "rep_candidate": "Dave Yost",
-        "margin": 79622,
-        "margin_pct": 27.056544787277424,
+        "margin": 79828,
+        "margin_pct": 27.100944465945588,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#cb181d"
       },
       "10": {
-        "dem_votes": 110908,
-        "rep_votes": 162738,
+        "dem_votes": 110872,
+        "rep_votes": 162496,
         "other_votes": 0,
-        "total_votes": 273646,
+        "total_votes": 273368,
         "dem_candidate": "Jeffrey A. Crossman",
         "rep_candidate": "Dave Yost",
-        "margin": 51830,
-        "margin_pct": 18.940529004626416,
+        "margin": 51624,
+        "margin_pct": 18.884434169324866,
         "winner": "REP",
         "color": "#cb181d"
       },

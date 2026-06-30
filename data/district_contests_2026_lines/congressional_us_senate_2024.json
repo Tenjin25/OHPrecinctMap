@@ -89,14 +89,14 @@
         "color": "#fcbba1"
       },
       "8": {
-        "dem_votes": 174015,
-        "rep_votes": 213332,
-        "other_votes": 13667,
-        "total_votes": 401014,
+        "dem_votes": 174082,
+        "rep_votes": 213631,
+        "other_votes": 13682,
+        "total_votes": 401395,
         "dem_candidate": "Sherrod Brown",
         "rep_candidate": "Bernie Moreno",
-        "margin": 39317,
-        "margin_pct": 9.804395856503763,
+        "margin": 39549,
+        "margin_pct": 9.852888052915457,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -113,14 +113,14 @@
         "color": "#fcbba1"
       },
       "10": {
-        "dem_votes": 178838,
-        "rep_votes": 182316,
-        "other_votes": 13529,
-        "total_votes": 374683,
+        "dem_votes": 178771,
+        "rep_votes": 182017,
+        "other_votes": 13514,
+        "total_votes": 374302,
         "dem_candidate": "Sherrod Brown",
         "rep_candidate": "Bernie Moreno",
-        "margin": 3478,
-        "margin_pct": 0.9282513484732426,
+        "margin": 3246,
+        "margin_pct": 0.8672141746504161,
         "winner": "REP",
         "color": "#fcbba1"
       },

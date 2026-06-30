@@ -89,14 +89,14 @@
         "color": "#fb6a4a"
       },
       "8": {
-        "dem_votes": 114365,
-        "rep_votes": 178431,
+        "dem_votes": 114407,
+        "rep_votes": 178665,
         "other_votes": 0,
-        "total_votes": 292796,
+        "total_votes": 293072,
         "dem_candidate": "Marilyn Zayas",
         "rep_candidate": "Pat DeWine",
-        "margin": 64066,
-        "margin_pct": 21.880763398407083,
+        "margin": 64258,
+        "margin_pct": 21.92567014249058,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#fb6a4a"
       },
       "10": {
-        "dem_votes": 118050,
-        "rep_votes": 153902,
+        "dem_votes": 118008,
+        "rep_votes": 153668,
         "other_votes": 0,
-        "total_votes": 271952,
+        "total_votes": 271676,
         "dem_candidate": "Marilyn Zayas",
         "rep_candidate": "Pat DeWine",
-        "margin": 35852,
-        "margin_pct": 13.183208801553214,
+        "margin": 35660,
+        "margin_pct": 13.125929415921908,
         "winner": "REP",
         "color": "#fb6a4a"
       },

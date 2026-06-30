@@ -96,6 +96,10 @@ def normalize_district_number(value: str) -> str:
     return raw
 
 
+def district_sort_key(value: str) -> tuple[int, int | str]:
+    return (0, int(value)) if value.isdigit() else (1, value)
+
+
 def contest_type_for_row(office: str, district: str) -> str:
     office = normalize_office(office)
     if office == "President/Vice President":
@@ -206,6 +210,7 @@ def aggregate_scopes_year(
             contest_type = contest_type_for_row(office, row.get("district", ""))
             if not contest_type:
                 continue
+            direct_district_num = normalize_district_number(row.get("district", ""))
             if contest_type in DISTRICT_SPECIFIC_CONTEST_TYPES:
                 if year not in {2022, 2024}:
                     continue
@@ -235,6 +240,30 @@ def aggregate_scopes_year(
 
             party = PARTY_MAP.get(clean_text(row.get("party", "")).upper(), "")
             for scope in target_scopes:
+                if (
+                    direct_district_num
+                    and (
+                        (contest_type == "us_house" and scope == "congressional")
+                        or (contest_type == "state_house" and scope == "state_house")
+                        or (contest_type == "state_senate" and scope == "state_senate")
+                    )
+                ):
+                    matched_rows_by_scope[scope] += 1
+                    allocated_rows_by_scope[scope] += 1
+                    bucket = contests_by_scope[scope][contest_type][direct_district_num]
+                    if party == "DEM":
+                        bucket["dem_votes"] += votes
+                        if not bucket["dem_candidate"]:
+                            bucket["dem_candidate"] = candidate
+                    elif party == "REP":
+                        bucket["rep_votes"] += votes
+                        if not bucket["rep_candidate"]:
+                            bucket["rep_candidate"] = candidate
+                    else:
+                        bucket["other_votes"] += votes
+                    bucket["total_votes"] += votes
+                    continue
+
                 district_targets = crosswalks[scope].get(precinct_key)
                 if not district_targets:
                     unmatched_precincts_by_scope[scope].add(precinct_key)
@@ -263,7 +292,7 @@ def aggregate_scopes_year(
         payloads: dict[str, dict] = {}
         for contest_type, results in contests.items():
             finalized_results = {}
-            for district_num, entry in sorted(results.items(), key=lambda item: int(item[0]) if item[0].isdigit() else item[0]):
+            for district_num, entry in sorted(results.items(), key=lambda item: district_sort_key(item[0])):
                 if float(entry.get("total_votes", 0) or 0) <= 0:
                     continue
                 finalized_results[str(district_num)] = finalize_result(entry)

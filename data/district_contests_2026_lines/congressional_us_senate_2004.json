@@ -89,14 +89,14 @@
         "color": "#cb181d"
       },
       "8": {
-        "dem_votes": 81170,
-        "rep_votes": 219309,
+        "dem_votes": 81259,
+        "rep_votes": 219563,
         "other_votes": 0,
-        "total_votes": 300479,
+        "total_votes": 300822,
         "dem_candidate": "Eric D. Fingerhut",
         "rep_candidate": "George V. Voinovich",
-        "margin": 138139,
-        "margin_pct": 45.97292988861118,
+        "margin": 138304,
+        "margin_pct": 45.975360844619075,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#cb181d"
       },
       "10": {
-        "dem_votes": 86806,
-        "rep_votes": 171044,
+        "dem_votes": 86717,
+        "rep_votes": 170790,
         "other_votes": 0,
-        "total_votes": 257850,
+        "total_votes": 257507,
         "dem_candidate": "Eric D. Fingerhut",
         "rep_candidate": "George V. Voinovich",
-        "margin": 84238,
-        "margin_pct": 32.669381423308124,
+        "margin": 84073,
+        "margin_pct": 32.64882119709367,
         "winner": "REP",
         "color": "#cb181d"
       },

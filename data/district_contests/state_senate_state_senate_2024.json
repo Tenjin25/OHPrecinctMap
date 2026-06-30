@@ -5,26 +5,14 @@
   "general": {
     "results": {
       "4": {
-        "dem_votes": 61334,
-        "rep_votes": 104071,
+        "dem_votes": 61381,
+        "rep_votes": 104251,
         "other_votes": 0,
-        "total_votes": 165405,
+        "total_votes": 165632,
         "dem_candidate": "Thomas Cooke",
         "rep_candidate": "George Lang",
-        "margin": 42737,
-        "margin_pct": 25.837792086091717,
-        "winner": "REP",
-        "color": "#cb181d"
-      },
-      "5": {
-        "dem_votes": 47,
-        "rep_votes": 180,
-        "other_votes": 0,
-        "total_votes": 227,
-        "dem_candidate": "Thomas Cooke",
-        "rep_candidate": "George Lang",
-        "margin": 133,
-        "margin_pct": 58.590308370044056,
+        "margin": 42870,
+        "margin_pct": 25.88267967542504,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -65,28 +53,16 @@
         "color": "#cb181d"
       },
       "18": {
-        "dem_votes": 12502,
-        "rep_votes": 12129,
+        "dem_votes": 14948,
+        "rep_votes": 14926,
         "other_votes": 0,
-        "total_votes": 24631,
+        "total_votes": 29874,
         "dem_candidate": "Katie O'Neill",
         "rep_candidate": "Jerry Cirino",
-        "margin": -373,
-        "margin_pct": -1.5143518330559051,
+        "margin": -22,
+        "margin_pct": -0.07364263238936868,
         "winner": "DEM",
         "color": "#c6dbef"
-      },
-      "21": {
-        "dem_votes": 2429,
-        "rep_votes": 2814,
-        "other_votes": 0,
-        "total_votes": 5243,
-        "dem_candidate": "Katie O'Neill",
-        "rep_candidate": "Jerry Cirino",
-        "margin": 385,
-        "margin_pct": 7.343124165554073,
-        "winner": "REP",
-        "color": "#fb6a4a"
       },
       "22": {
         "dem_votes": 6038,
@@ -100,27 +76,15 @@
         "winner": "REP",
         "color": "#cb181d"
       },
-      "23": {
-        "dem_votes": 17754,
-        "rep_votes": 19018,
-        "other_votes": 0,
-        "total_votes": 36772,
-        "dem_candidate": "Sue Durichko",
-        "rep_candidate": "Thomas F. Patton",
-        "margin": 1264,
-        "margin_pct": 3.437398020232786,
-        "winner": "REP",
-        "color": "#fcbba1"
-      },
       "24": {
-        "dem_votes": 39622,
-        "rep_votes": 43331,
+        "dem_votes": 57359,
+        "rep_votes": 62366,
         "other_votes": 0,
-        "total_votes": 82953,
+        "total_votes": 119725,
         "dem_candidate": "Sue Durichko",
         "rep_candidate": "Thomas F. Patton",
-        "margin": 3709,
-        "margin_pct": 4.47120658686244,
+        "margin": 5007,
+        "margin_pct": 4.182083942367926,
         "winner": "REP",
         "color": "#fcbba1"
       },

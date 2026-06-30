@@ -89,14 +89,14 @@
         "color": "#fb6a4a"
       },
       "8": {
-        "dem_votes": 113072,
-        "rep_votes": 179357,
+        "dem_votes": 113109,
+        "rep_votes": 179596,
         "other_votes": 0,
-        "total_votes": 292429,
+        "total_votes": 292705,
         "dem_candidate": "Terri Jamison",
         "rep_candidate": "Pat Fischer",
-        "margin": 66285,
-        "margin_pct": 22.667040546594215,
+        "margin": 66487,
+        "margin_pct": 22.71467860132215,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#fb6a4a"
       },
       "10": {
-        "dem_votes": 117535,
-        "rep_votes": 154108,
+        "dem_votes": 117498,
+        "rep_votes": 153869,
         "other_votes": 0,
-        "total_votes": 271643,
+        "total_votes": 271367,
         "dem_candidate": "Terri Jamison",
         "rep_candidate": "Pat Fischer",
-        "margin": 36573,
-        "margin_pct": 13.463626892649543,
+        "margin": 36371,
+        "margin_pct": 13.402882443333198,
         "winner": "REP",
         "color": "#fb6a4a"
       },

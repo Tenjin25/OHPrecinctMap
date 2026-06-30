@@ -53,16 +53,16 @@
         "color": "#cb181d"
       },
       "18": {
-        "dem_votes": 14931,
-        "rep_votes": 14943,
+        "dem_votes": 14948,
+        "rep_votes": 14926,
         "other_votes": 0,
         "total_votes": 29874,
         "dem_candidate": "Katie O'Neill",
         "rep_candidate": "Jerry Cirino",
-        "margin": 12,
-        "margin_pct": 0.04016870857601928,
-        "winner": "REP",
-        "color": "#fcbba1"
+        "margin": -22,
+        "margin_pct": -0.07364263238936868,
+        "winner": "DEM",
+        "color": "#c6dbef"
       },
       "22": {
         "dem_votes": 6038,
@@ -77,14 +77,14 @@
         "color": "#cb181d"
       },
       "24": {
-        "dem_votes": 57376,
-        "rep_votes": 62349,
+        "dem_votes": 57359,
+        "rep_votes": 62366,
         "other_votes": 0,
         "total_votes": 119725,
         "dem_candidate": "Sue Durichko",
         "rep_candidate": "Thomas F. Patton",
-        "margin": 4973,
-        "margin_pct": 4.153685529338066,
+        "margin": 5007,
+        "margin_pct": 4.182083942367926,
         "winner": "REP",
         "color": "#fcbba1"
       },

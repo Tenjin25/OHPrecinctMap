@@ -397,7 +397,7 @@
       "contest_type": "attorney_general",
       "year": 2006,
       "file": "state_house_attorney_general_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -405,7 +405,7 @@
       "contest_type": "attorney_general",
       "year": 2008,
       "file": "state_house_attorney_general_2008.json",
-      "rows": 86,
+      "rows": 87,
       "lines_year": 2022
     },
     {
@@ -413,7 +413,7 @@
       "contest_type": "attorney_general",
       "year": 2010,
       "file": "state_house_attorney_general_2010.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -421,7 +421,7 @@
       "contest_type": "attorney_general",
       "year": 2014,
       "file": "state_house_attorney_general_2014.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -429,7 +429,7 @@
       "contest_type": "attorney_general",
       "year": 2018,
       "file": "state_house_attorney_general_2018.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -437,7 +437,7 @@
       "contest_type": "attorney_general",
       "year": 2022,
       "file": "state_house_attorney_general_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -445,7 +445,7 @@
       "contest_type": "auditor",
       "year": 2006,
       "file": "state_house_auditor_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -453,7 +453,7 @@
       "contest_type": "auditor",
       "year": 2010,
       "file": "state_house_auditor_2010.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -461,7 +461,7 @@
       "contest_type": "auditor",
       "year": 2014,
       "file": "state_house_auditor_2014.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -469,7 +469,7 @@
       "contest_type": "auditor",
       "year": 2018,
       "file": "state_house_auditor_2018.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -477,7 +477,7 @@
       "contest_type": "auditor",
       "year": 2022,
       "file": "state_house_auditor_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -485,7 +485,7 @@
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01",
       "year": 2004,
       "file": "state_house_chief_justice_of_the_supreme_court_term_commencing_01_01_2004.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -493,7 +493,7 @@
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_house_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -501,7 +501,7 @@
       "contest_type": "governor",
       "year": 2006,
       "file": "state_house_governor_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -509,7 +509,7 @@
       "contest_type": "governor",
       "year": 2010,
       "file": "state_house_governor_2010.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -517,7 +517,7 @@
       "contest_type": "governor",
       "year": 2014,
       "file": "state_house_governor_2014.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -525,7 +525,7 @@
       "contest_type": "governor",
       "year": 2022,
       "file": "state_house_governor_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -533,7 +533,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
       "year": 2012,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_01_2013_2012.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -541,7 +541,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -549,7 +549,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
       "year": 2004,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_02_2004.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -557,7 +557,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2013",
       "year": 2012,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_02_2013_2012.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -565,7 +565,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2023",
       "year": 2022,
       "file": "state_house_justice_of_the_supreme_court_term_commencing_01_02_2023_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -573,7 +573,7 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
       "year": 2004,
       "file": "state_house_justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -581,7 +581,7 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
       "year": 2012,
       "file": "state_house_justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -589,7 +589,7 @@
       "contest_type": "president",
       "year": 2004,
       "file": "state_house_president_2004.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -597,7 +597,7 @@
       "contest_type": "president",
       "year": 2008,
       "file": "state_house_president_2008.json",
-      "rows": 86,
+      "rows": 87,
       "lines_year": 2022
     },
     {
@@ -605,7 +605,7 @@
       "contest_type": "president",
       "year": 2012,
       "file": "state_house_president_2012.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -613,7 +613,7 @@
       "contest_type": "president",
       "year": 2016,
       "file": "state_house_president_2016.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -621,7 +621,7 @@
       "contest_type": "president",
       "year": 2020,
       "file": "state_house_president_2020.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -629,7 +629,7 @@
       "contest_type": "president",
       "year": 2024,
       "file": "state_house_president_2024.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -637,7 +637,7 @@
       "contest_type": "secretary_of_state",
       "year": 2006,
       "file": "state_house_secretary_of_state_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -645,7 +645,7 @@
       "contest_type": "secretary_of_state",
       "year": 2010,
       "file": "state_house_secretary_of_state_2010.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -653,7 +653,7 @@
       "contest_type": "secretary_of_state",
       "year": 2014,
       "file": "state_house_secretary_of_state_2014.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -661,7 +661,7 @@
       "contest_type": "secretary_of_state",
       "year": 2018,
       "file": "state_house_secretary_of_state_2018.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -669,7 +669,7 @@
       "contest_type": "secretary_of_state",
       "year": 2022,
       "file": "state_house_secretary_of_state_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -693,7 +693,7 @@
       "contest_type": "treasurer",
       "year": 2006,
       "file": "state_house_treasurer_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -701,7 +701,7 @@
       "contest_type": "treasurer",
       "year": 2010,
       "file": "state_house_treasurer_2010.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -709,7 +709,7 @@
       "contest_type": "treasurer",
       "year": 2014,
       "file": "state_house_treasurer_2014.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -717,7 +717,7 @@
       "contest_type": "treasurer",
       "year": 2018,
       "file": "state_house_treasurer_2018.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -725,7 +725,7 @@
       "contest_type": "treasurer",
       "year": 2022,
       "file": "state_house_treasurer_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -733,7 +733,7 @@
       "contest_type": "us_senate",
       "year": 2004,
       "file": "state_house_us_senate_2004.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -741,7 +741,7 @@
       "contest_type": "us_senate",
       "year": 2006,
       "file": "state_house_us_senate_2006.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -749,7 +749,7 @@
       "contest_type": "us_senate",
       "year": 2012,
       "file": "state_house_us_senate_2012.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -757,7 +757,7 @@
       "contest_type": "us_senate",
       "year": 2016,
       "file": "state_house_us_senate_2016.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -765,7 +765,7 @@
       "contest_type": "us_senate",
       "year": 2018,
       "file": "state_house_us_senate_2018.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -773,7 +773,7 @@
       "contest_type": "us_senate",
       "year": 2022,
       "file": "state_house_us_senate_2022.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -781,7 +781,7 @@
       "contest_type": "us_senate",
       "year": 2024,
       "file": "state_house_us_senate_2024.json",
-      "rows": 99,
+      "rows": 100,
       "lines_year": 2022
     },
     {
@@ -789,7 +789,7 @@
       "contest_type": "attorney_general",
       "year": 2006,
       "file": "state_senate_attorney_general_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -797,7 +797,7 @@
       "contest_type": "attorney_general",
       "year": 2008,
       "file": "state_senate_attorney_general_2008.json",
-      "rows": 30,
+      "rows": 32,
       "lines_year": 2022
     },
     {
@@ -805,7 +805,7 @@
       "contest_type": "attorney_general",
       "year": 2010,
       "file": "state_senate_attorney_general_2010.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -813,7 +813,7 @@
       "contest_type": "attorney_general",
       "year": 2014,
       "file": "state_senate_attorney_general_2014.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -821,7 +821,7 @@
       "contest_type": "attorney_general",
       "year": 2018,
       "file": "state_senate_attorney_general_2018.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -829,7 +829,7 @@
       "contest_type": "attorney_general",
       "year": 2022,
       "file": "state_senate_attorney_general_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -837,7 +837,7 @@
       "contest_type": "auditor",
       "year": 2006,
       "file": "state_senate_auditor_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -845,7 +845,7 @@
       "contest_type": "auditor",
       "year": 2010,
       "file": "state_senate_auditor_2010.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -853,7 +853,7 @@
       "contest_type": "auditor",
       "year": 2014,
       "file": "state_senate_auditor_2014.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -861,7 +861,7 @@
       "contest_type": "auditor",
       "year": 2018,
       "file": "state_senate_auditor_2018.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -869,7 +869,7 @@
       "contest_type": "auditor",
       "year": 2022,
       "file": "state_senate_auditor_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -877,7 +877,7 @@
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01",
       "year": 2004,
       "file": "state_senate_chief_justice_of_the_supreme_court_term_commencing_01_01_2004.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -885,7 +885,7 @@
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_senate_chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -893,7 +893,7 @@
       "contest_type": "governor",
       "year": 2006,
       "file": "state_senate_governor_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -901,7 +901,7 @@
       "contest_type": "governor",
       "year": 2010,
       "file": "state_senate_governor_2010.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -909,7 +909,7 @@
       "contest_type": "governor",
       "year": 2014,
       "file": "state_senate_governor_2014.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -917,7 +917,7 @@
       "contest_type": "governor",
       "year": 2022,
       "file": "state_senate_governor_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -925,7 +925,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
       "year": 2012,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_01_2013_2012.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -933,7 +933,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -941,7 +941,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
       "year": 2004,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_02_2004.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -949,7 +949,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2013",
       "year": 2012,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_02_2013_2012.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -957,7 +957,7 @@
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2023",
       "year": 2022,
       "file": "state_senate_justice_of_the_supreme_court_term_commencing_01_02_2023_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -965,7 +965,7 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
       "year": 2004,
       "file": "state_senate_justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -973,7 +973,7 @@
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
       "year": 2012,
       "file": "state_senate_justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -981,7 +981,7 @@
       "contest_type": "president",
       "year": 2004,
       "file": "state_senate_president_2004.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -989,7 +989,7 @@
       "contest_type": "president",
       "year": 2008,
       "file": "state_senate_president_2008.json",
-      "rows": 30,
+      "rows": 32,
       "lines_year": 2022
     },
     {
@@ -997,7 +997,7 @@
       "contest_type": "president",
       "year": 2012,
       "file": "state_senate_president_2012.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1005,7 +1005,7 @@
       "contest_type": "president",
       "year": 2016,
       "file": "state_senate_president_2016.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1013,7 +1013,7 @@
       "contest_type": "president",
       "year": 2020,
       "file": "state_senate_president_2020.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1021,7 +1021,7 @@
       "contest_type": "president",
       "year": 2024,
       "file": "state_senate_president_2024.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1029,7 +1029,7 @@
       "contest_type": "secretary_of_state",
       "year": 2006,
       "file": "state_senate_secretary_of_state_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1037,7 +1037,7 @@
       "contest_type": "secretary_of_state",
       "year": 2010,
       "file": "state_senate_secretary_of_state_2010.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1045,7 +1045,7 @@
       "contest_type": "secretary_of_state",
       "year": 2014,
       "file": "state_senate_secretary_of_state_2014.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1053,7 +1053,7 @@
       "contest_type": "secretary_of_state",
       "year": 2018,
       "file": "state_senate_secretary_of_state_2018.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1061,7 +1061,7 @@
       "contest_type": "secretary_of_state",
       "year": 2022,
       "file": "state_senate_secretary_of_state_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1077,7 +1077,7 @@
       "contest_type": "state_senate",
       "year": 2024,
       "file": "state_senate_state_senate_2024.json",
-      "rows": 14,
+      "rows": 11,
       "lines_year": 2022
     },
     {
@@ -1085,7 +1085,7 @@
       "contest_type": "treasurer",
       "year": 2006,
       "file": "state_senate_treasurer_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1093,7 +1093,7 @@
       "contest_type": "treasurer",
       "year": 2010,
       "file": "state_senate_treasurer_2010.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1101,7 +1101,7 @@
       "contest_type": "treasurer",
       "year": 2014,
       "file": "state_senate_treasurer_2014.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1109,7 +1109,7 @@
       "contest_type": "treasurer",
       "year": 2018,
       "file": "state_senate_treasurer_2018.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1117,7 +1117,7 @@
       "contest_type": "treasurer",
       "year": 2022,
       "file": "state_senate_treasurer_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1125,7 +1125,7 @@
       "contest_type": "us_senate",
       "year": 2004,
       "file": "state_senate_us_senate_2004.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1133,7 +1133,7 @@
       "contest_type": "us_senate",
       "year": 2006,
       "file": "state_senate_us_senate_2006.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1141,7 +1141,7 @@
       "contest_type": "us_senate",
       "year": 2012,
       "file": "state_senate_us_senate_2012.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1149,7 +1149,7 @@
       "contest_type": "us_senate",
       "year": 2016,
       "file": "state_senate_us_senate_2016.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1157,7 +1157,7 @@
       "contest_type": "us_senate",
       "year": 2018,
       "file": "state_senate_us_senate_2018.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1165,7 +1165,7 @@
       "contest_type": "us_senate",
       "year": 2022,
       "file": "state_senate_us_senate_2022.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     },
     {
@@ -1173,7 +1173,7 @@
       "contest_type": "us_senate",
       "year": 2024,
       "file": "state_senate_us_senate_2024.json",
-      "rows": 33,
+      "rows": 34,
       "lines_year": 2022
     }
   ]

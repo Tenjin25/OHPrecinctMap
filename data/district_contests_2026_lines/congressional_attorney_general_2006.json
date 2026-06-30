@@ -89,14 +89,14 @@
         "color": "#c6dbef"
       },
       "8": {
-        "dem_votes": 90206,
-        "rep_votes": 129536,
+        "dem_votes": 90307,
+        "rep_votes": 129673,
         "other_votes": 0,
-        "total_votes": 219742,
+        "total_votes": 219980,
         "dem_candidate": "Marc Dann",
         "rep_candidate": "Betty Montgomery",
-        "margin": 39330,
-        "margin_pct": 17.898262507850117,
+        "margin": 39366,
+        "margin_pct": 17.895263205745977,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#6baed6"
       },
       "10": {
-        "dem_votes": 89593,
-        "rep_votes": 103427,
+        "dem_votes": 89492,
+        "rep_votes": 103290,
         "other_votes": 0,
-        "total_votes": 193020,
+        "total_votes": 192782,
         "dem_candidate": "Marc Dann",
         "rep_candidate": "Betty Montgomery",
-        "margin": 13834,
-        "margin_pct": 7.1671329395917525,
+        "margin": 13798,
+        "margin_pct": 7.15730721747881,
         "winner": "REP",
         "color": "#fb6a4a"
       },

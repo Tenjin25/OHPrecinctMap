@@ -405,7 +405,7 @@
       "contest_type": "attorney_general",
       "year": 2008,
       "file": "state_house_attorney_general_2008.json",
-      "rows": 86,
+      "rows": 90,
       "lines_year": 2024
     },
     {
@@ -597,7 +597,7 @@
       "contest_type": "president",
       "year": 2008,
       "file": "state_house_president_2008.json",
-      "rows": 86,
+      "rows": 90,
       "lines_year": 2024
     },
     {
@@ -797,7 +797,7 @@
       "contest_type": "attorney_general",
       "year": 2008,
       "file": "state_senate_attorney_general_2008.json",
-      "rows": 30,
+      "rows": 32,
       "lines_year": 2024
     },
     {
@@ -989,7 +989,7 @@
       "contest_type": "president",
       "year": 2008,
       "file": "state_senate_president_2008.json",
-      "rows": 30,
+      "rows": 32,
       "lines_year": 2024
     },
     {
@@ -1069,7 +1069,7 @@
       "contest_type": "state_senate",
       "year": 2022,
       "file": "state_senate_state_senate_2022.json",
-      "rows": 26,
+      "rows": 17,
       "lines_year": 2024
     },
     {

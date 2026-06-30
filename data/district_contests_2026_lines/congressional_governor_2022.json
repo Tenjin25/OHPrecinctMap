@@ -89,14 +89,14 @@
         "color": "#cb181d"
       },
       "8": {
-        "dem_votes": 99836,
-        "rep_votes": 194375,
+        "dem_votes": 99868,
+        "rep_votes": 194622,
         "other_votes": 0,
-        "total_votes": 294211,
+        "total_votes": 294490,
         "dem_candidate": "Nan Whaley",
         "rep_candidate": "Mike DeWine",
-        "margin": 94539,
-        "margin_pct": 32.13306096644925,
+        "margin": 94754,
+        "margin_pct": 32.17562565791708,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#cb181d"
       },
       "10": {
-        "dem_votes": 102368,
-        "rep_votes": 171862,
+        "dem_votes": 102336,
+        "rep_votes": 171615,
         "other_votes": 0,
-        "total_votes": 274230,
+        "total_votes": 273951,
         "dem_candidate": "Nan Whaley",
         "rep_candidate": "Mike DeWine",
-        "margin": 69494,
-        "margin_pct": 25.34150165919119,
+        "margin": 69279,
+        "margin_pct": 25.288829024168557,
         "winner": "REP",
         "color": "#cb181d"
       },

@@ -24,12 +24,12 @@ Format:
 
 Method:
 
-- Congressional and state house crosswalks are derived from positive-vote precinct rows in the corresponding general-election file for that cycle.
-- The `precinct_to_cd2026_sl2025_95.csv` congressional file is geometry-based for precincts that can be matched onto the statewide `vtd20` layer, with fallback to the earlier carryover crosswalk for unmatched modern precinct codes.
-- State senate crosswalks need two-cycle support because only half the senate districts are normally on the ballot in a single general election year.
-- For senate outputs, the generator prefers the target cycle first and only backfills missing precincts from the opposite cycle.
+- The legislative crosswalks are now geometry-based where the modern precinct code can be bridged to the statewide `vtd20` layer, with fallback to vote-derived carryover rows only for unmatched precinct codes.
+- The `precinct_to_cd2026_sl2025_95.csv` congressional file is also geometry-based for precincts that can be matched onto the statewide `vtd20` layer, with fallback to earlier carryover rows for unmatched modern precinct codes.
+- Vote-derived fallback rows come from positive-vote precinct rows in the corresponding general-election file for that cycle.
+- State senate fallback rows still need two-cycle support because only half the senate districts are normally on the ballot in a single general election year.
+- For senate fallback outputs, the generator prefers the target cycle first and only backfills missing precincts from the opposite cycle.
 
 Caveat:
 
-- These are vote-derived carryover crosswalks, not direct polygon-overlap crosswalks. They are suitable for the app's precinct-to-district membership mapping, but they should still be revisited once a full statewide modern precinct geometry layer is available.
-- The 2026 congressional file is the current exception: it uses polygon overlap against the 2026 congressional geometry where the modern precinct code can be bridged to the statewide `vtd20` geometry.
+- Geometry coverage depends on matching modern precinct codes onto the statewide `vtd20` layer, so a small fallback set still relies on vote-derived carryover rows.

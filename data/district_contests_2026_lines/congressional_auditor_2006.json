@@ -89,14 +89,14 @@
         "color": "#fb6a4a"
       },
       "8": {
-        "dem_votes": 80900,
-        "rep_votes": 140719,
+        "dem_votes": 80993,
+        "rep_votes": 140866,
         "other_votes": 0,
-        "total_votes": 221619,
+        "total_votes": 221859,
         "dem_candidate": "Barbara Sykes",
         "rep_candidate": "Mary Taylor",
-        "margin": 59819,
-        "margin_pct": 26.99181929347213,
+        "margin": 59873,
+        "margin_pct": 26.986960186424714,
         "winner": "REP",
         "color": "#cb181d"
       },
@@ -113,14 +113,14 @@
         "color": "#fcbba1"
       },
       "10": {
-        "dem_votes": 87235,
-        "rep_votes": 108400,
+        "dem_votes": 87142,
+        "rep_votes": 108253,
         "other_votes": 0,
-        "total_votes": 195635,
+        "total_votes": 195395,
         "dem_candidate": "Barbara Sykes",
         "rep_candidate": "Mary Taylor",
-        "margin": 21165,
-        "margin_pct": 10.818616300764178,
+        "margin": 21111,
+        "margin_pct": 10.804268277079762,
         "winner": "REP",
         "color": "#fb6a4a"
       },

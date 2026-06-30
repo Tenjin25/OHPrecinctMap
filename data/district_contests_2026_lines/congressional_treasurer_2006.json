@@ -89,14 +89,14 @@
         "color": "#6baed6"
       },
       "8": {
-        "dem_votes": 97693,
-        "rep_votes": 126328,
+        "dem_votes": 97805,
+        "rep_votes": 126464,
         "other_votes": 0,
-        "total_votes": 224021,
+        "total_votes": 224269,
         "dem_candidate": "Richard Cordray",
         "rep_candidate": "Sandra O'Brien",
-        "margin": 28635,
-        "margin_pct": 12.782283803750541,
+        "margin": 28659,
+        "margin_pct": 12.778850398405487,
         "winner": "REP",
         "color": "#fb6a4a"
       },
@@ -113,14 +113,14 @@
         "color": "#2171b5"
       },
       "10": {
-        "dem_votes": 101205,
-        "rep_votes": 94545,
+        "dem_votes": 101093,
+        "rep_votes": 94409,
         "other_votes": 0,
-        "total_votes": 195750,
+        "total_votes": 195502,
         "dem_candidate": "Richard Cordray",
         "rep_candidate": "Sandra O'Brien",
-        "margin": -6660,
-        "margin_pct": -3.402298850574713,
+        "margin": -6684,
+        "margin_pct": -3.4188908553365183,
         "winner": "DEM",
         "color": "#c6dbef"
       },

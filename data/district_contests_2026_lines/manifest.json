@@ -322,6 +322,22 @@
     },
     {
       "scope": "congressional",
+      "contest_type": "us_house",
+      "year": 2022,
+      "file": "congressional_us_house_2022.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
+      "contest_type": "us_house",
+      "year": 2024,
+      "file": "congressional_us_house_2024.json",
+      "rows": 15,
+      "lines_year": 2026
+    },
+    {
+      "scope": "congressional",
       "contest_type": "us_senate",
       "year": 2004,
       "file": "congressional_us_senate_2004.json",
