@@ -8827,22 +8827,27 @@ body.focus-active #hover-tooltip[data-context="preview"] {
 
   /* Ribbon + UI aesthetic polish */
   :root {
-    --state-ribbon: linear-gradient(92deg, #8f2433 0%, #cd4a44 24%, #f6f4ef 50%, #3b67a6 76%, #1b3d74 100%);
-    --state-accent-gradient: linear-gradient(136deg, #8f2433 0%, #305f98 100%);
-    --ui-bg: rgba(255, 255, 255, 0.95);
-    --ui-border: rgba(18, 33, 52, 0.15);
-    --ui-shadow: 0 18px 42px rgba(16, 30, 49, 0.2);
-    --ui-text: #122236;
-    --ui-muted: #4a5f77;
-    --ui-accent: #2f5f98;
-    --ui-accent-2: #204672;
+    --state-ribbon: linear-gradient(94deg, #8f2433 0%, #c94842 22%, #f4efe5 48%, #527fb9 74%, #173864 100%);
+    --state-accent-gradient: linear-gradient(138deg, #941f35 0%, #6f2b4a 28%, #2d5e97 100%);
+    --ui-bg: rgba(255, 252, 248, 0.95);
+    --ui-border: rgba(30, 47, 71, 0.16);
+    --ui-shadow: 0 20px 46px rgba(17, 31, 49, 0.2);
+    --ui-text: #15253a;
+    --ui-muted: #53667d;
+    --ui-accent: #8f2433;
+    --ui-accent-2: #244f83;
+    --ohio-paper: #fff9f2;
+    --ohio-cream: #f4ede1;
+    --ohio-scarlet: #8f2433;
+    --ohio-lake: #3b679f;
+    --ohio-ink: #142339;
   }
 
   body {
     background:
-      radial-gradient(circle at 16% 10%, rgba(48, 95, 152, 0.17) 0%, rgba(48, 95, 152, 0) 44%),
-      radial-gradient(circle at 86% 9%, rgba(143, 36, 51, 0.14) 0%, rgba(143, 36, 51, 0) 40%),
-      #f3f6fb;
+      radial-gradient(circle at 14% 8%, rgba(59, 103, 159, 0.19) 0%, rgba(59, 103, 159, 0) 42%),
+      radial-gradient(circle at 86% 10%, rgba(143, 36, 51, 0.16) 0%, rgba(143, 36, 51, 0) 38%),
+      linear-gradient(180deg, #f7f2eb 0%, #f7f8fb 46%, #ecf1f8 100%);
   }
 
   @media (min-width: 769px) {
@@ -8850,10 +8855,11 @@ body.focus-active #hover-tooltip[data-context="preview"] {
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at 14% 12%, rgba(120, 164, 216, 0.22) 0%, rgba(120, 164, 216, 0) 50%),
-        linear-gradient(145deg, rgba(13, 31, 52, 0.95) 0%, rgba(35, 76, 121, 0.84) 58%, rgba(120, 42, 54, 0.76) 100%);
-      border: 1px solid rgba(199, 217, 241, 0.3);
-      box-shadow: 0 20px 52px rgba(15, 26, 41, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+        radial-gradient(circle at 16% 14%, rgba(133, 172, 221, 0.24) 0%, rgba(133, 172, 221, 0) 44%),
+        radial-gradient(circle at 82% 14%, rgba(210, 101, 96, 0.18) 0%, rgba(210, 101, 96, 0) 34%),
+        linear-gradient(145deg, rgba(15, 31, 49, 0.97) 0%, rgba(34, 74, 117, 0.9) 56%, rgba(126, 44, 55, 0.8) 100%);
+      border: 1px solid rgba(216, 228, 243, 0.34);
+      box-shadow: 0 24px 60px rgba(15, 26, 41, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.18);
     }
 
     .map-topbar::before {
@@ -8870,9 +8876,18 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     }
 
     .map-topbar-badge {
-      border: 1px solid rgba(206, 226, 247, 0.32);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 8px 18px rgba(15, 23, 42, 0.24);
-      background: linear-gradient(130deg, rgba(205, 74, 68, 0.3) 0%, rgba(59, 103, 166, 0.3) 100%);
+      border: 1px solid rgba(230, 235, 242, 0.28);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 10px 22px rgba(15, 23, 42, 0.24);
+      background: linear-gradient(130deg, rgba(205, 74, 68, 0.24) 0%, rgba(245, 239, 229, 0.14) 45%, rgba(59, 103, 166, 0.28) 100%);
+    }
+
+    .map-topbar-copy strong {
+      font-size: 15px;
+      letter-spacing: 0.01em;
+    }
+
+    .map-topbar-copy span {
+      color: rgba(239, 245, 251, 0.86);
     }
 
     .fly-search-submit {
@@ -8903,23 +8918,37 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .legend,
     .vote-counter,
     #status-panel {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(246, 249, 253, 0.95) 100%);
-      border-color: rgba(73, 96, 127, 0.26);
-      box-shadow: 0 18px 40px rgba(17, 32, 50, 0.2);
+      background: linear-gradient(180deg, rgba(255, 250, 244, 0.98) 0%, rgba(248, 250, 252, 0.96) 100%);
+      border-color: rgba(73, 96, 127, 0.24);
+      box-shadow: 0 20px 44px rgba(17, 32, 50, 0.19);
     }
 
     .main-controls .control-group {
-      border-color: rgba(96, 123, 157, 0.2);
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(244, 248, 253, 0.9) 100%);
+      border-color: rgba(96, 123, 157, 0.18);
+      background: linear-gradient(180deg, rgba(255, 253, 249, 0.96) 0%, rgba(242, 246, 251, 0.92) 100%);
     }
 
     .controls-title-pill,
     .legend-badge {
-      background: linear-gradient(125deg, #8f2433 0%, #305f98 100%);
+      background: linear-gradient(125deg, #8f2433 0%, #c14b42 20%, #305f98 100%);
       border-color: rgba(234, 220, 197, 0.62);
       color: #f8fafc;
       box-shadow: 0 10px 22px rgba(23, 45, 70, 0.28);
       text-shadow: 0 1px 0 rgba(15, 23, 42, 0.24);
+    }
+
+    .controls-header {
+      background: linear-gradient(180deg, rgba(255, 250, 244, 0.96) 0%, rgba(255, 250, 244, 0.88) 74%, rgba(255, 250, 244, 0) 100%);
+    }
+
+    .controls-kicker {
+      background: rgba(143, 36, 51, 0.08);
+      color: #7b2130;
+    }
+
+    .controls-subtitle {
+      color: #4c5f74;
+      max-width: 28ch;
     }
 
     .view-toggle-btn.active,
@@ -9045,6 +9074,157 @@ body.focus-active #hover-tooltip[data-context="preview"] {
     .hover-tooltip {
       font-variant-numeric: tabular-nums;
       font-feature-settings: "tnum" 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    body {
+      background:
+        radial-gradient(circle at 50% -8%, rgba(59, 103, 159, 0.22) 0%, rgba(59, 103, 159, 0) 42%),
+        linear-gradient(180deg, #f7f1e8 0%, #f8fafd 36%, #edf2f9 100%);
+    }
+
+    .mobile-dock {
+      left: 10px;
+      right: 10px;
+      bottom: calc(10px + var(--safe-bottom, 0px));
+      gap: 10px;
+      padding: 10px;
+      border-radius: 22px;
+      border: 1px solid rgba(20, 35, 57, 0.14);
+      background: linear-gradient(180deg, rgba(255, 249, 241, 0.96) 0%, rgba(244, 248, 252, 0.94) 100%);
+      box-shadow: 0 16px 34px rgba(15, 23, 42, 0.2);
+    }
+
+    .mobile-dock::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      top: 0;
+      height: 3px;
+      border-radius: 0 0 999px 999px;
+      background: var(--state-ribbon);
+      opacity: 0.92;
+      pointer-events: none;
+    }
+
+    .mobile-dock-btn {
+      min-height: 48px;
+      border-radius: 16px;
+      border: 1px solid rgba(101, 123, 150, 0.24);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(247, 244, 239, 0.92) 100%);
+      color: var(--ohio-ink);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    }
+
+    .mobile-dock-btn[aria-pressed="true"] {
+      background: linear-gradient(135deg, #8f2433 0%, #2d5e97 100%);
+      border-color: rgba(226, 209, 181, 0.8);
+      box-shadow: 0 12px 22px rgba(25, 48, 77, 0.26), 0 8px 16px rgba(143, 36, 51, 0.18);
+    }
+
+    .mobile-sheet-scrim {
+      background: linear-gradient(180deg, rgba(20, 35, 57, 0.24) 0%, rgba(20, 35, 57, 0.38) 100%);
+      backdrop-filter: blur(2px);
+    }
+
+    .mobile-sheet-panel {
+      left: 10px !important;
+      right: 10px !important;
+      border-radius: 24px !important;
+      border: 1px solid rgba(29, 50, 77, 0.14) !important;
+      background:
+        radial-gradient(circle at 86% 0%, rgba(59, 103, 159, 0.12) 0%, rgba(59, 103, 159, 0) 28%),
+        linear-gradient(180deg, rgba(255, 250, 243, 0.98) 0%, rgba(247, 249, 252, 0.96) 100%) !important;
+      box-shadow: 0 22px 42px rgba(15, 23, 42, 0.22) !important;
+      backdrop-filter: blur(14px) !important;
+    }
+
+    .mobile-sheet-grab::before {
+      width: 54px;
+      height: 6px;
+      background: linear-gradient(90deg, rgba(143, 36, 51, 0.58) 0%, rgba(59, 103, 159, 0.68) 100%);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.36);
+    }
+
+    .map-topbar.mobile-sheet-panel {
+      padding: 14px !important;
+    }
+
+    .map-topbar.mobile-sheet-panel .map-topbar-meta {
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .map-topbar.mobile-sheet-panel .map-topbar-copy strong {
+      font-size: 15px;
+    }
+
+    .map-topbar.mobile-sheet-panel .map-topbar-copy span {
+      color: rgba(232, 240, 249, 0.84);
+    }
+
+    .map-topbar.mobile-sheet-panel .fly-search-field {
+      border-radius: 16px;
+      min-height: 50px;
+      border-color: rgba(76, 103, 135, 0.22);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.52);
+    }
+
+    .map-topbar.mobile-sheet-panel .fly-search-submit {
+      min-width: 92px;
+      border-radius: 16px;
+    }
+
+    .map-topbar.mobile-sheet-panel .context-banner {
+      gap: 10px;
+    }
+
+    .map-topbar.mobile-sheet-panel .context-banner-item {
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.09) 100%);
+    }
+
+    .main-controls.mobile-sheet-panel,
+    .legend.mobile-sheet-panel {
+      padding: 14px !important;
+    }
+
+    .main-controls.mobile-sheet-panel .controls-header {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      background: linear-gradient(180deg, rgba(255, 250, 243, 0.98) 0%, rgba(255, 250, 243, 0.82) 74%, rgba(255, 250, 243, 0) 100%);
+    }
+
+    .main-controls.mobile-sheet-panel .controls-kicker {
+      background: rgba(143, 36, 51, 0.08);
+      color: #7f2432;
+    }
+
+    .main-controls.mobile-sheet-panel .controls-title-pill,
+    .legend.mobile-sheet-panel .legend-badge {
+      min-height: 38px;
+      border-radius: 999px;
+      background: linear-gradient(125deg, #8f2433 0%, #c14b42 22%, #2f5f98 100%);
+      box-shadow: 0 12px 24px rgba(24, 48, 76, 0.22);
+    }
+
+    .main-controls.mobile-sheet-panel .controls-subtitle {
+      max-width: none;
+      color: #51657b;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .main-controls.mobile-sheet-panel .control-group,
+    .legend.mobile-sheet-panel .legend-content {
+      border-radius: 18px !important;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(246, 243, 238, 0.86) 100%);
+      border-color: rgba(95, 118, 145, 0.18) !important;
     }
   }
     </style>
@@ -9545,7 +9725,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="map-topbar-meta">
       <div class="map-topbar-badge"><span class="badge-state-name">Ohio</span> <span class="badge-atlas-name">Election Atlas</span></div>
       <div class="map-topbar-copy">
-        <strong>Fly to a county, district, or precinct</strong>
+        <strong>Jump anywhere from the lakefront to the river counties</strong>
         <span>Try Franklin, CD 1, HD 3, SD 15, or Franklin 09-A.</span>
       </div>
     </div>
@@ -9627,7 +9807,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="controls-heading">
               <span class="controls-kicker">Atlas controls</span>
               <h3 class="controls-title-pill">Ohio Election Atlas</h3>
-              <p class="controls-subtitle">Track Buckeye State counties, districts, and precinct trends without leaving the map.</p>
+              <p class="controls-subtitle">Track Buckeye State margins across counties, districts, and precincts in one Ohio-first map.</p>
             </div>
             <div class="controls-actions">
               <span class="controls-collapsed-label">Ohio Election Atlas</span>
@@ -9830,7 +10010,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span></span>
               </div>
               <div class="model-tuning-note" id="model-tuning-note" style="display:none;">
-                Model tuning only affects the synthetic 2026 modeled contests.
+                Model tuning only affects synthetic modeled contests when they are available.
               </div>
               <div class="model-summary-card" id="model-summary-card" style="display:none;" aria-live="polite"></div>
               <div class="scenario-row">
@@ -9859,7 +10039,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="scenario-help">Used by Pop Change mode in county view.</div>
               </div>
               <div class="controls-panel-note">
-                Positive swing shifts margins toward Democrats. Negative values shift toward Republicans. Modeled 2026 Senate and Court entries inherit this swing.
+                Positive swing shifts margins toward Democrats. Negative values shift toward Republicans. Any modeled contest inherits this swing.
                 <span id="modeled-context-badge" class="modeled-context-badge" style="display:none;">Modeled Scenario</span>
               </div>
             </details>
@@ -10173,7 +10353,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-regenerated-district-files';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-theme-refresh-3';
     const APP_BUILD_ID = '2026-06-30-senate-seat-1';
 
     function withCacheBuster(path) {
@@ -11692,6 +11872,10 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'more_base', label: 'More base', patch: { blendWeight: 0.75 } }
       ]
     };
+    delete MODELED_CONTEST_DEFINITIONS.us_senate_model_2026;
+    delete MODELED_CONTEST_DEFINITIONS.nc_supreme_court_model_2026;
+    delete MODELED_CONTEST_PRESETS_BY_TYPE.us_senate_model;
+    delete MODELED_CONTEST_PRESETS_BY_TYPE.nc_supreme_court_model;
 
     let urlStateRestoreInFlight = false;
     let saveUIStateTimer = null;
@@ -20155,6 +20339,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const normalizedDistrictId = String(districtId || '').trim().toUpperCase();
       if (!normalizedDistrictId) return false;
       return normalizedDistrictId === 'ZZZ' && (normalizedScope === 'state_house' || normalizedScope === 'state_senate');
+    }
+
+    function buildDistrictVisibilityFilter(scope) {
+      if (scope !== 'state_house' && scope !== 'state_senate') return true;
+      const districtFields = scope === 'state_house'
+        ? ['DISTRICT', 'SLDLST', 'district_id', 'district', 'NAMELSAD']
+        : ['DISTRICT', 'SLDUST', 'district_id', 'district', 'NAMELSAD'];
+      return ['!=', ['upcase', ['to-string', ['coalesce', ...districtFields.map(field => ['get', field])]]], 'ZZZ'];
     }
 
     function normalizeCarryoverPrecinctKey(raw) {
@@ -29910,6 +30102,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'fill',
           source: 'state-house',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_house'),
           paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.54 }
         });
         addLayerWithOptionalSourceLayer({
@@ -29917,6 +30110,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'line',
           source: 'state-house',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_house'),
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: DISTRICT_LINE_STYLE.state_house.casing
         });
@@ -29925,6 +30119,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'line',
           source: 'state-house',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_house'),
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: DISTRICT_LINE_STYLE.state_house.base
         });
@@ -30029,6 +30224,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'fill',
           source: 'state-senate',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_senate'),
           paint: { 'fill-color': '#e0e0e0', 'fill-opacity': 0.56 }
         });
         addLayerWithOptionalSourceLayer({
@@ -30036,6 +30232,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'line',
           source: 'state-senate',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_senate'),
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: DISTRICT_LINE_STYLE.state_senate.casing
         });
@@ -30044,6 +30241,7 @@ document.addEventListener('DOMContentLoaded', function() {
           type: 'line',
           source: 'state-senate',
           beforeId: baseSymbolLayerId,
+          filter: buildDistrictVisibilityFilter('state_senate'),
           layout: { 'line-join': 'round', 'line-cap': 'round' },
           paint: DISTRICT_LINE_STYLE.state_senate.base
         });
