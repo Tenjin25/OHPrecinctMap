@@ -10355,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-10';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-4';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-11';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-5';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -11209,6 +11209,19 @@ document.addEventListener('DOMContentLoaded', function() {
       const normalizedView = String(view || '').trim().toLowerCase();
       const normalizedLinesYear = normalizeDistrictLinesYear(linesYear);
       if (!contestType || !Number.isFinite(year)) return false;
+
+      // Legislative chamber contests should only appear alongside the matching
+      // chamber map vintage. The 2022 and 2024 General Assembly elections were
+      // run under different district plans, so avoid offering cross-vintage
+      // chamber elections in the selector.
+      if (scope === 'state_house' && contestType === 'state_house') {
+        if (normalizedLinesYear === 2022) return year === 2022;
+        if (normalizedLinesYear >= 2024) return year === 2024;
+      }
+      if (scope === 'state_senate' && contestType === 'state_senate') {
+        if (normalizedLinesYear === 2022) return year === 2022;
+        if (normalizedLinesYear >= 2024) return year === 2024;
+      }
 
       const modeledDef = getModeledContestDefinition(contestType, year);
       if (modeledDef) return true;
