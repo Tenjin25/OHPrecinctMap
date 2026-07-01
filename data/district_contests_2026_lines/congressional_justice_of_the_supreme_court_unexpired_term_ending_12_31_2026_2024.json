@@ -1,0 +1,189 @@
+{
+  "scope": "congressional",
+  "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+  "year": 2024,
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 184684,
+        "rep_votes": 199084,
+        "other_votes": 0,
+        "total_votes": 383768,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 14400,
+        "margin_pct": 3.752266994642597,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "2": {
+        "dem_votes": 108167,
+        "rep_votes": 249871,
+        "other_votes": 0,
+        "total_votes": 358038,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 141704,
+        "margin_pct": 39.577921896558465,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 235289,
+        "rep_votes": 101593,
+        "other_votes": 0,
+        "total_votes": 336882,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": -133696,
+        "margin_pct": -39.686299653884745,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 111109,
+        "rep_votes": 269431,
+        "other_votes": 0,
+        "total_votes": 380540,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 158322,
+        "margin_pct": 41.604561938298204,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 142791,
+        "rep_votes": 220855,
+        "other_votes": 0,
+        "total_votes": 363646,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 78064,
+        "margin_pct": 21.467031123675223,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "6": {
+        "dem_votes": 121324,
+        "rep_votes": 225929,
+        "other_votes": 0,
+        "total_votes": 347253,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 104605,
+        "margin_pct": 30.12356984676878,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 178325,
+        "rep_votes": 212204,
+        "other_votes": 0,
+        "total_votes": 390529,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 33879,
+        "margin_pct": 8.675156006340117,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "8": {
+        "dem_votes": 162317,
+        "rep_votes": 227502,
+        "other_votes": 0,
+        "total_votes": 389819,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 65185,
+        "margin_pct": 16.721863223701256,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "9": {
+        "dem_votes": 166583,
+        "rep_votes": 198179,
+        "other_votes": 0,
+        "total_votes": 364762,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 31596,
+        "margin_pct": 8.662086511204565,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "10": {
+        "dem_votes": 166349,
+        "rep_votes": 193995,
+        "other_votes": 0,
+        "total_votes": 360344,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 27646,
+        "margin_pct": 7.672113313944454,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "11": {
+        "dem_votes": 230487,
+        "rep_votes": 59824,
+        "other_votes": 0,
+        "total_votes": 290311,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": -170663,
+        "margin_pct": -58.7862671411004,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 137257,
+        "rep_votes": 255007,
+        "other_votes": 0,
+        "total_votes": 392264,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 117750,
+        "margin_pct": 30.01804906899435,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 196901,
+        "rep_votes": 175010,
+        "other_votes": 0,
+        "total_votes": 371911,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": -21891,
+        "margin_pct": -5.886085649523676,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "14": {
+        "dem_votes": 161685,
+        "rep_votes": 225532,
+        "other_votes": 0,
+        "total_votes": 387217,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 63847,
+        "margin_pct": 16.488687221893667,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "15": {
+        "dem_votes": 153193,
+        "rep_votes": 184577,
+        "other_votes": 0,
+        "total_votes": 337770,
+        "dem_candidate": "Lisa Forbes",
+        "rep_candidate": "Daniel R. Hawkins",
+        "margin": 31384,
+        "margin_pct": 9.291529739171626,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      }
+    }
+  }
+}

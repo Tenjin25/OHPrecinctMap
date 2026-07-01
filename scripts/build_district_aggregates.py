@@ -36,23 +36,93 @@ LINES_SPECS = {
         "dir": DATA_DIR / "district_contests",
         "legacy_json": DATA_DIR / "oh_district_results_2022_lines.json",
         "crosswalks": {
-            "congressional": DATA_DIR / "crosswalks" / "precinct_to_cd118.csv",
-            "state_house": DATA_DIR / "crosswalks" / "precinct_to_2022_state_house.csv",
-            "state_senate": DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate.csv",
+            "congressional": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_cd118.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_cd118_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_cd118_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_cd118_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_cd118_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_cd118_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_cd118_2020_vtd10.csv",
+                },
+            },
+            "state_house": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_2022_state_house.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_2022_state_house_2020_vtd10.csv",
+                },
+            },
+            "state_senate": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_2022_state_senate_2020_vtd10.csv",
+                },
+            },
         },
     },
     2024: {
         "dir": DATA_DIR / "district_contests_2024_lines",
         "crosswalks": {
-            "congressional": DATA_DIR / "crosswalks" / "precinct_to_cd119.csv",
-            "state_house": DATA_DIR / "crosswalks" / "precinct_to_2024_state_house.csv",
-            "state_senate": DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate.csv",
+            "congressional": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_cd119.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_cd119_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_cd119_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_cd119_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_cd119_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_cd119_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_cd119_2020_vtd10.csv",
+                },
+            },
+            "state_house": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_2024_state_house.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_2024_state_house_2020_vtd10.csv",
+                },
+            },
+            "state_senate": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_2024_state_senate_2020_vtd10.csv",
+                },
+            },
         },
     },
     2026: {
         "dir": DATA_DIR / "district_contests_2026_lines",
         "crosswalks": {
-            "congressional": DATA_DIR / "crosswalks" / "precinct_to_cd2026_sl2025_95.csv",
+            "congressional": {
+                "default": DATA_DIR / "crosswalks" / "precinct_to_cd2026_sl2025_95.csv",
+                "by_year": {
+                    2010: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2010_vtd10.csv",
+                    2012: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2012_vtd10.csv",
+                    2014: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2014_vtd10.csv",
+                    2016: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2016_vtd10.csv",
+                    2018: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2018_vtd10.csv",
+                    2020: DATA_DIR / "crosswalks" / "precinct_to_cd2026_2020_vtd10.csv",
+                },
+            },
         },
     },
 }
@@ -162,6 +232,13 @@ def load_crosswalk(path: Path) -> dict[str, list[tuple[str, float]]]:
                 continue
             mapping[precinct_key].append((district_num, weight))
     return mapping
+
+
+def crosswalk_path_for_year(spec: Path | dict, year: int) -> Path:
+    if isinstance(spec, Path):
+        return spec
+    by_year = spec.get("by_year", {}) if isinstance(spec, dict) else {}
+    return Path(by_year.get(year) or spec.get("default"))
 
 
 def empty_result() -> dict[str, float | str]:
@@ -356,14 +433,21 @@ def build_for_lines_year(lines_year: int, spec: dict) -> tuple[list[dict], dict]
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    crosswalks = {scope: load_crosswalk(path) for scope, path in spec["crosswalks"].items()}
     manifest_entries: list[dict] = []
     legacy_results_by_year: dict[str, dict] = {}
     summaries: dict[str, dict] = {}
+    crosswalk_cache: dict[tuple[str, str], dict[str, list[tuple[str, float]]]] = {}
 
     for year, precinct_file in PRECINCT_GENERAL_FILES.items():
         if not precinct_file.exists():
             continue
+        crosswalks = {}
+        for scope, crosswalk_spec in spec["crosswalks"].items():
+            path = crosswalk_path_for_year(crosswalk_spec, year)
+            cache_key = (scope, str(path))
+            if cache_key not in crosswalk_cache:
+                crosswalk_cache[cache_key] = load_crosswalk(path)
+            crosswalks[scope] = crosswalk_cache[cache_key]
         legacy_year_bucket = legacy_results_by_year.setdefault(str(year), {})
         payloads_by_scope, summaries_by_scope = aggregate_scopes_year(year, precinct_file, crosswalks)
         for scope, crosswalk in crosswalks.items():
