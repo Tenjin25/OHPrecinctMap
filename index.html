@@ -9703,10 +9703,10 @@ document.addEventListener('DOMContentLoaded', function() {
     contestSearch.addEventListener('input', function() {
       contestSearchQuery = (contestSearch.value || '').toString();
       if (raf) cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
+      raf = requestAnimationFrame(async () => {
         const sel = document.getElementById('contestSelect');
         const keep = sel ? sel.value : '';
-        try { updateContestSelectForCurrentView(); } catch (_) {}
+        try { await updateContestSelectForCurrentView(); } catch (_) {}
         const sel2 = document.getElementById('contestSelect');
         if (sel2 && keep) {
           const exists = Array.from(sel2.options || []).some(o => o && o.value === keep);
@@ -9965,7 +9965,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <button id="state-senate-view" class="view-toggle-btn" onclick="setMapView('state_senate')" data-testid="view-state-senate" aria-label="Show state senate districts view" aria-pressed="false">State Senate</button>
                 </div>
             </div>
-            <div id="district-lines-control-group" class="control-group" style="margin-bottom:10px;">
+            <div id="district-lines-control-group" class="control-group" style="margin-bottom:10px;display:none;">
                 <span class="section-kicker">District Lines</span>
                 <div class="view-toggle-row" style="display:flex;gap:6px;flex-wrap:wrap;">
                   <button id="district-lines-2022" class="view-toggle-btn active" type="button" data-testid="lines-2022" aria-label="Use 2022 district lines" aria-pressed="true">2022 Lines</button>
@@ -13036,7 +13036,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const btn2022 = document.getElementById('district-lines-2022');
       const btn2024 = document.getElementById('district-lines-2024');
       const btn2026 = document.getElementById('district-lines-2026');
-      const districtView = currentView !== 'counties';
+      const districtView = currentView === 'districts' || currentView === 'state_house' || currentView === 'state_senate';
       if (controlGroup) {
         controlGroup.style.display = districtView ? '' : 'none';
       }
@@ -19895,6 +19895,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let contestChangeInFlight = false;
     let queuedContestSelection = null;
     let contestSelectionSeq = 0;
+    let contestSelectRenderSeq = 0;
     let lastCompletedContestSelection = '';
     let lastContestApplySig = '';
     const contestSelectNavKeys = new Set(['ArrowUp', 'ArrowDown', 'Home', 'End', 'PageUp', 'PageDown']);
@@ -19916,6 +19917,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const overlays = `split:${splitTicketOverlayEnabled ? 1 : 0}|baro:${barometerOverlayEnabled ? 1 : 0}|turnout:${turnoutBivariateEnabled ? 1 : 0}|opacity:${String(overlayOpacityPreset || '')}`;
       const precinct = `precincts:${precinctsEnabled ? 1 : 0}|geom:${precinctGeom}`;
       return `k:${key}|ct:${ct}|y:${Number.isFinite(y) ? y : ''}|v:${view}|m:${mode}|lines:${linesYear}|${precinct}|${overlays}|scenario:${scenarioSignature()}`;
+    }
+
+    function isActiveContestSelectRender(seq) {
+      const n = Number(seq);
+      return !Number.isFinite(n) || n === contestSelectRenderSeq;
     }
 
     function wireContestSelectHandlers(sel) {
@@ -20085,9 +20091,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-	    async function populateContestSelectFromManifest(manifestEntries) {
+	    async function populateContestSelectFromManifest(manifestEntries, renderSeq = contestSelectRenderSeq) {
 	      const q = (contestSearchQuery || '').toString().trim().toUpperCase();
 	      const sel = document.getElementById('contestSelect');
+        if (!sel || !isActiveContestSelectRender(renderSeq)) return;
 	      sel.innerHTML = '<option value="">Select a contest...</option>';
 
 	      const contestYearPairs = {};
@@ -20180,6 +20187,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	      const fragment = document.createDocumentFragment();
 	      for (const label of orderedLabels) {
+          if (!isActiveContestSelectRender(renderSeq)) return;
 	        const items = (grouped.get(label) || []).slice();
 	        const isJudicial = (label === 'Supreme Court' || label === 'Court of Appeals');
 	        items.sort((a, b) => {
@@ -20204,6 +20212,7 @@ document.addEventListener('DOMContentLoaded', function() {
               currentView,
               currentDistrictLinesYear
             );
+            if (!isActiveContestSelectRender(renderSeq)) return;
             if (!shouldShow) continue;
             visibleItems.push(item);
           }
@@ -20257,12 +20266,15 @@ document.addEventListener('DOMContentLoaded', function() {
 	        fragment.appendChild(og);
 	      }
 
+        if (!isActiveContestSelectRender(renderSeq)) return;
 	      sel.appendChild(fragment);
 	      sel.dataset.populated = 'true';
+        sel.dataset.populatedView = currentView || '';
 	      wireContestSelectHandlers(sel);
 	    }
 
     async function updateContestSelectForCurrentView() {
+      const renderSeq = ++contestSelectRenderSeq;
       const isCountyView = currentView === 'counties' || currentView === 'vtds_2000' || !currentView;
 
       // County mode should be driven by Ohio's county_aggregates_nested.json fallback unless
@@ -20275,7 +20287,7 @@ document.addEventListener('DOMContentLoaded', function() {
           ? mergeManifestEntriesWithModeled(countyManifestEntries, currentView)
           : [];
         if (entriesWithModels.length > 0) {
-          await populateContestSelectFromManifest(entriesWithModels);
+          await populateContestSelectFromManifest(entriesWithModels, renderSeq);
         } else {
           populateContestSelectFromElectionJSON(electionData || []);
         }
@@ -20294,7 +20306,7 @@ document.addEventListener('DOMContentLoaded', function() {
         : [];
 
       if (entriesWithModels.length > 0) {
-        await populateContestSelectFromManifest(entriesWithModels);
+        await populateContestSelectFromManifest(entriesWithModels, renderSeq);
         return;
       }
 
