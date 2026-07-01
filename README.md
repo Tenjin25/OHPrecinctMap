@@ -79,3 +79,24 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - Older statewide contests on congressional, state house, and state senate views now use historical `vtd10` geometry-based carryover crosswalks where available, which sharply reduces dropped precincts in 2010-2020 district reaggregations.
 - Some views compare older elections against newer line vintages so users can inspect how the same electorate would map onto different districts.
 - The atlas intentionally emphasizes margin structure and geography, not just who won.
+
+## Update Log
+
+### 2026-07-01
+
+- Renamed the `Youngstown` quick jump to `Mahoning Valley`.
+- Expanded `Greater Toledo` to include `Henry County`; `Fulton County` was already part of the region.
+- Replaced technical CSA-style display names with friendlier public-facing labels such as `Greater Cincinnati`, `Greater Cleveland`, and `Tuscarawas Valley`.
+- Split desktop quick jumps into labeled groups: `Major Metros`, `Broad Regions`, and `Small Metros & Micros`.
+
+### 2026-06-30
+
+- Added a smaller-city quick-jump tier for `Lima`, `Findlay`, `Mansfield`, `Athens`, `Marietta`, `Portsmouth`, `New Philly`, and `Steubenville`.
+- Converted the major metro quick jumps to broader Ohio CSA-style county footprints, then refined the visible labels so they read naturally for users.
+- Tightened several regional quick jumps, including `Appalachia`, `Southeast`, `Lake Erie`, `Miami Valley`, and `Upper Ohio Valley`, to better match Ohio political geography.
+- Replaced a duplicate Mahoning/Youngstown jump with a dedicated eastern-river region focused on the Steubenville side of the state.
+- Updated statewide legislative labels so state house and state senate views show the correct post-election caucus leaders for the relevant cycle.
+- Filtered legislative contest dropdowns so 2022 state house/state senate elections do not appear on 2024 legislative lines, and 2024 chamber elections do not appear on 2022 lines.
+- Added a dedicated precinct-contest build flow so precinct overlays can load real precinct election data directly from prebuilt JSON payloads instead of depending only on county aggregates.
+- Fixed precinct overlay contest loading so county-view precinct shading can pull from the new precinct contest payloads.
+- Rebuilt older congressional and legislative carryover aggregations using historical `vtd10` geometry-based crosswalks, improving district reaggregation for older statewide contests and reducing dropped precincts.
