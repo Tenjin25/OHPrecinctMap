@@ -10355,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-14';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-8';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-15';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-9';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10476,24 +10476,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // - Upper Ohio Valley: eastern Ohio River counties anchored by Steubenville/Jefferson
     const REGION_JUMPS = {
       cleveland: {
-        label: 'Greater Cleveland',
-        bounds: [[-82.65, 40.75], [-80.95, 41.95]],
-        counties: ['Cuyahoga', 'Lake', 'Lorain', 'Geauga', 'Medina']
+        label: 'Cleveland-Akron-Canton CSA',
+        bounds: [[-83.15, 40.45], [-80.35, 42.10]],
+        counties: ['Ashtabula', 'Carroll', 'Coshocton', 'Cuyahoga', 'Erie', 'Geauga', 'Huron', 'Lake', 'Lorain', 'Medina', 'Ottawa', 'Portage', 'Sandusky', 'Stark', 'Summit', 'Tuscarawas', 'Wayne']
       },
       columbus: {
-        label: 'Greater Columbus',
-        bounds: [[-83.75, 39.55], [-82.15, 40.55]],
-        counties: ['Franklin', 'Delaware', 'Licking', 'Fairfield', 'Pickaway', 'Madison', 'Union']
+        label: 'Columbus-Marion-Zanesville CSA',
+        bounds: [[-84.05, 39.35], [-81.55, 40.85]],
+        counties: ['Athens', 'Delaware', 'Fairfield', 'Fayette', 'Franklin', 'Guernsey', 'Hocking', 'Knox', 'Licking', 'Logan', 'Madison', 'Marion', 'Morrow', 'Muskingum', 'Perry', 'Pickaway', 'Ross', 'Union']
       },
       cincinnati: {
-        label: 'Greater Cincinnati',
-        bounds: [[-84.95, 38.75], [-83.45, 39.65]],
-        counties: ['Hamilton', 'Butler', 'Clermont', 'Warren', 'Brown']
+        label: 'Cincinnati-Wilmington CSA',
+        bounds: [[-85.10, 38.65], [-83.10, 39.85]],
+        counties: ['Brown', 'Butler', 'Clermont', 'Clinton', 'Hamilton', 'Warren']
       },
       toledo: {
-        label: 'Toledo Metro',
-        bounds: [[-84.75, 40.95], [-82.95, 41.95]],
-        counties: ['Lucas', 'Wood', 'Ottawa', 'Fulton', 'Sandusky']
+        label: 'Toledo-Findlay-Tiffin CSA',
+        bounds: [[-84.85, 40.65], [-82.85, 41.95]],
+        counties: ['Fulton', 'Hancock', 'Lucas', 'Ottawa', 'Seneca', 'Wood']
       },
       akron: {
         label: 'Akron-Canton',
@@ -10501,14 +10501,14 @@ document.addEventListener('DOMContentLoaded', function() {
         counties: ['Summit', 'Stark', 'Portage', 'Medina', 'Tuscarawas']
       },
       dayton: {
-        label: 'Dayton Metro',
-        bounds: [[-84.55, 39.35], [-83.25, 40.35]],
-        counties: ['Montgomery', 'Greene', 'Miami', 'Clark', 'Preble']
+        label: 'Dayton-Springfield-Kettering CSA',
+        bounds: [[-84.95, 39.25], [-83.10, 40.55]],
+        counties: ['Champaign', 'Clark', 'Darke', 'Greene', 'Miami', 'Montgomery', 'Preble', 'Shelby']
       },
       youngstown: {
-        label: 'Youngstown-Warren',
-        bounds: [[-81.35, 40.65], [-80.35, 41.55]],
-        counties: ['Mahoning', 'Trumbull', 'Columbiana']
+        label: 'Youngstown-Warren CSA',
+        bounds: [[-81.10, 40.65], [-80.45, 41.45]],
+        counties: ['Mahoning', 'Trumbull']
       },
       appalachia: {
         label: 'Ohio Appalachia',
