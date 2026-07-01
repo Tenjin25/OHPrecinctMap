@@ -85,6 +85,8 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 
 ### 2026-07-01
 
+- Added a fresh static asset/data cachebuster so GitHub Pages and browser caches pick up the latest atlas build immediately.
+- Fixed an async contest-selector rebuild race that could append duplicate contest options after fast search/filter or view refreshes.
 - Added broad macro-region quick jumps for `Northwest Ohio`, `Northeast Ohio`, `North Central Ohio`, `Central Ohio`, `Southwest Ohio`, and `South Central Ohio`.
 - Renamed the `Youngstown` quick jump to `Mahoning Valley`.
 - Expanded `Greater Toledo` to include `Henry County`; `Fulton County` was already part of the region.
