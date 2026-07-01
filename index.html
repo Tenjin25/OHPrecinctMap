@@ -9928,6 +9928,12 @@ document.addEventListener('DOMContentLoaded', function() {
                   <div style="margin-bottom:8px;">
                     <div class="section-kicker" style="font-size:10px;margin-bottom:4px;">Broad Regions</div>
                     <div class="region-jumps">
+                      <button type="button" class="region-jump-btn" data-region-jump="northwest">Northwest Ohio</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="northeast">Northeast Ohio</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="northcentral">North Central Ohio</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="central">Central Ohio</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="southwest">Southwest Ohio</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="southcentral">South Central Ohio</button>
                       <button type="button" class="region-jump-btn" data-region-jump="appalachia">Appalachia</button>
                       <button type="button" class="region-jump-btn" data-region-jump="lakeerie">Lake Erie</button>
                       <button type="button" class="region-jump-btn" data-region-jump="southeast">Southeast</button>
@@ -10378,8 +10384,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-01-ohio-historical-vtd10-20';
-    const APP_BUILD_ID = '2026-07-01-ohio-historical-vtd10-14';
+    const DATA_CACHE_BUSTER = '2026-07-01-ohio-historical-vtd10-21';
+    const APP_BUILD_ID = '2026-07-01-ohio-historical-vtd10-15';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10537,6 +10543,36 @@ document.addEventListener('DOMContentLoaded', function() {
         label: 'Ohio Appalachia',
         bounds: [[-83.55, 38.35], [-80.35, 41.05]],
         counties: ['Adams', 'Athens', 'Belmont', 'Carroll', 'Coshocton', 'Gallia', 'Guernsey', 'Harrison', 'Hocking', 'Jackson', 'Jefferson', 'Lawrence', 'Meigs', 'Monroe', 'Morgan', 'Muskingum', 'Noble', 'Perry', 'Pike', 'Ross', 'Scioto', 'Tuscarawas', 'Vinton', 'Washington']
+      },
+      northwest: {
+        label: 'Northwest Ohio',
+        bounds: [[-84.95, 40.05], [-82.60, 41.95]],
+        counties: ['Allen', 'Defiance', 'Fulton', 'Hancock', 'Henry', 'Lucas', 'Ottawa', 'Paulding', 'Putnam', 'Sandusky', 'Seneca', 'Van Wert', 'Williams', 'Wood', 'Wyandot']
+      },
+      northeast: {
+        label: 'Northeast Ohio',
+        bounds: [[-82.95, 40.55], [-80.35, 42.10]],
+        counties: ['Ashtabula', 'Carroll', 'Columbiana', 'Cuyahoga', 'Geauga', 'Lake', 'Lorain', 'Mahoning', 'Medina', 'Portage', 'Stark', 'Summit', 'Trumbull', 'Wayne']
+      },
+      northcentral: {
+        label: 'North Central Ohio',
+        bounds: [[-83.95, 40.35], [-81.95, 41.55]],
+        counties: ['Ashland', 'Crawford', 'Erie', 'Huron', 'Knox', 'Lorain', 'Marion', 'Morrow', 'Richland', 'Sandusky', 'Seneca', 'Wyandot']
+      },
+      central: {
+        label: 'Central Ohio',
+        bounds: [[-84.05, 39.45], [-81.85, 40.95]],
+        counties: ['Delaware', 'Fairfield', 'Fayette', 'Franklin', 'Knox', 'Licking', 'Madison', 'Marion', 'Morrow', 'Pickaway', 'Union']
+      },
+      southwest: {
+        label: 'Southwest Ohio',
+        bounds: [[-85.10, 38.65], [-83.10, 40.35]],
+        counties: ['Brown', 'Butler', 'Clermont', 'Clinton', 'Greene', 'Hamilton', 'Highland', 'Miami', 'Montgomery', 'Preble', 'Warren']
+      },
+      southcentral: {
+        label: 'South Central Ohio',
+        bounds: [[-83.95, 38.35], [-82.10, 40.05]],
+        counties: ['Adams', 'Fayette', 'Highland', 'Hocking', 'Jackson', 'Pickaway', 'Pike', 'Ross', 'Scioto', 'Vinton']
       },
       lakeerie: {
         label: 'Lake Erie Shore',

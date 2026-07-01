@@ -78,12 +78,14 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - The 2022 state house and state senate carryover files are now rebuilt against the 2022 Census legislative geometries, rather than the older 2020 legislative shapes.
 - Older statewide contests on congressional, state house, and state senate views now use historical `vtd10` geometry-based carryover crosswalks where available, which sharply reduces dropped precincts in 2010-2020 district reaggregations.
 - Some views compare older elections against newer line vintages so users can inspect how the same electorate would map onto different districts.
+- `Major Metros` quick jumps are meant for city-centered commuter and media-market regions, while `Broad Regions` are meant for larger macro-regions such as `Northwest Ohio`, `Appalachia`, or `South Central Ohio` that capture shared political geography beyond a single metro.
 - The atlas intentionally emphasizes margin structure and geography, not just who won.
 
 ## Update Log
 
 ### 2026-07-01
 
+- Added broad macro-region quick jumps for `Northwest Ohio`, `Northeast Ohio`, `North Central Ohio`, `Central Ohio`, `Southwest Ohio`, and `South Central Ohio`.
 - Renamed the `Youngstown` quick jump to `Mahoning Valley`.
 - Expanded `Greater Toledo` to include `Henry County`; `Fulton County` was already part of the region.
 - Replaced technical CSA-style display names with friendlier public-facing labels such as `Greater Cincinnati`, `Greater Cleveland`, and `Tuscarawas Valley`.
