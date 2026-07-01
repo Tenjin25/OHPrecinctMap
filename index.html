@@ -9912,27 +9912,42 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="control-group" style="margin-bottom:12px;">
                 <span class="section-kicker">Quick Jumps</span>
-                <div class="region-jumps" id="region-jumps">
-                  <button type="button" class="region-jump-btn" data-region-jump="cleveland">Cleveland</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="columbus">Columbus</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="cincinnati">Cincinnati</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="toledo">Toledo</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="akron">Akron</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="dayton">Dayton</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="youngstown">Youngstown</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="appalachia">Appalachia</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="lakeerie">Lake Erie</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="southeast">Southeast</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="miamivalley">Miami Valley</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="ohioriver">Upper Ohio Valley</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="lima">Lima</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="findlay">Findlay</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="mansfield">Mansfield</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="athens">Athens</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="marietta">Marietta</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="portsmouth">Portsmouth</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="newphilly">New Philly</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="steubenville">Steubenville</button>
+                <div id="region-jumps">
+                  <div style="margin-bottom:8px;">
+                    <div class="section-kicker" style="font-size:10px;margin-bottom:4px;">Major Metros</div>
+                    <div class="region-jumps">
+                      <button type="button" class="region-jump-btn" data-region-jump="cleveland">Cleveland</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="columbus">Columbus</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="cincinnati">Cincinnati</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="toledo">Toledo</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="akron">Akron</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="dayton">Dayton</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="youngstown">Youngstown</button>
+                    </div>
+                  </div>
+                  <div style="margin-bottom:8px;">
+                    <div class="section-kicker" style="font-size:10px;margin-bottom:4px;">Broad Regions</div>
+                    <div class="region-jumps">
+                      <button type="button" class="region-jump-btn" data-region-jump="appalachia">Appalachia</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="lakeerie">Lake Erie</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="southeast">Southeast</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="miamivalley">Miami Valley</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="ohioriver">Upper Ohio Valley</button>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="section-kicker" style="font-size:10px;margin-bottom:4px;">Small Metros & Micros</div>
+                    <div class="region-jumps">
+                      <button type="button" class="region-jump-btn" data-region-jump="lima">Lima</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="findlay">Findlay</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="mansfield">Mansfield</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="athens">Athens</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="marietta">Marietta</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="portsmouth">Portsmouth</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="newphilly">New Philly</button>
+                      <button type="button" class="region-jump-btn" data-region-jump="steubenville">Steubenville</button>
+                    </div>
+                  </div>
                 </div>
             </div>
             <div class="control-group" style="margin-bottom:10px;">
@@ -10363,8 +10378,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-16';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-10';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-18';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-12';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10484,22 +10499,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // - Upper Ohio Valley: eastern Ohio River counties anchored by Steubenville/Jefferson
     const REGION_JUMPS = {
       cleveland: {
-        label: 'Cleveland-Akron-Canton CSA',
+        label: 'Greater Cleveland',
         bounds: [[-83.15, 40.45], [-80.35, 42.10]],
         counties: ['Ashtabula', 'Carroll', 'Coshocton', 'Cuyahoga', 'Erie', 'Geauga', 'Huron', 'Lake', 'Lorain', 'Medina', 'Ottawa', 'Portage', 'Sandusky', 'Stark', 'Summit', 'Tuscarawas', 'Wayne']
       },
       columbus: {
-        label: 'Columbus-Marion-Zanesville CSA',
+        label: 'Greater Columbus',
         bounds: [[-84.05, 39.35], [-81.55, 40.85]],
         counties: ['Athens', 'Delaware', 'Fairfield', 'Fayette', 'Franklin', 'Guernsey', 'Hocking', 'Knox', 'Licking', 'Logan', 'Madison', 'Marion', 'Morrow', 'Muskingum', 'Perry', 'Pickaway', 'Ross', 'Union']
       },
       cincinnati: {
-        label: 'Cincinnati-Wilmington CSA',
+        label: 'Greater Cincinnati',
         bounds: [[-85.10, 38.65], [-83.10, 39.85]],
         counties: ['Brown', 'Butler', 'Clermont', 'Clinton', 'Hamilton', 'Warren']
       },
       toledo: {
-        label: 'Toledo-Findlay-Tiffin CSA',
+        label: 'Greater Toledo',
         bounds: [[-84.85, 40.65], [-82.85, 41.95]],
         counties: ['Fulton', 'Hancock', 'Lucas', 'Ottawa', 'Seneca', 'Wood']
       },
@@ -10509,12 +10524,12 @@ document.addEventListener('DOMContentLoaded', function() {
         counties: ['Summit', 'Stark', 'Portage', 'Medina', 'Tuscarawas']
       },
       dayton: {
-        label: 'Dayton-Springfield-Kettering CSA',
+        label: 'Greater Dayton',
         bounds: [[-84.95, 39.25], [-83.10, 40.55]],
         counties: ['Champaign', 'Clark', 'Darke', 'Greene', 'Miami', 'Montgomery', 'Preble', 'Shelby']
       },
       youngstown: {
-        label: 'Youngstown-Warren CSA',
+        label: 'Greater Youngstown',
         bounds: [[-81.10, 40.65], [-80.45, 41.45]],
         counties: ['Mahoning', 'Trumbull']
       },
@@ -10544,42 +10559,42 @@ document.addEventListener('DOMContentLoaded', function() {
         counties: ['Jefferson', 'Belmont', 'Columbiana', 'Monroe', 'Harrison']
       },
       lima: {
-        label: 'Lima-Van Wert-Celina CSA',
+        label: 'Greater Lima',
         bounds: [[-84.95, 40.35], [-83.55, 40.95]],
         counties: ['Allen', 'Auglaize', 'Mercer', 'Van Wert']
       },
       findlay: {
-        label: 'Findlay-Tiffin CSA',
+        label: 'Greater Findlay',
         bounds: [[-84.35, 40.75], [-82.95, 41.45]],
         counties: ['Hancock', 'Seneca']
       },
       mansfield: {
-        label: 'Mansfield-Ashland-Bucyrus CSA',
+        label: 'Greater Mansfield',
         bounds: [[-83.75, 40.35], [-82.35, 41.05]],
         counties: ['Ashland', 'Crawford', 'Richland']
       },
       athens: {
-        label: 'Athens Micropolitan',
+        label: 'Athens Area',
         bounds: [[-82.45, 39.05], [-81.65, 39.65]],
         counties: ['Athens']
       },
       marietta: {
-        label: 'Marietta Micropolitan',
+        label: 'Marietta Area',
         bounds: [[-81.95, 39.15], [-81.05, 39.85]],
         counties: ['Washington']
       },
       portsmouth: {
-        label: 'Portsmouth Micropolitan',
+        label: 'Portsmouth Area',
         bounds: [[-83.45, 38.55], [-82.55, 39.25]],
         counties: ['Scioto']
       },
       newphilly: {
-        label: 'New Philadelphia-Dover Micropolitan',
+        label: 'Tuscarawas Valley',
         bounds: [[-81.75, 40.15], [-80.85, 40.75]],
         counties: ['Tuscarawas']
       },
       steubenville: {
-        label: 'Steubenville-Weirton',
+        label: 'Steubenville Area',
         bounds: [[-80.95, 40.10], [-80.45, 40.55]],
         counties: ['Jefferson']
       }
