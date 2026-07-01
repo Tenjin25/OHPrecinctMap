@@ -9924,7 +9924,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <button type="button" class="region-jump-btn" data-region-jump="lakeerie">Lake Erie</button>
                   <button type="button" class="region-jump-btn" data-region-jump="southeast">Southeast</button>
                   <button type="button" class="region-jump-btn" data-region-jump="miamivalley">Miami Valley</button>
-                  <button type="button" class="region-jump-btn" data-region-jump="ohioriver">Ohio River</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="ohioriver">Upper Ohio Valley</button>
                 </div>
             </div>
             <div class="control-group" style="margin-bottom:10px;">
@@ -10355,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-12';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-6';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-13';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-7';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10473,7 +10473,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // - Appalachia / Southeast: Appalachian Regional Commission Ohio footprint
     // - Lake Erie: lakefront counties from Toledo to Ashtabula
     // - Miami Valley: common southwest/Dayton-area regional geography
-    // - Ohio River: counties along Ohio's river border from East Liverpool to Portsmouth
+    // - Upper Ohio Valley: eastern Ohio River counties anchored by Steubenville/Jefferson
     const REGION_JUMPS = {
       cleveland: {
         label: 'Greater Cleveland',
@@ -10531,7 +10531,7 @@ document.addEventListener('DOMContentLoaded', function() {
         counties: ['Montgomery', 'Miami', 'Greene', 'Clark', 'Darke', 'Champaign', 'Shelby', 'Preble']
       },
       ohioriver: {
-        label: 'Ohio River',
+        label: 'Upper Ohio Valley',
         bounds: [[-84.95, 38.35], [-80.45, 40.95]],
         counties: ['Scioto', 'Lawrence', 'Gallia', 'Meigs', 'Washington', 'Monroe', 'Belmont', 'Jefferson', 'Columbiana']
       }
