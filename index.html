@@ -9925,6 +9925,14 @@ document.addEventListener('DOMContentLoaded', function() {
                   <button type="button" class="region-jump-btn" data-region-jump="southeast">Southeast</button>
                   <button type="button" class="region-jump-btn" data-region-jump="miamivalley">Miami Valley</button>
                   <button type="button" class="region-jump-btn" data-region-jump="ohioriver">Upper Ohio Valley</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="lima">Lima</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="findlay">Findlay</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="mansfield">Mansfield</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="athens">Athens</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="marietta">Marietta</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="portsmouth">Portsmouth</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="newphilly">New Philly</button>
+                  <button type="button" class="region-jump-btn" data-region-jump="steubenville">Steubenville</button>
                 </div>
             </div>
             <div class="control-group" style="margin-bottom:10px;">
@@ -10355,8 +10363,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-15';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-9';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-16';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-10';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10534,6 +10542,46 @@ document.addEventListener('DOMContentLoaded', function() {
         label: 'Upper Ohio Valley',
         bounds: [[-81.55, 39.45], [-80.45, 41.05]],
         counties: ['Jefferson', 'Belmont', 'Columbiana', 'Monroe', 'Harrison']
+      },
+      lima: {
+        label: 'Lima-Van Wert-Celina CSA',
+        bounds: [[-84.95, 40.35], [-83.55, 40.95]],
+        counties: ['Allen', 'Auglaize', 'Mercer', 'Van Wert']
+      },
+      findlay: {
+        label: 'Findlay-Tiffin CSA',
+        bounds: [[-84.35, 40.75], [-82.95, 41.45]],
+        counties: ['Hancock', 'Seneca']
+      },
+      mansfield: {
+        label: 'Mansfield-Ashland-Bucyrus CSA',
+        bounds: [[-83.75, 40.35], [-82.35, 41.05]],
+        counties: ['Ashland', 'Crawford', 'Richland']
+      },
+      athens: {
+        label: 'Athens Micropolitan',
+        bounds: [[-82.45, 39.05], [-81.65, 39.65]],
+        counties: ['Athens']
+      },
+      marietta: {
+        label: 'Marietta Micropolitan',
+        bounds: [[-81.95, 39.15], [-81.05, 39.85]],
+        counties: ['Washington']
+      },
+      portsmouth: {
+        label: 'Portsmouth Micropolitan',
+        bounds: [[-83.45, 38.55], [-82.55, 39.25]],
+        counties: ['Scioto']
+      },
+      newphilly: {
+        label: 'New Philadelphia-Dover Micropolitan',
+        bounds: [[-81.75, 40.15], [-80.85, 40.75]],
+        counties: ['Tuscarawas']
+      },
+      steubenville: {
+        label: 'Steubenville-Weirton',
+        bounds: [[-80.95, 40.10], [-80.45, 40.55]],
+        counties: ['Jefferson']
       }
     };
 
