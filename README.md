@@ -74,6 +74,7 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 ## Notes
 
 - District results are aggregated from precinct-level inputs wherever available.
+- Precinct overlays now load contest data from the underlying statewide precinct CSVs, so county-view precinct coloring is not limited by the lighter county summary JSONs.
 - The 2022 state house and state senate carryover files are now rebuilt against the 2022 Census legislative geometries, rather than the older 2020 legislative shapes.
 - Older statewide contests on congressional, state house, and state senate views now use historical `vtd10` geometry-based carryover crosswalks where available, which sharply reduces dropped precincts in 2010-2020 district reaggregations.
 - Some views compare older elections against newer line vintages so users can inspect how the same electorate would map onto different districts.

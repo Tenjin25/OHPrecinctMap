@@ -10355,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-7';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-1';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-8';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-2';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -15817,9 +15817,197 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	    const PRESIDENT_OPEN_ELECTIONS_CSV = {
 	      2004: withBase('./data/2004/20041102__oh__general__precinct.csv'),
+	      2006: withBase('./data/2006/20061107__OH__general__precinct.csv'),
 	      2008: withBase('./data/2008/20081104__oh__general__precinct.csv'),
-	      2012: withBase('./data/2012/20121106__oh__general__precinct.csv')
+	      2010: withBase('./data/2010/20101102__oh__general__precinct.csv'),
+	      2012: withBase('./data/2012/20121106__oh__general__precinct.csv'),
+	      2014: withBase('./data/2014/20141104__oh__general__precinct.csv'),
+	      2016: withBase('./data/2016/20161108__oh__general__precinct.csv'),
+	      2018: withBase('./data/2018/20181106__oh__general__precinct.csv'),
+	      2020: withBase('./data/2020/20201103__oh__general__precinct.csv'),
+	      2022: withBase('./data/2022/20221108__oh__general__precinct.csv'),
+	      2024: withBase('./data/2024/20241105__oh__general__precinct.csv')
 	    };
+
+      const OHIO_PRECINCT_GENERAL_ELECTION_CSV = { ...PRESIDENT_OPEN_ELECTIONS_CSV };
+      const OHIO_PRECINCT_PARTY_MAP = {
+        D: 'DEM',
+        DEMOCRATIC: 'DEM',
+        R: 'REP',
+        REPUBLICAN: 'REP'
+      };
+      const OHIO_JUDICIAL_CANDIDATE_PARTY_MAP = {
+        'CHIEF JUSTICE OF THE SUPREME COURT (TERM COMMENCING 01/01)||C. ELLEN CONNALLY': 'DEM',
+        'CHIEF JUSTICE OF THE SUPREME COURT (TERM COMMENCING 01/01)||THOMAS J. MOYER': 'REP',
+        'JUSTICE OF THE SUPREME COURT (TERM COMMENCING 01/02)||PAUL E. PFEIFER': 'REP',
+        'JUSTICE OF THE SUPREME COURT (UNEXPIRED TERM ENDING 12/31)||TERRENCE O\'DONNELL': 'REP',
+        'CHIEF JUSTICE OF THE SUPREME COURT - TERM COMMENCING 01/01/2011||ERIC BROWN': 'DEM',
+        'CHIEF JUSTICE OF THE SUPREME COURT - TERM COMMENCING 01/01/2011||MAUREEN O\'CONNOR': 'REP',
+        'JUSTICE OF THE SUPREME COURT - TERM COMMENCING 01/01/2011||MARY JANE TRAPP': 'DEM',
+        'JUSTICE OF THE SUPREME COURT - TERM COMMENCING 01/01/2011||JUDITH LANZINGER': 'REP',
+        'JUSTICE OF THE OHIO SUPREME COURT - TERM COMMENCING 01/01/2011||MARY JANE TRAPP': 'DEM',
+        'JUSTICE OF THE OHIO SUPREME COURT - TERM COMMENCING 01/01/2011||JUDITH LANZINGER': 'REP',
+        'JUSTICE OF THE SUPREME COURT - TERM COMMENCING 01/02/2011||PAUL PFEIFER': 'REP',
+        'JUSTICE OF THE OHIO SUPREME COURT - TERM COMMENCING 01/02/2011||PAUL PFEIFER': 'REP'
+      };
+      const precinctContestSliceCache = new Map();
+      const precinctContestSliceInflight = new Map();
+
+      function normalizeOhioOfficeName(value) {
+        let office = (value || '').toString().trim().replace(/\s+/g, ' ');
+        const direct = {
+          'Governor/LtGovernor': 'Governor/Lieutenant Governor',
+          'President': 'President/Vice President',
+          'President/Vice-President': 'President/Vice President',
+          'State Auditor': 'Auditor of State',
+          'Treasure of State': 'Treasurer of State',
+          'US Senate': 'U.S. Senate'
+        };
+        office = direct[office] || office;
+        const judicialPatterns = [
+          [/^Chief Justice Of The Supreme Court\b/i, 'Chief Justice of the Supreme Court'],
+          [/^Chief Justice of the Supreme Court\b/i, 'Chief Justice of the Supreme Court'],
+          [/^Justice Of The Ohio Supreme Court\b/i, 'Justice of the Supreme Court'],
+          [/^Justice Of The Supreme Court\b/i, 'Justice of the Supreme Court'],
+          [/^Justice of the Supreme Court\b/i, 'Justice of the Supreme Court'],
+          [/^Judge Of Court Of Appeals\b/i, 'Judge of the Court of Appeals'],
+          [/^Judge Of The Court Of Appeals\b/i, 'Judge of the Court of Appeals'],
+          [/^Judge of the Court of Appeals\b/i, 'Judge of the Court of Appeals']
+        ];
+        for (const [pattern, replacement] of judicialPatterns) {
+          if (pattern.test(office)) return office.replace(pattern, replacement);
+        }
+        return office;
+      }
+
+      function normalizeOhioTicketCandidateName(candidate, contestType) {
+        const text = (candidate || '').toString().trim().replace(/\s+/g, ' ');
+        if (contestType !== 'president') return text;
+        return text.split(/\s+(?:and|\/|&)\s+/i, 1)[0].trim();
+      }
+
+      function slugifyOhioContestText(value) {
+        return (value || '')
+          .toString()
+          .trim()
+          .toLowerCase()
+          .replace(/&/g, 'and')
+          .replace(/[^a-z0-9]+/g, '_')
+          .replace(/^_+|_+$/g, '');
+      }
+
+      function ohioContestTypeForPrecinctRow(officeRaw, districtRaw) {
+        const office = normalizeOhioOfficeName(officeRaw);
+        const district = (districtRaw || '').toString().trim().replace(/\s+/g, ' ');
+        if (office === 'President/Vice President') return 'president';
+        if (office === 'U.S. Senate') return 'us_senate';
+        if (office === 'Governor' || office === 'Governor/Lieutenant Governor') return 'governor';
+        if (office === 'Attorney General') return 'attorney_general';
+        if (office === 'Auditor of State') return 'auditor';
+        if (office === 'Secretary of State') return 'secretary_of_state';
+        if (office === 'Treasurer of State') return 'treasurer';
+        if (office === 'U.S. House') return 'us_house';
+        if (office === 'State House' || office === 'State Representative') return 'state_house';
+        if (office.startsWith('State Senate') || office === 'State Senator') return 'state_senate';
+        if (office.startsWith('Chief Justice of the Supreme Court')) return slugifyOhioContestText(office);
+        if (office.startsWith('Justice of the Supreme Court')) return slugifyOhioContestText(office);
+        if (district) return slugifyOhioContestText(`${office} ${district}`);
+        return slugifyOhioContestText(office);
+      }
+
+      function inferOhioPrecinctRowParty(officeRaw, candidateRaw, partyRaw) {
+        const explicit = OHIO_PRECINCT_PARTY_MAP[(partyRaw || '').toString().trim().toUpperCase()] || '';
+        if (explicit) return explicit;
+        const office = normalizeOhioOfficeName(officeRaw).toUpperCase();
+        const candidate = (candidateRaw || '').toString().trim().replace(/\s+/g, ' ').toUpperCase();
+        return OHIO_JUDICIAL_CANDIDATE_PARTY_MAP[`${office}||${candidate}`] || '';
+      }
+
+      async function loadPrecinctContestSliceFromGeneralCSV(contestType, year) {
+        const y = Number(year);
+        const key = `${String(contestType || '').trim()}_${y}`;
+        if (precinctContestSliceCache.has(key)) return precinctContestSliceCache.get(key);
+        if (precinctContestSliceInflight.has(key)) return precinctContestSliceInflight.get(key);
+
+        const p = atlasPerf(`slice.precinct:${key}`, async () => {
+          const path = OHIO_PRECINCT_GENERAL_ELECTION_CSV[y];
+          if (!path) return null;
+          const rows = [];
+          const byPrecinct = new Map();
+          const finalize = () => Array.from(byPrecinct.entries()).map(([precinctKey, v]) => ({
+            year: y,
+            county: precinctKey,
+            [`${contestType}_dem`]: v.dem,
+            [`${contestType}_rep`]: v.rep,
+            [`${contestType}_other`]: v.other,
+            [`${contestType}_total`]: v.total,
+            [`${contestType}_dem_candidate`]: v.demCand,
+            [`${contestType}_rep_candidate`]: v.repCand,
+            [`${contestType}_margin`]: Math.round(v.rep - v.dem),
+            [`${contestType}_margin_pct`]: signedMarginPctFromVotes(v.dem, v.rep, v.total),
+            [`${contestType}_winner`]: v.rep > v.dem ? 'REPUBLICAN' : (v.dem > v.rep ? 'DEMOCRAT' : 'TIE'),
+            [`${contestType}_color`]: ''
+          }));
+
+          const ingestRow = (r) => {
+            const office = normalizeOhioOfficeName(r?.office || '');
+            const rowContestType = ohioContestTypeForPrecinctRow(office, r?.district || '');
+            if (rowContestType !== contestType) return;
+            const county = (r?.county || '').toString().trim().toUpperCase();
+            const precinctCode = (r?.['precinct code'] || r?.precinct_code || r?.precinct || '').toString().trim().toUpperCase();
+            const candidateRaw = (r?.candidate || '').toString().trim();
+            const votes = Number(r?.votes) || 0;
+            if (!county || !precinctCode || !candidateRaw || votes <= 0) return;
+            const candidate = normalizeOhioTicketCandidateName(candidateRaw, contestType);
+            const precinctKey = `${county} - ${precinctCode}`.replace(/\s+/g, ' ').trim();
+            const party = inferOhioPrecinctRowParty(office, candidate, r?.party || '');
+            const node = byPrecinct.get(precinctKey) || { dem: 0, rep: 0, other: 0, total: 0, demCand: '', repCand: '' };
+            if (party === 'DEM') {
+              node.dem += votes;
+              if (!node.demCand) node.demCand = candidate;
+            } else if (party === 'REP') {
+              node.rep += votes;
+              if (!node.repCand) node.repCand = candidate;
+            } else {
+              node.other += votes;
+            }
+            node.total += votes;
+            byPrecinct.set(precinctKey, node);
+          };
+
+          if (typeof Papa !== 'undefined' && Papa && typeof Papa.parse === 'function') {
+            await new Promise((resolve, reject) => {
+              Papa.parse(withCacheBuster(toAbsoluteUrl(path)), {
+                download: true,
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                worker: true,
+                chunkSize: 1024 * 256,
+                chunk: (result) => {
+                  (result?.data || []).forEach(ingestRow);
+                },
+                error: (err) => reject(err),
+                complete: () => resolve()
+              });
+            });
+          } else {
+            const csvText = await loadCSV(path);
+            parseCSV(csvText).forEach(ingestRow);
+          }
+
+          rows.push(...finalize());
+          precinctContestSliceCache.set(key, rows);
+          return rows;
+        });
+
+        precinctContestSliceInflight.set(key, p);
+        try {
+          return await p;
+        } finally {
+          precinctContestSliceInflight.delete(key);
+        }
+      }
 
 	    async function loadPresidentSliceFromOpenElectionsCSV(year) {
 	      const y = Number(year);
@@ -32582,9 +32770,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	      const prevPrecinctMarginByNorm = new Map();
 	      const prevCountyTotals = {};
+        let prevPrecinctRows = null;
 	      let precinctIdx = null;
         let precinctAliasIdx = null;
 	      if (includePrecinctMargins) {
+          try { prevPrecinctRows = await loadPrecinctContestSliceFromGeneralCSV(contestType, prevMeta.year); } catch (_) { prevPrecinctRows = null; }
 	        try { precinctIdx = await ensurePrecinctCodeIndex(); } catch (_) { precinctIdx = null; }
           try { precinctAliasIdx = await ensurePrecinctAliasIndex(); } catch (_) { precinctAliasIdx = null; }
           try { await ensurePrecinctVariantOverrides(); } catch (_) {}
@@ -32740,12 +32930,16 @@ document.addEventListener('DOMContentLoaded', function() {
         prevCountyTotals[countyNorm].dem += dem;
         prevCountyTotals[countyNorm].rep += rep;
         prevCountyTotals[countyNorm].total += total;
+      });
 
-        if (includePrecinctMargins) {
+      if (includePrecinctMargins) {
+        const marginRows = Array.isArray(prevPrecinctRows) && prevPrecinctRows.length ? prevPrecinctRows : (prevMeta.rows || []);
+        marginRows.forEach(r => {
+          const rowName = (r.county || '').toString();
           const mPct = Number(r[`${contestType}_margin_pct`] || 0);
           precinctNormVariantsLite(rowName).forEach(n => prevPrecinctMarginByNorm.set(n, mPct));
-        }
-      });
+        });
+      }
 
       vizPrevCache = {
         contestType,
@@ -32992,7 +33186,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // provide a shorter base code (e.g. "03S" vs "03SE"/"03SM").
       let precinctIdx = null;
       let precinctAliasIdx = null;
+      let precinctContestData = null;
       if (needsPrecinctDetail) {
+        try { precinctContestData = await loadPrecinctContestSliceFromGeneralCSV(contestType, year); } catch (_) { precinctContestData = null; }
         try { precinctIdx = await ensurePrecinctCodeIndex(); } catch (_) { precinctIdx = null; }
         try { precinctAliasIdx = await ensurePrecinctAliasIndex(); } catch (_) { precinctAliasIdx = null; }
         try { await ensurePrecinctVariantOverrides(); } catch (_) {}
@@ -33201,8 +33397,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (!cachedAggBundle || needsPrecinctDetail) {
-        // Build county aggregates (and optionally precinct result map) from precinct-level rows.
-        // Also compute statewide totals in the same pass to avoid re-looping contest rows.
+        // Build county aggregates from the fast county slice, and build precinct rows separately
+        // from the raw precinct CSV when that detail is available.
         if (!cachedAggBundle) {
           countyAgg = {};
           countyTurnoutTotals = {};
@@ -33238,24 +33434,6 @@ document.addEventListener('DOMContentLoaded', function() {
           const totalVotes = Number(adjusted.total || 0);
           const demCand = (row[`${contestType}_dem_candidate`] || '').toString();
           const repCand = (row[`${contestType}_rep_candidate`] || '').toString();
-
-          if (needsPrecinctDetail && !skipPrecinctRowBuild) {
-            const norms = precinctNormVariants(rowName);
-            const adjustedSigned = signedMarginPctFromVotes(demVotes, repVotes, totalVotes);
-            const adjustedWinner = adjustedSigned > 0 ? 'REPUBLICAN' : (adjustedSigned < 0 ? 'DEMOCRAT' : 'TIE');
-            const adjustedRow = {
-              ...row,
-              [`${contestType}_dem`]: demVotes,
-              [`${contestType}_rep`]: repVotes,
-              [`${contestType}_other`]: otherVotes,
-              [`${contestType}_total`]: totalVotes,
-              [`${contestType}_margin_pct`]: adjustedSigned,
-              [`${contestType}_winner`]: adjustedWinner
-            };
-            norms.forEach(n => {
-              currentPrecinctResults.set(n, adjustedRow);
-            });
-          }
 
           if (!cachedAggBundle) {
             statewidedemVotes += demVotes;
@@ -33364,6 +33542,43 @@ document.addEventListener('DOMContentLoaded', function() {
               candidates: { dem: statewideDemCandidate, rep: statewideRepCandidate }
             });
           } catch (_) {}
+        }
+        if (needsPrecinctDetail && !skipPrecinctRowBuild && currentPrecinctResults) {
+          const precinctRowsForDetail = Array.isArray(precinctContestData) && precinctContestData.length
+            ? precinctContestData
+            : contestData;
+          for (const row of precinctRowsForDetail) {
+            if (staleCheck()) return;
+            const rowName = (row.county || '').toString();
+            const countyOnly = rowName.includes(' - ') ? rowName.split(' - ')[0] : rowName;
+            const countyNorm = normalizeCountyName(countyOnly);
+            const rawDemVotes = Number(row[`${contestType}_dem`] || 0);
+            const rawRepVotes = Number(row[`${contestType}_rep`] || 0);
+            const rawOtherVotes = Number(row[`${contestType}_other`] || 0);
+            const rawTotalVotes = Number(row[`${contestType}_total`] || 0);
+            const adjusted = applyScenarioShiftToVotes(countyNorm, rawDemVotes, rawRepVotes, rawOtherVotes, rawTotalVotes);
+            const demVotes = Number(adjusted.dem || 0);
+            const repVotes = Number(adjusted.rep || 0);
+            const otherVotes = Number(adjusted.other || 0);
+            const totalVotes = Number(adjusted.total || 0);
+            const adjustedSigned = signedMarginPctFromVotes(demVotes, repVotes, totalVotes);
+            const adjustedWinner = adjustedSigned > 0 ? 'REPUBLICAN' : (adjustedSigned < 0 ? 'DEMOCRAT' : 'TIE');
+            const adjustedRow = {
+              ...row,
+              [`${contestType}_dem`]: demVotes,
+              [`${contestType}_rep`]: repVotes,
+              [`${contestType}_other`]: otherVotes,
+              [`${contestType}_total`]: totalVotes,
+              [`${contestType}_margin_pct`]: adjustedSigned,
+              [`${contestType}_winner`]: adjustedWinner
+            };
+            precinctNormVariants(rowName).forEach(n => {
+              currentPrecinctResults.set(n, adjustedRow);
+            });
+          }
+          if (!(Array.isArray(precinctContestData) && precinctContestData.length)) {
+            try { backfillHistoricalPrecinctResultsWithCountyFallback(currentPrecinctResults, countyAgg, contestType, year); } catch (_) {}
+          }
         }
         if (needsPrecinctDetail && !skipPrecinctRowBuild && precinctCacheKey && currentPrecinctResults) {
           try { precinctAdjustedRowCache.set(precinctCacheKey, currentPrecinctResults); } catch (_) {}
