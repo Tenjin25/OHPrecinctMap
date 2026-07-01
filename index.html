@@ -10355,8 +10355,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-8';
-    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-2';
+    const DATA_CACHE_BUSTER = '2026-06-30-ohio-historical-vtd10-9';
+    const APP_BUILD_ID = '2026-06-30-ohio-historical-vtd10-3';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -10437,6 +10437,7 @@ document.addEventListener('DOMContentLoaded', function() {
         state_senate_info: withBase('./data/oh_state_senate_districts.csv'),
         district_descriptions: withBase('./data/oh_district_descriptions.json'),
         contests_dir: withBase('./data/contests'),
+        precinct_contests_dir: withBase('./data/precinct_contests'),
         reports_match_year_summary: withBase('./data/reports/precinct_match_year_summary_fresh_2026-03-19.csv'),
         reports_top_unmatched: withBase('./data/reports/precinct_match_top_unmatched_file_county.csv'),
         crosswalks: {
@@ -15930,6 +15931,29 @@ document.addEventListener('DOMContentLoaded', function() {
         if (precinctContestSliceInflight.has(key)) return precinctContestSliceInflight.get(key);
 
         const p = atlasPerf(`slice.precinct:${key}`, async () => {
+          const precinctJsonDir = CONFIG.paths?.precinct_contests_dir;
+          if (precinctJsonDir) {
+            try {
+              const payload = await loadJSON(`${precinctJsonDir}/${key}.json`);
+              const rows = (payload?.rows || []).map(r => ({
+                year: y,
+                county: r.precinct || r.county || '',
+                [`${contestType}_dem`]: Number(r.dem_votes) || 0,
+                [`${contestType}_rep`]: Number(r.rep_votes) || 0,
+                [`${contestType}_other`]: Number(r.other_votes) || 0,
+                [`${contestType}_total`]: Number(r.total_votes) || 0,
+                [`${contestType}_dem_candidate`]: r.dem_candidate || '',
+                [`${contestType}_rep_candidate`]: r.rep_candidate || '',
+                [`${contestType}_margin`]: Number(r.margin) || 0,
+                [`${contestType}_margin_pct`]: Number(r.margin_pct) || 0,
+                [`${contestType}_winner`]: r.winner || '',
+                [`${contestType}_color`]: r.color || ''
+              }));
+              precinctContestSliceCache.set(key, rows);
+              return rows;
+            } catch (_) {}
+          }
+
           const path = OHIO_PRECINCT_GENERAL_ELECTION_CSV[y];
           if (!path) return null;
           const rows = [];

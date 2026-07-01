@@ -1,675 +1,326 @@
 {
   "files": [
     {
+      "contest_type": "attorney_general",
+      "year": 2006,
+      "file": "attorney_general_2006.json",
+      "rows": 11121
+    },
+    {
+      "contest_type": "attorney_general",
+      "year": 2008,
+      "file": "attorney_general_2008.json",
+      "rows": 11105
+    },
+    {
+      "contest_type": "attorney_general",
+      "year": 2010,
+      "file": "attorney_general_2010.json",
+      "rows": 9959
+    },
+    {
+      "contest_type": "attorney_general",
+      "year": 2014,
+      "file": "attorney_general_2014.json",
+      "rows": 9158
+    },
+    {
+      "contest_type": "attorney_general",
+      "year": 2018,
+      "file": "attorney_general_2018.json",
+      "rows": 8904
+    },
+    {
+      "contest_type": "attorney_general",
+      "year": 2022,
+      "file": "attorney_general_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2006,
+      "file": "auditor_2006.json",
+      "rows": 11122
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2010,
+      "file": "auditor_2010.json",
+      "rows": 9959
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2014,
+      "file": "auditor_2014.json",
+      "rows": 9158
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2018,
+      "file": "auditor_2018.json",
+      "rows": 8904
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2022,
+      "file": "auditor_2022.json",
+      "rows": 8933
+    },
+    {
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01",
       "year": 2004,
-      "source_file": "data/2004/20041102__oh__general__precinct.csv",
-      "positive_rows": 22789,
-      "precincts": 11397,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "chief_justice_of_the_supreme_court_term_commencing_01_01_2004.json",
+      "rows": 11397
     },
     {
-      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
-      "year": 2004,
-      "source_file": "data/2004/20041102__oh__general__precinct.csv",
-      "positive_rows": 11397,
-      "precincts": 11397,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
-      "year": 2004,
-      "source_file": "data/2004/20041102__oh__general__precinct.csv",
-      "positive_rows": 22791,
-      "precincts": 11397,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "president",
-      "year": 2004,
-      "source_file": "data/2004/20041102__oh__general__precinct.csv",
-      "positive_rows": 36089,
-      "precincts": 11402,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "us_senate",
-      "year": 2004,
-      "source_file": "data/2004/20041102__oh__general__precinct.csv",
-      "positive_rows": 22798,
-      "precincts": 11401,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 22235,
-      "precincts": 11121,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "auditor",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 22238,
-      "precincts": 11122,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "governor",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 43258,
-      "precincts": 11122,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "secretary_of_state",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 44132,
-      "precincts": 11122,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "treasurer",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 22235,
-      "precincts": 11122,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "us_senate",
-      "year": 2006,
-      "source_file": "data/2006/20061107__OH__general__precinct.csv",
-      "positive_rows": 22235,
-      "precincts": 11122,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
-      "year": 2008,
-      "source_file": "data/2008/20081104__oh__general__precinct.csv",
-      "positive_rows": 33288,
-      "precincts": 11105,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "president",
-      "year": 2008,
-      "source_file": "data/2008/20081104__oh__general__precinct.csv",
-      "positive_rows": 57301,
-      "precincts": 11107,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
+      "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2011",
       "year": 2010,
-      "source_file": "data/2010/20101102__oh__general__precinct.csv",
-      "positive_rows": 39419,
-      "precincts": 9873,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "auditor",
-      "year": 2010,
-      "source_file": "data/2010/20101102__oh__general__precinct.csv",
-      "positive_rows": 29698,
-      "precincts": 9873,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "governor",
-      "year": 2010,
-      "source_file": "data/2010/20101102__oh__general__precinct.csv",
-      "positive_rows": 39606,
-      "precincts": 9873,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "secretary_of_state",
-      "year": 2010,
-      "source_file": "data/2010/20101102__oh__general__precinct.csv",
-      "positive_rows": 29707,
-      "precincts": 9873,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "treasurer",
-      "year": 2010,
-      "source_file": "data/2010/20101102__oh__general__precinct.csv",
-      "positive_rows": 29689,
-      "precincts": 9873,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
-      "year": 2012,
-      "source_file": "data/2012/20121106__oh__general__precinct.csv",
-      "positive_rows": 18458,
-      "precincts": 9230,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2013",
-      "year": 2012,
-      "source_file": "data/2012/20121106__oh__general__precinct.csv",
-      "positive_rows": 18459,
-      "precincts": 9230,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
-      "year": 2012,
-      "source_file": "data/2012/20121106__oh__general__precinct.csv",
-      "positive_rows": 18459,
-      "precincts": 9230,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "president",
-      "year": 2012,
-      "source_file": "data/2012/20121106__oh__general__precinct.csv",
-      "positive_rows": 46967,
-      "precincts": 9230,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "us_senate",
-      "year": 2012,
-      "source_file": "data/2012/20121106__oh__general__precinct.csv",
-      "positive_rows": 27671,
-      "precincts": 9230,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
-      "year": 2014,
-      "source_file": "data/2014/20141104__oh__general__precinct.csv",
-      "positive_rows": 18315,
-      "precincts": 9158,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "auditor",
-      "year": 2014,
-      "source_file": "data/2014/20141104__oh__general__precinct.csv",
-      "positive_rows": 27449,
-      "precincts": 9158,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "governor",
-      "year": 2014,
-      "source_file": "data/2014/20141104__oh__general__precinct.csv",
-      "positive_rows": 27411,
-      "precincts": 9158,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "secretary_of_state",
-      "year": 2014,
-      "source_file": "data/2014/20141104__oh__general__precinct.csv",
-      "positive_rows": 27431,
-      "precincts": 9158,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "treasurer",
-      "year": 2014,
-      "source_file": "data/2014/20141104__oh__general__precinct.csv",
-      "positive_rows": 18314,
-      "precincts": 9158,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "president",
-      "year": 2016,
-      "source_file": "data/2016/20161108__oh__general__precinct.csv",
-      "positive_rows": 42835,
-      "precincts": 8887,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "us_senate",
-      "year": 2016,
-      "source_file": "data/2016/20161108__oh__general__precinct.csv",
-      "positive_rows": 44221,
-      "precincts": 8887,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 17806,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "auditor",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 26702,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "governor",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 35282,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "secretary_of_state",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 26667,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "treasurer",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 17806,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "us_senate",
-      "year": 2018,
-      "source_file": "data/2018/20181106__oh__general__precinct.csv",
-      "positive_rows": 17806,
-      "precincts": 8904,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "president",
-      "year": 2020,
-      "source_file": "data/2020/20201103__oh__general__precinct.csv",
-      "positive_rows": 33904,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "attorney_general",
-      "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17865,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
-    },
-    {
-      "contest_type": "auditor",
-      "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17863,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "chief_justice_of_the_supreme_court_term_commencing_01_01_2011_2010.json",
+      "rows": 9959
     },
     {
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17864,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "chief_justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "governor",
+      "year": 2006,
+      "file": "governor_2006.json",
+      "rows": 11122
+    },
+    {
+      "contest_type": "governor",
+      "year": 2010,
+      "file": "governor_2010.json",
+      "rows": 9959
+    },
+    {
+      "contest_type": "governor",
+      "year": 2014,
+      "file": "governor_2014.json",
+      "rows": 9158
+    },
+    {
+      "contest_type": "governor",
+      "year": 2018,
+      "file": "governor_2018.json",
+      "rows": 8904
     },
     {
       "contest_type": "governor",
       "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17864,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "governor_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
+      "year": 2012,
+      "file": "justice_of_the_supreme_court_term_commencing_01_01_2013_2012.json",
+      "rows": 9230
     },
     {
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2023",
       "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17864,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "justice_of_the_supreme_court_term_commencing_01_01_2023_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2025",
+      "year": 2024,
+      "file": "justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
+      "rows": 8878
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
+      "year": 2004,
+      "file": "justice_of_the_supreme_court_term_commencing_01_02_2004.json",
+      "rows": 11397
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2013",
+      "year": 2012,
+      "file": "justice_of_the_supreme_court_term_commencing_01_02_2013_2012.json",
+      "rows": 9230
     },
     {
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2023",
       "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17864,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "justice_of_the_supreme_court_term_commencing_01_02_2023_2022.json",
+      "rows": 8933
     },
     {
-      "contest_type": "secretary_of_state",
-      "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 26415,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2025",
+      "year": 2024,
+      "file": "justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
+      "rows": 8878
     },
     {
-      "contest_type": "treasurer",
-      "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17863,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
+      "year": 2004,
+      "file": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2004.json",
+      "rows": 11397
     },
     {
-      "contest_type": "us_senate",
-      "year": 2022,
-      "source_file": "data/2022/20221108__oh__general__precinct.csv",
-      "positive_rows": 17862,
-      "precincts": 8933,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014",
+      "year": 2012,
+      "file": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2014_2012.json",
+      "rows": 9230
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026",
+      "year": 2024,
+      "file": "justice_of_the_supreme_court_unexpired_term_ending_12_31_2026_2024.json",
+      "rows": 8878
+    },
+    {
+      "contest_type": "president",
+      "year": 2004,
+      "file": "president_2004.json",
+      "rows": 11402
+    },
+    {
+      "contest_type": "president",
+      "year": 2008,
+      "file": "president_2008.json",
+      "rows": 11107
+    },
+    {
+      "contest_type": "president",
+      "year": 2012,
+      "file": "president_2012.json",
+      "rows": 9230
+    },
+    {
+      "contest_type": "president",
+      "year": 2016,
+      "file": "president_2016.json",
+      "rows": 8887
+    },
+    {
+      "contest_type": "president",
+      "year": 2020,
+      "file": "president_2020.json",
+      "rows": 8933
     },
     {
       "contest_type": "president",
       "year": 2024,
-      "source_file": "data/2024/20241105__oh__general__precinct.csv",
-      "positive_rows": 37086,
-      "precincts": 8878,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "president_2024.json",
+      "rows": 8878
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "year": 2006,
+      "file": "secretary_of_state_2006.json",
+      "rows": 11122
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "year": 2010,
+      "file": "secretary_of_state_2010.json",
+      "rows": 9959
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "year": 2014,
+      "file": "secretary_of_state_2014.json",
+      "rows": 9158
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "year": 2018,
+      "file": "secretary_of_state_2018.json",
+      "rows": 8904
+    },
+    {
+      "contest_type": "secretary_of_state",
+      "year": 2022,
+      "file": "secretary_of_state_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2006,
+      "file": "treasurer_2006.json",
+      "rows": 11122
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2010,
+      "file": "treasurer_2010.json",
+      "rows": 9959
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2014,
+      "file": "treasurer_2014.json",
+      "rows": 9158
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2018,
+      "file": "treasurer_2018.json",
+      "rows": 8904
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2022,
+      "file": "treasurer_2022.json",
+      "rows": 8933
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2004,
+      "file": "us_senate_2004.json",
+      "rows": 11401
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2006,
+      "file": "us_senate_2006.json",
+      "rows": 11122
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2010,
+      "file": "us_senate_2010.json",
+      "rows": 9962
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2012,
+      "file": "us_senate_2012.json",
+      "rows": 9230
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2016,
+      "file": "us_senate_2016.json",
+      "rows": 8887
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2018,
+      "file": "us_senate_2018.json",
+      "rows": 8904
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2022,
+      "file": "us_senate_2022.json",
+      "rows": 8933
     },
     {
       "contest_type": "us_senate",
       "year": 2024,
-      "source_file": "data/2024/20241105__oh__general__precinct.csv",
-      "positive_rows": 26625,
-      "precincts": 8878,
-      "counties": 88,
-      "lines_years_available": [
-        2022,
-        2024,
-        2026
-      ]
+      "file": "us_senate_2024.json",
+      "rows": 8878
     }
   ],
   "metadata": {
     "scope": "precinct",
-    "generated_from": "Ohio precinct general-election CSVs in this workspace",
-    "crosswalks": {
-      "2022": {
-        "congressional": {
-          "path": "data/crosswalks/precinct_to_cd118.csv",
-          "exists": true,
-          "rows": 8968
-        },
-        "state_house": {
-          "path": "data/crosswalks/precinct_to_2022_state_house.csv",
-          "exists": true,
-          "rows": 9522
-        },
-        "state_senate": {
-          "path": "data/crosswalks/precinct_to_2022_state_senate.csv",
-          "exists": true,
-          "rows": 9181
-        }
-      },
-      "2024": {
-        "congressional": {
-          "path": "data/crosswalks/precinct_to_cd119.csv",
-          "exists": true,
-          "rows": 8915
-        },
-        "state_house": {
-          "path": "data/crosswalks/precinct_to_2024_state_house.csv",
-          "exists": true,
-          "rows": 9207
-        },
-        "state_senate": {
-          "path": "data/crosswalks/precinct_to_2024_state_senate.csv",
-          "exists": true,
-          "rows": 9041
-        }
-      },
-      "2026": {
-        "congressional": {
-          "path": "data/crosswalks/precinct_to_cd2026_sl2025_95.csv",
-          "exists": true,
-          "rows": 8930
-        }
-      }
-    }
+    "generated_from": "Ohio precinct general-election CSVs in this workspace"
   }
 }
