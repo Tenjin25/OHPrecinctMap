@@ -10384,7 +10384,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-01-ohio-historical-vtd10-22';
+    const DATA_CACHE_BUSTER = '2026-07-01-ohio-historical-vtd10-23';
     const APP_BUILD_ID = '2026-07-01-ohio-historical-vtd10-15';
 
     function withCacheBuster(path) {
@@ -20072,7 +20072,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
 
-    async function populateContestSelectFromManifest(manifestEntries) {
+	    async function populateContestSelectFromManifest(manifestEntries) {
 	      const q = (contestSearchQuery || '').toString().trim().toUpperCase();
 	      const sel = document.getElementById('contestSelect');
 	      sel.innerHTML = '<option value="">Select a contest...</option>';
@@ -20112,6 +20112,26 @@ document.addEventListener('DOMContentLoaded', function() {
 	        const m = (contestType || '').match(/(?:seat_|seat)(\d+)/i);
 	        return m ? Number(m[1]) : null;
 	      }
+
+        function formatContestOptionDisambiguator(contestType) {
+          const type = String(contestType || '').trim();
+          if (!type) return '';
+          const termMatch = type.match(/term_commencing_(\d{2})_(\d{2})_(\d{4})/i);
+          if (termMatch) {
+            const month = String(Number(termMatch[1]));
+            const day = String(Number(termMatch[2]));
+            const year = termMatch[3];
+            return `Term ${month}/${day}/${year}`;
+          }
+          const unexpiredMatch = type.match(/unexpired_term_ending_(\d{2})_(\d{2})_(\d{4})/i);
+          if (unexpiredMatch) {
+            const month = String(Number(unexpiredMatch[1]));
+            const day = String(Number(unexpiredMatch[2]));
+            const year = unexpiredMatch[3];
+            return `Ends ${month}/${day}/${year}`;
+          }
+          return '';
+        }
 
 	      const groupOrder = [
 	        'US President',
@@ -20160,10 +20180,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	          return String(a.contestType).localeCompare(String(b.contestType));
 	        });
 
-	        const og = document.createElement('optgroup');
-	        og.label = label;
-
-	        for (const item of items) {
+          const visibleItems = [];
+          for (const item of items) {
             const shouldShow = await shouldShowManifestContestOption(
               {
                 contest_type: item.contestType,
@@ -20174,19 +20192,47 @@ document.addEventListener('DOMContentLoaded', function() {
               currentDistrictLinesYear
             );
             if (!shouldShow) continue;
+            visibleItems.push(item);
+          }
+
+          const baseLabelCounts = new Map();
+          visibleItems.forEach(item => {
+            const modeledDef = getModeledContestDefinition(item.contestType, item.year);
+            const modeledOptionLabel = String(modeledDef?.optionLabel || '').trim();
+            const modeledSuffix = modeledDef && !modeledOptionLabel ? ' [Modeled]' : '';
+            let baseText = '';
+            if (modeledOptionLabel) {
+              baseText = modeledOptionLabel;
+            } else if (isJudicial || modeledDef) {
+              baseText = `${formatContestName(item.contestType, item.year)} (${item.year})${modeledSuffix}`;
+            } else {
+              baseText = `${label} (${item.year})${modeledSuffix}`;
+            }
+            baseLabelCounts.set(baseText, (baseLabelCounts.get(baseText) || 0) + 1);
+          });
+
+	        const og = document.createElement('optgroup');
+	        og.label = label;
+
+	        for (const item of visibleItems) {
 	          const opt = document.createElement('option');
 	          opt.value = `${item.contestType}_${item.year}`;
             const modeledDef = getModeledContestDefinition(item.contestType, item.year);
             const modeledOptionLabel = String(modeledDef?.optionLabel || '').trim();
             const modeledSuffix = modeledDef && !modeledOptionLabel ? ' [Modeled]' : '';
+            let optionText = '';
             if (modeledOptionLabel) {
-              opt.textContent = modeledOptionLabel;
-            } else
-	          if (isJudicial || modeledDef) {
-              opt.textContent = `${formatContestName(item.contestType, item.year)} (${item.year})${modeledSuffix}`;
-	          } else {
-              opt.textContent = `${label} (${item.year})${modeledSuffix}`;
-	          }
+              optionText = modeledOptionLabel;
+            } else if (isJudicial || modeledDef) {
+              optionText = `${formatContestName(item.contestType, item.year)} (${item.year})${modeledSuffix}`;
+            } else {
+              optionText = `${label} (${item.year})${modeledSuffix}`;
+            }
+            if ((baseLabelCounts.get(optionText) || 0) > 1) {
+              const disambiguator = formatContestOptionDisambiguator(item.contestType);
+              if (disambiguator) optionText = `${optionText} - ${disambiguator}`;
+            }
+            opt.textContent = optionText;
 	          if (q) {
 	            const hay = `${label} ${item.year} ${item.contestType} ${formatContestName(item.contestType, item.year)}`.toUpperCase();
 	            if (!hay.includes(q)) continue;
