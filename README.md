@@ -15,7 +15,7 @@ The atlas is designed for people who want more than a red-blue snapshot.
 
 - County-level election history for statewide and federal races.
 - District-level re-aggregations for congressional, state house, and state senate maps.
-- Alternate line years, including 2022, 2024, and 2026 congressional lines.
+- Alternate line years, with congressional views using 2022 or 2026 lines and legislative views exposing 2022 or 2024 line vintages as appropriate.
 - Contest-by-contest comparisons that make it easier to spot ticket-splitting, regional drift, and structural partisan advantages.
 - Hover and detail views that surface vote totals, margin, winner, and trend context.
 
@@ -90,6 +90,8 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - Expanded `Greater Toledo` to include `Henry County`; `Fulton County` was already part of the region.
 - Replaced technical CSA-style display names with friendlier public-facing labels such as `Greater Cincinnati`, `Greater Cleveland`, and `Tuscarawas Valley`.
 - Split desktop quick jumps into labeled groups: `Major Metros`, `Broad Regions`, and `Small Metros & Micros`.
+- Hid district-line toggles in county mode so the county view only shows controls that affect the active map.
+- Limited congressional district-line toggles to the supported `2022` and `2026` options while keeping `2024` available for state house and state senate views.
 
 ### 2026-06-30
 
