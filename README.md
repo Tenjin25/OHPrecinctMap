@@ -18,6 +18,7 @@ The atlas is designed for people who want more than a red-blue snapshot.
 - Alternate line years, with congressional views using 2022 or 2026 lines and legislative views exposing 2022 or 2024 line vintages as appropriate.
 - Contest-by-contest comparisons that make it easier to spot ticket-splitting, regional drift, and structural partisan advantages.
 - Hover and detail views that surface vote totals, margin, winner, and trend context.
+- County detail views now include Ohio-specific Census population context based on cleaned county estimate data.
 
 In practice, most visitors will probably use it to look for:
 
@@ -79,12 +80,17 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - Older statewide contests on congressional, state house, and state senate views now use historical `vtd10` geometry-based carryover crosswalks where available, which sharply reduces dropped precincts in 2010-2020 district reaggregations.
 - Some views compare older elections against newer line vintages so users can inspect how the same electorate would map onto different districts.
 - `Major Metros` quick jumps are meant for city-centered commuter and media-market regions, while `Broad Regions` are meant for larger macro-regions such as `Northwest Ohio`, `Appalachia`, or `South Central Ohio` that capture shared political geography beyond a single metro.
+- County population context is sourced from the cleaned Census-style county estimate file at `data/CO-EST2025-POP-39-clean.csv`, generated from the raw workbook with `scripts/clean_county_population_estimates.py`.
+- Ohio population-context buckets now call out Lake Erie growth counties, Appalachian and river slow-growth counties, and the broader Central Ohio / outer-suburban growth corridor that includes places like `Delaware`, `Union`, `Fairfield`, `Licking`, `Pickaway`, `Madison`, `Morrow`, and `Knox`.
 - The atlas intentionally emphasizes margin structure and geography, not just who won.
 
 ## Update Log
 
 ### 2026-07-01
 
+- Hooked the atlas to cleaned Ohio county population estimates and added Ohio-specific county Census context in the county detail UI.
+- Replaced leftover non-Ohio population narratives with Ohio regional buckets, including Lake Erie growth, Appalachian and river slow-growth counties, and a broader Central Ohio growth corridor.
+- Expanded the growth-corridor treatment to include additional fast-growing counties such as `Pickaway`, `Madison`, `Morrow`, and `Knox`.
 - Added a fresh static asset/data cachebuster so GitHub Pages and browser caches pick up the latest atlas build immediately.
 - Fixed an async contest-selector rebuild race that could append duplicate contest options after fast search/filter or view refreshes.
 - Added broad macro-region quick jumps for `Northwest Ohio`, `Northeast Ohio`, `North Central Ohio`, `Central Ohio`, `Southwest Ohio`, and `South Central Ohio`.
