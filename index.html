@@ -744,7 +744,7 @@ body.focus-active.hover-preview-active .vote-counter {
 }
 
 #hover-tooltip[data-context="votehub-results"] .votehub-results-card.pop-change {
-  padding-top: 14px;
+  padding-top: 12px;
 }
 
 #hover-tooltip[data-context="votehub-results"][data-pinned="0"] .tooltip-head {
@@ -759,9 +759,9 @@ body.focus-active.hover-preview-active .vote-counter {
 }
 
 #hover-tooltip[data-context="votehub-results"] .votehub-results-card.pop-change .vhr-title {
-  font-size: 17px;
-  font-weight: 900;
-  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 2px;
 }
 
 #hover-tooltip[data-context="votehub-results"] .vhr-subtitle {
@@ -774,7 +774,7 @@ body.focus-active.hover-preview-active .vote-counter {
 }
 
 #hover-tooltip[data-context="votehub-results"] .votehub-results-card.pop-change .vhr-subtitle {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 #hover-tooltip[data-context="votehub-results"] .vhr-pop-summary {
@@ -27051,8 +27051,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const toneLabel = tone === 'gain' ? 'Growth' : (tone === 'loss' ? 'Decline' : 'Flat');
         return {
           line: `Population change: ${signAbs}${Math.round(abs).toLocaleString()} (${pctLine})`,
-          absLine: `Population change: ${signAbs}${Math.round(abs).toLocaleString()}`,
-          pctLine,
           raw: `${p2020.toLocaleString()} → ${p2025.toLocaleString()}`,
           tone,
           label: toneLabel
@@ -27061,21 +27059,17 @@ document.addEventListener('DOMContentLoaded', function() {
       const popChangeToneColor = popChangeHeaderMeta?.tone === 'gain'
         ? '#166534'
         : (popChangeHeaderMeta?.tone === 'loss' ? '#7c2d12' : '#334155');
-      const hasPopChangeSummaryCard = currentVizMode === 'population_change' && !!popChangeHeaderMeta;
-      const popChangeSummaryHtml = hasPopChangeSummaryCard
-        ? `
-          <div class="vhr-pop-summary ${escapeHtml(popChangeHeaderMeta.tone)}">
-            <div class="vhr-pop-main">
-              <div class="vhr-pop-line primary">${escapeHtml(popChangeHeaderMeta.absLine)}</div>
-              <div class="vhr-pop-line secondary">(${escapeHtml(popChangeHeaderMeta.pctLine)})</div>
-            </div>
-            <div class="vhr-pop-side">
-              <div class="vhr-pop-raw">${escapeHtml(popChangeHeaderMeta.raw)}</div>
-              <div class="vhr-pop-tone">${escapeHtml(popChangeHeaderMeta.label)}</div>
-            </div>
+      const popChangeTopLineMobile = (() => {
+        if (!popChangeHeaderMeta) return '';
+        if (isDesktopTooltipMode()) return '';
+        return `
+          <div class="tooltip-insight" style="margin:0 0 8px 0;padding:8px 10px;border-radius:10px;background:rgba(15,23,42,0.06);border:1px solid rgba(148,163,184,0.35);">
+            <strong style="color:${popChangeToneColor};">${escapeHtml(popChangeHeaderMeta.line)}</strong><br>
+            <span style="color:${popChangeToneColor};">${escapeHtml(popChangeHeaderMeta.raw)}</span><br>
+            <span style="color:${popChangeToneColor};font-size:11px;font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</span>
           </div>
-        `.trim()
-        : '';
+        `.trim();
+      })();
       const winnerName = winner === 'R'
         ? shortCandidateLabel(repCandidate, 'Republican')
         : (winner === 'D' ? shortCandidateLabel(demCandidate, 'Democratic') : 'Tie');
@@ -27095,35 +27089,34 @@ document.addEventListener('DOMContentLoaded', function() {
         winnerName,
         winnerParty,
         marginPct: Math.abs(signedMarginPct),
-        winnerLineText: (marginCall?.text || ''),
-        winnerRawLeadText: '',
-        winnerLineToneClass: '',
-        winnerRawLeadToneClass: '',
+        winnerLineText: (popChangeHeaderMeta && isDesktopTooltipMode()) ? popChangeHeaderMeta.line : (marginCall?.text || ''),
+        winnerRawLeadText: (popChangeHeaderMeta && isDesktopTooltipMode()) ? `${popChangeHeaderMeta.raw} • ${popChangeHeaderMeta.label}` : '',
+        winnerLineToneClass: (popChangeHeaderMeta && isDesktopTooltipMode()) ? popChangeHeaderMeta.tone : '',
+        winnerRawLeadToneClass: (popChangeHeaderMeta && isDesktopTooltipMode()) ? popChangeHeaderMeta.tone : '',
         prevSignedMarginPct: prevSignedForFlip,
         currentSignedMarginPct: signedMarginPct,
         flipYearLabel: vizPrevCache?.prevYear || null,
         districtType: 'County',
-        showWinnerLine: currentVizMode !== 'population_change',
+        showWinnerLine: true,
         shiftLineText: Number.isFinite(shiftDelta) ? formatShiftLabel(shiftDelta) : '',
         shiftToneClass: shiftClass,
         shiftYearLabel: (vizShiftCache?.prevYear && vizShiftCache?.year) ? `${vizShiftCache.prevYear}→${vizShiftCache.year}` : '',
-        showShiftLine: currentVizMode === 'shift' && Number.isFinite(shiftDelta) && !!vizShiftCache?.prevYear,
-        summaryHtml: popChangeSummaryHtml,
-        cardClassName: hasPopChangeSummaryCard ? 'pop-change' : ''
+        showShiftLine: currentVizMode === 'shift' && Number.isFinite(shiftDelta) && !!vizShiftCache?.prevYear
       });
       const detailLines = `
         ${finalInsight ? `<div class="tooltip-insight">${escapeHtml(finalInsight)}</div>` : ''}
         ${censusDetailLine}
-        ${hasPopChangeSummaryCard ? '' : popChangeDetailLine}
-        ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label && !hasPopChangeSummaryCard) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
+        ${popChangeDetailLine}
+        ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
         ${(currentVizMode === 'shift' && Number.isFinite(shiftDelta) && vizShiftCache?.prevYear) ? '' : shiftLine}
-        ${flipLine}
+        ${isDesktopTooltipMode() ? flipLine : ''}
         ${deltaBlock}
         ${splitInsightLine}
         ${demoLine}
       `.trim();
       const inner = `
         ${votehubCore}
+        ${popChangeTopLineMobile}
         <details class="tooltip-more" aria-label="More details">
           <summary>More details</summary>
           <div class="tooltip-more-body">${detailLines}</div>
@@ -29576,14 +29569,26 @@ document.addEventListener('DOMContentLoaded', function() {
       const winnerText = normalizeCandidateLabel(winnerName || winnerShort, winnerShort || 'Tie');
       const winnerToneClass = winnerPartyKey === 'rep' ? 'rep' : (winnerPartyKey === 'dem' ? 'dem' : 'tie');
       const winnerDisplayText = (winnerLineText || '').toString().trim() || `${winnerText} +${marginFormatter(marginAbs)}%`;
+      const customTopTone = String(winnerLineToneClass || '').trim().toLowerCase();
+      const customRawTopTone = String(winnerRawLeadToneClass || '').trim().toLowerCase();
+      const topToneStyle = customTopTone === 'gain'
+        ? 'font-size:12px;font-weight:800;opacity:0.96;color:#166534;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
+        : (customTopTone === 'loss'
+          ? 'font-size:12px;font-weight:800;opacity:0.96;color:#7c2d12;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
+          : '');
       const voteLeadStyle = winnerToneClass === 'rep'
         ? 'font-size:12px;font-weight:800;opacity:0.96;color:#fecaca;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
         : (winnerToneClass === 'dem'
           ? 'font-size:12px;font-weight:800;opacity:0.96;color:#bfdbfe;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
           : 'font-size:12px;font-weight:800;opacity:0.92;color:#e2e8f0;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;');
       const winnerRawLeadDisplay = (winnerRawLeadText || '').toString().trim() || `${formatVotehubVotes(Math.abs(rVotes - dVotes))} votes`;
+      const rawLeadStyle = customRawTopTone === 'gain'
+        ? 'font-size:12px;font-weight:800;opacity:0.96;color:#166534;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
+        : (customRawTopTone === 'loss'
+          ? 'font-size:12px;font-weight:800;opacity:0.96;color:#7c2d12;font-family:"JetBrains Mono","Consolas","SFMono-Regular",monospace;'
+          : voteLeadStyle);
       const winnerLine = showWinnerLine
-        ? `<div class="vhr-winner ${winnerToneClass}" style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;"><span>${escapeHtml(winnerDisplayText)}</span><span class="vhr-raw-lead ${winnerToneClass}" style="${voteLeadStyle}">${escapeHtml(winnerRawLeadDisplay)}</span></div>`
+        ? `<div class="vhr-winner ${winnerToneClass}" style="display:flex;align-items:baseline;justify-content:space-between;gap:10px;"><span${topToneStyle ? ` style="${topToneStyle}"` : ''}>${escapeHtml(winnerDisplayText)}</span><span class="vhr-raw-lead ${winnerToneClass}" style="${rawLeadStyle}">${escapeHtml(winnerRawLeadDisplay)}</span></div>`
         : '';
       const prevSigned = Number(prevSignedMarginPct);
       const curSigned = Number(currentSignedMarginPct);
@@ -29605,13 +29610,10 @@ document.addEventListener('DOMContentLoaded', function() {
         ? `<div class="vhr-shift"><span class="vhr-shift-label">Shift${shiftYears ? ` (${escapeHtml(shiftYears)})` : ''}</span><span class="vhr-shift-value ${shiftToneSafe}">${escapeHtml(shiftText)}</span></div>`
         : '';
 
-      const summaryBlock = (summaryHtml || '').toString().trim();
-      const cardClass = ['votehub-results-card', (cardClassName || '').toString().trim()].filter(Boolean).join(' ');
       return `
-        <div class="${cardClass}">
+        <div class="votehub-results-card">
           <div class="vhr-title">${escapeHtml((title || '').toString())}</div>
           ${(subtitle || districtType) ? `<div class="vhr-subtitle">${escapeHtml(String(subtitle || districtType || ''))}</div>` : ''}
-          ${summaryBlock}
           ${winnerLine}
           ${flipLine}
           ${shiftLine}
