@@ -43,18 +43,14 @@ The atlas uses named margin bands rather than only raw percentages. These are ba
 | `Dominant` | `30.00%` to `39.99%` |
 | `Annihilation` | `40.00%` and up |
 
-The party label is attached to the category name. For example:
-
-- `Safe Republican` means the Republican candidate leads by `10.00%` to `19.99%`.
-- `Lean Democratic` means the Democratic candidate leads by `1.00%` to `5.49%`.
-- `Tossup (Republican Win)` means Republicans won, but by less than `0.50%`.
+The party label is attached to the category name, but the current tooltip keeps that presentation cleaner: it shows a compact winner line, raw vote totals, and candidate rows instead of spelling out long-form labels like `Safe Republican` or `Lean Democratic` inside the card.
 
 ## How To Read The Map
 
 The colors are meant to do two things at once:
 
 - Hue shows which party is ahead.
-- Intensity shows how large that lead is.
+- Intensity shows how large that lead is. The deeper the color, the higher the margin of victory.
 
 That means a pale district is not just "close" in a general sense. It is close within a specific competitiveness bucket. Darker shades indicate bigger cushions; lighter shades indicate more fragile control.
 
