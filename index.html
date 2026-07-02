@@ -10440,7 +10440,7 @@ document.addEventListener('DOMContentLoaded', function() {
         state_senate_2024: withBase('./data/tileset/oh_state_senate_2024.geojson'),
         // Optional census/demographic overlays. Keep blank until the Ohio files are committed.
         county_demographics: '',
-        county_population_estimates: '',
+        county_population_estimates: withBase('./data/CO-EST2025-POP-39-clean.csv'),
         precinct_demographics: '',
         cvap_aggregates: {
           county_2020: '',
@@ -12482,7 +12482,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!c) return null;
       if (modeledCensusContextMemo.has(c)) return modeledCensusContextMemo.get(c) || null;
       let ctx = null;
-      try { ctx = getNcCensusContext(c); } catch (_) { ctx = null; }
+      try { ctx = getOhioCensusContext(c); } catch (_) { ctx = null; }
       try { modeledCensusContextMemo.set(c, ctx); } catch (_) {}
       return ctx;
     }
@@ -15477,7 +15477,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if ((meta.kind === 'county' || meta.kind === 'precinct') && meta.county) {
           try {
-            censusContext = getNcCensusContext(meta.county);
+            censusContext = getOhioCensusContext(meta.county);
             trendOptions.censusContext = censusContext;
             trendOptions.censusContextTitle = meta.kind === 'precinct'
               ? `${displayCountyName(meta.county)} County Census Insight`
@@ -16475,7 +16475,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const pop = Number(countyPopulationEstimatesByNorm?.get(county)?.population2025 || 0);
           if (/urban anchor|urban county/.test(pattern) || pop >= 550000) return 'urban';
           if (/metro spillover|outer-suburban|suburban/.test(pattern) || pop >= 180000) return 'suburban';
-          if (/small-metro|transition|coastal growth/.test(pattern) || pop >= 90000) return 'exurban';
+          if (/small-metro|transition|lake erie growth/.test(pattern) || pop >= 90000) return 'exurban';
           return 'rural';
         };
 
@@ -17085,7 +17085,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const out = new Map();
             baseAgg.forEach((totals, county) => {
               const ctx = (() => {
-                try { return getNcCensusContext(county); } catch (_) { return null; }
+                try { return getOhioCensusContext(county); } catch (_) { return null; }
               })();
               const pattern = String(ctx?.patternLabel || '');
               const note = String(ctx?.noteLabel || '');
@@ -17094,7 +17094,7 @@ document.addEventListener('DOMContentLoaded', function() {
               let pts = basePts;
               if (/Urban anchor/i.test(pattern)) pts = Number(modeledDef?.candidateBonusUrbanPts);
               else if (/Metro spillover|outer-suburban/i.test(pattern)) pts = Number(modeledDef?.candidateBonusMetroPts);
-              else if (/Coastal growth/i.test(pattern)) pts = Number(modeledDef?.candidateBonusCoastalPts);
+              else if (/Lake Erie growth/i.test(pattern)) pts = Number(modeledDef?.candidateBonusCoastalPts);
               else if (/Small-metro|transition/i.test(pattern)) pts = Number(modeledDef?.candidateBonusTransitionPts);
               else if (/Slow-growth|declining county|Rural slowdown/i.test(pattern)) pts = Number(modeledDef?.candidateBonusSlowPts);
               if (!Number.isFinite(pts)) pts = basePts;
@@ -17280,7 +17280,7 @@ document.addEventListener('DOMContentLoaded', function() {
               let durablePts = rawPts * durableShare * (0.55 + (0.45 * reusableScore));
               let personalPts = rawPts * personalShare * (0.35 + (0.65 * (1 - reusableScore)));
 
-              // Durable crossover signal should be strongest in rural / Black Belt / eastern counties.
+              // Durable crossover signal should be strongest in slower-growth rural and eastern Ohio counties.
               let durableRegionalBoost = 1;
               if (countyType === 'rural') durableRegionalBoost *= 1.08;
               if (senateFamily === 'black_belt_residual_crossover') durableRegionalBoost *= 1.10;
@@ -23066,7 +23066,7 @@ document.addEventListener('DOMContentLoaded', function() {
           changePct2023To2024: Number.isFinite(changePct2023To2024) ? changePct2023To2024 : NaN
         };
 
-        if (countyNorm === 'NORTH CAROLINA') statewide = entry;
+        if (countyNorm === 'OHIO') statewide = entry;
         else byNorm.set(countyNorm, entry);
       });
       return { byNorm, statewide };
@@ -23079,14 +23079,14 @@ document.addEventListener('DOMContentLoaded', function() {
       return `${value > 0 ? 'up' : 'down'} ${Math.abs(value).toFixed(1)}%`;
     }
 
-    function getNcCensusContext(countyNorm) {
+    function getOhioCensusContext(countyNorm) {
       const norm = String(countyNorm || '').trim().toUpperCase();
-      const urbanAnchor = new Set(['WAKE', 'MECKLENBURG', 'DURHAM', 'ORANGE', 'GUILFORD', 'FORSYTH', 'BUNCOMBE']);
-      const metroSpillover = new Set(['JOHNSTON', 'UNION', 'CABARRUS', 'IREDELL', 'HARNETT', 'CHATHAM', 'PENDER', 'FRANKLIN', 'GASTON', 'CLEVELAND']);
-      const coastalGrowth = new Set(['BRUNSWICK', 'NEW HANOVER', 'PENDER', 'ONSLOW', 'CURRITUCK', 'CARTERET']);
-      const ruralSlowdown = new Set(['ROBESON', 'BLADEN', 'RICHMOND', 'ANSON', 'MARTIN', 'GATES', 'HALIFAX', 'SCOTLAND', 'WASHINGTON', 'BERTIE', 'NORTHAMPTON']);
-      const mixedTransition = new Set(['PASQUOTANK', 'ALAMANCE', 'DAVIDSON', 'ROWAN', 'NASH', 'PITT', 'CUMBERLAND', 'RANDOLPH', 'CATAWBA', 'WAYNE', 'CRAVEN']);
-      const institutionalHub = new Set(['CUMBERLAND', 'HOKE', 'ONSLOW', 'WAYNE', 'CRAVEN']);
+      const urbanAnchor = new Set(['CUYAHOGA', 'FRANKLIN', 'HAMILTON', 'SUMMIT', 'LUCAS', 'MONTGOMERY']);
+      const metroSpillover = new Set(['DELAWARE', 'UNION', 'WARREN', 'FAIRFIELD', 'LICKING', 'MEDINA', 'BUTLER', 'CLERMONT', 'LAKE', 'GEAUGA', 'PICKAWAY', 'MADISON', 'MORROW', 'KNOX']);
+      const coastalGrowth = new Set(['OTTAWA', 'ERIE', 'LORAIN', 'LAKE', 'ASHTABULA']);
+      const ruralSlowdown = new Set(['MEIGS', 'MONROE', 'HARRISON', 'NOBLE', 'VINTON', 'GALLIA', 'JEFFERSON', 'ADAMS', 'MORGAN']);
+      const mixedTransition = new Set(['STARK', 'PORTAGE', 'WOOD', 'GREENE', 'MIAMI', 'CLARK', 'ALLEN', 'RICHLAND', 'MARION', 'MUSKINGUM']);
+      const institutionalHub = new Set(['ATHENS', 'GREENE', 'WOOD', 'MONTGOMERY', 'CLARK']);
 
       let signalEmoji = '📊';
       let signalLabel = 'Steady population signal';
@@ -23094,7 +23094,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let patternLabel = 'Mixed local and regional forces';
       let noteEmoji = '🗳️';
       let noteLabel = 'Population change may shape the electorate over time, even when margins remain stable in the short run.';
-      let sourceNote = 'Qualitative context inspired by recent Census population-estimate patterns; not a raw population table.';
+      let sourceNote = 'Qualitative context based on recent Ohio Census population-estimate patterns.';
 
       const estimate = countyPopulationEstimatesByNorm?.get(norm) || null;
       const statewide = countyPopulationEstimateStatewide || null;
@@ -23125,15 +23125,15 @@ document.addEventListener('DOMContentLoaded', function() {
           signalEmoji = '🌊';
           patternEmoji = '🏖️';
           patternLabel = slowedIn2025
-            ? 'Coastal growth still positive but cooling in 2025'
-            : 'Coastal growth running above the statewide pace';
+            ? 'Lake Erie growth still positive but cooling in 2025'
+            : 'Lake Erie growth running above the statewide pace';
           noteLabel = `2025 estimate: ${Number(estimate.population2025 || 0).toLocaleString()}. Since 2020, this county is ${formatPopulationChangePct(totalPct)}${aboveStatewide ? ', faster than the statewide pace.' : '.'}`;
         } else if (metroSpillover.has(norm) && (aboveStatewide || Number(totalPct) >= 8)) {
           signalEmoji = '📈';
           patternEmoji = '🌆';
           patternLabel = slowedIn2025
-            ? 'Metro spillover growth with a slower 2025 pace'
-            : 'Metro spillover / outer-suburban expansion';
+            ? 'Metro spillover / growth-corridor growth with a slower 2025 pace'
+            : 'Metro spillover / outer-suburban growth corridor';
           noteLabel = `2025 estimate: ${Number(estimate.population2025 || 0).toLocaleString()}. The county is ${formatPopulationChangePct(totalPct)} since 2020 and ${formatPopulationChangePct(recentPct)} from 2024 to 2025.`;
         } else if (mixedTransition.has(norm) && !isFlatOrDeclining) {
           signalEmoji = aboveStatewide ? '📈' : '⚖️';
@@ -23157,7 +23157,7 @@ document.addEventListener('DOMContentLoaded', function() {
           patternEmoji = '📉';
           patternLabel = 'Urban county with flat/declining population';
           const hubClause = isInstitutionalHub
-            ? 'In institutional hubs (e.g., military-heavy counties like Cumberland/Fayetteville), year-to-year estimates can be choppy, and political change may track voter turnover and participation as much as net in-migration.'
+            ? 'In institutional hubs, year-to-year estimates can be choppy, and political change may track voter turnover and participation as much as net in-migration.'
             : 'Flat or declining growth often means less in-migration-driven electorate churn, so shifts may show up more through turnout and coalition change than sheer population inflow.';
           noteLabel = `2025 estimate: ${Number(estimate.population2025 || 0).toLocaleString()}. Since 2020 this county is ${formatPopulationChangePct(totalPct)}, while the 2024 to 2025 change was ${formatPopulationChangePct(recentPct)}. ${hubClause}`;
         } else if (ruralSlowdown.has(norm) || isFlatOrDeclining) {
@@ -23175,7 +23175,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (isInstitutionalHub && !/institutional hubs|military/i.test(noteLabel)) {
-          noteLabel += ' Military hubs can show choppy year-to-year estimates; political change may track turnover as much as net in-migration.';
+          noteLabel += ' Institutional hubs can show choppy year-to-year estimates; political change may track turnover as much as net in-migration.';
         }
       }
 
@@ -23187,21 +23187,21 @@ document.addEventListener('DOMContentLoaded', function() {
         noteLabel = 'Large urban counties often absorb new voters first, which can reshape both county margins and nearby suburbs.';
       } else if (!estimate && coastalGrowth.has(norm)) {
         signalEmoji = '📈';
-        signalLabel = 'High-growth coastal county';
+        signalLabel = 'High-growth Lake Erie county';
         patternEmoji = '🏖️';
-        patternLabel = 'Coastal migration and retirement growth';
-        noteLabel = 'Coastal growth can boost raw turnout quickly and may either strengthen or soften the existing partisan lean depending on who is moving in.';
+        patternLabel = 'Lake Erie migration and lakefront growth';
+        noteLabel = 'Lakefront growth can boost raw turnout quickly and may either strengthen or soften the existing partisan lean depending on who is moving in.';
       } else if (!estimate && metroSpillover.has(norm)) {
         signalEmoji = '📈';
         signalLabel = 'High-growth county';
         patternEmoji = '🌆';
-        patternLabel = 'Metro spillover / outer-suburban expansion';
+        patternLabel = 'Metro spillover / outer-suburban growth corridor';
         noteLabel = 'Fast-growing outer-ring counties often show the clearest link between Census-era growth and changing election results.';
       } else if (!estimate && ruralSlowdown.has(norm)) {
         signalEmoji = '🌾';
         signalLabel = 'Slow-growth or declining county';
         patternEmoji = '⬇️';
-        patternLabel = 'Rural slowdown / Black Belt population loss';
+        patternLabel = 'Appalachian or rural slowdown';
         noteLabel = 'Places with slower growth or population loss can still shift sharply when the electorate changes composition rather than simply adding new residents.';
       } else if (!estimate && mixedTransition.has(norm)) {
         signalEmoji = '⚖️';
@@ -23212,7 +23212,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       if (!/institutional hubs|military/i.test(noteLabel) && isInstitutionalHub) {
-        noteLabel += ' Military hubs can show choppy year-to-year estimates; political change may track turnover as much as net in-migration.';
+        noteLabel += ' Institutional hubs can show choppy year-to-year estimates; political change may track turnover as much as net in-migration.';
       }
 
       return {
@@ -23248,12 +23248,12 @@ document.addEventListener('DOMContentLoaded', function() {
         (Number.isFinite(stateTotalPct) && totalPct > stateTotalPct + 1.25)
       );
       const slowGrowth = (Number.isFinite(totalPct) && totalPct < 1) || (Number.isFinite(recentPct) && recentPct < 0);
-      const demGrowthPattern = /Urban anchor|Metro spillover|outer-suburban|Above-state growth county|Coastal growth/i.test(patternLabel);
+      const demGrowthPattern = /Urban anchor|Metro spillover|outer-suburban|Above-state growth county|Lake Erie growth/i.test(patternLabel);
       const repGrowthPattern = /Slow-growth|declining county|Rural slowdown/i.test(patternLabel);
       const growthLabel = (() => {
         if (/Metro spillover|outer-suburban expansion/i.test(patternLabel)) return 'fast outer-suburban growth';
         if (/Urban anchor/i.test(patternLabel)) return 'continued urban growth';
-        if (/Coastal growth/i.test(patternLabel)) return 'fast coastal growth';
+        if (/Lake Erie growth/i.test(patternLabel)) return 'fast Lake Erie growth';
         if (/Above-state growth county/i.test(patternLabel)) return 'above-average growth';
         return 'fast county growth';
       })();
@@ -23488,7 +23488,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (/Urban anchor/i.test(raw)) return 'Urban anchor county';
         if (/Metro spillover/i.test(raw)) return 'Metro spillover county';
         if (/outer-suburban/i.test(raw)) return 'Outer-suburban county';
-        if (/Coastal/i.test(raw)) return 'Coastal growth county';
+        if (/Lake Erie/i.test(raw)) return 'Lake Erie growth county';
         if (/Above-state/i.test(raw)) return 'Fast-growth county';
         return raw.replace(/\s+or\s+declining\b/i, '').trim();
       }
@@ -23504,7 +23504,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (/outer-suburban/i.test(raw)) return 'outer-suburban growth';
         if (/metro spillover/i.test(raw)) return 'metro spillover growth';
         if (/urban anchor/i.test(raw)) return 'urban anchor growth';
-        if (/coastal growth/i.test(raw)) return 'coastal growth';
+        if (/lake erie growth/i.test(raw)) return 'lake erie growth';
         return raw.replace(/\s+county$/i, '').trim().toLowerCase();
       }
 
@@ -23515,7 +23515,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const toneLocal = String(directionTone || '').trim().toLowerCase();
         const g = String(growthText || '').trim().toLowerCase();
         if (!g || g === '—') return { effect: 'neutral', line: '' };
-        const fast = /fast-growth|metro|outer-suburban|urban anchor|coastal growth/.test(g);
+        const fast = /fast-growth|metro|outer-suburban|urban anchor|lake erie growth/.test(g);
         const slow = /slow-growth|declin/.test(g);
         if (toneLocal === 'rep') {
           if (slow) return { effect: 'reinforces', line: 'Slow growth can make margins feel stickier (less churn), even when the mood shifts.' };
@@ -23639,7 +23639,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const glanceMeaning = (() => {
         const tag = `${String(growthHeadline || '').toLowerCase()} ${String(contextBullet || '').toLowerCase()}`;
-        const fast = /fast growth|metro spillover|outer-suburban|urban anchor|coastal growth/.test(tag);
+        const fast = /fast growth|metro spillover|outer-suburban|urban anchor|lake erie growth/.test(tag);
         const slow = /slow growth|declin/.test(tag);
         if (fast) return 'Growth could keep margins moving';
         if (slow) return 'Stable electorate, margins can be sticky';
@@ -23686,9 +23686,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const stateSigned = ((sr - sd) / two) * 100;
         const delta = Number(selectedSigned) - stateSigned;
         if (!Number.isFinite(delta)) return '';
-        if (Math.abs(delta) < 0.005) return 'Compared with NC: about even';
+        if (Math.abs(delta) < 0.005) return 'Compared with Ohio: about even';
         const word = delta > 0 ? 'redder' : 'bluer';
-        return `Compared with NC: ${Math.abs(delta).toFixed(2)} pts ${word}`;
+        return `Compared with Ohio: ${Math.abs(delta).toFixed(2)} pts ${word}`;
       })();
 
       function buildNarrativeSentence(options = {}) {
@@ -23738,7 +23738,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const absMargin = Math.abs(Number(selectedSigned) || 0);
         const accel = Number.isFinite(recentShiftSince2020) && Math.abs(recentShiftSince2020) >= 4;
         const growthTag = `${String(growthHeadline || '').toLowerCase()} ${String(contextBullet || '').toLowerCase()}`;
-        const fastGrowth = /fast growth|metro spillover|outer-suburban|urban anchor|coastal growth/.test(growthTag);
+        const fastGrowth = /fast growth|metro spillover|outer-suburban|urban anchor|lake erie growth/.test(growthTag);
         const slowGrowth = /slow growth|declin/.test(growthTag);
         if (!isRecentFlip && electionCount > 0 && electionCount < 4) {
           return compact ? 'Early read: watch for confirmation next cycle.' : 'Early read: watch for confirmation in the next comparable cycle.';
@@ -23881,7 +23881,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return `Votes vs last cycle: R ${formatSignedCompact(repGrowth)}, D ${formatSignedCompact(demGrowth)}`;
 	    }
 
-	    function classifyGrowthType(countyName, growthRate) {
+	    function classifyGrowthTypeLegacyNc(countyName, growthRate) {
 	      const norm = String(countyName || '').trim().toUpperCase();
 	      if (!norm) return '🏭 Stable / Local Growth';
 
@@ -23905,6 +23905,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	      void growthRate;
 	      return '🏭 Stable / Local Growth';
+	    }
+
+	    function classifyGrowthType(countyName, growthRate) {
+	      const norm = String(countyName || '').trim().toUpperCase();
+	      if (!norm) return 'Stable / Local Growth';
+
+	      const lakeErie = new Set(['ASHTABULA', 'ERIE', 'LAKE', 'LORAIN', 'OTTAWA']);
+	      const metroSpillover = new Set(['DELAWARE', 'UNION', 'WARREN', 'FAIRFIELD', 'LICKING', 'MEDINA', 'BUTLER', 'CLERMONT', 'GEAUGA', 'PICKAWAY', 'MADISON', 'MORROW', 'KNOX']);
+	      const appalachianRiver = new Set(['ADAMS', 'GALLIA', 'HARRISON', 'JEFFERSON', 'MEIGS', 'MONROE', 'MORGAN', 'NOBLE', 'VINTON', 'WASHINGTON']);
+
+	      if (lakeErie.has(norm)) return 'Lake Erie Growth';
+	      if (metroSpillover.has(norm)) return 'Metro Spillover';
+	      if (appalachianRiver.has(norm)) return 'Appalachian / River County';
+
+	      void growthRate;
+	      return 'Stable / Local Growth';
 	    }
 
     function classifyCountyTrajectory(dataOrSeries, unitNoun = 'county', censusContext = null) {
@@ -24019,7 +24035,7 @@ document.addEventListener('DOMContentLoaded', function() {
         totalPct >= 8 ||
         (Number.isFinite(stateTotalPct) && totalPct > stateTotalPct + 1.25)
       );
-      const demGrowthPattern = /Urban anchor|Metro spillover|outer-suburban|Above-state growth county|Coastal growth/i.test(patternLabel);
+      const demGrowthPattern = /Urban anchor|Metro spillover|outer-suburban|Above-state growth county|Lake Erie growth/i.test(patternLabel);
 
       function getSignedDisplayMarginTowardGop(row) {
         return getTrendSeriesSignedMarginPct(row, {
@@ -26892,7 +26908,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const deltaBlock = buildCountyDeltaBlockHTML(norm, contestType, { presentation: 'desktop-expanded' });
       const censusDetailLine = (() => {
         try {
-          const ctx = getNcCensusContext(norm);
+          const ctx = getOhioCensusContext(norm);
           const signal = String(ctx?.signalLabel || '').trim();
           if (!signal) return '';
           return `<div class="tooltip-insight">Census insight: ${escapeHtml(signal)}.</div>`;
@@ -28478,8 +28494,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const censusContext = (() => {
         try {
-          if (typeof getNcCensusContext !== 'function') return null;
-          return getNcCensusContext(norm);
+          if (typeof getOhioCensusContext !== 'function') return null;
+          return getOhioCensusContext(norm);
         } catch (_) {
           return null;
         }
@@ -28543,7 +28559,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         `
       });
-      miniCards.push({ k: 'Compared with NC', v: vsNcShort || '—' });
+      miniCards.push({ k: 'Compared with Ohio', v: vsNcShort || '-' });
       miniCards.push({ k: 'Total votes', v: totalVotes.toLocaleString() });
       miniCards.push({ k: 'What to watch', v: 'Whether the next cycle confirms this direction.', id: 'county-watch' });
 
@@ -28565,7 +28581,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const pat = String(censusContext?.patternLabel || '').trim();
             if (/Metro spillover|outer-suburban/i.test(pat)) return 'Suburban growth is reshaping the electorate here.';
             if (/Urban anchor/i.test(pat)) return 'Urban growth keeps this county politically dynamic.';
-            if (/Coastal growth/i.test(pat)) return 'Migration-driven growth can move margins quickly here.';
+            if (/Lake Erie growth/i.test(pat)) return 'Lake Erie migration and lakefront growth can move margins quickly here.';
             if (/Slow-growth|declin/i.test(pat)) return 'Slow growth often locks in today’s political lean.';
             if (pat) return 'Population change is part of this county’s political story.';
             return 'Local turnout and long-run change shape this county.';
@@ -29013,7 +29029,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const growthDriver = (() => {
             if (/metro spillover|outer-suburban/.test(pat)) return 'Suburban growth';
             if (/urban anchor/.test(pat)) return 'Urban growth';
-            if (/coastal growth|coastal migration/.test(pat)) return 'Coastal in‑migration';
+            if (/lake erie growth|lake erie migration/.test(pat)) return 'Lake Erie in-migration';
             if (/slow-growth|declin/.test(pat)) return 'Slow growth';
             if (/small-metro/.test(pat)) return 'Small‑metro growth';
             if (patRaw) return patRaw.replace(/\s+with\s+.*$/i, '').replace(/\s+county$/i, '').trim();
@@ -29031,10 +29047,10 @@ document.addEventListener('DOMContentLoaded', function() {
               if (longDir === 'rep') return `${growthDriver} hasn’t translated into a leftward shift here.`;
               return `${growthDriver} is the big backdrop, but margins haven’t moved cleanly one way.`;
             }
-            if (growthDriver === 'Coastal in‑migration') {
-              if (longDir === 'dem') return 'In‑migration has helped pull margins left over time.';
-              if (longDir === 'rep') return 'In‑migration hasn’t changed the underlying Republican lean yet.';
-              return 'In‑migration can move margins quickly here—watch the next cycle.';
+            if (growthDriver === 'Lake Erie in-migration') {
+              if (longDir === 'dem') return 'In-migration has helped pull margins left over time.';
+              if (longDir === 'rep') return 'In-migration has not changed the underlying Republican lean yet.';
+              return 'In-migration can move margins quickly here; watch the next cycle.';
             }
             if (longDir === 'dem') return `${growthDriver} lines up with a long-run move left.`;
             if (longDir === 'rep') return `${growthDriver} lines up with a long-run move right.`;
