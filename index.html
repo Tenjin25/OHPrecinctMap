@@ -15093,6 +15093,18 @@ document.addEventListener('DOMContentLoaded', function() {
       return list.find(candidate => chain.includes(Number(candidate?.item?.year))) || entry;
     }
 
+    function filterTrendSeriesForComparableSequence(series, contestType, anchorYear = null) {
+      const list = Array.isArray(series) ? series.slice() : [];
+      const ct = String(contestType || '').trim();
+      if (ct !== 'us_senate' || !list.length) return list;
+      const numericAnchorYear = Number(anchorYear);
+      const fallbackYear = Number(list[list.length - 1]?.year);
+      const targetYear = Number.isFinite(numericAnchorYear) ? numericAnchorYear : fallbackYear;
+      const chain = getUsSenateSameSeatChain(targetYear);
+      if (!chain.length) return list;
+      return list.filter(item => chain.includes(Number(item?.year)));
+    }
+
     function renderFocusTrendSeries(series, caption = 'Trend history', options = {}) {
       const captionEl = document.getElementById('focus-trend-caption');
       const chartEl = document.getElementById('focus-trend-chart');
@@ -15110,9 +15122,14 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
-      const sortedSeries = series
+      const comparableSeries = filterTrendSeriesForComparableSequence(series, contestTypeHint, selectedYear);
+      const sortedSeries = comparableSeries
         .slice()
         .sort((a, b) => a.year - b.year);
+      if (!sortedSeries.length) {
+        chartEl.innerHTML = `<div class="focus-trend-empty">No historical trend data available.</div>`;
+        return;
+      }
       const annotated = sortedSeries.map((item, idx) => {
         const prev = getPreviousTrendItemForContest(sortedSeries, idx, contestTypeHint);
         const totalVotes = Number(item.total_votes || 0);

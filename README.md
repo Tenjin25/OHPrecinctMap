@@ -100,6 +100,7 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - Split desktop quick jumps into labeled groups: `Major Metros`, `Broad Regions`, and `Small Metros & Micros`.
 - Hid district-line toggles in county mode so the county view only shows controls that affect the active map.
 - Limited congressional district-line toggles to the supported `2022` and `2026` options while keeping `2024` available for state house and state senate views.
+- Fixed the Senate trend timeline so it only shows contests from the active same-seat sequence instead of mixing both Ohio Senate classes together.
 
 ### 2026-06-30
 
