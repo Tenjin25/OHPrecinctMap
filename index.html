@@ -793,7 +793,7 @@ body.focus-active.hover-preview-active .vote-counter {
 #hover-tooltip[data-context="votehub-results"] .vhr-pop-line {
   font-size: 11.5px;
   line-height: 1.45;
-  color: #16a34a;
+  color: #334155;
   font-weight: 850;
 }
 
@@ -815,7 +815,7 @@ body.focus-active.hover-preview-active .vote-counter {
   font-size: 11.5px;
   line-height: 1.35;
   font-weight: 850;
-  color: #15803d;
+  color: #334155;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -824,8 +824,26 @@ body.focus-active.hover-preview-active .vote-counter {
   font-size: 11px;
   line-height: 1.3;
   font-weight: 900;
-  color: #15803d;
+  color: #334155;
   letter-spacing: 0.01em;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.gain .vhr-pop-line,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.gain .vhr-pop-raw,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.gain .vhr-pop-tone {
+  color: #15803d;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.loss .vhr-pop-line,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.loss .vhr-pop-raw,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.loss .vhr-pop-tone {
+  color: #92400e;
+}
+
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.flat .vhr-pop-line,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.flat .vhr-pop-raw,
+#hover-tooltip[data-context="votehub-results"] .vhr-pop-summary.flat .vhr-pop-tone {
+  color: #475569;
 }
 
 #hover-tooltip[data-context="votehub-results"] .vhr-winner {
@@ -10449,8 +10467,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-01-ohio-contest-dropdown-fix-24';
-    const APP_BUILD_ID = '2026-07-02-ohio-pop-tooltip-cachebuster-26';
+    const DATA_CACHE_BUSTER = '2026-07-02-ohio-pop-tooltip-colors-25';
+    const APP_BUILD_ID = '2026-07-02-ohio-pop-tooltip-colors-27';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -27046,7 +27064,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const hasPopChangeSummaryCard = currentVizMode === 'population_change' && !!popChangeHeaderMeta;
       const popChangeSummaryHtml = hasPopChangeSummaryCard
         ? `
-          <div class="vhr-pop-summary">
+          <div class="vhr-pop-summary ${escapeHtml(popChangeHeaderMeta.tone)}">
             <div class="vhr-pop-main">
               <div class="vhr-pop-line primary">${escapeHtml(popChangeHeaderMeta.absLine)}</div>
               <div class="vhr-pop-line secondary">(${escapeHtml(popChangeHeaderMeta.pctLine)})</div>
