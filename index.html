@@ -26981,6 +26981,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         `.trim();
       })();
+      const hasPopChangeSummaryCard = currentVizMode === 'population_change' && !!popChangeHeaderMeta;
       const winnerName = winner === 'R'
         ? shortCandidateLabel(repCandidate, 'Republican')
         : (winner === 'D' ? shortCandidateLabel(demCandidate, 'Democratic') : 'Tie');
@@ -27017,8 +27018,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const detailLines = `
         ${finalInsight ? `<div class="tooltip-insight">${escapeHtml(finalInsight)}</div>` : ''}
         ${censusDetailLine}
-        ${popChangeDetailLine}
-        ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
+        ${hasPopChangeSummaryCard ? '' : popChangeDetailLine}
+        ${(currentVizMode === 'population_change' && popChangeHeaderMeta?.label && !hasPopChangeSummaryCard) ? `<div class="tooltip-insight" style="color:${popChangeToneColor};font-weight:700;">${escapeHtml(popChangeHeaderMeta.label)}</div>` : ''}
         ${(currentVizMode === 'shift' && Number.isFinite(shiftDelta) && vizShiftCache?.prevYear) ? '' : shiftLine}
         ${flipLine}
         ${deltaBlock}
