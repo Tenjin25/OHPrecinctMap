@@ -9811,7 +9811,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="map-topbar-badge"><span class="badge-state-name">Ohio</span> <span class="badge-atlas-name">Election Atlas</span></div>
       <div class="map-topbar-copy">
         <strong>Jump anywhere from the lakefront to the river counties</strong>
-        <span>Try Miami County, CD 1, HD 44, SD 33, or Franklin 09-A.</span>
+        <span>Try Miami, CD 1, HD 44, SD 33, or Franklin 09-A.</span>
       </div>
     </div>
     <form class="fly-search-bar" id="fly-search-form" role="search">
@@ -9833,7 +9833,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <button type="button" class="mobile-topbar-toggle" id="mobile-topbar-toggle" aria-controls="map-topbar-details" aria-expanded="false">Show details</button>
     <div class="map-topbar-details" id="map-topbar-details">
       <div class="map-topbar-hints" aria-label="Search examples">
-        <button type="button" class="fly-search-chip" data-search-example="Miami County">Miami County</button>
+        <button type="button" class="fly-search-chip" data-search-example="Miami">Miami</button>
         <button type="button" class="fly-search-chip" data-search-example="CD 1">CD 1</button>
         <button type="button" class="fly-search-chip" data-search-example="HD 44">HD 44</button>
         <button type="button" class="fly-search-chip" data-search-example="SD 33">SD 33</button>
@@ -9905,14 +9905,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 <label class="control-section-label" for="desktop-fly-search">Fly to</label>
                 <div class="desktop-fly-search-wrap">
                   <div class="desktop-fly-search-field fly-search-field">
-                    <input id="desktop-fly-search" type="search" placeholder="Miami County, CD 1, HD 44, SD 33, Franklin 09-A" autocomplete="off" spellcheck="false" inputmode="search" />
+                    <input id="desktop-fly-search" type="search" placeholder="Miami, CD 1, HD 44, SD 33, Franklin 09-A" autocomplete="off" spellcheck="false" inputmode="search" />
                   </div>
                   <button id="desktop-fly-submit" class="desktop-fly-submit" type="button">Go</button>
                 </div>
                 <div class="desktop-fly-helper">Jump to counties, districts, or precincts without changing the selected contest.</div>
                 <div class="desktop-quick-stats" data-viewport-precinct-count>Viewing precincts...</div>
                 <div class="desktop-fly-chip-row" aria-label="Fly-to examples">
-                  <button class="desktop-fly-chip" type="button" data-search-example="Miami County">Miami County</button>
+                  <button class="desktop-fly-chip" type="button" data-search-example="Miami">Miami</button>
                   <button class="desktop-fly-chip" type="button" data-search-example="CD 1">CD 1</button>
                   <button class="desktop-fly-chip" type="button" data-search-example="HD 44">HD 44</button>
                   <button class="desktop-fly-chip" type="button" data-search-example="SD 33">SD 33</button>
@@ -10467,8 +10467,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-02-flyto-example-refresh-26';
-    const APP_BUILD_ID = '2026-07-02-flyto-example-refresh-28';
+    const DATA_CACHE_BUSTER = '2026-07-03-ohio-county-name-cleanup-29';
+    const APP_BUILD_ID = '2026-07-03-ohio-county-name-cleanup-30';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();

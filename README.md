@@ -84,7 +84,7 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 
 ### 2026-07-02
 
-- Refreshed the fly-to example banner, chips, and desktop search placeholder so the atlas now spotlights `Miami County` in the Miami Valley, `HD 44` in Northwest Ohio, and `SD 33` in the Mahoning Valley.
+- Refreshed the fly-to example banner, chips, and desktop search placeholder so the atlas now spotlights `Miami` in the Miami Valley, `HD 44` in Northwest Ohio, and `SD 33` in the Mahoning Valley.
 - Replaced the older `Franklin`, `HD 3`, and `SD 15` example prompts in both the mobile and desktop fly-to UI with the newer regional examples.
 - Bumped the static asset/data cachebuster again so GitHub Pages and browser caches pick up the refreshed fly-to examples immediately.
 
