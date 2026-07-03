@@ -27114,13 +27114,18 @@ document.addEventListener('DOMContentLoaded', function() {
         ${splitInsightLine}
         ${demoLine}
       `.trim();
+      const detailSection = isDesktopTooltipMode()
+        ? detailLines
+        : `
+          <details class="tooltip-more" aria-label="More details">
+            <summary>More details</summary>
+            <div class="tooltip-more-body">${detailLines}</div>
+          </details>
+        `.trim();
       const inner = `
         ${votehubCore}
         ${popChangeTopLineMobile}
-        <details class="tooltip-more" aria-label="More details">
-          <summary>More details</summary>
-          <div class="tooltip-more-body">${detailLines}</div>
-        </details>
+        ${detailSection}
       `.trim();
 
       const copyText = `${countyDisplay} County`;
