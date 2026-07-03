@@ -11492,7 +11492,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // special-election dataset/model is ready to go live.
     const US_SENATE_SAME_SEAT_YEAR_CHAINS = [
       [2004, 2010, 2016, 2022],
-      [2006, 2012, 2018, 2024]
+      [2000, 2006, 2012, 2018, 2024]
     ];
 
     function getUsSenateSameSeatChain(year) {
@@ -11515,15 +11515,39 @@ document.addEventListener('DOMContentLoaded', function() {
         .sort((a, b) => b - a);
     }
 
-    function getPriorContestYearsFromAvailableYears(contestType, year, availableYears) {
+    function getUsSenateSameSeatLaterYears(year, availableYears = []) {
+      const y = Number(year);
+      const available = new Set(
+        (Array.isArray(availableYears) ? availableYears : [])
+          .map(Number)
+          .filter(Number.isFinite)
+      );
+      const chain = getUsSenateSameSeatChain(y);
+      if (!chain.length) return [];
+      return chain
+        .filter(cy => Number(cy) > y && available.has(Number(cy)))
+        .sort((a, b) => a - b);
+    }
+
+    function getComparableContestYearsFromAvailableYears(contestType, year, availableYears) {
       const ct = String(contestType || '').trim();
       const y = Number(year);
       const years = Array.isArray(availableYears)
-        ? availableYears.map(Number).filter(v => Number.isFinite(v) && v < y).sort((a, b) => a - b)
+        ? availableYears.map(Number).filter(Number.isFinite)
         : [];
       if (!years.length) return [];
-      if (ct === 'us_senate') return getUsSenateSameSeatPriorYears(y, years);
-      return years.slice().sort((a, b) => b - a);
+      if (ct === 'us_senate') {
+        const prior = getUsSenateSameSeatPriorYears(y, years);
+        return prior.length ? prior : getUsSenateSameSeatLaterYears(y, years);
+      }
+      const prior = years.filter(v => v < y).sort((a, b) => b - a);
+      if (prior.length) return prior;
+      return years.filter(v => v > y).sort((a, b) => a - b);
+    }
+
+    function getPriorContestYearsFromAvailableYears(contestType, year, availableYears) {
+      const comparable = getComparableContestYearsFromAvailableYears(contestType, year, availableYears);
+      return comparable.filter(v => Number(v) < Number(year)).sort((a, b) => b - a);
     }
 
     function getVoteDeltaPairsForTooltip(contestType, toYear, maxPairs = 2) {
@@ -33067,7 +33091,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (rows && rows.length) return { year: modeledDef.baseYear, rows };
         return null;
       }
-      const candidates = getPriorContestYearsFromAvailableYears(
+      const candidates = getComparableContestYearsFromAvailableYears(
         contestType,
         y,
         getAvailableContestYearsForType(contestType)
@@ -33305,7 +33329,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (results && Object.keys(results).length) return { year: modeledDef.baseYear, node };
         return null;
       }
-      const candidates = getPriorContestYearsFromAvailableYears(
+      const candidates = getComparableContestYearsFromAvailableYears(
         contestType,
         y,
         getAvailableDistrictContestYearsForScopeType(scope, contestType, linesYear)
