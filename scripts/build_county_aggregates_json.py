@@ -3,7 +3,13 @@ import json
 import re
 from pathlib import Path
 
-from build_county_aggregates import DATA_DIR, include_office, normalize_office, parse_votes
+from build_county_aggregates import (
+    DATA_DIR,
+    include_office,
+    normalize_county_name,
+    normalize_office,
+    parse_votes,
+)
 
 
 OUTPUT_PATH = DATA_DIR / "county_aggregates_nested.json"
@@ -172,7 +178,7 @@ def load_results_by_year() -> tuple[dict[str, dict], list[str]]:
                 if office in EXCLUDED_COUNTY_OFFICES:
                     continue
 
-                county = clean_text(row.get("county", ""))
+                county = normalize_county_name(row.get("county", ""))
                 district = clean_text(row.get("district", ""))
                 party_raw = clean_text(row.get("party", ""))
                 candidate = clean_text(row.get("candidate", ""))

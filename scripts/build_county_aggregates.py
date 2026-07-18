@@ -78,6 +78,17 @@ def clean_text(value: str) -> str:
     return " ".join((value or "").split())
 
 
+COUNTY_NAME_ALIASES = {
+    "VANWERT": "Van Wert",
+}
+
+
+def normalize_county_name(value: str) -> str:
+    county = clean_text(value)
+    alias_key = re.sub(r"[^A-Z0-9]", "", county.upper())
+    return COUNTY_NAME_ALIASES.get(alias_key, county)
+
+
 def normalize_office(value: str) -> str:
     office = clean_text(value)
     office = OFFICE_NORMALIZATION.get(office, office)
@@ -128,7 +139,7 @@ def aggregate_rows(paths: list[Path]) -> list[list[str]]:
                 if not include_office(office):
                     continue
 
-                county = clean_text(row.get("county", ""))
+                county = normalize_county_name(row.get("county", ""))
                 district = clean_text(row.get("district", ""))
                 party = clean_text(row.get("party", ""))
                 candidate = clean_text(row.get("candidate", ""))
