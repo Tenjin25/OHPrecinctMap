@@ -5,12 +5,12 @@
     // Resolve the initial legend palette before first paint. The full palette
     // initializer below still owns persistence and interactive switching.
     try {
-      const initialPalette = window.localStorage?.getItem('oh-atlas-partisan-palette-v1') === 'atlas'
-        ? 'atlas'
-        : 'dra';
+      const initialPalette = window.localStorage?.getItem('oh-atlas-partisan-palette-v1') === 'dra'
+        ? 'dra'
+        : 'atlas';
       document.documentElement.setAttribute('data-initial-partisan-palette', initialPalette);
     } catch (_) {
-      document.documentElement.setAttribute('data-initial-partisan-palette', 'dra');
+      document.documentElement.setAttribute('data-initial-partisan-palette', 'atlas');
     }
   </script>
   <style>
@@ -18,15 +18,15 @@
     --initial-margin-1: #67000d;
     --initial-margin-2: #a50f15;
     --initial-margin-3: #cb181d;
-    --initial-margin-4: #ef3b2c;
-    --initial-margin-5: #fb6a4a;
-    --initial-margin-6: #fcae91;
-    --initial-margin-7: #fee8c8;
+    --initial-margin-4: #d6362e;
+    --initial-margin-5: #ed4e46;
+    --initial-margin-6: #fb9875;
+    --initial-margin-7: #f5d6c4;
     --initial-margin-8: #f7f7f7;
-    --initial-margin-9: #e1f5fe;
-    --initial-margin-10: #c6dbef;
-    --initial-margin-11: #9ecae1;
-    --initial-margin-12: #6baed6;
+    --initial-margin-9: #b8d4ec;
+    --initial-margin-10: #8bbde0;
+    --initial-margin-11: #6baed6;
+    --initial-margin-12: #4e9ad4;
     --initial-margin-13: #3182bd;
     --initial-margin-14: #08519c;
     --initial-margin-15: #08306b;
@@ -9418,12 +9418,11 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   const DRA_PALETTE_STORAGE_KEY = 'oh-atlas-partisan-palette-v1';
   try {
-    if (window.localStorage && window.localStorage.getItem(DRA_PALETTE_STORAGE_KEY) !== 'atlas') {
+    // Default to the hybrid atlas ramp; only enable DRA when explicitly saved.
+    if (window.localStorage && window.localStorage.getItem(DRA_PALETTE_STORAGE_KEY) === 'dra') {
       document.body.classList.add('dra-palette');
     }
-  } catch (_) {
-    document.body.classList.add('dra-palette');
-  }
+  } catch (_) {}
   syncDraPaletteToggle();
   updateLegendColors();
   if (draPaletteBtn) {
@@ -10063,7 +10062,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   <details class="contest-tools-more" aria-label="More tools">
                     <summary class="tool-chip-btn tool-chip-btn-muted" role="button">More</summary>
                     <div class="contest-tools-row contest-tools-row-more">
-                      <button id="dra-palette-toggle" title="Use the original Atlas colors" class="tool-chip-btn tool-chip-btn-muted" type="button" data-testid="tool-dra-palette" aria-label="Toggle DRA color palette" aria-pressed="true">Atlas Colors</button>
+                      <button id="dra-palette-toggle" title="Use DRA-inspired colors with the existing 15 margin tiers" class="tool-chip-btn tool-chip-btn-muted" type="button" data-testid="tool-dra-palette" aria-label="Toggle DRA color palette" aria-pressed="false">DRA Colors</button>
                       <button id="follow-hover-toggle" title="Auto-update hover tooltip while panning (mobile)" class="tool-chip-btn tool-chip-btn-muted" type="button" data-testid="tool-follow-hover" aria-label="Toggle auto hover while panning" aria-pressed="false">Auto Hover Off</button>
                       <button id="gps-locate-btn" title="Find my precinct by GPS" class="tool-chip-btn" type="button" data-testid="tool-gps" aria-label="Find my precinct by GPS">Find My Precinct</button>
                       <button id="reset-view-btn" title="Reset map camera and clear pinned focus" class="tool-chip-btn tool-chip-btn-muted" type="button" data-testid="tool-reset-view" aria-label="Reset map view">Reset View</button>
@@ -10573,8 +10572,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cache destroyer token for static data requests.
     // Bump this value when you want browsers/CDNs to fetch fresh files immediately.
-    const DATA_CACHE_BUSTER = '2026-07-18-van-wert-1';
-    const APP_BUILD_ID = '2026-07-18-van-wert-1';
+    const DATA_CACHE_BUSTER = '2026-07-19-dra-hybrid-11';
+    const APP_BUILD_ID = '2026-07-19-dra-hybrid-11';
 
     function withCacheBuster(path) {
       const p = (path || '').toString().trim();
@@ -16164,11 +16163,31 @@ document.addEventListener('DOMContentLoaded', function() {
       queueVoteBreakdownLayoutMeasure();
     });
 
+    async function fetchAtlasResource(path, options = {}) {
+      const retryableStatuses = new Set([408, 425, 429, 500, 502, 503, 504]);
+      const maxAttempts = 3;
+      let response;
+      for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+        try {
+          response = await fetch(path, options);
+        } catch (error) {
+          if (attempt === maxAttempts) throw error;
+          await new Promise(resolve => setTimeout(resolve, 250 * attempt));
+          continue;
+        }
+        if (response.ok || !retryableStatuses.has(response.status) || attempt === maxAttempts) {
+          return response;
+        }
+        await new Promise(resolve => setTimeout(resolve, 250 * attempt));
+      }
+      return response;
+    }
+
     async function loadJSON(path) {
       const requestPath = withCacheBuster(path);
       if (jsonInflightByPath.has(requestPath)) return jsonInflightByPath.get(requestPath);
       const p = atlasPerf(`json:${requestPath}`, async () => {
-        const r = await fetch(requestPath, { cache: 'force-cache' });
+        const r = await fetchAtlasResource(requestPath, { cache: 'force-cache' });
         if (!r.ok) throw new Error(`${requestPath} fetch failed: ${r.status}`);
         return r.json();
       });
@@ -16184,7 +16203,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	      const requestPath = withCacheBuster(path);
 	      if (csvInflightByPath.has(requestPath)) return csvInflightByPath.get(requestPath);
 	      const p = atlasPerf(`csv:${requestPath}`, async () => {
-	        const r = await fetch(requestPath, { cache: 'force-cache' });
+	        const r = await fetchAtlasResource(requestPath, { cache: 'force-cache' });
 	        if (!r.ok) throw new Error(`${requestPath} fetch failed: ${r.status}`);
 	        return r.text();
 	      });
@@ -16196,7 +16215,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	      }
 	    }
 
-	    const PRESIDENT_OPEN_ELECTIONS_CSV = {
+      const OHIO_PRECINCT_GENERAL_ELECTION_CSV = {
 	      2004: withBase('./data/2004/20041102__oh__general__precinct.csv'),
 	      2006: withBase('./data/2006/20061107__OH__general__precinct.csv'),
 	      2008: withBase('./data/2008/20081104__oh__general__precinct.csv'),
@@ -16210,7 +16229,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	      2024: withBase('./data/2024/20241105__oh__general__precinct.csv')
 	    };
 
-      const OHIO_PRECINCT_GENERAL_ELECTION_CSV = { ...PRESIDENT_OPEN_ELECTIONS_CSV };
+      // Presidential fallbacks only exist in presidential election years. Keeping
+      // midterms here makes the manifest advertise contests that cannot exist.
+      const PRESIDENT_OPEN_ELECTIONS_CSV = Object.fromEntries(
+        Object.entries(OHIO_PRECINCT_GENERAL_ELECTION_CSV)
+          .filter(([year]) => Number(year) % 4 === 0)
+      );
       const OHIO_PRECINCT_PARTY_MAP = {
         D: 'DEM',
         DEMOCRATIC: 'DEM',
@@ -33031,6 +33055,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function categoryColorForMargin(marginPct, winner) {
+      // DRA-hybrid mid tiers; OG Stronghold + OG Dominant/Annihilation.
       if (marginPct >= 40) {
         return winner === 'R' ? '#67000d' : '#08306b';
       } else if (marginPct >= 30) {
@@ -33038,13 +33063,13 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (marginPct >= 20) {
         return winner === 'R' ? '#cb181d' : '#3182bd';
       } else if (marginPct >= 10) {
-        return winner === 'R' ? '#ef3b2c' : '#6baed6';
+        return winner === 'R' ? '#d6362e' : '#4e9ad4';
       } else if (marginPct >= 5.5) {
-        return winner === 'R' ? '#fb6a4a' : '#9ecae1';
+        return winner === 'R' ? '#ed4e46' : '#6baed6';
       } else if (marginPct >= 1.0) {
-        return winner === 'R' ? '#fcae91' : '#c6dbef';
+        return winner === 'R' ? '#fb9875' : '#8bbde0';
       } else if (marginPct >= 0.5) {
-        return winner === 'R' ? '#fee8c8' : '#e1f5fe';
+        return winner === 'R' ? '#f5d6c4' : '#b8d4ec';
       } else {
         return '#f7f7f7';
       }
