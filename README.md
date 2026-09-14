@@ -115,3 +115,12 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 - Added a dedicated precinct-contest build flow so precinct overlays can load real precinct election data directly from prebuilt JSON payloads instead of depending only on county aggregates.
 - Fixed precinct overlay contest loading so county-view precinct shading can pull from the new precinct contest payloads.
 - Rebuilt older congressional and legislative carryover aggregations using historical `vtd10` geometry-based crosswalks, improving district reaggregation for older statewide contests and reducing dropped precincts.
+
+## CVAP data attribution
+
+Citizen Voting Age Population (CVAP) totals use the U.S. Census Bureau's 2020-2024 American Community Survey five-year CVAP Special Tabulation. Precinct and legacy-boundary aggregates use the Redistricting Data Hub's **2024 CVAP Data Disaggregated to 2020 Census Blocks**.
+
+- Census source: https://www.census.gov/programs-surveys/decennial-census/about/voting-rights/cvap/2020-2024-CVAP.html
+- Block-level source and processing: https://redistrictingdatahub.org/
+
+Credit: **U.S. Census Bureau; Redistricting Data Hub.**
