@@ -378,6 +378,15 @@
     },
     {
       "scope": "congressional",
+      "contest_type": "us_house",
+      "year": 2026,
+      "file": "congressional_us_house_2026.json",
+      "rows": 15,
+      "lines_year": 2026,
+      "status": "unofficial"
+    },
+    {
+      "scope": "congressional",
       "contest_type": "us_senate",
       "year": 2004,
       "file": "congressional_us_senate_2004.json",

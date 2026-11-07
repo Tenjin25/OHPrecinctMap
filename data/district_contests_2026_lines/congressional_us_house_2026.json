@@ -1,0 +1,192 @@
+{
+  "scope": "congressional",
+  "contest_type": "us_house",
+  "year": 2026,
+  "status": "unofficial",
+  "source": "Ohio Secretary of State election-night reporting feed",
+  "source_as_of": "2026-11-07",
+  "general": {
+    "results": {
+      "1": {
+        "dem_votes": 176453,
+        "rep_votes": 139343,
+        "other_votes": 8675,
+        "total_votes": 324471,
+        "dem_candidate": "Greg Landsman",
+        "rep_candidate": "Eric Conroy",
+        "margin": -37110,
+        "margin_pct": -11.437077581663694,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "2": {
+        "dem_votes": 97638,
+        "rep_votes": 175411,
+        "other_votes": 0,
+        "total_votes": 273049,
+        "dem_candidate": "Jen Mazzuckelli",
+        "rep_candidate": "David Taylor",
+        "margin": 77773,
+        "margin_pct": 28.483166025145668,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "3": {
+        "dem_votes": 231925,
+        "rep_votes": 68407,
+        "other_votes": 0,
+        "total_votes": 300332,
+        "dem_candidate": "Joyce Beatty",
+        "rep_candidate": "Cleophus Dulaney",
+        "margin": -163518,
+        "margin_pct": -54.445746706977616,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "4": {
+        "dem_votes": 95497,
+        "rep_votes": 197084,
+        "other_votes": 13005,
+        "total_votes": 305586,
+        "dem_candidate": "Joshua Kolasinski",
+        "rep_candidate": "Jim Jordan",
+        "margin": 101587,
+        "margin_pct": 33.24334229971268,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "5": {
+        "dem_votes": 128142,
+        "rep_votes": 163382,
+        "other_votes": 9577,
+        "total_votes": 301101,
+        "dem_candidate": "Brian Shaver",
+        "rep_candidate": "Bob Latta",
+        "margin": 35240,
+        "margin_pct": 11.70371403615398,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "6": {
+        "dem_votes": 107310,
+        "rep_votes": 163675,
+        "other_votes": 0,
+        "total_votes": 270985,
+        "dem_candidate": "Elizabeth Kirtley",
+        "rep_candidate": "Michael Rulli",
+        "margin": 56365,
+        "margin_pct": 20.800044282893886,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "7": {
+        "dem_votes": 180614,
+        "rep_votes": 148177,
+        "other_votes": 242,
+        "total_votes": 329033,
+        "dem_candidate": "Brian Poindexter",
+        "rep_candidate": "Max Miller",
+        "margin": -32437,
+        "margin_pct": -9.85828169210991,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "8": {
+        "dem_votes": 154828,
+        "rep_votes": 168689,
+        "other_votes": 0,
+        "total_votes": 323517,
+        "dem_candidate": "Vanessa Enoch",
+        "rep_candidate": "Warren Davidson",
+        "margin": 13861,
+        "margin_pct": 4.2844734588908775,
+        "winner": "REP",
+        "color": "#fcbba1"
+      },
+      "9": {
+        "dem_votes": 159306,
+        "rep_votes": 142830,
+        "other_votes": 175,
+        "total_votes": 302311,
+        "dem_candidate": "Marcy Kaptur",
+        "rep_candidate": "Derek Merrin",
+        "margin": -16476,
+        "margin_pct": -5.450016704651832,
+        "winner": "DEM",
+        "color": "#6baed6"
+      },
+      "10": {
+        "dem_votes": 149024,
+        "rep_votes": 144086,
+        "other_votes": 8906,
+        "total_votes": 302016,
+        "dem_candidate": "Kristina Knickerbocker",
+        "rep_candidate": "Mike Turner",
+        "margin": -4938,
+        "margin_pct": -1.6350127145581692,
+        "winner": "DEM",
+        "color": "#c6dbef"
+      },
+      "11": {
+        "dem_votes": 219971,
+        "rep_votes": 43373,
+        "other_votes": 0,
+        "total_votes": 263344,
+        "dem_candidate": "Shontel Brown",
+        "rep_candidate": "Mike Kirchner",
+        "margin": -176598,
+        "margin_pct": -67.05981529862082,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "12": {
+        "dem_votes": 131211,
+        "rep_votes": 191926,
+        "other_votes": 0,
+        "total_votes": 323137,
+        "dem_candidate": "Jerrad Christian",
+        "rep_candidate": "Troy Balderson",
+        "margin": 60715,
+        "margin_pct": 18.78924419054457,
+        "winner": "REP",
+        "color": "#cb181d"
+      },
+      "13": {
+        "dem_votes": 190593,
+        "rep_votes": 122078,
+        "other_votes": 5104,
+        "total_votes": 317775,
+        "dem_candidate": "Emilia Sykes",
+        "rep_candidate": "Carey Coleman",
+        "margin": -68515,
+        "margin_pct": -21.560852804657383,
+        "winner": "DEM",
+        "color": "#2171b5"
+      },
+      "14": {
+        "dem_votes": 146651,
+        "rep_votes": 179467,
+        "other_votes": 0,
+        "total_votes": 326118,
+        "dem_candidate": "Maria Jukic",
+        "rep_candidate": "David Joyce",
+        "margin": 32816,
+        "margin_pct": 10.062615372349885,
+        "winner": "REP",
+        "color": "#fb6a4a"
+      },
+      "15": {
+        "dem_votes": 149287,
+        "rep_votes": 130225,
+        "other_votes": 8244,
+        "total_votes": 287756,
+        "dem_candidate": "Don Leonard",
+        "rep_candidate": "Mike Carey",
+        "margin": -19062,
+        "margin_pct": -6.624362306954504,
+        "winner": "DEM",
+        "color": "#6baed6"
+      }
+    }
+  }
+}

@@ -778,6 +778,15 @@
     },
     {
       "scope": "state_house",
+      "contest_type": "state_house",
+      "year": 2026,
+      "file": "state_house_state_house_2026.json",
+      "rows": 99,
+      "lines_year": 2024,
+      "status": "unofficial"
+    },
+    {
+      "scope": "state_house",
       "contest_type": "treasurer",
       "year": 2006,
       "file": "state_house_treasurer_2006.json",
@@ -1215,6 +1224,15 @@
       "file": "state_senate_state_senate_2024.json",
       "rows": 17,
       "lines_year": 2024
+    },
+    {
+      "scope": "state_senate",
+      "contest_type": "state_senate",
+      "year": 2026,
+      "file": "state_senate_state_senate_2026.json",
+      "rows": 17,
+      "lines_year": 2024,
+      "status": "unofficial"
     },
     {
       "scope": "state_senate",

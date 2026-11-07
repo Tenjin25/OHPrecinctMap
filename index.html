@@ -622,13 +622,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <meta charset='utf-8'>
-    <title>Ohio Election Atlas (2000-2024)</title>
+    <title>Ohio Election Atlas (2000-2026)</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover'>
     <meta name="author" content="Shamar Davis">
     <meta name="copyright" content="© 2026 Shamar Does Elections. All Rights Reserved.">
     <!-- Watermark: SDE Creator Attribution | Created by Shamar Davis | Copyright 2026 Shamar Does Elections -->
-    <meta property="og:title" content="Ohio Election Atlas (2000-2024)">
-    <meta property="og:description" content="Interactive visualization of Ohio election trends from 2000 to 2024, with county, precinct, and district views.">
+    <meta property="og:title" content="Ohio Election Atlas (2000-2026)">
+    <meta property="og:description" content="Interactive visualization of Ohio election trends from 2000 to 2026, with county, precinct, and district views. 2026 results are unofficial until certified.">
     <meta property="og:image" content="preview.png">
     <meta name="twitter:card" content="summary_large_image">
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet'>
@@ -11691,11 +11691,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // chamber elections in the selector.
       if (scope === 'state_house' && contestType === 'state_house') {
         if (normalizedLinesYear === 2022) return year === 2022;
-        if (normalizedLinesYear >= 2024) return year === 2024;
+        if (normalizedLinesYear >= 2024) return year === 2024 || year === 2026;
       }
       if (scope === 'state_senate' && contestType === 'state_senate') {
         if (normalizedLinesYear === 2022) return year === 2022;
-        if (normalizedLinesYear >= 2024) return year === 2024;
+        if (normalizedLinesYear >= 2024) return year === 2024 || year === 2026;
       }
 
       const modeledDef = getModeledContestDefinition(contestType, year);
@@ -20362,7 +20362,23 @@ document.addEventListener('DOMContentLoaded', function() {
       const modeledOptionLabel = String(modeledDef?.optionLabel || '').trim();
       if (modeledOptionLabel) return modeledOptionLabel;
       const officeName = formatContestName(contestType, year);
-      return Number.isFinite(Number(year)) ? `${officeName} ${year}` : officeName;
+      const label = Number.isFinite(Number(year)) ? `${officeName} ${year}` : officeName;
+      return isUnofficialContest(contestType, year) ? `${label} [Unofficial]` : label;
+    }
+
+    function isUnofficialContest(contestType, year) {
+      const type = String(contestType || '').trim();
+      const targetYear = Number(year);
+      if (!type || !Number.isFinite(targetYear)) return false;
+      const manifests = [
+        ...(Array.isArray(contestManifest) ? contestManifest : []),
+        ...(Array.isArray(getActiveDistrictManifest?.()) ? getActiveDistrictManifest() : [])
+      ];
+      return manifests.some(entry => (
+        String(entry?.contest_type || '').trim() === type &&
+        Number(entry?.year) === targetYear &&
+        String(entry?.status || '').toLowerCase() === 'unofficial'
+      ));
     }
 
     function populateContestSelectFromElectionJSON(electionData) {
@@ -20722,6 +20738,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
               baseText = `${label} (${item.year})${modeledSuffix}`;
             }
+            if (isUnofficialContest(item.contestType, item.year)) baseText += ' [Unofficial]';
             baseLabelCounts.set(baseText, (baseLabelCounts.get(baseText) || 0) + 1);
           });
 
@@ -20742,6 +20759,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
               optionText = `${label} (${item.year})${modeledSuffix}`;
             }
+            if (isUnofficialContest(item.contestType, item.year)) optionText += ' [Unofficial]';
             if ((baseLabelCounts.get(optionText) || 0) > 1) {
               const disambiguator = formatContestOptionDisambiguator(item.contestType);
               if (disambiguator) optionText = `${optionText} - ${disambiguator}`;

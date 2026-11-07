@@ -153,6 +153,7 @@ def main() -> None:
                     "year": int(year),
                     "file": filename,
                     "rows": len(rows),
+                    **({"status": "unofficial"} if int(year) == 2026 else {}),
                 }
             )
 

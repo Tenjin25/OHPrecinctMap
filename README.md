@@ -82,6 +82,12 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 
 ## Update Log
 
+### 2026-11-07
+
+- Added clearly labeled unofficial 2026 county results for governor, U.S. Senate, attorney general, auditor, secretary of state, treasurer, and both Ohio Supreme Court races from the Ohio Secretary of State election-night reporting feed.
+- Added unofficial 2026 district totals for U.S. House on the 2026 congressional plan and for Ohio House and Ohio Senate on the 2024 legislative plans.
+- Precinct-level 2026 results and statewide-race reaggregations into districts remain unavailable until Ohio publishes the official canvass files; 2026 entries are labeled `Unofficial` in the atlas until then.
+
 ### 2026-07-02
 
 - Refreshed the fly-to example banner, chips, and desktop search placeholder so the atlas now spotlights `Miami` in the Miami Valley, `HD 44` in Northwest Ohio, and `SD 33` in the Mahoning Valley.

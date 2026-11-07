@@ -43,6 +43,13 @@
       "rows": 88
     },
     {
+      "contest_type": "attorney_general",
+      "year": 2026,
+      "file": "attorney_general_2026.json",
+      "rows": 88,
+      "status": "unofficial"
+    },
+    {
       "contest_type": "auditor",
       "year": 2002,
       "file": "auditor_2002.json",
@@ -77,6 +84,13 @@
       "year": 2022,
       "file": "auditor_2022.json",
       "rows": 88
+    },
+    {
+      "contest_type": "auditor",
+      "year": 2026,
+      "file": "auditor_2026.json",
+      "rows": 88,
+      "status": "unofficial"
     },
     {
       "contest_type": "chief_justice_of_the_supreme_court_term_commencing_01_01",
@@ -133,6 +147,13 @@
       "rows": 88
     },
     {
+      "contest_type": "governor",
+      "year": 2026,
+      "file": "governor_2026.json",
+      "rows": 88,
+      "status": "unofficial"
+    },
+    {
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2013",
       "year": 2012,
       "file": "justice_of_the_supreme_court_term_commencing_01_01_2013_2012.json",
@@ -149,6 +170,13 @@
       "year": 2024,
       "file": "justice_of_the_supreme_court_term_commencing_01_01_2025_2024.json",
       "rows": 88
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_01_2027",
+      "year": 2026,
+      "file": "justice_of_the_supreme_court_term_commencing_01_01_2027_2026.json",
+      "rows": 88,
+      "status": "unofficial"
     },
     {
       "contest_type": "justice_of_the_supreme_court_term_commencing_01_02",
@@ -173,6 +201,13 @@
       "year": 2024,
       "file": "justice_of_the_supreme_court_term_commencing_01_02_2025_2024.json",
       "rows": 88
+    },
+    {
+      "contest_type": "justice_of_the_supreme_court_term_commencing_01_02_2027",
+      "year": 2026,
+      "file": "justice_of_the_supreme_court_term_commencing_01_02_2027_2026.json",
+      "rows": 88,
+      "status": "unofficial"
     },
     {
       "contest_type": "justice_of_the_supreme_court_unexpired_term_ending_12_31",
@@ -271,6 +306,13 @@
       "rows": 88
     },
     {
+      "contest_type": "secretary_of_state",
+      "year": 2026,
+      "file": "secretary_of_state_2026.json",
+      "rows": 88,
+      "status": "unofficial"
+    },
+    {
       "contest_type": "treasurer",
       "year": 2002,
       "file": "treasurer_2002.json",
@@ -305,6 +347,13 @@
       "year": 2022,
       "file": "treasurer_2022.json",
       "rows": 88
+    },
+    {
+      "contest_type": "treasurer",
+      "year": 2026,
+      "file": "treasurer_2026.json",
+      "rows": 88,
+      "status": "unofficial"
     },
     {
       "contest_type": "us_senate",
@@ -359,6 +408,13 @@
       "year": 2024,
       "file": "us_senate_2024.json",
       "rows": 88
+    },
+    {
+      "contest_type": "us_senate",
+      "year": 2026,
+      "file": "us_senate_2026.json",
+      "rows": 88,
+      "status": "unofficial"
     }
   ],
   "metadata": {

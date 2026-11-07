@@ -36,6 +36,7 @@ YEAR_FILES = [
     ("2020", DATA_DIR / "2020" / "20201103__oh__general__county.csv"),
     ("2022", DATA_DIR / "2022" / "20221108__oh__general__county.csv"),
     ("2024", DATA_DIR / "2024" / "20241105__oh__general__county.csv"),
+    ("2026", DATA_DIR / "2026" / "20261103__oh__general__county.csv"),
 ]
 
 UNAVAILABLE_YEARS = {}
