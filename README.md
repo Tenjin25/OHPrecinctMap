@@ -84,6 +84,7 @@ This matters because Ohio has a lot of places that are not tossups, but are stil
 
 ### 2026-11-07
 
+- Clarified that the 2026 U.S. Senate race is the special election for the remainder of JD Vance's term, ending January 3, 2029, and paired its shift and trend comparisons with the same seat's 2022 result.
 - Added clearly labeled unofficial 2026 county results for governor, U.S. Senate, attorney general, auditor, secretary of state, treasurer, and both Ohio Supreme Court races from the Ohio Secretary of State election-night reporting feed.
 - Added unofficial 2026 district totals for U.S. House on the 2026 congressional plan and for Ohio House and Ohio Senate on the 2024 legislative plans.
 - Precinct-level 2026 results and statewide-race reaggregations into districts remain unavailable until Ohio publishes the official canvass files; 2026 entries are labeled `Unofficial` in the atlas until then.

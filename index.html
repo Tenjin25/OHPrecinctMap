@@ -11778,12 +11778,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // US Senate has two Ohio seat/classes in the generic `us_senate` contest stream.
     // Keep shift/flip comparisons within the same seat instead of comparing the most
-    // recent Senate election from the other class (for example 2024 should compare to
-    // 2018, not 2022; 2022 should compare to 2016, not 2020/2018).
-    // 2026 is intentionally not included yet; add it to the proper chain when that
-    // special-election dataset/model is ready to go live.
+    // recent Senate election from the other class (for example 2024 compares to
+    // 2018, while the 2026 special election for Vance's seat compares to 2022).
     const US_SENATE_SAME_SEAT_YEAR_CHAINS = [
-      [2004, 2010, 2016, 2022],
+      [2004, 2010, 2016, 2022, 2026],
       [2000, 2006, 2012, 2018, 2024]
     ];
 
@@ -20298,6 +20296,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	      if (modeledDef?.displayName) {
 	        return modeledDef.displayName;
 	      }
+	      if (contestType === 'us_senate' && Number(year) === 2026) {
+	        return 'United States Senator (Special Election, Vance term ending 2029)';
+	      }
 	      const nameMap = {
 	        'president': 'President of the United States',
 	        'governor': 'Governor',
@@ -20733,7 +20734,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let baseText = '';
             if (modeledOptionLabel) {
               baseText = modeledOptionLabel;
-            } else if (isJudicial || modeledDef) {
+            } else if (isJudicial || modeledDef || (item.contestType === 'us_senate' && item.year === 2026)) {
               baseText = `${formatContestName(item.contestType, item.year)} (${item.year})${modeledSuffix}`;
             } else {
               baseText = `${label} (${item.year})${modeledSuffix}`;
@@ -20754,7 +20755,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let optionText = '';
             if (modeledOptionLabel) {
               optionText = modeledOptionLabel;
-            } else if (isJudicial || modeledDef) {
+            } else if (isJudicial || modeledDef || (item.contestType === 'us_senate' && item.year === 2026)) {
               optionText = `${formatContestName(item.contestType, item.year)} (${item.year})${modeledSuffix}`;
             } else {
               optionText = `${label} (${item.year})${modeledSuffix}`;
